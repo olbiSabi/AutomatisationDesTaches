@@ -1,0 +1,288 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6PJH1_ARTTHRA.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6PJH1_ARTTHRA.KSH
+_YCFSHELL=XDPA6PJH1_ARTTHRA.KSH
+_YCFJOB=XDPA6PJH1_ARTTHRA
+_YCTDATE=20210310215003
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6PJH1_ARTTHRA.KSH.20210310215003
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. /dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe> 
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client IMPOSSIBLE
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. /dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6PJH1_ARTTHRA.KSH: Debut le 10-03-2021 a 21:50:05
+# =========================================================================== #
++set -x
++ls -1 /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++head -1
++export IDF_FICIN=/dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++export FIC_CIBLE=/dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS
++basename /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++export FIC_NAME=OM2PA6AG.C1002243
++date +%Y%m%d%H%M%S
++export DT_HORODT=20210310215005
++export DEST_MAIL=mail_pa6_moe
++export JOB_MAIL=XDPA6PJH1_ARTTHRA-OMEGA-ABSENCES
++export NO_DMD=06
++fg_suppr_cpt_rendu 06
++jobEtape fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+
+# =========================================================================== #
+# 10-03-2021 a 21:50:05 fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.06.*
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210309
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210309
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210309
++fg_ctrl_fic_absence_vide mail_pa6_moe XDPA6PJH1_ARTTHRA-OMEGA-ABSENCES /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++jobEtape fg_ctrl_fic_absence_vide : sortie + message + archivage si vide ou sortie + message si absent
+
+# =========================================================================== #
+# 10-03-2021 a 21:50:05 fg_ctrl_fic_absence_vide : sortie + message + archivage si vide ou sortie + message si absent
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+HORODT_CTRL=20210310215005
++[ ! /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 ]
++[ -f /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 ]
++[ -s /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 ]
++echo Fichier à traiter : /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
+Fichier à traiter : /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++fg_copy_file_cft /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 10-03-2021 a 21:50:05 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210310215005
++basename /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
+FIC_NAME=OM2PA6AG.C1002243
++cp /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 /dz-pareo/applis/pa6/archive/OM2PA6AG.C1002243.20210310215005
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 OK
++cp /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 vers /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 vers /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243 vers /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS OK
++fl_maj_absence_bdx /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS
++jobEtape fl_maj_absence_bdx : Mise à jour des absences par bordereaux (NRB)
+
+# =========================================================================== #
+# 10-03-2021 a 21:50:05 fl_maj_absence_bdx : Mise à jour des absences par bordereaux (NRB)
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnrb_ZY_v9 -pINTZY -f/dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS -c0 -n06
++1> /dz-pareo/applis/pa6/logapp/XDPA6PJH1_ARTTHRA_INTZYNRB.20210310215003.15466522
++jobTest 0 fl_maj_absence_bdx : Pb dans la mise à jour des absences par bordereaux !!! fl_maj_absence_bdx : Mise à jour des absences par bordereaux OK
+fl_maj_absence_bdx : Mise à jour des absences par bordereaux OK
++fg_cat_cr_bdx_out 06 cr_quotidiens OMEGA_ABSENCES
++jobEtape fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+
+# =========================================================================== #
+# 10-03-2021 a 21:54:41 fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210310215441
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.06.*
+/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.06.* not found
+NOM_FIC_CR1=
++[ !  ]
++echo Pas de fichier NRB150IZ.06
+Pas de fichier NRB150IZ.06
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310
+NOM_FIC_CR2=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210310215441
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.06.20210310
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310
+NOM_FIC_CR3=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210310215441
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.06.20210310
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310
++head -1
+NOM_FIC_CR4=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210310215441
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.06.20210310
++rm -f /dz-pareo/applis/pa6/cft.in/OM2PA6AG.C1002243
++unset IDF_FICIN
++unset FIC_CIBLE
++unset FIC_NAME
++unset DT_HORODT
++unset DEST_MAIL
++unset JOB_MAIL
++unset NO_DMD
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6PJH1_ARTTHRA.KSH: Fin le 10-03-2021 a 21:54:41
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6PJH1_ARTTHRA.LOG_*0pju7*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 10-03-2021 a 21:54:42  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6PJH1_ARTTHRA.LOG_*0pju7*.24772708
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_24772708
++__orderid=LOG_*0pju7*
++__jobname_fin=XDPA6PJH1_ARTTHRA
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA
++__jobname=XDPA6PJH1_ARTTHRA
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001
++__orderid_fin=LOG_00pju7_00001
++__job_complet_fin=XDPA6PJH1_ARTTHRA.LOG_00pju7_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001
++grep YCFLOG=
++cut -d = -f 2-5
++head -1
++cut -d / -f 1-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001 ]
++sed s/^+/%/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/*/*/g
++sed s/^++/%/g
++sed s/*/*/g
++sed s/^%/+/g
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PJH1_ARTTHRA.LOG_00pju7_00001

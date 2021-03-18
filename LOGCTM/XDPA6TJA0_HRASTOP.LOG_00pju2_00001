@@ -1,0 +1,195 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6TJA0_HRASTOP.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6TJA0_HRASTOP.KSH
+_YCFSHELL=XDPA6TJA0_HRASTOP.KSH
+_YCFJOB=XDPA6TJA0_HRASTOP
+_YCTDATE=20210310203126
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6TJA0_HRASTOP.KSH.20210310203126
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6TJA0_HRASTOP.KSH: Debut le 10-03-2021 a 20:31:26
+# =========================================================================== #
++fl_arret_serveur_QUERY
++jobEtape fl_arret_serveur_QUERY: Arret du serveur QUERY
+
+# =========================================================================== #
+# 10-03-2021 a 20:31:26 fl_arret_serveur_QUERY: Arret du serveur QUERY
+# =========================================================================== #
++gec.sh stop -m pa6-query -x
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/query/bin/stop_query.sh ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/query/bin/stop_query.sh ; exit 0
+Stopping QueryServer...
+OK
+code retour=0
++jobTest 0 fl_arret_serveur_QUERY: Pb dans l'arret du serveur Query !!! fl_arret_serveur_QUERY: Arret du serveur Query OK
+fl_arret_serveur_QUERY: Arret du serveur Query OK
++sleep 20
++fl_arret_serveur_OpenHR
++jobEtape fl_arret_serveur_OpenHR: Arret du serveur OpenHR
+
+# =========================================================================== #
+# 10-03-2021 a 20:31:47 fl_arret_serveur_OpenHR: Arret du serveur OpenHR
+# =========================================================================== #
++gec.sh stop -m pa6-openhr -x
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin stop openhr ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin stop openhr ; exit 0
+
+      ***************************************
+      *   Stopping the dispatcher OpenHR    *
+      ***************************************
+
+RMI registry is located at 127.0.0.1:54527
+Stopping OpenHR server ...
+OpenHR server stopped
+
+      ******
+      ******   The dispatcher is stopped 
+      ******
+
+
+code retour=0
++jobTest 0 fl_arret_serveur_OpenHR: Pb dans l'arret du serveur OpenHR !!! fl_arret_serveur_OpenHR: Arret du serveur OpenHR OK
+fl_arret_serveur_OpenHR: Arret du serveur OpenHR OK
++sleep 20
++fl_arret_serveur_CS
++jobEtape fl_arret_serveur_CS: Arret du serveur CS
+
+# =========================================================================== #
+# 10-03-2021 a 20:32:18 fl_arret_serveur_CS: Arret du serveur CS
+# =========================================================================== #
++gec.sh stop -m pa6-csadmin -x
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin stop cs ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin stop cs ; exit 0
+
+      *******************************
+      *   Stopping the server CS    *
+      *******************************
+
+
+      ******
+      ******   The server CS is stopped 
+      ******
+
+
+code retour=0
++jobTest 0 fl_arret_serveur_CS: Pb dans l'arret du serveur CS !!! fl_arret_serveur_CS: Arret du serveur CS OK
+fl_arret_serveur_CS: Arret du serveur CS OK
++sleep 20
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6TJA0_HRASTOP.KSH: Fin le 10-03-2021 a 20:32:43
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6TJA0_HRASTOP.LOG_*0pju2*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 10-03-2021 a 20:32:43  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6TJA0_HRASTOP.LOG_*0pju2*.25428192
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_25428192
++__orderid=LOG_*0pju2*
++__jobname_fin=XDPA6TJA0_HRASTOP
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP
++__jobname=XDPA6TJA0_HRASTOP
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001
++__orderid_fin=LOG_00pju2_00001
++__job_complet_fin=XDPA6TJA0_HRASTOP.LOG_00pju2_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA0_HRASTOP.LOG_00pju2_00001
++sed s/^+/%/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/*/*/g
++sed s/^++/%/g
++sed s/*/*/g
++sed s/^%/+/g
++

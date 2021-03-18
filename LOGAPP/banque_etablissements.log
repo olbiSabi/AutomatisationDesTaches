@@ -1,0 +1,51 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Thu Mar 11 21:56:42 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /dz-pareo/applis/pa6/parm/banque_etablissements.ctl
+Data File:      /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210310193035
+  Bad File:     /dz-pareo/applis/pa6/logapp/banque_etablissements.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 0
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+Silent options: FEEDBACK, ERRORS and DISCARDS
+
+Table F_AMONT.T_BANQETABL, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CODETA                                2:6     5           CHARACTER            
+LIBLON                              13:52    40           CHARACTER            
+LIBABR                              53:62    10           CHARACTER            
+DATFIN                              82:89     8           DATE YYYYMMDD        
+
+
+Table F_AMONT.T_BANQETABL:
+  598 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   4608 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           598
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Mar 11 21:56:42 2021
+Run ended on Thu Mar 11 21:56:42 2021
+
+Elapsed time was:     00:00:00.51
+CPU time was:         00:00:00.02

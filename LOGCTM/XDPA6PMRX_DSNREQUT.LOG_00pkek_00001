@@ -1,0 +1,237 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6PMRX_DSNREQUT.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6PMRX_DSNREQUT.KSH
+_YCFSHELL=XDPA6PMRX_DSNREQUT.KSH
+_YCFJOB=XDPA6PMRX_DSNREQUT
+_YCTDATE=20210311015008
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6PMRX_DSNREQUT.KSH.20210311015008
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6PMRX_DSNREQUT.KSH: Debut le 11-03-2021 a 01:50:10
+# =========================================================================== #
++set -x
++date +%y%m%d%H%M%S
+HORODAT=210311015010
++export FIC_DSN=/dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csv
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers contrôle DSN 
+
+# =========================================================================== #
+# 11-03-2021 a 01:50:10 fl_suppr_fichier : Suppression des fichiers contrôle DSN 
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210218232611.csvT1 /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210218232611.csvT2
++fl_param_per_paie
++jobEtape fl_param_per_paie : Recherche paramètres de période de paie
+
+# =========================================================================== #
+# 11-03-2021 a 01:50:10 fl_param_per_paie : Recherche paramètres de période de paie
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/PARAM_EXPLO.dat ]
++[ -s /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat ]
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
++cut -c3-4
+MM=03
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
++cut -c1-2
+AA=21
++export PERPAI=MT202103
++echo Période de paie : ${PERPAI}
+Période de paie : ${PERPAI}
++fl_extraction
++jobEtape fl_extraction : Lancement du SQL
+
+# =========================================================================== #
+# 11-03-2021 a 01:50:10 fl_extraction : Lancement du SQL
+# =========================================================================== #
++sed -e s/\PERIODE/MT202103/g /dz-pareo/applis/pa6/sql/requete_controle_DSN.sql
++1> /dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql
++jobTest 0 fl_extraction :Problème Remplacement de la variable
++fg_lance_script_sql /dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql ; /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1
++SCRIPT=/dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql
++CSEP=;
++FOUT=/dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1
++shift 3
++jobEtape fg_lance_script_sql(/dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql,,/dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1) / sql-params:
+
+# =========================================================================== #
+# 11-03-2021 a 01:50:10 fg_lance_script_sql(/dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql,,/dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ';'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ';'" -F /dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql
++1> /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ';' -F /dz-pareo/applis/pa6/sql/requete_controle_DSN_1.sql
++jobTest 0 fg_lance_script_sql
++echo MATRICULE;PÉRIODE_DE_PAIE;CDNORM;DÉBUT_DOSSIER_PAIE;FIN_DOSSIER_PAIE;PREM_JOUR_DÉCLAR;ETABLISSEMENT;LIB_ETABLISSEMENT;POINT_DEPOT;CODLOT;DÉBUT_CONTRAT;NUM_CONTRAT;TÉMOIN_EXCLUS;MOTIF_EXCLU;TYPS89;LIBELLÉ_EMPLOI;FIN_PRÉVIS;STATUT_EMPLOI_SAL;TAUDGI;TYPDGI;NUM_CRM;FIN_RELATION;BUL_EMB_RÉTRO;PROFIL_PAIE;TYPE_GEST_AC;DÉBUT_ADHÉSION_AC;EMPLOI_MULTILPLE;EMPLOYEUR_MULTILPLE;REGIME_BASE;TAUXAT;EMPLOI_RETAITE_HR;EMPLOI_RETRAITE_DSN;EFFECTIF_FIN;SIRET_UD;ANCIEN_SIRET_UD;CHG_SIRET;MOIS_DÉCLA;FIN_HIST_CONT;MOIS_DSN_RAPP;PROF_RAPP_IND;COMPTEUR_DSN;RUBRIQUE_PAIE;LIBEL_RUBRIQUE_PAIE;SOURCE;CATÉGORIE_CPT_DSN;TYPE_COD;TYPE_PARENT;MONTA1;ASSIETTE;TAUX;UNITÉ_50_003_P2;ROLDT1;DATE01;ROLDT2;DATE02;DÉBUT_ORIGINE;FIN_ORIGINE;ID_OPS_DEST;TYPE_OPS;QUALIF_ASSIETTE;CODE_INSEE_COMMUNE;TAUEFF;CODE_ASSIETTE_COTIS;TRANCH_COTIS;CODE_AFFILIATION;TAUXAT_1
++1> /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT2 /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csv
++jobTest 0 fl_extraction : problème concaténation  de l'entete avec le résultat de la requete
++mv /dz-pareo/product/pa6/hra/prod/file/Contrôle_DSN_210311015010.csv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/
++jobTest 0  fl_extraction: problème déplacement du fichier
++fg_envoi_cft_arch /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/Contrôle_DSN_210311015010.csv PA6DFSPA6DSNREQU
++[ X = D -o X = U ]
++jobEtape fg_envoi_cft_arch : Envoi CFT
+
+# =========================================================================== #
+# 11-03-2021 a 01:51:19 fg_envoi_cft_arch : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6DSNREQU -f /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/Contrôle_DSN_210311015010.csv
+
+# =========================================================================== #
+# 11-03-2021 a 01:51:19 cft.sh send -f /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/Contrôle_DSN_210311015010.csv -m PA6DFSPA6DSNREQU
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6DSNREQU.PRODWIN.17039364.5119-1' vers part='PRODWIN',idf='PA6DFSPA6DSNREQU' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fg_envoi_cft_arch - identifiant CFT : PA6DFSPA6DSNREQU - fichier : /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/Contrôle_DSN_210311015010.csv
++mv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/Contrôle_DSN_210311015010.csv /dz-pareo/applis/pa6/archive
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6PMRX_DSNREQUT.KSH: Fin le 11-03-2021 a 01:51:25
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6PMRX_DSNREQUT.LOG_*0pkek*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 11-03-2021 a 01:51:26  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6PMRX_DSNREQUT.LOG_*0pkek*.19005670
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_19005670
++__orderid=LOG_*0pkek*
++__jobname_fin=XDPA6PMRX_DSNREQUT
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT
++__jobname=XDPA6PMRX_DSNREQUT
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001.out
++head -1
++grep -vE \.out|\.err
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001
++__orderid_fin=LOG_00pkek_00001
++__job_complet_fin=XDPA6PMRX_DSNREQUT.LOG_00pkek_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6PMRX_DSNREQUT.LOG_00pkek_00001

@@ -1,0 +1,52 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Thu Mar 11 21:57:04 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /dz-pareo/applis/pa6/parm/banque_guichets.ctl
+Data File:      /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210310193036
+  Bad File:     /dz-pareo/applis/pa6/logapp/banque_guichets.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 0
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+Silent options: FEEDBACK, ERRORS and DISCARDS
+
+Table F_AMONT.T_BANQGUICH, loaded from every logical record.
+Insert option in effect for this table: REPLACE
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CODETA                                2:6     5           CHARACTER            
+CODGUI                               7:11     5           CHARACTER            
+LIBELLE                             53:72    20           CHARACTER            
+BIC                               235:245    11           CHARACTER            
+DATFIN                            262:269     8           DATE YYYYMMDD        
+
+
+Table F_AMONT.T_BANQGUICH:
+  31431 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                   3968 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         31431
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Mar 11 21:57:04 2021
+Run ended on Thu Mar 11 21:57:06 2021
+
+Elapsed time was:     00:00:01.95
+CPU time was:         00:00:00.05

@@ -1,0 +1,571 @@
+
+######################################################################
+# Début JOB subnra_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement des paramètres
+######################################################################
+
+
+######################################################################
+# STEP 2 : recuperation des proprietes du processus
+######################################################################
+
+<I> le processus 1 existe sur la plateforme PRODS9
+
+######################################################################
+# STEP 3 : copie du shell standard
+######################################################################
+
+<I> le Shell /dz-pareo/product/pa6/hra/prod/prod/shl/JA0FSNRA est copié sous /dz-pareo/product/pa6/hra/prod/txt/tmp/JA0FSNRA.22020330
+
+######################################################################
+# STEP 4 : Alimentation des cartes paramètre
+######################################################################
+
+TYBPPNRA.22020330 : 
+
+22S3PC10P%POP                                      110 R
+27S3PC12ZY01
+5T**S
+5W**01SELECPOPSELECT NUDOSS FROM ZY00 WHERE TYPDOS='SAL'
+
+######################################################################
+# STEP 5 : Habillage du Shell standard
+######################################################################
+
+
+######################################################################
+# STEP 6 : Execution de la NRA
+######################################################################
+
+*****************************************************************
+*                   Production de mouvements                    *
+*****************************************************************
+
+
+JOB : JNRA                            DATE : 2021/03/11 21:25:04
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.25.04                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NRACHAINE NRA                F         55                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRA                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NRACHAINE NRA                F        A55                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRA                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-22S3PC10P%POP                                      110 R                                              
+AS800BOP-00000000-27S3PC12ZY01                                                                                          
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT NUDOSS FROM ZY00 WHERE TYPDOS='SAL'                                              
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-22S3PC10P%POP                                      110 R                                              
+AS800BOP-00000000-27S3PC12ZY01                                                                                          
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT NUDOSS FROM ZY00 WHERE TYPDOS='SAL'                                              
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000119476 NRA CHAINE NRA ALLHRLO                                                 
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000004                                                                             
+AS800BOP-BBAD0009-SD (S3) : 000000000000002                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.25.04  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.25.04                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119476                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000002                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000002                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.25.04  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100PB.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.22020330: No such file or directory
+
+
+*-------------------------- STEP110N ----------------*
+*          Execution module JAVA                    *
+*---------------------------------------------------*
+Filein: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.22020330
+Fileout: /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.22020330
+Reading INI file /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.22020330 ....
+Action: 0
+Writing response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.22020330 ...
+Wrote response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.22020330
+
+
+*-------------------------- STEP120A ---------------------------*
+*             Chargement de paramètres dans T120PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP120N ---------------------------*
+*                 Pré-sélection des populations                 *
+*---------------------------------------------------------------*
+AS800BOV-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOV-BBAD0002-IDENTIFICATION DU PROGRAMME : BOV/7.000/2020-06-12-14.48.46/F/                                        
+AS800BOV-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.25.05                                     
+AS800BOV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOV-00000000-PA5SZY                                                                                                
+AS800BOV-BBAX0035-SELECTION POPULATION CONSTITUEE PAR L'UTILISATEUR                                                     
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0021-POPULATION 0001 CONTENANT 000000000012859 DOSSIERS A ETE CREEE                                        
+AS800BOV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOV-BBAD0009-PD (PD) : 000000000000002                                                                             
+AS800BOV-BBAD0009-PS (PS) : 000000000000001                                                                             
+AS800BOV-BBAD0010-*** BOV : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.25.13  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP220A -----------------------*
+*                  REMOVE du fichier PSBBI101.C86              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI102.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI103.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI104.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI105.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI106.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI107.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI108.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI109.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI110.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1WE.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L1.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L2.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L3.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L4.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L5.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L6.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L7.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L8.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L9.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B2.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B3.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B4.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B5.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B6.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B7.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B8.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B9.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C1.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C2.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C3.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C4.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C5.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C6.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C7.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C8.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C9.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N2.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N3.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N4.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N5.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N6.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N7.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N8.C86: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N9.C86: No such file or directory
+
+
+*-------------------------- STEP220B ---------------------------*
+*             Chargement de paramètres dans T220PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP220N ---------------------------*
+*                   Production de mouvements                    *
+*---------------------------------------------------------------*
+JA0FSBI1-BBAD0001-------------------------------------------------------------------------------------------------------
+JA0FSBI1-BBAD0002-IDENTIFICATION DU PROGRAMME : BI1/7.000/2020-06-13-05.26.48/F/                                        
+JA0FSBI1-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.25.13                                     
+JA0FSBI1-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA0FSBI1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA0FSBI1-00000000-PC10P0001                                      110 R                                                  
+JA0FSBI1-00000000-PC12ZY01                                                                                              
+JA0FSBI1-BBAD0009-PC (PC) : 000000000000002                                                                             
+JA0FSBI1-00000000-PC10P0001                                      110 R                                                  
+JA0FSBI1-00000000-PC12ZY01                                                                                              
+JA0FSBI1-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA0FSBI1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA0FSBI1-00000000-PC10P00010001-01-01-00.00.002999-12-31-23.59.59110 R                                                  
+JA0FSBLS-BBAD0001-------------------------------------------------------------------------------------------------------
+JA0FSBLS-BBAD0002-IDENTIFICATION DU PROGRAMME : BLS/7.000/2020-06-13-05.26.51/F/                                        
+JA0FSBLS-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.25.13                                     
+JA0FSBLS-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000012859                                                      
+JA0FSBI1-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JA0FSBI1-BBAD0009-N1 (NA) : 000000000012859                                                                             
+JA0FSBI1-BBAD0009-B1 (BA) : 000000000000000                                                                             
+JA0FSBI1-BBAD0009-PC (PC) : 000000000000004                                                                             
+JA0FSBI1-BBAD0009-M1 (MA) : 000000000012859                                                                             
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0041-POPULATION 0001 LIBEREE                                                                               
+JA0FSBI1-BBAD0010-*** BI1 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.28.36  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP350A ---------------------------*
+*             Chargement de paramètres dans T350PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP350B ---------------------------*
+*             Chargement de paramètres dans T350PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP350N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.28.37                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119476                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FVOL1         VOLT350C1                                                                            
+AS800BOU-00000000-PA5FVOL1BI1X1VOL XMLT220XL                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FVOL1BI1M1VOL DATPSBBI101.C86                                                                      
+AS800BOU-00000000-PA5FVOL1BI1B1VOL BLBPSBBI1B1.C86                                                                      
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FVOL1         VOLT350C1                                                                            
+AS800BOU-00000000-PA5FVOL1BI1X1VOL XMLT220XL                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FVOL1BI1M1VOL DATPSBBI101.C86                                                                      
+AS800BOU-00000000-PA5FVOL1BI1B1VOL BLBPSBBI1B1.C86                                                                      
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1X (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1X 1V OL (3P)                                                                       
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1M (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1M 1V OL (3P)                                                                       
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1B (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1B 1V OL (3P)                                                                       
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000008                                                                             
+AS800BOU-BBAD0009-FT (FT) : 000000000000012                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000006                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.28.37  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C9.22020330: No such file or directory
+
+
+*-------------------------- STEP360N ---------------*
+*               Submit generated SHELL in T350FT    *
+*---------------------------------------------------*
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T220XL.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350FT.22020330: No such file or directory
+
+
+*-------------------------- STEP400A ---------------------------*
+*             Chargement de paramètres dans T400PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400B ---------------------------*
+*             Chargement de paramètres dans T400PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.28.37                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119476                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT400C1                                                                            
+AS800BOU-00000000-PA5FLYT1BX0101XMDXMLT220XA                                                                            
+AS800BOU-00000000-PA5FLYT1BX0201XMDXMLT220XB                                                                            
+AS800BOU-00000000-PA5FLYT1BX0301XMDXMLT220XC                                                                            
+AS800BOU-00000000-PA5FLYT1BX0401XMDXMLT220XD                                                                            
+AS800BOU-00000000-PA5FLYT1BX0501XMDXMLT220XE                                                                            
+AS800BOU-00000000-PA5FLYT1BX0601XMDXMLT220XF                                                                            
+AS800BOU-00000000-PA5FLYT1BX0701XMDXMLT220XG                                                                            
+AS800BOU-00000000-PA5FLYT1BX0801XMDXMLT220XH                                                                            
+AS800BOU-00000000-PA5FLYT1BX0901XMDXMLT220XI                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT400C1                                                                            
+AS800BOU-00000000-PA5FLYT1BX0101XMDXMLT220XA                                                                            
+AS800BOU-00000000-PA5FLYT1BX0201XMDXMLT220XB                                                                            
+AS800BOU-00000000-PA5FLYT1BX0301XMDXMLT220XC                                                                            
+AS800BOU-00000000-PA5FLYT1BX0401XMDXMLT220XD                                                                            
+AS800BOU-00000000-PA5FLYT1BX0501XMDXMLT220XE                                                                            
+AS800BOU-00000000-PA5FLYT1BX0601XMDXMLT220XF                                                                            
+AS800BOU-00000000-PA5FLYT1BX0701XMDXMLT220XG                                                                            
+AS800BOU-00000000-PA5FLYT1BX0801XMDXMLT220XH                                                                            
+AS800BOU-00000000-PA5FLYT1BX0901XMDXMLT220XI                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BX01 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX01 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX02 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX02 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX03 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX03 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX04 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX04 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX05 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX05 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX06 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX06 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX07 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX07 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX08 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX08 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX09 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX09 01 XMD (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000011                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.28.37  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C9.22020330: No such file or directory
+
+
+
+
+*-------------------------- STEP500A ---------------------------*
+*             Chargement de paramètres dans T500PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500B ---------------------------*
+*             Chargement de paramètres dans T500PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.28.37                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119476                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT500C1                                                                            
+AS800BOU-00000000-PA5FLYT1BY0101XMLXMLT220XL                                                                            
+AS800BOU-00000000-PA5FLYT1BY0201XMLXMLT220XM                                                                            
+AS800BOU-00000000-PA5FLYT1BY0301XMLXMLT220XN                                                                            
+AS800BOU-00000000-PA5FLYT1BY0401XMLXMLT220XO                                                                            
+AS800BOU-00000000-PA5FLYT1BY0501XMLXMLT220XP                                                                            
+AS800BOU-00000000-PA5FLYT1BY0601XMLXMLT220XQ                                                                            
+AS800BOU-00000000-PA5FLYT1BY0701XMLXMLT220XR                                                                            
+AS800BOU-00000000-PA5FLYT1BY0801XMLXMLT220XS                                                                            
+AS800BOU-00000000-PA5FLYT1BY0901XMLXMLT220XT                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT500C1                                                                            
+AS800BOU-00000000-PA5FLYT1BY0101XMLXMLT220XL                                                                            
+AS800BOU-00000000-PA5FLYT1BY0201XMLXMLT220XM                                                                            
+AS800BOU-00000000-PA5FLYT1BY0301XMLXMLT220XN                                                                            
+AS800BOU-00000000-PA5FLYT1BY0401XMLXMLT220XO                                                                            
+AS800BOU-00000000-PA5FLYT1BY0501XMLXMLT220XP                                                                            
+AS800BOU-00000000-PA5FLYT1BY0601XMLXMLT220XQ                                                                            
+AS800BOU-00000000-PA5FLYT1BY0701XMLXMLT220XR                                                                            
+AS800BOU-00000000-PA5FLYT1BY0801XMLXMLT220XS                                                                            
+AS800BOU-00000000-PA5FLYT1BY0901XMLXMLT220XT                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BY01 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY01 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY02 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY02 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY03 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY03 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY04 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY04 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY05 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY05 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY06 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY06 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY07 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY07 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY08 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY08 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY09 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY09 01 XML (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000011                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.28.37  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C9.22020330: No such file or directory
+
+
+
+
+No HMF file produced
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-21.28.37                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001194760                                                       001992796                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000119476                                                         h\                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000250 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-21.28.37  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H1.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H9.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M1.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M2.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M3.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M4.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M5.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M6.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M7.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M8.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M9.22020330: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950PM.22020330: No such file or directory
+
+
+
+
+JOB : JNRA                            DATE : 2021/03/11 21:28:38
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************

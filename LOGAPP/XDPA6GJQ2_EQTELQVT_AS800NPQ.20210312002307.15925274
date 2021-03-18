@@ -1,0 +1,213 @@
+
+# =========================================================================== #
+# 12-03-2021 a 00:23:09 fg_exec_query : execution de la query VAWVH003
+# =========================================================================== #
+5X**M0
+5Q**1DateTraitement                  2021-03-11-00.00.00
+3P**1BNPQ00XMD001VAWVH003CSVF
+
+######################################################################
+# Début JOB subnpq_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+
+######################################################################
+# STEP 2 : Acces SQL : recuperation des proprietes du processus
+######################################################################
+
+
+######################################################################
+# STEP 3 : Copie de NPQ
+######################################################################
+
+
+######################################################################
+# STEP 4 : Creation du fichier des parametres pour NPQ
+######################################################################
+
+VAWVH003.parm
+PA52D               110001  
+
+######################################################################
+# STEP 5 : Habillage du Shell standard
+######################################################################
+
+
+######################################################################
+# STEP 6 : Soumission de la chaine NPQ
+######################################################################
+
+*****************************************************************
+*            Chaine NPQ - Triplet UNO (UNIX/ORACLE)             *
+*****************************************************************
+
+
+JOB : JNPQ                            DATE : 2021/03/12 00:23:09
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Initialisation du fichier vide T050PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-12-00.23.10                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NPQ                  VAWVH003F         05                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NPQ                  VAWVH003F        A05                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5X**M0                                                                                                
+AS800BOP-00000000-5Q**1DateTraitement                  2021-03-11-00.00.00                                              
+AS800BOP-00000000-3P**1BNPQ00XMD001VAWVH003CSVF                                                                         
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5X**M0                                                                                                
+AS800BOP-00000000-5Q**1DateTraitement                  2021-03-11-00.00.00                                              
+AS800BOP-00000000-3P**1BNPQ00XMD001VAWVH003CSVF                                                                         
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000119497 NPQ  ALLHRLO                                                           
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000003                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-12-00.23.10  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100B ---------------------------*
+*             Initialisation du fichier vide T100PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-12-00.23.10                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119497                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FQRY1         QRYT100C1                                                                            
+AS800BOU-00000000-*A5FLYT1   LYTT100C1                                                                                  
+AS800BOU-00000000-*A5FLYT1XMDXMLT                                                                                       
+AS800BOU-00000000-*A5FLYT1XMDXSD                                                                                        
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FQRY1         QRYT100C1                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000005                                                                             
+AS800BOU-BBAD0009-FT (FT) : 000000000000006                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000005                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-12-00.23.10  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.10617016: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.10617016: No such file or directory
+
+
+*-------------------------- STEP110N ----------------*
+*               Submit generated SHELL in T100FT     *
+*---------------------------------------------------*
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-12-00.23.10                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001194970                                                       001992888                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000119497                                                         h¸                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000054 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-12-00.23.10  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.10617016: No such file or directory
+
+
+
+
+JOB : JNPQ                            DATE : 2021/03/12 00:23:10
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
+nudoss
+119497
+
+######################################################################
+# STEP 7 : Mise a disposition Editions
+######################################################################
+
+/dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119497

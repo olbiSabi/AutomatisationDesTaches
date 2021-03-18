@@ -1,0 +1,504 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6MTQ02.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6MTQ02.KSH
+_YCFSHELL=XDPA6MTQ02.KSH
+_YCFJOB=XDPA6MTQ02
+_YCTDATE=20210311013903
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6MTQ02.KSH.20210311013903
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MTQ02.KSH: Debut le 11-03-2021 a 01:39:05
+# =========================================================================== #
++set -x
++export QUERY=YDEMPOPP
++date +%y%m%d%H%M%S
++export HORODAT=210311013905
++export ATTENTE=180
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de la query YDEMPOPP
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_suppr_fichier : Suppression des fichiers résultat de la query YDEMPOPP
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.zip
++fl_param_per_paie
++jobEtape fl_param_per_paie : Recherche paramètres de période de paie
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_param_per_paie : Recherche paramètres de période de paie
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/PARAM_EXPLO.dat ]
++[ -s /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat ]
++cut -c3-4
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
+MM=03
++cut -c1-2
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
+AA=21
++export DATDEB=2021-03-01
++fl_const_requ
++jobEtape fl_const_requ : Constitution de la requête pour récupérer la date de fin
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_const_requ : Constitution de la requête pour récupérer la date de fin
+# =========================================================================== #
++1> /dz-pareo/applis/pa6/sql/query.sql
++echo SET PAGESIZE 0;
++1>> /dz-pareo/applis/pa6/sql/query.sql
++echo SET ECHO OFF;
++1>> /dz-pareo/applis/pa6/sql/query.sql
++echo select to_char(DAFIN, 'YYYY-MM-DD') from hr.zddi where SOCDOS ='CD4' and DADEB =to_date('2021-03-01', 'YYYY-MM-DD');
++1>> /dz-pareo/applis/pa6/sql/query.sql
++echo exit;
++1>> /dz-pareo/applis/pa6/sql/query.sql
++jobTest 0 fl_const_requ : Pb dans la constitution du fichier sql pour la date de fin
++fl_exec_requ
++jobEtape fl_exec_requ : Récupération de la date de fin pour la query
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_exec_requ : Récupération de la date de fin pour la query
+# =========================================================================== #
++[ X = X -o X = P ]
+oracle.sh sql ******
++1> /dz-pareo/applis/pa6/tmp/datfin.dat
++jobTest 0 fl_exec_requ : Pb d'exécution de la requête pour récupérer la date de fin de la query avec le fichier /dz-pareo/applis/pa6/sql/query.sql
++[ -s /dz-pareo/applis/pa6/tmp/datfin.dat ]
++cut -c1-10
++cat /dz-pareo/applis/pa6/tmp/datfin.dat
+DATFIN=2021-03-31
++echo Date de fin : 2021-03-31
+Date de fin : 2021-03-31
++echo Date de fin : 2021-03-31
+Date de fin : 2021-03-31
++fl_carte_param
++jobEtape fl_carte_param : Génération de la carte paramètre de la query YDEMPOPP
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_carte_param : Génération de la carte paramètre de la query YDEMPOPP
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++1> /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
+5X**M0
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++echo 5Q**1DébutDePériode                  2021-03-01
+5Q**1DébutDePériode                  2021-03-01
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++echo 5Q**1FinDePériode                    2021-03-31
+5Q**1FinDePériode                    2021-03-31
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
+5Q**1CyclePaie                       T
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++echo 3P**1BNPQ00XMD001YDEMPOPPFO F
+3P**1BNPQ00XMD001YDEMPOPPFO F
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
+3P**2BNPQ0000
++tee -a /dz-pareo/applis/pa6/parm/YDEMPOPP.parm
++echo 3P**3BNPQ0000    Total Retenues oppositions
+3P**3BNPQ0000    Total Retenues oppositions
++fl_lance_query
++jobEtape fl_lance_query : Lancement de la query YDEMPOPP
+
+# =========================================================================== #
+# 11-03-2021 a 01:39:05 fl_lance_query : Lancement de la query YDEMPOPP
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnpq_v9 YDEMPOPP 180
+
+######################################################################
+# Début JOB subnpq_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+/dz-pareo/applis/pa6/bin/subnpq_v9[181]: NUDOSS:  not found
+
+######################################################################
+# STEP 2 : Acces SQL : recuperation des proprietes du processus
+######################################################################
+
+
+######################################################################
+# STEP 3 : Copie de NPQ
+######################################################################
+
+
+######################################################################
+# STEP 4 : Creation du fichier des parametres pour NPQ
+######################################################################
+
+YDEMPOPP.parm
+PA52D               110001  
+
+######################################################################
+# STEP 5 : Habillage du Shell standard
+######################################################################
+
+
+######################################################################
+# STEP 6 : Soumission de la chaine NPQ
+######################################################################
+
+*****************************************************************
+*            Chaine NPQ - Triplet UNO (UNIX/ORACLE)             *
+*****************************************************************
+
+
+JOB : JNPQ                            DATE : 2021/03/11 01:39:05
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Initialisation du fichier vide T050PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-01.39.05                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NPQ                  YDEMPOPPF         05                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NPQ                  YDEMPOPPF        A05                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5X**M0                                                                                                
+AS800BOP-00000000-5Q**1DébutDePériode                  2021-03-01                                                       
+AS800BOP-00000000-5Q**1FinDePériode                    2021-03-31                                                       
+AS800BOP-00000000-5Q**1CyclePaie                       T                                                                
+AS800BOP-00000000-3P**1BNPQ00XMD001YDEMPOPPFO F                                                                         
+AS800BOP-00000000-3P**2BNPQ0000                                                                                         
+AS800BOP-00000000-3P**3BNPQ0000    Total Retenues oppositions                                                           
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5X**M0                                                                                                
+AS800BOP-00000000-5Q**1DébutDePériode                  2021-03-01                                                       
+AS800BOP-00000000-5Q**1FinDePériode                    2021-03-31                                                       
+AS800BOP-00000000-5Q**1CyclePaie                       T                                                                
+AS800BOP-00000000-3P**1BNPQ00XMD001YDEMPOPPFO F                                                                         
+AS800BOP-00000000-3P**2BNPQ0000                                                                                         
+AS800BOP-00000000-3P**3BNPQ0000    Total Retenues oppositions                                                           
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000119260 NPQ  ALLHRLO                                                           
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000007                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-01.39.06  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100B ---------------------------*
+*             Initialisation du fichier vide T100PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-01.39.06                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119260                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FQRY1         QRYT100C1                                                                            
+AS800BOU-00000000-*A5FLYT1   LYTT100C1                                                                                  
+AS800BOU-00000000-*A5FLYT1XMDXMLT                                                                                       
+AS800BOU-00000000-*A5FLYT1XMDXSD                                                                                        
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FQRY1         QRYT100C1                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000005                                                                             
+AS800BOU-BBAD0009-FT (FT) : 000000000000006                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000005                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-01.39.06  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.2883744: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.2883744: No such file or directory
+
+
+*-------------------------- STEP110N ----------------*
+*               Submit generated SHELL in T100FT     *
+*---------------------------------------------------*
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-01.39.06                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001192600                                                       001990825                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000119260                                                        `©                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000062 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-01.39.06  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.2883744: No such file or directory
+
+
+
+
+JOB : JNPQ                            DATE : 2021/03/11 01:39:06
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
+nudoss
+119260
+
+######################################################################
+# STEP 7 : Mise a disposition Editions
+######################################################################
+
+/dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119260
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119260/f_00_xmd_01.zip: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119260/f_00_xmd_00.slk: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119260/f_00_xmd_00.csv: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119260/f_00_xmd_01.csv: No such file or directory
++jobTest 0 fl_lance_query : Pb Traitement query YDEMPOPP
++fl_generation_copy
++jobEtape fl_generation_copy : Génération fichier pour la query YDEMPOPP
+
+# =========================================================================== #
+# 11-03-2021 a 01:42:06 fl_generation_copy : Génération fichier pour la query YDEMPOPP
+# =========================================================================== #
++rm -f /dz-pareo/applis/pa6/sql/query.sql
++rm -f /dz-pareo/applis/pa6/tmp/datfin.dat
++[ -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf ]
++echo Fichier généré : NPQ.YDEMPOPP.pdf
+Fichier généré : NPQ.YDEMPOPP.pdf
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/YDEMPOPP-210311013905.pdf
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 11-03-2021 a 01:42:06 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210311014206
++basename /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf
+FIC_NAME=NPQ.YDEMPOPP.pdf
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf /dz-pareo/applis/pa6/archive/NPQ.YDEMPOPP.pdf.20210311014206
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf OK
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/YDEMPOPP-210311013905.pdf
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf vers /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/YDEMPOPP-210311013905.pdf fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf vers /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/YDEMPOPP-210311013905.pdf OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.YDEMPOPP.pdf vers /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/YDEMPOPP-210311013905.pdf OK
++unset DATDEB
++unset FICPRM
++unset HORODAT
++unset ATTENTE
++unset QUERY
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MTQ02.KSH: Fin le 11-03-2021 a 01:42:06
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6MTQ02.LOG_*0pkeb*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 11-03-2021 a 01:42:07  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6MTQ02.LOG_*0pkeb*.19136552
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_19136552
++__orderid=LOG_*0pkeb*
++__jobname_fin=XDPA6MTQ02
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.out
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02
++__jobname=XDPA6MTQ02
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001
++__orderid_fin=LOG_00pkeb_00001
++__job_complet_fin=XDPA6MTQ02.LOG_00pkeb_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MTQ02.LOG_00pkeb_00001
++sed s/^++/%/g

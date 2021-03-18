@@ -1,0 +1,224 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6TJA1_HRASTART.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6TJA1_HRASTART.KSH
+_YCFSHELL=XDPA6TJA1_HRASTART.KSH
+_YCFJOB=XDPA6TJA1_HRASTART
+_YCTDATE=20210311015619
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6TJA1_HRASTART.KSH.20210311015619
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6TJA1_HRASTART.KSH: Debut le 11-03-2021 a 01:56:19
+# =========================================================================== #
++fl_Demarrage_serveur_CS
++jobEtape fl_Demarrage_serveur_CS: Démarrage du serveur CS
+
+# =========================================================================== #
+# 11-03-2021 a 01:56:19 fl_Demarrage_serveur_CS: Démarrage du serveur CS
+# =========================================================================== #
++gec.sh start -m pa6-csadmin -x
++[ -f /dexploit/supervision/pa6-csadmin*KO -o -f /dexploit/supervision/pa6-csadmin*OK ]
++grep 21233864
++grep -v grep
++grep S[0-9][0-9]
++ps -ef
++[ 1 -ne 0 ]
++gecExec pa6-csadmin EXEC start
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin start cs ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin start cs ; exit 0
+
+      ******
+      ******   WARNING : make sure the database dxpa6 running !
+      ******
+
+
+      ***************************
+      *   Starting the server   *
+      ***************************
+
+
+      ******
+      ******   The server is running 
+      ******    Owner is 
+      ******   dpa6
+      ******
+
+
+code retour=0
++__rcode=0
++rm -f /dexploit/supervision/pa6-csadmin.AV /dexploit/supervision/pa6-csadmin.process_AV
++date +%Y%m%d
+__DATEJOUR=20210311
++date +%Y-%m-%d %H:%M:%S
+__DATE=2021-03-11 01:56:22
++[ XDPA6TJA1_HRASTART !=  ]
++msgLog 2021-03-11 01:56:22;X;gecstart;pa6-csadmin;daproda4;0;gec;start;XDPA6TJA1_HRASTART /dexploit/tools/../data/metrique/X.GECSTARTSTOP.daproda4.20210311
++exit 0
++jobTest 0 fl_Demarrage_serveur_CS: Pb dans le démarrage du serveur CS !!! fl_Demarrage_serveur_CS: Démarrage du serveur CS OK
+fl_Demarrage_serveur_CS: Démarrage du serveur CS OK
++sleep 20
++fl_demarrage_serveur_OpenHR
++jobEtape fl_demarrage_serveur_OpenHR: Démarrage du serveur OpenHR
+
+# =========================================================================== #
+# 11-03-2021 a 01:56:42 fl_demarrage_serveur_OpenHR: Démarrage du serveur OpenHR
+# =========================================================================== #
++gec.sh start -m pa6-openhr -x
++[ -f /dexploit/supervision/pa6-openhr*KO -o -f /dexploit/supervision/pa6-openhr*OK ]
++ps -ef
++grep 21233864
++grep -v grep
++grep S[0-9][0-9]
++[ 1 -ne 0 ]
++gecExec pa6-openhr EXEC start
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin start openhr ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/bin/csadmin start openhr ; exit 0
+
+      ******
+      ******   WARNING : make sure the database dxpa6 running !
+      ******
+
+
+      **************************************
+      *   Starting the dispatcher OpenHR   *
+      **************************************
+
+
+      ******
+      ******   The dispatcher is running 
+      ******    Owner is 
+      ******   dpa6
+      ******
+
+
+code retour=0
++__rcode=0
++rm -f /dexploit/supervision/pa6-openhr.AV /dexploit/supervision/pa6-openhr.process_AV
++date +%Y%m%d
+__DATEJOUR=20210311
++date +%Y-%m-%d %H:%M:%S
+__DATE=2021-03-11 01:56:49
++[ XDPA6TJA1_HRASTART !=  ]
++msgLog 2021-03-11 01:56:49;X;gecstart;pa6-openhr;daproda4;0;gec;start;XDPA6TJA1_HRASTART /dexploit/tools/../data/metrique/X.GECSTARTSTOP.daproda4.20210311
++exit 0
++jobTest 0 Pb dans le démarrage du serveur OpenHR !!! Démarrage du serveur OpenHR OK
+Démarrage du serveur OpenHR OK
++sleep 90
++fl_demarrage_serveur_QUERY
++jobEtape fl_Demarrage_serveur_CS: Démarrage du serveur QUERY
+
+# =========================================================================== #
+# 11-03-2021 a 01:58:19 fl_Demarrage_serveur_CS: Démarrage du serveur QUERY
+# =========================================================================== #
++gec.sh start -m pa6-query -x
++[ -f /dexploit/supervision/pa6-query*KO -o -f /dexploit/supervision/pa6-query*OK ]
++ps -ef
++grep 21233864
++grep -v grep
++grep S[0-9][0-9]
++[ 1 -ne 0 ]
++gecExec pa6-query EXEC start
+==============================================
+cmd 1:(dpa6):. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/query/bin/start_query.sh ; exit 0
+==============================================
+execRemoteSsh: dpa6@daproda4:. ~dpa6/init.env ; /dz-pareo/product/pa6/hra/prod/query/bin/start_query.sh ; exit 0
+2021-03-11 01:58:20,581 [main] INFO  edttl - EDTTL1001 Checking graphic configuration
+2021-03-11 01:58:20,634 [main] INFO  edttl - EDTTL1002 Graphic configuration successfully checked
+code retour=0
++__rcode=0
++rm -f /dexploit/supervision/pa6-query.AV /dexploit/supervision/pa6-query.process_AV
++date +%Y%m%d
+__DATEJOUR=20210311
++date +%Y-%m-%d %H:%M:%S
+__DATE=2021-03-11 01:58:20
++[ XDPA6TJA1_HRASTART !=  ]
++msgLog 2021-03-11 01:58:20;X;gecstart;pa6-query;daproda4;0;gec;start;XDPA6TJA1_HRASTART /dexploit/tools/../data/metrique/X.GECSTARTSTOP.daproda4.20210311
++exit 0
++jobTest 0 fl_Demarrage_serveur_QUERY: Pb dans le démarrage du serveur Query !!! fl_Demarrage_serveur_QUERY: Démarrage du serveur Query OK
+fl_Demarrage_serveur_QUERY: Démarrage du serveur Query OK
++sleep 60
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6TJA1_HRASTART.KSH: Fin le 11-03-2021 a 01:59:20
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6TJA1_HRASTART.LOG_*0pjoo*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 11-03-2021 a 01:59:21  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6TJA1_HRASTART.LOG_*0pjoo*.21233866
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_21233866
++__orderid=LOG_*0pjoo*
++__jobname_fin=XDPA6TJA1_HRASTART
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.out
++awk -F. {print $1}
++head -1
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART
++__jobname=XDPA6TJA1_HRASTART
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001
++__orderid_fin=LOG_00pjoo_00001
++__job_complet_fin=XDPA6TJA1_HRASTART.LOG_00pjoo_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001
++head -1
++cut -d / -f 1-5
++cut -d = -f 2-5
++grep YCFLOG=
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6TJA1_HRASTART.LOG_00pjoo_00001

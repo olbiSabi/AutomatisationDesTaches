@@ -1,0 +1,449 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJM1_REFMOBIL.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJM1_REFMOBIL.KSH
+_YCFSHELL=XDPA6GJM1_REFMOBIL.KSH
+_YCFJOB=XDPA6GJM1_REFMOBIL
+_YCTDATE=20210319014355
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJM1_REFMOBIL.KSH.20210319014355
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJM1_REFMOBIL.KSH: Debut le 19-03-2021 a 01:43:57
+# =========================================================================== #
++set -x
++date +%Y%m%d
+HORODAT=20210319
++date +%H%M
+HORODAT2=0143
++fl_suppression
++rm -f /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210318_0537.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210318_0537.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210318_0537.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210318_0537.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210318_0537.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210318_0537.csv
++rm -f /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip
++fl_extraction
++echo Exécution boucle sur les fichiers sql
+Exécution boucle sur les fichiers sql
++cd /dz-pareo/applis/pa6/sql/PA6_REF_MOBILE
++[ X = X ]
++FICHOUT=CDC_P_ENTERPRISE_FILE_20210319_0143.csv
++fg_lance_script_sql ENTERPRISE_FILE.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1
++SCRIPT=ENTERPRISE_FILE.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(ENTERPRISE_FILE.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:43:57 fg_lance_script_sql(ENTERPRISE_FILE.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F ENTERPRISE_FILE.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F ENTERPRISE_FILE.sql
++jobTest 0 fg_lance_script_sql
++[ ENTERPRISE_FILE == ENTERPRISE_FILE ]
++echo ENTCODE;ENTNAMEF;ENTNAMEE;ENTPARENT;ENTLEVEL;ENTACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT2
++sort -n -t ; -k5 /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1_trie
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1_trie
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT3
++[ ENTERPRISE_FILE == REF_JOBS ]
++[ ENTERPRISE_FILE == REF_CONTRACTS_TYPES ]
++[ ENTERPRISE_FILE == REF_RANKS ]
++[ ENTERPRISE_FILE != ENTERPRISE_FILE ]
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csvT3
++[ X = X ]
++FICHOUT=CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csv
++fg_lance_script_sql REF_CONTRACTS_NATURES.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1
++SCRIPT=REF_CONTRACTS_NATURES.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(REF_CONTRACTS_NATURES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:43:58 fg_lance_script_sql(REF_CONTRACTS_NATURES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F REF_CONTRACTS_NATURES.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F REF_CONTRACTS_NATURES.sql
++jobTest 0 fg_lance_script_sql
++[ REF_CONTRACTS_NATURES == ENTERPRISE_FILE ]
++[ REF_CONTRACTS_NATURES == REF_JOBS ]
++[ REF_CONTRACTS_NATURES == REF_CONTRACTS_TYPES ]
++[ REF_CONTRACTS_NATURES == REF_RANKS ]
++[ REF_CONTRACTS_NATURES != ENTERPRISE_FILE ]
++[ REF_CONTRACTS_NATURES != REF_JOBS ]
++[ REF_CONTRACTS_NATURES != REF_CONTRACTS_TYPES ]
++[ REF_CONTRACTS_NATURES != REF_RANKS ]
++echo CODE;NAME_E;NAME_F;ACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT3
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT3
+rm: /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csvT1_trie: No such file or directory
++[ X = X ]
++FICHOUT=CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csv
++fg_lance_script_sql REF_CONTRACTS_TYPES.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1
++SCRIPT=REF_CONTRACTS_TYPES.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(REF_CONTRACTS_TYPES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:43:59 fg_lance_script_sql(REF_CONTRACTS_TYPES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F REF_CONTRACTS_TYPES.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F REF_CONTRACTS_TYPES.sql
++jobTest 0 fg_lance_script_sql
++[ REF_CONTRACTS_TYPES == ENTERPRISE_FILE ]
++[ REF_CONTRACTS_TYPES == REF_JOBS ]
++[ REF_CONTRACTS_TYPES == REF_CONTRACTS_TYPES ]
++echo REF_CT_CODE;REF_CT_NAME_E;REF_CT_NAME_F;REF_CT_ACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT3
++[ REF_CONTRACTS_TYPES == REF_RANKS ]
++[ REF_CONTRACTS_TYPES != ENTERPRISE_FILE ]
++[ REF_CONTRACTS_TYPES != REF_JOBS ]
++[ REF_CONTRACTS_TYPES != REF_CONTRACTS_TYPES ]
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT3
+rm: /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csvT1_trie: No such file or directory
++[ X = X ]
++FICHOUT=CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csv
++fg_lance_script_sql REF_ENTREPRISES_ACTIVITIES.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1
++SCRIPT=REF_ENTREPRISES_ACTIVITIES.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(REF_ENTREPRISES_ACTIVITIES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:43:59 fg_lance_script_sql(REF_ENTREPRISES_ACTIVITIES.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F REF_ENTREPRISES_ACTIVITIES.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F REF_ENTREPRISES_ACTIVITIES.sql
++jobTest 0 fg_lance_script_sql
++[ REF_ENTREPRISES_ACTIVITIES == ENTERPRISE_FILE ]
++[ REF_ENTREPRISES_ACTIVITIES == REF_JOBS ]
++[ REF_ENTREPRISES_ACTIVITIES == REF_CONTRACTS_TYPES ]
++[ REF_ENTREPRISES_ACTIVITIES == REF_RANKS ]
++[ REF_ENTREPRISES_ACTIVITIES != ENTERPRISE_FILE ]
++[ REF_ENTREPRISES_ACTIVITIES != REF_JOBS ]
++[ REF_ENTREPRISES_ACTIVITIES != REF_CONTRACTS_TYPES ]
++[ REF_ENTREPRISES_ACTIVITIES != REF_RANKS ]
++echo CODE;NAME_E;NAME_F;ACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT3
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT3
+rm: /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csvT1_trie: No such file or directory
++[ X = X ]
++FICHOUT=CDC_P_REF_JOBS_20210319_0143.csv
++fg_lance_script_sql REF_JOBS.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1
++SCRIPT=REF_JOBS.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(REF_JOBS.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:00 fg_lance_script_sql(REF_JOBS.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F REF_JOBS.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F REF_JOBS.sql
++jobTest 0 fg_lance_script_sql
++[ REF_JOBS == ENTERPRISE_FILE ]
++[ REF_JOBS == REF_JOBS ]
++echo REF_JOBS_CODE;REF_JOBS_NAME_E;REF_JOBS_NAME_F;REF_JOBS_DESCRIPTION_E;REF_JOBS_DESCRIPTION_F;REF_JOBS_LEVEL;REF_JOBS_PARENT_CODE;REF_JOBS_ACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT3
++[ REF_JOBS == REF_CONTRACTS_TYPES ]
++[ REF_JOBS == REF_RANKS ]
++[ REF_JOBS != ENTERPRISE_FILE ]
++[ REF_JOBS != REF_JOBS ]
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT3
+rm: /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csvT1_trie: No such file or directory
++[ X = X ]
++FICHOUT=CDC_P_REF_RANKS_20210319_0143.csv
++fg_lance_script_sql REF_RANKS.sql  /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1
++SCRIPT=REF_RANKS.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1
++shift 3
++jobEtape fg_lance_script_sql(REF_RANKS.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1) / sql-params:
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:01 fg_lance_script_sql(REF_RANKS.sql,,/dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F REF_RANKS.sql
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F REF_RANKS.sql
++jobTest 0 fg_lance_script_sql
++[ REF_RANKS == ENTERPRISE_FILE ]
++[ REF_RANKS == REF_JOBS ]
++[ REF_RANKS == REF_CONTRACTS_TYPES ]
++[ REF_RANKS == REF_RANKS ]
++echo REF_RA_CODE;REF_RA_NAME_E;REF_RA_NAME_F;REF_RA_ACTIVE
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT2
++cat /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT3
++[ REF_RANKS != ENTERPRISE_FILE ]
++[ REF_RANKS != REF_JOBS ]
++[ REF_RANKS != REF_CONTRACTS_TYPES ]
++[ REF_RANKS != REF_RANKS ]
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT3
++1> /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csv
++rm /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1_trie /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT2 /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT3
+rm: /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csvT1_trie: No such file or directory
++fl_Zip /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip /dz-pareo/product/pa6/hra/prod/file/CDC_P*.csv
++jobEtape fl_Zip : Zip du résultat de la Query et de la log
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:01 fl_Zip : Zip du résultat de la Query et de la log
+# =========================================================================== #
++zip -9j /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip /dz-pareo/product/pa6/hra/prod/file/CDC_P_ENTERPRISE_FILE_20210319_0143.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_JOBS_20210319_0143.csv /dz-pareo/product/pa6/hra/prod/file/CDC_P_REF_RANKS_20210319_0143.csv
+  adding: CDC_P_ENTERPRISE_FILE_20210319_0143.csv (deflated 76%)
+  adding: CDC_P_REF_CONTRACTS_NATURES_20210319_0143.csv (deflated 68%)
+  adding: CDC_P_REF_CONTRACTS_TYPES_20210319_0143.csv (deflated 45%)
+  adding: CDC_P_REF_ENTREPRISES_ACTIVITIES_20210319_0143.csv (deflated 78%)
+  adding: CDC_P_REF_JOBS_20210319_0143.csv (deflated 78%)
+  adding: CDC_P_REF_RANKS_20210319_0143.csv (deflated 81%)
++jobTest 0 fl_Zip : Pb Zip du résultat de la Query et de la log fl_Zip : Zip du résultat de la Query et de la log OK
+fl_Zip : Zip du résultat de la Query et de la log OK
++fl_cft_archivage
++jobEtape fl_cft_envoi : envoi cft du fichier et archivage
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:01 fl_cft_envoi : envoi cft du fichier et archivage
+# =========================================================================== #
++[ -f /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip ]
++cft.sh send -m PA6EXTTV1REFE -f /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip -p REFMOBILE.zip
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:01 cft.sh send -f /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip -m PA6EXTTV1REFE
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6EXTTV1REFE.GTWCDCX5.19792060.4401-1' vers part='GTWCDCX5',idf='PA6EXTTV1REFE' parm='REFMOBILE.zip' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_cft_archivage : pb envoi_cft fl_cft_archivage : envoi_cft OK
+fl_cft_archivage : envoi_cft OK
++mv /dz-pareo/applis/pa6/cft.out/MOBILE/REFMOBILE.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_cft_archivage : pb archivage fl_cft_archivage : archivage OK
+fl_cft_archivage : archivage OK
++unset FICHIN
++unset FICHOUT
++unset HORODAT
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJM1_REFMOBIL.KSH: Fin le 19-03-2021 a 01:44:01
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJM1_REFMOBIL.LOG_*0rto4*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:02  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJM1_REFMOBIL.LOG_*0rto4*.11599912
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_11599912
++__orderid=LOG_*0rto4*
++__jobname_fin=XDPA6GJM1_REFMOBIL
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL
++__jobname=XDPA6GJM1_REFMOBIL
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001
++__orderid_fin=LOG_00rto4_00001
++__job_complet_fin=XDPA6GJM1_REFMOBIL.LOG_00rto4_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001
++grep YCFLOG=
++head -1
++cut -d / -f 1-5
++cut -d = -f 2-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM1_REFMOBIL.LOG_00rto4_00001

@@ -1,0 +1,1717 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJB2_AGENBORH.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJB2_AGENBORH.KSH
+_YCFSHELL=XDPA6GJB2_AGENBORH.KSH
+_YCFJOB=XDPA6GJB2_AGENBORH
+_YCTDATE=20210318212936
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJB2_AGENBORH.KSH.20210318212936
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJB2_AGENBORH.KSH: Debut le 18-03-2021 a 21:29:38
+# =========================================================================== #
++set -x
++rm -f /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210317212235-1979.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210317212235-15267.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210317212235-15267.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210317212235-2698.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210317212235-13194.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210317212235-46448.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210317212235-12899.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210317212235-12930.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210317212235-13387.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210317212235-13303.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210317212235-0.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210317212235-69284.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210317212235-90911.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210317212235-9935.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210317212235-127480.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210317212235-1056.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210317212235-3216.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210317212235-2335.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210317212235-6800.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210317212235-38486.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210317212235-6953.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210317212235-22748.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210317212235-2306.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210317212235-8894.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210317212235-1583.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210317212235-13381.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210317212235-29200.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210317212235-14684.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210317212235-1459.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210317212235-1520.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210317212235-0.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210317212235-138254.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210317212235-141064.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210317212235-43821.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210317212235-527.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210317212235-41187.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210317212235-49075.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210317212235-5961.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210317212235-23383.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210317212235-3903.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210317212235-9829.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210317212235-893.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210317212235-47921.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210317212235-3791.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210317212235-12874.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210317212235-3877.csv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210317212235-16901.csv
++date +%Y%m%d%H%M%S
++export DATE_JOUR=20210318212938
++fl_extraction_bo_agents
++jobEtape fl_extraction_bo_agents : Extraction des données Agents 
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:38 fl_extraction_bo_agents : Extraction des données Agents 
+# =========================================================================== #
++cd /dz-pareo/applis/pa6/sql/PA6_BO_AGENTS
++echo PA6_PQVT.sql
++cut -c1-8
+FICHIEROUT=PA6_PQVT
++fg_lance_script_sql PA6_PQVT.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938
++SCRIPT=PA6_PQVT.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_PQVT.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:38 fg_lance_script_sql(PA6_PQVT.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_PQVT.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_PQVT.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938
+nbligne=1990
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_PQVT_20210318212938-1990.csv
++echo PA6_UF01.sql
++cut -c1-8
+FICHIEROUT=PA6_UF01
++fg_lance_script_sql PA6_UF01.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938
++SCRIPT=PA6_UF01.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_UF01.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:39 fg_lance_script_sql(PA6_UF01.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_UF01.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_UF01.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938
+nbligne=15270
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_UF01_20210318212938-15270.csv
++echo PA6_ZY00.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY00
++fg_lance_script_sql PA6_ZY00.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938
++SCRIPT=PA6_ZY00.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY00.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:45 fg_lance_script_sql(PA6_ZY00.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY00.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY00.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938
+nbligne=15270
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY00_20210318212938-15270.csv
++echo PA6_ZY09.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY09
++fg_lance_script_sql PA6_ZY09.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938
++SCRIPT=PA6_ZY09.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY09.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:47 fg_lance_script_sql(PA6_ZY09.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY09.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY09.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938
+nbligne=2698
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY09_20210318212938-2698.csv
++echo PA6_ZY0G.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY0G
++fg_lance_script_sql PA6_ZY0G.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938
++SCRIPT=PA6_ZY0G.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY0G.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:48 fg_lance_script_sql(PA6_ZY0G.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY0G.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY0G.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938
+nbligne=13197
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0G_20210318212938-13197.csv
++echo PA6_ZY0H.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY0H
++fg_lance_script_sql PA6_ZY0H.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938
++SCRIPT=PA6_ZY0H.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY0H.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:50 fg_lance_script_sql(PA6_ZY0H.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY0H.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY0H.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938
+nbligne=46457
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0H_20210318212938-46457.csv
++echo PA6_ZY0I.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY0I
++fg_lance_script_sql PA6_ZY0I.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938
++SCRIPT=PA6_ZY0I.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY0I.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:55 fg_lance_script_sql(PA6_ZY0I.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY0I.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY0I.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938
+nbligne=12903
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY0I_20210318212938-12903.csv
++echo PA6_ZY12.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY12
++fg_lance_script_sql PA6_ZY12.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938
++SCRIPT=PA6_ZY12.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY12.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:00 fg_lance_script_sql(PA6_ZY12.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY12.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY12.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938
+nbligne=12933
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY12_20210318212938-12933.csv
++cut -c1-8
++echo PA6_ZY18.sql
+FICHIEROUT=PA6_ZY18
++fg_lance_script_sql PA6_ZY18.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938
++SCRIPT=PA6_ZY18.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY18.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:02 fg_lance_script_sql(PA6_ZY18.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY18.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY18.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938
+nbligne=13387
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY18_20210318212938-13387.csv
++echo PA6_ZY19.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY19
++fg_lance_script_sql PA6_ZY19.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938
++SCRIPT=PA6_ZY19.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY19.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:04 fg_lance_script_sql(PA6_ZY19.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY19.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY19.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938
+nbligne=13306
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY19_20210318212938-13306.csv
++echo PA6_ZY1U.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY1U
++fg_lance_script_sql PA6_ZY1U.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938
++SCRIPT=PA6_ZY1U.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY1U.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:06 fg_lance_script_sql(PA6_ZY1U.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY1U.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY1U.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938
+nbligne=0
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY1U_20210318212938-0.csv
++echo PA6_ZY38.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY38
++fg_lance_script_sql PA6_ZY38.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938
++SCRIPT=PA6_ZY38.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY38.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:06 fg_lance_script_sql(PA6_ZY38.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY38.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY38.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938
+nbligne=69292
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY38_20210318212938-69292.csv
++echo PA6_ZY3B.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY3B
++fg_lance_script_sql PA6_ZY3B.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938
++SCRIPT=PA6_ZY3B.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY3B.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:15 fg_lance_script_sql(PA6_ZY3B.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY3B.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY3B.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938
+nbligne=90920
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY3B_20210318212938-90920.csv
++echo PA6_ZY4I.sql
++cut -c1-8
+FICHIEROUT=PA6_ZY4I
++fg_lance_script_sql PA6_ZY4I.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938
++SCRIPT=PA6_ZY4I.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZY4I.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:26 fg_lance_script_sql(PA6_ZY4I.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZY4I.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZY4I.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938
+nbligne=9939
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZY4I_20210318212938-9939.csv
++echo PA6_ZYAF.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYAF
++fg_lance_script_sql PA6_ZYAF.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938
++SCRIPT=PA6_ZYAF.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYAF.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:29 fg_lance_script_sql(PA6_ZYAF.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYAF.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYAF.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938
+nbligne=127487
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAF_20210318212938-127487.csv
++echo PA6_ZYAU.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYAU
++fg_lance_script_sql PA6_ZYAU.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938
++SCRIPT=PA6_ZYAU.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYAU.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:44 fg_lance_script_sql(PA6_ZYAU.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYAU.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYAU.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938
+nbligne=1056
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAU_20210318212938-1056.csv
++echo PA6_ZYAV.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYAV
++fg_lance_script_sql PA6_ZYAV.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938
++SCRIPT=PA6_ZYAV.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYAV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:44 fg_lance_script_sql(PA6_ZYAV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYAV.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYAV.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938
+nbligne=3217
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYAV_20210318212938-3217.csv
++echo PA6_ZYBI.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYBI
++fg_lance_script_sql PA6_ZYBI.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938
++SCRIPT=PA6_ZYBI.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYBI.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:45 fg_lance_script_sql(PA6_ZYBI.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYBI.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYBI.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938
+nbligne=2336
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBI_20210318212938-2336.csv
++echo PA6_ZYBL.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYBL
++fg_lance_script_sql PA6_ZYBL.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938
++SCRIPT=PA6_ZYBL.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYBL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:46 fg_lance_script_sql(PA6_ZYBL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYBL.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYBL.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938
+nbligne=6801
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYBL_20210318212938-6801.csv
++echo PA6_ZYCB.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYCB
++fg_lance_script_sql PA6_ZYCB.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938
++SCRIPT=PA6_ZYCB.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYCB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:48 fg_lance_script_sql(PA6_ZYCB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYCB.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYCB.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938
+nbligne=38497
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCB_20210318212938-38497.csv
++echo PA6_ZYCJ.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYCJ
++fg_lance_script_sql PA6_ZYCJ.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938
++SCRIPT=PA6_ZYCJ.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYCJ.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:52 fg_lance_script_sql(PA6_ZYCJ.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYCJ.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYCJ.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938
+nbligne=6953
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCJ_20210318212938-6953.csv
++echo PA6_ZYCO.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYCO
++fg_lance_script_sql PA6_ZYCO.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938
++SCRIPT=PA6_ZYCO.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYCO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:30:56 fg_lance_script_sql(PA6_ZYCO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYCO.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYCO.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938
+nbligne=22753
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYCO_20210318212938-22753.csv
++echo PA6_ZYDE.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYDE
++fg_lance_script_sql PA6_ZYDE.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938
++SCRIPT=PA6_ZYDE.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYDE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:10 fg_lance_script_sql(PA6_ZYDE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYDE.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYDE.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938
+nbligne=2307
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDE_20210318212938-2307.csv
++echo PA6_ZYDI.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYDI
++fg_lance_script_sql PA6_ZYDI.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938
++SCRIPT=PA6_ZYDI.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYDI.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:15 fg_lance_script_sql(PA6_ZYDI.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYDI.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYDI.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938
+nbligne=8894
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDI_20210318212938-8894.csv
++echo PA6_ZYDO.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYDO
++fg_lance_script_sql PA6_ZYDO.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938
++SCRIPT=PA6_ZYDO.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYDO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:19 fg_lance_script_sql(PA6_ZYDO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYDO.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYDO.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938
+nbligne=1583
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYDO_20210318212938-1583.csv
++echo PA6_ZYE5.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYE5
++fg_lance_script_sql PA6_ZYE5.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938
++SCRIPT=PA6_ZYE5.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYE5.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:21 fg_lance_script_sql(PA6_ZYE5.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYE5.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYE5.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938
+nbligne=13381
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYE5_20210318212938-13381.csv
++echo PA6_ZYED.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYED
++fg_lance_script_sql PA6_ZYED.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938
++SCRIPT=PA6_ZYED.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYED.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:28 fg_lance_script_sql(PA6_ZYED.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYED.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYED.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938
+nbligne=29200
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYED_20210318212938-29200.csv
++echo PA6_ZYES.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYES
++fg_lance_script_sql PA6_ZYES.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938
++SCRIPT=PA6_ZYES.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYES.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:34 fg_lance_script_sql(PA6_ZYES.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYES.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYES.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938
+nbligne=14687
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYES_20210318212938-14687.csv
++echo PA6_ZYFA.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYFA
++fg_lance_script_sql PA6_ZYFA.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938
++SCRIPT=PA6_ZYFA.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYFA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:37 fg_lance_script_sql(PA6_ZYFA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYFA.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYFA.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938
+nbligne=1460
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFA_20210318212938-1460.csv
++echo PA6_ZYFG.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYFG
++fg_lance_script_sql PA6_ZYFG.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938
++SCRIPT=PA6_ZYFG.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYFG.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:39 fg_lance_script_sql(PA6_ZYFG.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYFG.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYFG.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938
+nbligne=1520
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYFG_20210318212938-1520.csv
++echo PA6_ZYGE.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYGE
++fg_lance_script_sql PA6_ZYGE.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938
++SCRIPT=PA6_ZYGE.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYGE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:39 fg_lance_script_sql(PA6_ZYGE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYGE.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYGE.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938
+nbligne=0
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGE_20210318212938-0.csv
++echo PA6_ZYGR.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYGR
++fg_lance_script_sql PA6_ZYGR.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938
++SCRIPT=PA6_ZYGR.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYGR.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:31:40 fg_lance_script_sql(PA6_ZYGR.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYGR.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYGR.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938
+nbligne=138258
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGR_20210318212938-138258.csv
++echo PA6_ZYGS.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYGS
++fg_lance_script_sql PA6_ZYGS.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938
++SCRIPT=PA6_ZYGS.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYGS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:32:22 fg_lance_script_sql(PA6_ZYGS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYGS.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYGS.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938
+nbligne=141068
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYGS_20210318212938-141068.csv
++echo PA6_ZYH2.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYH2
++fg_lance_script_sql PA6_ZYH2.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938
++SCRIPT=PA6_ZYH2.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYH2.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:32:55 fg_lance_script_sql(PA6_ZYH2.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYH2.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYH2.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938
+nbligne=43827
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYH2_20210318212938-43827.csv
++echo PA6_ZYHA.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYHA
++fg_lance_script_sql PA6_ZYHA.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938
++SCRIPT=PA6_ZYHA.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYHA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:00 fg_lance_script_sql(PA6_ZYHA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYHA.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYHA.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938
+nbligne=527
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYHA_20210318212938-527.csv
++echo PA6_ZYPO.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYPO
++fg_lance_script_sql PA6_ZYPO.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938
++SCRIPT=PA6_ZYPO.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYPO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:01 fg_lance_script_sql(PA6_ZYPO.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYPO.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYPO.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938
+nbligne=41193
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYPO_20210318212938-41193.csv
++echo PA6_ZYTL.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYTL
++fg_lance_script_sql PA6_ZYTL.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938
++SCRIPT=PA6_ZYTL.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYTL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:11 fg_lance_script_sql(PA6_ZYTL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYTL.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYTL.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938
+nbligne=49081
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYTL_20210318212938-49081.csv
++echo PA6_ZYV3.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYV3
++fg_lance_script_sql PA6_ZYV3.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938
++SCRIPT=PA6_ZYV3.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYV3.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:21 fg_lance_script_sql(PA6_ZYV3.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYV3.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYV3.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938
+nbligne=5964
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV3_20210318212938-5964.csv
++echo PA6_ZYV4.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYV4
++fg_lance_script_sql PA6_ZYV4.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938
++SCRIPT=PA6_ZYV4.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYV4.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:24 fg_lance_script_sql(PA6_ZYV4.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYV4.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYV4.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938
+nbligne=23381
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYV4_20210318212938-23381.csv
++echo PA6_ZYVA.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVA
++fg_lance_script_sql PA6_ZYVA.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938
++SCRIPT=PA6_ZYVA.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:28 fg_lance_script_sql(PA6_ZYVA.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVA.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVA.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938
+nbligne=3904
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVA_20210318212938-3904.csv
++echo PA6_ZYVB.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVB
++fg_lance_script_sql PA6_ZYVB.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938
++SCRIPT=PA6_ZYVB.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:29 fg_lance_script_sql(PA6_ZYVB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVB.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVB.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938
+nbligne=9833
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVB_20210318212938-9833.csv
++echo PA6_ZYVE.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVE
++fg_lance_script_sql PA6_ZYVE.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938
++SCRIPT=PA6_ZYVE.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:31 fg_lance_script_sql(PA6_ZYVE.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVE.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVE.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938
+nbligne=894
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVE_20210318212938-894.csv
++cut -c1-8
++echo PA6_ZYVF.sql
+FICHIEROUT=PA6_ZYVF
++fg_lance_script_sql PA6_ZYVF.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938
++SCRIPT=PA6_ZYVF.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVF.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:31 fg_lance_script_sql(PA6_ZYVF.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVF.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVF.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938
+nbligne=47929
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVF_20210318212938-47929.csv
++echo PA6_ZYVH.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVH
++fg_lance_script_sql PA6_ZYVH.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938
++SCRIPT=PA6_ZYVH.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVH.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:37 fg_lance_script_sql(PA6_ZYVH.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVH.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVH.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938
+nbligne=3802
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVH_20210318212938-3802.csv
++echo PA6_ZYVK.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVK
++fg_lance_script_sql PA6_ZYVK.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938
++SCRIPT=PA6_ZYVK.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVK.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:42 fg_lance_script_sql(PA6_ZYVK.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVK.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVK.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938
+nbligne=12877
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVK_20210318212938-12877.csv
++echo PA6_ZYVL.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYVL
++fg_lance_script_sql PA6_ZYVL.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938
++SCRIPT=PA6_ZYVL.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYVL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:44 fg_lance_script_sql(PA6_ZYVL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYVL.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYVL.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938
+nbligne=3877
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYVL_20210318212938-3877.csv
++echo PA6_ZYWN.sql
++cut -c1-8
+FICHIEROUT=PA6_ZYWN
++fg_lance_script_sql PA6_ZYWN.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938
++SCRIPT=PA6_ZYWN.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938
++shift 3
++jobEtape fg_lance_script_sql(PA6_ZYWN.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:45 fg_lance_script_sql(PA6_ZYWN.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_ZYWN.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_ZYWN.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938
++awk END {print NR} /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938
+nbligne=16901
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938 /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6_ZYWN_20210318212938-16901.csv
++jobTest 0 fl_extraction_bo_agents : Pb extraction des données Agents !
++Archivage des fichiers et compression
+/dz-pareo/applis/pa6/shell/XDPA6GJB2_AGENBORH.KSH[78]: Archivage:  not found
++fl_archive_compress_fic
++jobEtape fl_archive_compress_fic : Archivage et compression des fichiers et copie dans cft.out
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:47 fl_archive_compress_fic : Archivage et compression des fichiers et copie dans cft.out
+# =========================================================================== #
++cd /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/
++rm -f PA6RH2J0.tar.Z
++tar -cvf PA6RH2J0.tar PA6_PQVT_20210318212938-1990.csv PA6_UF01_20210318212938-15270.csv PA6_ZY00_20210318212938-15270.csv PA6_ZY09_20210318212938-2698.csv PA6_ZY0G_20210318212938-13197.csv PA6_ZY0H_20210318212938-46457.csv PA6_ZY0I_20210318212938-12903.csv PA6_ZY12_20210318212938-12933.csv PA6_ZY18_20210318212938-13387.csv PA6_ZY19_20210318212938-13306.csv PA6_ZY1U_20210318212938-0.csv PA6_ZY38_20210318212938-69292.csv PA6_ZY3B_20210318212938-90920.csv PA6_ZY4I_20210318212938-9939.csv PA6_ZYAF_20210318212938-127487.csv PA6_ZYAU_20210318212938-1056.csv PA6_ZYAV_20210318212938-3217.csv PA6_ZYBI_20210318212938-2336.csv PA6_ZYBL_20210318212938-6801.csv PA6_ZYCB_20210318212938-38497.csv PA6_ZYCJ_20210318212938-6953.csv PA6_ZYCO_20210318212938-22753.csv PA6_ZYDE_20210318212938-2307.csv PA6_ZYDI_20210318212938-8894.csv PA6_ZYDO_20210318212938-1583.csv PA6_ZYE5_20210318212938-13381.csv PA6_ZYED_20210318212938-29200.csv PA6_ZYES_20210318212938-14687.csv PA6_ZYFA_20210318212938-1460.csv PA6_ZYFG_20210318212938-1520.csv PA6_ZYGE_20210318212938-0.csv PA6_ZYGR_20210318212938-138258.csv PA6_ZYGS_20210318212938-141068.csv PA6_ZYH2_20210318212938-43827.csv PA6_ZYHA_20210318212938-527.csv PA6_ZYPO_20210318212938-41193.csv PA6_ZYTL_20210318212938-49081.csv PA6_ZYV3_20210318212938-5964.csv PA6_ZYV4_20210318212938-23381.csv PA6_ZYVA_20210318212938-3904.csv PA6_ZYVB_20210318212938-9833.csv PA6_ZYVE_20210318212938-894.csv PA6_ZYVF_20210318212938-47929.csv PA6_ZYVH_20210318212938-3802.csv PA6_ZYVK_20210318212938-12877.csv PA6_ZYVL_20210318212938-3877.csv PA6_ZYWN_20210318212938-16901.csv
+a PA6_PQVT_20210318212938-1990.csv 817 blocks
+a PA6_UF01_20210318212938-15270.csv 6414 blocks
+a PA6_ZY00_20210318212938-15270.csv 3756 blocks
+a PA6_ZY09_20210318212938-2698.csv 775 blocks
+a PA6_ZY0G_20210318212938-13197.csv 6173 blocks
+a PA6_ZY0H_20210318212938-46457.csv 13248 blocks
+a PA6_ZY0I_20210318212938-12903.csv 5448 blocks
+a PA6_ZY12_20210318212938-12933.csv 1264 blocks
+a PA6_ZY18_20210318212938-13387.csv 2092 blocks
+a PA6_ZY19_20210318212938-13306.csv 1872 blocks
+a PA6_ZY1U_20210318212938-0.csv 0 blocks
+a PA6_ZY38_20210318212938-69292.csv 14341 blocks
+a PA6_ZY3B_20210318212938-90920.csv 28058 blocks
+a PA6_ZY4I_20210318212938-9939.csv 9672 blocks
+a PA6_ZYAF_20210318212938-127487.csv 81443 blocks
+a PA6_ZYAU_20210318212938-1056.csv 143 blocks
+a PA6_ZYAV_20210318212938-3217.csv 624 blocks
+a PA6_ZYBI_20210318212938-2336.csv 385 blocks
+a PA6_ZYBL_20210318212938-6801.csv 944 blocks
+a PA6_ZYCB_20210318212938-38497.csv 5595 blocks
+a PA6_ZYCJ_20210318212938-6953.csv 5037 blocks
+a PA6_ZYCO_20210318212938-22753.csv 53517 blocks
+a PA6_ZYDE_20210318212938-2307.csv 3972 blocks
+a PA6_ZYDI_20210318212938-8894.csv 7136 blocks
+a PA6_ZYDO_20210318212938-1583.csv 688 blocks
+a PA6_ZYE5_20210318212938-13381.csv 13489 blocks
+a PA6_ZYED_20210318212938-29200.csv 8784 blocks
+a PA6_ZYES_20210318212938-14687.csv 1119 blocks
+a PA6_ZYFA_20210318212938-1460.csv 1743 blocks
+a PA6_ZYFG_20210318212938-1520.csv 232 blocks
+a PA6_ZYGE_20210318212938-0.csv 0 blocks
+a PA6_ZYGR_20210318212938-138258.csv 124110 blocks
+a PA6_ZYGS_20210318212938-141068.csv 92820 blocks
+a PA6_ZYH2_20210318212938-43827.csv 8315 blocks
+a PA6_ZYHA_20210318212938-527.csv 92 blocks
+a PA6_ZYPO_20210318212938-41193.csv 28532 blocks
+a PA6_ZYTL_20210318212938-49081.csv 25681 blocks
+a PA6_ZYV3_20210318212938-5964.csv 4403 blocks
+a PA6_ZYV4_20210318212938-23381.csv 7244 blocks
+a PA6_ZYVA_20210318212938-3904.csv 603 blocks
+a PA6_ZYVB_20210318212938-9833.csv 675 blocks
+a PA6_ZYVE_20210318212938-894.csv 95 blocks
+a PA6_ZYVF_20210318212938-47929.csv 5898 blocks
+a PA6_ZYVH_20210318212938-3802.csv 1373 blocks
+a PA6_ZYVK_20210318212938-12877.csv 1811 blocks
+a PA6_ZYVL_20210318212938-3877.csv 394 blocks
+a PA6_ZYWN_20210318212938-16901.csv 886 blocks
++jobTest 0 fl_archive_compress_fic : Pb lors de l'archivage (tar) des fichiers BO
++compress PA6RH2J0.tar
++jobTest 0 fl_archive_compress_fic : Pb lors de la compression (compress) des fichiers BO
++fg_copy_file_cft /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z /dz-pareo/applis/pa6/cft.out/interfaces_aval/
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:53 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318213353
++basename /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z
+FIC_NAME=PA6RH2J0.tar.Z
++cp /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z /dz-pareo/applis/pa6/archive/PA6RH2J0.tar.Z.20210318213353
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z OK
++cp /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z /dz-pareo/applis/pa6/cft.out/interfaces_aval/
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/Agents/PA6RH2J0.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ OK
++fl_envoi_cft PA6RH2J0 /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J0.tar.Z
++jobEtape fl_envoi_cft : Envoi CFT
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:53 fl_envoi_cft : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6RH2J0 -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J0.tar.Z
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:53 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J0.tar.Z -m PA6RH2J0
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6RH2J0.DAPRODA1.10158302.3353-1' vers part='DAPRODA1',idf='PA6RH2J0' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft PA6RH2J0
++unset DATE_JOUR
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJB2_AGENBORH.KSH: Fin le 18-03-2021 a 21:33:54
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJB2_AGENBORH.LOG_*0rttd*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 21:33:54  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJB2_AGENBORH.LOG_*0rttd*.3866852
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_3866852
++__orderid=LOG_*0rttd*
++__jobname_fin=XDPA6GJB2_AGENBORH
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.out
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH
++__jobname=XDPA6GJB2_AGENBORH
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001
++__orderid_fin=LOG_00rttd_00001
++__job_complet_fin=XDPA6GJB2_AGENBORH.LOG_00rttd_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJB2_AGENBORH.LOG_00rttd_00001
++sed s/^++/%/g
++sed s/^+/%/g
++sed s/*/*/g

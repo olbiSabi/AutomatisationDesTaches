@@ -1,0 +1,651 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJF3_REFEGASYF.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJF3_REFEGASYF.KSH
+_YCFSHELL=XDPA6GJF3_REFEGASYF.KSH
+_YCFJOB=XDPA6GJF3_REFEGASYF
+_YCTDATE=20210318233449
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJF3_REFEGASYF.KSH.20210318233449
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJF3_REFEGASYF.KSH: Debut le 18-03-2021 a 23:34:51
+# =========================================================================== #
++set -x
++date +%y%m%d%H%M%S
+HORODAT=210318233451
++fl_suppression
++rm -f /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/product/pa6/hra/prod/file/REFGA.zip/dz-pareo/product/pa6/hra/prod/file/HJB.csv /dz-pareo/product/pa6/hra/prod/file/UIQ.csv /dz-pareo/product/pa6/hra/prod/file/UIP.csv /dz-pareo/product/pa6/hra/prod/file/UIN.csv /dz-pareo/product/pa6/hra/prod/file/UIH.csv /dz-pareo/product/pa6/hra/prod/file/UGP.csv /dz-pareo/product/pa6/hra/prod/file/U3H.csv /dz-pareo/product/pa6/hra/prod/file/U34.csv /dz-pareo/product/pa6/hra/prod/file/U33.csv /dz-pareo/product/pa6/hra/prod/file/U25.csv /dz-pareo/product/pa6/hra/prod/file/HKK.csv /dz-pareo/product/pa6/hra/prod/file/HJL.csv
++rm -f /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip
++fl_extraction
++echo Exécution boucle sur les fichiers sql
+Exécution boucle sur les fichiers sql
++cd /dz-pareo/applis/pa6/sql/PA6_REFGA_SYFADIS
++FICHOUT=HJB
++fg_lance_script_sql HJB.sql  /dz-pareo/product/pa6/hra/prod/file/HJBT1
++SCRIPT=HJB.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/HJBT1
++shift 3
++jobEtape fg_lance_script_sql(HJB.sql,,/dz-pareo/product/pa6/hra/prod/file/HJBT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:51 fg_lance_script_sql(HJB.sql,,/dz-pareo/product/pa6/hra/prod/file/HJBT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F HJB.sql
++1> /dz-pareo/product/pa6/hra/prod/file/HJBT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F HJB.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/HJBT2
++awk {print $1}
++wc -l /dz-pareo/product/pa6/hra/prod/file/HJBT1
++1> /dz-pareo/product/pa6/hra/prod/file/HJBT3
++cat /dz-pareo/product/pa6/hra/prod/file/HJBT2 /dz-pareo/product/pa6/hra/prod/file/HJBT1 /dz-pareo/product/pa6/hra/prod/file/HJBT3
++1> /dz-pareo/product/pa6/hra/prod/file/HJB.csv
++rm /dz-pareo/product/pa6/hra/prod/file/HJBT1 /dz-pareo/product/pa6/hra/prod/file/HJBT2 /dz-pareo/product/pa6/hra/prod/file/HJBT3
++FICHOUT=HJL
++fg_lance_script_sql HJL.sql  /dz-pareo/product/pa6/hra/prod/file/HJLT1
++SCRIPT=HJL.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/HJLT1
++shift 3
++jobEtape fg_lance_script_sql(HJL.sql,,/dz-pareo/product/pa6/hra/prod/file/HJLT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:51 fg_lance_script_sql(HJL.sql,,/dz-pareo/product/pa6/hra/prod/file/HJLT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F HJL.sql
++1> /dz-pareo/product/pa6/hra/prod/file/HJLT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F HJL.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/HJLT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/HJLT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/HJLT3
++cat /dz-pareo/product/pa6/hra/prod/file/HJLT2 /dz-pareo/product/pa6/hra/prod/file/HJLT1 /dz-pareo/product/pa6/hra/prod/file/HJLT3
++1> /dz-pareo/product/pa6/hra/prod/file/HJL.csv
++rm /dz-pareo/product/pa6/hra/prod/file/HJLT1 /dz-pareo/product/pa6/hra/prod/file/HJLT2 /dz-pareo/product/pa6/hra/prod/file/HJLT3
++FICHOUT=HKK
++fg_lance_script_sql HKK.sql  /dz-pareo/product/pa6/hra/prod/file/HKKT1
++SCRIPT=HKK.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/HKKT1
++shift 3
++jobEtape fg_lance_script_sql(HKK.sql,,/dz-pareo/product/pa6/hra/prod/file/HKKT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:52 fg_lance_script_sql(HKK.sql,,/dz-pareo/product/pa6/hra/prod/file/HKKT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F HKK.sql
++1> /dz-pareo/product/pa6/hra/prod/file/HKKT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F HKK.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/HKKT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/HKKT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/HKKT3
++cat /dz-pareo/product/pa6/hra/prod/file/HKKT2 /dz-pareo/product/pa6/hra/prod/file/HKKT1 /dz-pareo/product/pa6/hra/prod/file/HKKT3
++1> /dz-pareo/product/pa6/hra/prod/file/HKK.csv
++rm /dz-pareo/product/pa6/hra/prod/file/HKKT1 /dz-pareo/product/pa6/hra/prod/file/HKKT2 /dz-pareo/product/pa6/hra/prod/file/HKKT3
++FICHOUT=U25
++fg_lance_script_sql U25.sql  /dz-pareo/product/pa6/hra/prod/file/U25T1
++SCRIPT=U25.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/U25T1
++shift 3
++jobEtape fg_lance_script_sql(U25.sql,,/dz-pareo/product/pa6/hra/prod/file/U25T1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:52 fg_lance_script_sql(U25.sql,,/dz-pareo/product/pa6/hra/prod/file/U25T1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F U25.sql
++1> /dz-pareo/product/pa6/hra/prod/file/U25T1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F U25.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/U25T2
++wc -l /dz-pareo/product/pa6/hra/prod/file/U25T1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/U25T3
++cat /dz-pareo/product/pa6/hra/prod/file/U25T2 /dz-pareo/product/pa6/hra/prod/file/U25T1 /dz-pareo/product/pa6/hra/prod/file/U25T3
++1> /dz-pareo/product/pa6/hra/prod/file/U25.csv
++rm /dz-pareo/product/pa6/hra/prod/file/U25T1 /dz-pareo/product/pa6/hra/prod/file/U25T2 /dz-pareo/product/pa6/hra/prod/file/U25T3
++FICHOUT=U33
++fg_lance_script_sql U33.sql  /dz-pareo/product/pa6/hra/prod/file/U33T1
++SCRIPT=U33.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/U33T1
++shift 3
++jobEtape fg_lance_script_sql(U33.sql,,/dz-pareo/product/pa6/hra/prod/file/U33T1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:53 fg_lance_script_sql(U33.sql,,/dz-pareo/product/pa6/hra/prod/file/U33T1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F U33.sql
++1> /dz-pareo/product/pa6/hra/prod/file/U33T1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F U33.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/U33T2
++wc -l /dz-pareo/product/pa6/hra/prod/file/U33T1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/U33T3
++cat /dz-pareo/product/pa6/hra/prod/file/U33T2 /dz-pareo/product/pa6/hra/prod/file/U33T1 /dz-pareo/product/pa6/hra/prod/file/U33T3
++1> /dz-pareo/product/pa6/hra/prod/file/U33.csv
++rm /dz-pareo/product/pa6/hra/prod/file/U33T1 /dz-pareo/product/pa6/hra/prod/file/U33T2 /dz-pareo/product/pa6/hra/prod/file/U33T3
++FICHOUT=U34
++fg_lance_script_sql U34.sql  /dz-pareo/product/pa6/hra/prod/file/U34T1
++SCRIPT=U34.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/U34T1
++shift 3
++jobEtape fg_lance_script_sql(U34.sql,,/dz-pareo/product/pa6/hra/prod/file/U34T1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:53 fg_lance_script_sql(U34.sql,,/dz-pareo/product/pa6/hra/prod/file/U34T1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F U34.sql
++1> /dz-pareo/product/pa6/hra/prod/file/U34T1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F U34.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/U34T2
++wc -l /dz-pareo/product/pa6/hra/prod/file/U34T1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/U34T3
++cat /dz-pareo/product/pa6/hra/prod/file/U34T2 /dz-pareo/product/pa6/hra/prod/file/U34T1 /dz-pareo/product/pa6/hra/prod/file/U34T3
++1> /dz-pareo/product/pa6/hra/prod/file/U34.csv
++rm /dz-pareo/product/pa6/hra/prod/file/U34T1 /dz-pareo/product/pa6/hra/prod/file/U34T2 /dz-pareo/product/pa6/hra/prod/file/U34T3
++FICHOUT=U3H
++fg_lance_script_sql U3H.sql  /dz-pareo/product/pa6/hra/prod/file/U3HT1
++SCRIPT=U3H.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/U3HT1
++shift 3
++jobEtape fg_lance_script_sql(U3H.sql,,/dz-pareo/product/pa6/hra/prod/file/U3HT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:54 fg_lance_script_sql(U3H.sql,,/dz-pareo/product/pa6/hra/prod/file/U3HT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F U3H.sql
++1> /dz-pareo/product/pa6/hra/prod/file/U3HT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F U3H.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/U3HT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/U3HT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/U3HT3
++cat /dz-pareo/product/pa6/hra/prod/file/U3HT2 /dz-pareo/product/pa6/hra/prod/file/U3HT1 /dz-pareo/product/pa6/hra/prod/file/U3HT3
++1> /dz-pareo/product/pa6/hra/prod/file/U3H.csv
++rm /dz-pareo/product/pa6/hra/prod/file/U3HT1 /dz-pareo/product/pa6/hra/prod/file/U3HT2 /dz-pareo/product/pa6/hra/prod/file/U3HT3
++FICHOUT=UGP
++fg_lance_script_sql UGP.sql  /dz-pareo/product/pa6/hra/prod/file/UGPT1
++SCRIPT=UGP.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/UGPT1
++shift 3
++jobEtape fg_lance_script_sql(UGP.sql,,/dz-pareo/product/pa6/hra/prod/file/UGPT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:54 fg_lance_script_sql(UGP.sql,,/dz-pareo/product/pa6/hra/prod/file/UGPT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F UGP.sql
++1> /dz-pareo/product/pa6/hra/prod/file/UGPT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F UGP.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/UGPT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/UGPT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/UGPT3
++cat /dz-pareo/product/pa6/hra/prod/file/UGPT2 /dz-pareo/product/pa6/hra/prod/file/UGPT1 /dz-pareo/product/pa6/hra/prod/file/UGPT3
++1> /dz-pareo/product/pa6/hra/prod/file/UGP.csv
++rm /dz-pareo/product/pa6/hra/prod/file/UGPT1 /dz-pareo/product/pa6/hra/prod/file/UGPT2 /dz-pareo/product/pa6/hra/prod/file/UGPT3
++FICHOUT=UIH
++fg_lance_script_sql UIH.sql  /dz-pareo/product/pa6/hra/prod/file/UIHT1
++SCRIPT=UIH.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/UIHT1
++shift 3
++jobEtape fg_lance_script_sql(UIH.sql,,/dz-pareo/product/pa6/hra/prod/file/UIHT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:55 fg_lance_script_sql(UIH.sql,,/dz-pareo/product/pa6/hra/prod/file/UIHT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F UIH.sql
++1> /dz-pareo/product/pa6/hra/prod/file/UIHT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F UIH.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/UIHT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/UIHT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/UIHT3
++cat /dz-pareo/product/pa6/hra/prod/file/UIHT2 /dz-pareo/product/pa6/hra/prod/file/UIHT1 /dz-pareo/product/pa6/hra/prod/file/UIHT3
++1> /dz-pareo/product/pa6/hra/prod/file/UIH.csv
++rm /dz-pareo/product/pa6/hra/prod/file/UIHT1 /dz-pareo/product/pa6/hra/prod/file/UIHT2 /dz-pareo/product/pa6/hra/prod/file/UIHT3
++FICHOUT=UIN
++fg_lance_script_sql UIN.sql  /dz-pareo/product/pa6/hra/prod/file/UINT1
++SCRIPT=UIN.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/UINT1
++shift 3
++jobEtape fg_lance_script_sql(UIN.sql,,/dz-pareo/product/pa6/hra/prod/file/UINT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:55 fg_lance_script_sql(UIN.sql,,/dz-pareo/product/pa6/hra/prod/file/UINT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F UIN.sql
++1> /dz-pareo/product/pa6/hra/prod/file/UINT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F UIN.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/UINT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/UINT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/UINT3
++cat /dz-pareo/product/pa6/hra/prod/file/UINT2 /dz-pareo/product/pa6/hra/prod/file/UINT1 /dz-pareo/product/pa6/hra/prod/file/UINT3
++1> /dz-pareo/product/pa6/hra/prod/file/UIN.csv
++rm /dz-pareo/product/pa6/hra/prod/file/UINT1 /dz-pareo/product/pa6/hra/prod/file/UINT2 /dz-pareo/product/pa6/hra/prod/file/UINT3
++FICHOUT=UIP
++fg_lance_script_sql UIP.sql  /dz-pareo/product/pa6/hra/prod/file/UIPT1
++SCRIPT=UIP.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/UIPT1
++shift 3
++jobEtape fg_lance_script_sql(UIP.sql,,/dz-pareo/product/pa6/hra/prod/file/UIPT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:55 fg_lance_script_sql(UIP.sql,,/dz-pareo/product/pa6/hra/prod/file/UIPT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F UIP.sql
++1> /dz-pareo/product/pa6/hra/prod/file/UIPT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F UIP.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/UIPT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/UIPT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/UIPT3
++cat /dz-pareo/product/pa6/hra/prod/file/UIPT2 /dz-pareo/product/pa6/hra/prod/file/UIPT1 /dz-pareo/product/pa6/hra/prod/file/UIPT3
++1> /dz-pareo/product/pa6/hra/prod/file/UIP.csv
++rm /dz-pareo/product/pa6/hra/prod/file/UIPT1 /dz-pareo/product/pa6/hra/prod/file/UIPT2 /dz-pareo/product/pa6/hra/prod/file/UIPT3
++FICHOUT=UIQ
++fg_lance_script_sql UIQ.sql  /dz-pareo/product/pa6/hra/prod/file/UIQT1
++SCRIPT=UIQ.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/UIQT1
++shift 3
++jobEtape fg_lance_script_sql(UIQ.sql,,/dz-pareo/product/pa6/hra/prod/file/UIQT1) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 fg_lance_script_sql(UIQ.sql,,/dz-pareo/product/pa6/hra/prod/file/UIQT1) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F UIQ.sql
++1> /dz-pareo/product/pa6/hra/prod/file/UIQT1
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F UIQ.sql
++jobTest 0 fg_lance_script_sql
++echo Répertoire;Code;Libellé long;Libellé court
++1> /dz-pareo/product/pa6/hra/prod/file/UIQT2
++wc -l /dz-pareo/product/pa6/hra/prod/file/UIQT1
++awk {print $1}
++1> /dz-pareo/product/pa6/hra/prod/file/UIQT3
++cat /dz-pareo/product/pa6/hra/prod/file/UIQT2 /dz-pareo/product/pa6/hra/prod/file/UIQT1 /dz-pareo/product/pa6/hra/prod/file/UIQT3
++1> /dz-pareo/product/pa6/hra/prod/file/UIQ.csv
++rm /dz-pareo/product/pa6/hra/prod/file/UIQT1 /dz-pareo/product/pa6/hra/prod/file/UIQT2 /dz-pareo/product/pa6/hra/prod/file/UIQT3
++fl_Zip /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/product/pa6/hra/prod/file/HJB.csv /dz-pareo/product/pa6/hra/prod/file/UIQ.csv /dz-pareo/product/pa6/hra/prod/file/UIP.csv /dz-pareo/product/pa6/hra/prod/file/UIN.csv /dz-pareo/product/pa6/hra/prod/file/UIH.csv /dz-pareo/product/pa6/hra/prod/file/UGP.csv /dz-pareo/product/pa6/hra/prod/file/U3H.csv /dz-pareo/product/pa6/hra/prod/file/U34.csv /dz-pareo/product/pa6/hra/prod/file/U33.csv /dz-pareo/product/pa6/hra/prod/file/U25.csv /dz-pareo/product/pa6/hra/prod/file/HKK.csv /dz-pareo/product/pa6/hra/prod/file/HJL.csv
++jobEtape fl_Zip : Zip du résultat de la Query et de la log
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 fl_Zip : Zip du résultat de la Query et de la log
+# =========================================================================== #
++zip -9j /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/product/pa6/hra/prod/file/HJB.csv /dz-pareo/product/pa6/hra/prod/file/UIQ.csv /dz-pareo/product/pa6/hra/prod/file/UIP.csv /dz-pareo/product/pa6/hra/prod/file/UIN.csv /dz-pareo/product/pa6/hra/prod/file/UIH.csv /dz-pareo/product/pa6/hra/prod/file/UGP.csv /dz-pareo/product/pa6/hra/prod/file/U3H.csv /dz-pareo/product/pa6/hra/prod/file/U34.csv /dz-pareo/product/pa6/hra/prod/file/U33.csv /dz-pareo/product/pa6/hra/prod/file/U25.csv /dz-pareo/product/pa6/hra/prod/file/HKK.csv /dz-pareo/product/pa6/hra/prod/file/HJL.csv
+  adding: HJB.csv (deflated 84%)
+  adding: UIQ.csv (deflated 78%)
+  adding: UIP.csv (deflated 67%)
+  adding: UIN.csv (deflated 82%)
+  adding: UIH.csv (deflated 57%)
+  adding: UGP.csv (deflated 60%)
+  adding: U3H.csv (deflated 53%)
+  adding: U34.csv (deflated 67%)
+  adding: U33.csv (deflated 59%)
+  adding: U25.csv (deflated 67%)
+  adding: HKK.csv (deflated 74%)
+  adding: HJL.csv (deflated 67%)
++jobTest 0 fl_Zip : Pb Zip du résultat de la Query et de la log fl_Zip : Zip du résultat de la Query et de la log OK
+fl_Zip : Zip du résultat de la Query et de la log OK
++fl_copy_file_cft
++jobEtape fl_copy_file_cft : Copie de fichier CFT
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 fl_copy_file_cft : Copie de fichier CFT
+# =========================================================================== #
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318233456
++basename /dz-pareo/product/pa6/hra/prod/file/REFGA.zip
+FIC_NAME=REFGA.zip
++cp /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/applis/pa6/archive/REFGA.zip.20210318233456
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/file/REFGA.zip fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/REFGA.zip OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/REFGA.zip OK
++cp /dz-pareo/product/pa6/hra/prod/file/REFGA.zip /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/file/REFGA.zip vers /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/REFGA.zip vers /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/REFGA.zip vers /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip OK
++jobTest 0 fl_copy_file_cft : Pb de copie CFT fl_copy_file_cft : Copie CFT OK
+fl_copy_file_cft : Copie CFT OK
++fl_envoi_cft PA6PF2F3 /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip
++jobEtape fl_envoi_cft : Envoi fichiers interface aval FUTURSKILL
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 fl_envoi_cft : Envoi fichiers interface aval FUTURSKILL
+# =========================================================================== #
++cft.sh send -m PA6PF2F3 -f /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:56 cft.sh send -f /dz-pareo/applis/pa6/cft.out/FUTURSKILL/REFGA.zip -m PA6PF2F3
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6PF2F3.GTWCDCX5.20905990.3456-1' vers part='GTWCDCX5',idf='PA6PF2F3' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi CFT FUTURSKILL PA6PF2F3
++unset FICHIN
++unset FICHOUT
++unset HORODAT
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJF3_REFEGASYF.KSH: Fin le 18-03-2021 a 23:34:57
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJF3_REFEGASYF.LOG_*0rttj*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 23:34:57  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJF3_REFEGASYF.LOG_*0rttj*.15466730
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_15466730
++__orderid=LOG_*0rttj*
++__jobname_fin=XDPA6GJF3_REFEGASYF
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF
++__jobname=XDPA6GJF3_REFEGASYF
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001
++__orderid_fin=LOG_00rttj_00001
++__job_complet_fin=XDPA6GJF3_REFEGASYF.LOG_00rttj_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001 ]
++sed s/^+/%/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/*/*/g
++sed s/^++/%/g
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJF3_REFEGASYF.LOG_00rttj_00001
++sed s/*/*/g
++sed s/^%/+/g
++

@@ -1,0 +1,325 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJS1_CORHSALS.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJS1_CORHSALS.KSH
+_YCFSHELL=XDPA6GJS1_CORHSALS.KSH
+_YCFJOB=XDPA6GJS1_CORHSALS
+_YCTDATE=20210318203608
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJS1_CORHSALS.KSH.20210318203608
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJS1_CORHSALS.KSH: Debut le 18-03-2021 a 20:36:10
+# =========================================================================== #
++set -x
++export EXPLO=XE0016
++export PROCESS=XE601
++date +%y%m%d%H%M%S
+HORODAT=210318203610
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:10 fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSXE0016.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSXE0016.LS
++fg_param_explo_datref
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:10 fg_param_explo_datref : Recherche paramètre dateref
+# =========================================================================== #
+Date ctrlm : 18032021
++fl_carte_param XE0016
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:10 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/XE0016.parm
++1> /dz-pareo/applis/pa6/parm/XE0016.parm
++tee -a /dz-pareo/applis/pa6/parm/XE0016.parm
++echo 5DS31   XE0016        18032021                00                         %POP01
+5DS31   XE0016        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:10 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/XE0016.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++tee -a /dz-pareo/applis/pa6/parm/XE0016.parm
++echo 3P**1BXPL01TXT001
+3P**1BXPL01TXT001
++tee -a /dz-pareo/applis/pa6/parm/XE0016.parm
++echo 3P**1BXFI01TXT001
+3P**1BXFI01TXT001
++fg_lance_explo XE0016 XE601
++jobEtape fg_lance_explo : Lancement de l'exploration XE0016
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:10 fg_lance_explo : Lancement de l'exploration XE0016
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 XE0016 XE601
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJS1_CORHSALS_AS800NBX.XE0016.20210318203608.12910824
++jobTest 0 fg_lance_explo : Pb Traitement exploration XE0016
++unset FICPRM
++unset PROCESS
++export EXPLO2=XE0019
++export PROCESS=XE001
++fl_suppr_fichier2
++jobEtape fl_suppr_fichier2 : Suppression des fichiers résultat de l'explo 
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:15 fl_suppr_fichier2 : Suppression des fichiers résultat de l'explo 
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSXE0019.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSXE0019.LS
++fg_param_explo_datref
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:15 fg_param_explo_datref : Recherche paramètre dateref
+# =========================================================================== #
+Date ctrlm : 18032021
++fl_carte_param XE0019
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:15 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/XE0019.parm
++1> /dz-pareo/applis/pa6/parm/XE0019.parm
++tee -a /dz-pareo/applis/pa6/parm/XE0019.parm
++echo 5DS31   XE0019        18032021                00                         %POP01
+5DS31   XE0019        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:15 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/XE0019.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++tee -a /dz-pareo/applis/pa6/parm/XE0019.parm
++echo 3P**1BXPL01TXT001
+3P**1BXPL01TXT001
++tee -a /dz-pareo/applis/pa6/parm/XE0019.parm
+3P**1BXFI01TXT001
++fg_lance_explo XE0019 XE001
++jobEtape fg_lance_explo : Lancement de l'exploration XE0019
+
+# =========================================================================== #
+# 18-03-2021 a 20:36:15 fg_lance_explo : Lancement de l'exploration XE0019
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 XE0019 XE001
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJS1_CORHSALS_AS800NBX.XE0019.20210318203608.12910824
++jobTest 0 fg_lance_explo : Pb Traitement exploration XE0019
++fl_concat_fic_explo
++jobEtape fl_concat_fic_explo : Concaténation des fichiers des explorations XE0016 et XE0019
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 fl_concat_fic_explo : Concaténation des fichiers des explorations XE0016 et XE0019
+# =========================================================================== #
++cat /dz-pareo/product/pa6/hra/prod/file/PSXE0019.LS /dz-pareo/product/pa6/hra/prod/file/PSXE0016.LS
++1> /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS
++jobTest 0 fl_concat_fic_explo : Concaténation des fichiers des explorations XE0016 et XE0019
++fl_copy_file_cft
++jobEtape fl_copy_file_cft : Copie de fichier CFT
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 fl_copy_file_cft : Copie de fichier CFT
+# =========================================================================== #
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318203818
++basename /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS
+FIC_NAME=PSXE001.LS
++cp /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS /dz-pareo/applis/pa6/archive/PSXE001.LS.20210318203818
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS OK
++cp /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/PSXE001.LS vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt OK
++jobTest 0 fl_copy_file_cft : Pb de copie CFT fl_copy_file_cft : Copie CFT OK
+fl_copy_file_cft : Copie CFT OK
++tail -1
++ls -1tr /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
++export IDF_EXPLO=/dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
++fl_envoi_cft PA6SA0CO /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
++jobEtape fl_envoi_cft : Envoi fichier interface codification SALSA 
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 fl_envoi_cft : Envoi fichier interface codification SALSA 
+# =========================================================================== #
++cft.sh send -m PA6SA0CO -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt -m PA6SA0CO
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6SA0CO.DLEAIPRODA31001.17432636.3818-1' vers part='DLEAIPRODA31001',idf='PA6SA0CO' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi fichier interface codification SALSA 
++fl_move /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt cr_quotidiens_grh
++jobEtape fl_move : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:18 fl_move : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+# =========================================================================== #
++cp /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJS1_CORHSALS_AS800NBX.XE0016.20210318203608.12910824 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0016_20210318203608.txt
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJS1_CORHSALS_AS800NBX.XE0019.20210318203608.12910824 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0019_20210318203608.txt
++mv /dz-pareo/applis/pa6/cft.out/interfaces_aval/CORHSALS-210318203610.txt /dz-pareo/applis/pa6/archive
++jobTest 0 fl_move : Pb déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
++unset FICPRM
++unset IDF_EXPLO
++unset EXPLO
++unset EXPLO2
++unset PROCESS
++unset DATREF
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJS1_CORHSALS.KSH: Fin le 18-03-2021 a 20:38:18
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJS1_CORHSALS.LOG_*0rtt7*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:19  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJS1_CORHSALS.LOG_*0rtt7*.17432650
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_17432650
++__orderid=LOG_*0rtt7*
++__jobname_fin=XDPA6GJS1_CORHSALS
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.out
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS
++__jobname=XDPA6GJS1_CORHSALS
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001
++__orderid_fin=LOG_00rtt7_00001
++__job_complet_fin=XDPA6GJS1_CORHSALS.LOG_00rtt7_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001
++grep YCFLOG=
++head -1
++cut -d = -f 2-5
++cut -d / -f 1-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS1_CORHSALS.LOG_00rtt7_00001
++sed s/^++/%/g

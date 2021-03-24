@@ -1,0 +1,290 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6MCEF1.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6MCEF1.KSH
+_YCFSHELL=XDPA6MCEF1.KSH
+_YCFJOB=XDPA6MCEF1
+_YCTDATE=20210319005922
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6MCEF1.KSH.20210319005922
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCEF1.KSH: Debut le 19-03-2021 a 00:59:23
+# =========================================================================== #
++set -x
++[ -f /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMMMOY-210318233806.csv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMPNC7-210319004215.csv ]
++fl_Zip /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/*
++jobEtape fl_Zip : Zip des fichiers
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:23 fl_Zip : Zip des fichiers
+# =========================================================================== #
++zip -9lj /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMMMOY-210318233806.csv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMPNC7-210319004215.csv
+  adding: EMMMOY-210318233806.csv (deflated 82%)
+  adding: EMPNC7-210319004215.csv (deflated 89%)
++jobTest 0 fl_Zip : Pb zip des fichiers fl_Zip : Zip des fichiers OK
+fl_Zip : Zip des fichiers OK
++fl_envoi_cft PA6DFSPA6METPAIE /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip
++jobEtape fl_envoi_cft : Envoi CFT
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_envoi_cft : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6METPAIE -f /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 cft.sh send -f /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip -m PA6DFSPA6METPAIE
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6METPAIE.PRODWIN.21626982.5924-1' vers part='PRODWIN',idf='PA6DFSPA6METPAIE' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft : PA6DFSPA6METPAIE
++fl_archive /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/fichiers_explo_METIER-20210319005922.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++fl_archive /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/*
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMMMOY-210318233806.csv /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/EMPNC7-210319004215.csv /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++[ -f /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1 ]
++fl_Zip /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W*.CORR1
++jobEtape fl_Zip : Zip des fichiers
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_Zip : Zip des fichiers
+# =========================================================================== #
++zip -9lj /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1
+  adding: K3W600IZ.CORR1 (deflated 92%)
+  adding: K3W950IX.CORR1 (deflated 89%)
++jobTest 0 fl_Zip : Pb zip des fichiers fl_Zip : Zip des fichiers OK
+fl_Zip : Zip des fichiers OK
++fl_envoi_cft PA6DFSPA6FICPAIE /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip
++jobEtape fl_envoi_cft : Envoi CFT
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_envoi_cft : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6FICPAIE -f /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 cft.sh send -f /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip -m PA6DFSPA6FICPAIE
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6FICPAIE.PRODWIN.21626998.5924-1' vers part='PRODWIN',idf='PA6DFSPA6FICPAIE' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft : PA6DFSPA6FICPAIE
++fl_archive /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/log_paie_CORR1-20210319005922.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++fl_archive /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W*.CORR1
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1 /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++[ -f /dz-pareo/applis/pa6/cft.out/editions_compta/EMCMCG-210318235808.txt /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv ]
++fl_Zip /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip /dz-pareo/applis/pa6/cft.out/editions_compta/*
++jobEtape fl_Zip : Zip des fichiers
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_Zip : Zip des fichiers
+# =========================================================================== #
++zip -9lj /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip /dz-pareo/applis/pa6/cft.out/editions_compta/EMCMCG-210318235808.txt /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv
+  adding: EMCMCG-210318235808.txt (deflated 80%)
+  adding: EMCRUB-210318235813.csv (deflated 80%)
++jobTest 0 fl_Zip : Pb zip des fichiers fl_Zip : Zip des fichiers OK
+fl_Zip : Zip des fichiers OK
++fl_envoi_cft PA6DFSPA6CPTPAIE /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip
++jobEtape fl_envoi_cft : Envoi CFT
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_envoi_cft : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6CPTPAIE -f /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 cft.sh send -f /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip -m PA6DFSPA6CPTPAIE
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6CPTPAIE.PRODWIN.21627014.5924-1' vers part='PRODWIN',idf='PA6DFSPA6CPTPAIE' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft : PA6DFSPA6CPTPAIE
++fl_archive /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/editions_compta-20210319005922.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++fl_archive /dz-pareo/applis/pa6/cft.out/editions_compta/*
++jobEtape fl_archive : Archivage du zip
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:24 fl_archive : Archivage du zip
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/editions_compta/EMCMCG-210318235808.txt /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCEF1.KSH: Fin le 19-03-2021 a 00:59:24
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6MCEF1.LOG_*0rucg*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:25  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6MCEF1.LOG_*0rucg*.22806770
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_22806770
++__orderid=LOG_*0rucg*
++__jobname_fin=XDPA6MCEF1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1
++__jobname=XDPA6MCEF1
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001
++__orderid_fin=LOG_00rucg_00001
++__job_complet_fin=XDPA6MCEF1.LOG_00rucg_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001
++grep YCFLOG=
++cut -d = -f 2-5
++head -1
++cut -d / -f 1-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCEF1.LOG_00rucg_00001

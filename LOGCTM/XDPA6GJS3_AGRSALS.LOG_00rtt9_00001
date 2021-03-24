@@ -1,0 +1,479 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJS3_AGRSALS.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJS3_AGRSALS.KSH
+_YCFSHELL=XDPA6GJS3_AGRSALS.KSH
+_YCFJOB=XDPA6GJS3_AGRSALS
+_YCTDATE=20210318203852
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJS3_AGRSALS.KSH.20210318203852
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJS3_AGRSALS.KSH: Debut le 18-03-2021 a 20:38:54
+# =========================================================================== #
++set -x
++fl_date_ctrlm_ouvsuiv_hr
++jobEtape fl_date_ctrlm_ouvsuiv_hr : retourne date ctrlm jour ouvré suivant au format HR
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:54 fl_date_ctrlm_ouvsuiv_hr : retourne date ctrlm jour ouvré suivant au format HR
+# =========================================================================== #
++cat /dz-pareo/applis/pa6/parm/ctrlm_ouvsuiv.date
++cut -c1-4
+DATE_A=2021
++cat /dz-pareo/applis/pa6/parm/ctrlm_ouvsuiv.date
++cut -c5-6
+DATE_M=03
++cat /dz-pareo/applis/pa6/parm/ctrlm_ouvsuiv.date
++cut -c7-8
+DATE_J=19
++DATE_CTRLM_OUVSUIV_HR=2021-03-19
++echo Date CTRLM jour ouvré suivant format HR : 2021-03-19 
+Date CTRLM jour ouvré suivant format HR : 2021-03-19 
++export CODPROS=XE004
++export NODMDE=85
++export FIC_IN1=/dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1
++rm -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1
++fl_carte_param
++jobEtape fl_carte_param : Paramètres de l'export de données NRA avec le processus XE004
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:54 fl_carte_param : Paramètres de l'export de données NRA avec le processus XE004
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/XE004NRA.parm
++1> /dz-pareo/applis/pa6/parm/XE004NRA.parm
++TYTRAI=P
++IDPOPL=%POP
++TELEBA=1
++TETRBA=1
++TELEJO=0
++TYACTI= 
++TYPFIC=R
++echo 22S3PC10P%POP                                      110 R
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
+22S3PC10P%POP                                      110 R
++CDSTDO=ZY
++NUSO02=01
++echo 27S3PC12ZY01
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
+27S3PC12ZY01
++ZONUT1=2021-03-19
++echo 28S3PC132021-03-19
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
+28S3PC132021-03-19
++echo 5T**S
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
+5T**S
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**01SELECPOPSELECT DISTINCT (A.NUDOSS) FROM ZYVF A, ZYPO B, ZY00 C 
+5W**01SELECPOPSELECT DISTINCT (A.NUDOSS) FROM ZYVF A, ZYPO B, ZY00 C 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**03SELECPOPWHERE A.NUDOSS=C.NUDOSS AND A.NUDOSS=B.NUDOSS  
+5W**03SELECPOPWHERE A.NUDOSS=C.NUDOSS AND A.NUDOSS=B.NUDOSS  
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**04SELECPOPAND A.TEMPAY='P' AND B.REGPOS<>'Z1' AND C.TYPDOS='SAL' 
+5W**04SELECPOPAND A.TEMPAY='P' AND B.REGPOS<>'Z1' AND C.TYPDOS='SAL' 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**04SELECPOPAND TO_CHAR(A.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
+5W**04SELECPOPAND TO_CHAR(A.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**04SELECPOPAND TO_CHAR(A.DATXXX,'YYYY-MM-DD') >= '2021-03-19' 
+5W**04SELECPOPAND TO_CHAR(A.DATXXX,'YYYY-MM-DD') >= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**04SELECPOPAND TO_CHAR(B.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
+5W**04SELECPOPAND TO_CHAR(B.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
++echo 5W**01SELECPOPAND ( TO_CHAR(B.FINREE,'YYYY-MM-DD') >= '2021-03-19' 
+5W**01SELECPOPAND ( TO_CHAR(B.FINREE,'YYYY-MM-DD') >= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE004NRA.parm
+5W**01SELECPOPOR TO_CHAR(B.FINREE,'YYYY-MM-DD')='0001-01-01') 
++fg_lance_nra XE004 85
++jobEtape fg_lance_nra : Lancement de l'export de données pour le processus XE004
+
+# =========================================================================== #
+# 18-03-2021 a 20:38:54 fg_lance_nra : Lancement de l'export de données pour le processus XE004
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnra_v9 XE004 85
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJS3_AGRSALS_XE004NRA.85.20210318203852.26149098
++jobTest 0 fg_lance_nra : Pb traitement NRA pour l'extraction des données
++fl_fich_bdx /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1
++jobEtape fl_fich_bdx : Copie du fichier pour mise à jour de ZYXU
+
+# =========================================================================== #
+# 18-03-2021 a 20:43:30 fl_fich_bdx : Copie du fichier pour mise à jour de ZYXU
+# =========================================================================== #
++cp /dz-pareo/product/pa6/hra/prod/file/PSBBI101.C85 /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1
++jobTest 0 fl_fich_bdx : Pb dans la copie du fichier màj temp de ZYXU fl_fich_bdx : Copie du fichier màj temp de ZYXU OK
+fl_fich_bdx : Copie du fichier màj temp de ZYXU OK
++unset CODPROS
++unset NODMDE
++export CODPROS=XE041
++export NODMDE=86
++export FIC_INZ=/dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++rm -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++fl_carte_paramZ
++jobEtape fl_carte_param : Paramètres de l'export de données NRA avec le processus XE041
+
+# =========================================================================== #
+# 18-03-2021 a 20:43:30 fl_carte_param : Paramètres de l'export de données NRA avec le processus XE041
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/XE041NRA.parm
++1> /dz-pareo/applis/pa6/parm/XE041NRA.parm
++TYTRAI=P
++IDPOPL=%POP
++TELEBA=1
++TETRBA=1
++TELEJO=0
++TYACTI= 
++TYPFIC=R
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 22S3PC10P%POP                                      110 R
+22S3PC10P%POP                                      110 R
++CDSTDO=ZY
++NUSO02=01
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 27S3PC12ZY01
+27S3PC12ZY01
++ZONUT1=2021-03-19
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 28S3PC132021-03-19
+28S3PC132021-03-19
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5T**S
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPSELECT DISTINCT NUDOSS FROM ZY00 WHERE TYPDOS ='SAL' 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPAND NUDOSS IN (SELECT A.NUDOSS FROM ZYVF A, ZYPO B, ZY00 C 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 5W**01SELECPOPWHERE A.NUDOSS=C.NUDOSS AND A.NUDOSS=B.NUDOSS  
+5W**01SELECPOPWHERE A.NUDOSS=C.NUDOSS AND A.NUDOSS=B.NUDOSS  
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 5W**01SELECPOPAND A.TEMPAY<>'P' AND B.REGPOS='Z1' AND C.TYPDOS='SAL' 
+5W**01SELECPOPAND A.TEMPAY<>'P' AND B.REGPOS='Z1' AND C.TYPDOS='SAL' 
++echo 5W**01SELECPOPAND TO_CHAR(A.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPAND TO_CHAR(A.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
++echo 5W**01SELECPOPAND TO_CHAR(A.DATXXX,'YYYY-MM-DD') >= '2021-03-19' 
+5W**01SELECPOPAND TO_CHAR(A.DATXXX,'YYYY-MM-DD') >= '2021-03-19' 
++echo 5W**01SELECPOPAND TO_CHAR(B.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPAND TO_CHAR(B.DATEFF,'YYYY-MM-DD') <= '2021-03-19' 
++echo 5W**01SELECPOPAND ( TO_CHAR(B.FINREE,'YYYY-MM-DD') >= '2021-03-19' 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPAND ( TO_CHAR(B.FINREE,'YYYY-MM-DD') >= '2021-03-19' 
++echo 5W**01SELECPOPOR TO_CHAR(B.FINREE,'YYYY-MM-DD')='0001-01-01')) 
++tee -a /dz-pareo/applis/pa6/parm/XE041NRA.parm
+5W**01SELECPOPOR TO_CHAR(B.FINREE,'YYYY-MM-DD')='0001-01-01')) 
++fg_lance_nra XE041 86
++jobEtape fg_lance_nra : Lancement de l'export de données pour le processus XE041
+
+# =========================================================================== #
+# 18-03-2021 a 20:43:30 fg_lance_nra : Lancement de l'export de données pour le processus XE041
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnra_v9 XE041 86
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJS3_AGRSALS_XE041NRA.86.20210318203852.26149098
++jobTest 0 fg_lance_nra : Pb traitement NRA pour l'extraction des données
++fl_fich_bdx /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++jobEtape fl_fich_bdx : Copie du fichier pour mise à jour de ZYXU
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fl_fich_bdx : Copie du fichier pour mise à jour de ZYXU
+# =========================================================================== #
++cp /dz-pareo/product/pa6/hra/prod/file/PSBBI101.C86 /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++jobTest 0 fl_fich_bdx : Pb dans la copie du fichier màj temp de ZYXU fl_fich_bdx : Copie du fichier màj temp de ZYXU OK
+fl_fich_bdx : Copie du fichier màj temp de ZYXU OK
++export CODPROS=INTZY
++export DEST_MAIL=mail_pa6_moe
++export JOB_MAIL=XDPA6GJS3_AGRSALS
++export NO_DMD=85
++export FIC_IN=/dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++fl_concat_fic_nra
++jobEtape fl_concat_fic_nra : Concaténation des fichiers des nra XE004 et XE041
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fl_concat_fic_nra : Concaténation des fichiers des nra XE004 et XE041
+# =========================================================================== #
++cat /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1 /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++1> /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++jobTest 0 fl_concat_fic_explo : Concaténation des fichiers des nra XE004 et XE041
++fl_ctrl_fic
++jobEtape fl_ctrl_fic : Suppression des fichiers cpt-rendu
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fl_ctrl_fic : Suppression des fichiers cpt-rendu
+# =========================================================================== #
++fg_suppr_cpt_rendu 85
++jobEtape fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.85.*
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210317
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210317
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210317
++jobEtape fl_ctrl_fic : Test présence fichier de bdx : si absent alors sortie du shell
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fl_ctrl_fic : Test présence fichier de bdx : si absent alors sortie du shell
+# =========================================================================== #
++fg_ctrl_fic_absence_vide mail_pa6_moe XDPA6GJS3_AGRSALS /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++jobEtape fg_ctrl_fic_absence_vide : sortie + message + archivage si vide ou sortie + message si absent
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fg_ctrl_fic_absence_vide : sortie + message + archivage si vide ou sortie + message si absent
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+HORODT_CTRL=20210318204618
++[ ! /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU ]
++[ -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU ]
++[ -s /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU ]
++echo Fichier à traiter : /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
+Fichier à traiter : /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++jobEtape fl_ctrl_fic : Sauvegarde du fichier de bordereaux
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fl_ctrl_fic : Sauvegarde du fichier de bordereaux
+# =========================================================================== #
++fg_copy_file_sav /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++jobEtape fg_copy_file_sav : Sauvegarde du fichier
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fg_copy_file_sav : Sauvegarde du fichier
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318204618
++basename /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
+FIC_NAME=FICH_ZYXU
++cp /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU /dz-pareo/applis/pa6/archive/FICH_ZYXU.20210318204618
++jobTest 0 fg_copy_file_sav : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU OK
+fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU OK
++fg_maj_dossier_bdx INTZY /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU 85
++jobEtape fg_maj_dossier_bdx : Mise à jour des dossiers par bordereaux
+
+# =========================================================================== #
+# 18-03-2021 a 20:46:18 fg_maj_dossier_bdx : Mise à jour des dossiers par bordereaux
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnrb_ZY_v9 -pINTZY -f/dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU -c0 -n85 -bV -t0
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJS3_AGRSALS_INTZYNRB.85.20210318203852.26149098
++jobTest 0 fg_maj_dossier_bdx : Pb dans la mise à jour des dossiers par bordereaux !!! fg_maj_dossier_bdx : Mise à jour des dossiers par bordereaux OK
+fg_maj_dossier_bdx : Mise à jour des dossiers par bordereaux OK
++fg_cat_cr_bdx_out 85 cr_quotidiens_grh CR_AGRSALS
++jobEtape fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+
+# =========================================================================== #
+# 18-03-2021 a 21:16:44 fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318211644
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.85.*
+/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.85.* not found
+NOM_FIC_CR1=
++[ !  ]
++echo Pas de fichier NRB150IZ.85
+Pas de fichier NRB150IZ.85
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318
++head -1
+NOM_FIC_CR2=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.85.20210318
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318
+NOM_FIC_CR3=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.85.20210318
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318
+NOM_FIC_CR4=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.85.20210318
++rm -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU
++rm -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXU1
++rm -f /dz-pareo/product/pa6/hra/prod/file/FICH_ZYXUZ
++unset CODPROS
++unset NODMDE
++unset FIC_IN
++unset FIC_IN1
++unset FIC_INZ
++unset DEST_MAIL
++unset JOB_MAIL
++unset NO_DMD
++unset DATE_CTRLM_OUVSUIV_HR
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJS3_AGRSALS.KSH: Fin le 18-03-2021 a 21:16:44
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJS3_AGRSALS.LOG_*0rtt9*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 21:16:45  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJS3_AGRSALS.LOG_*0rtt9*.26149100
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_26149100
++__orderid=LOG_*0rtt9*
++__jobname_fin=XDPA6GJS3_AGRSALS
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS
++__jobname=XDPA6GJS3_AGRSALS
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001
++__orderid_fin=LOG_00rtt9_00001
++__job_complet_fin=XDPA6GJS3_AGRSALS.LOG_00rtt9_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001 ]
++sed s/^+/%/g
++sed s/*/*/g
++sed s/*/*/g
++sed s/^%/+/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/^++/%/g
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJS3_AGRSALS.LOG_00rtt9_00001

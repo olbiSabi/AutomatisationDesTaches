@@ -1,0 +1,197 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJD1_PREEMDFS.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJD1_PREEMDFS.KSH
+_YCFSHELL=XDPA6GJD1_PREEMDFS.KSH
+_YCFJOB=XDPA6GJD1_PREEMDFS
+_YCTDATE=20210319014144
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJD1_PREEMDFS.KSH.20210319014144
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJD1_PREEMDFS.KSH: Debut le 19-03-2021 a 01:41:45
+# =========================================================================== #
++set -x
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.VA0EMB04.*
++fg_date_ctrlm_hr
+DATE_CTRLM_HR=2021-03-18
++fg_exec_query 60 VA0EMB04 SLK BorneInférieure=2021-03-18 BorneSupérieure=2021-03-18
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJD1_PREEMDFS_AS800NPQ.20210319014144.12910750
++jobEtape fg_exec_query : execution de la query VA0EMB04
++ATTENTE=60
++QUERY=VA0EMB04
++EXT=SLK
++shift 3
++FICPRM=/dz-pareo/applis/pa6/parm/VA0EMB04.parm
++rm -f /dz-pareo/applis/pa6/parm/VA0EMB04.parm
++echo 5X**M0
++tee -a /dz-pareo/applis/pa6/parm/VA0EMB04.parm
++echo BorneInférieure=2021-03-18
++cut -d= -f1
+pn=BorneInférieure
++echo BorneInférieure=2021-03-18
++cut -d= -f2
+pv=2021-03-18
++printf 5Q**%c%-32s%s\n 1 BorneInférieure 2021-03-18
++tee -a /dz-pareo/applis/pa6/parm/VA0EMB04.parm
++echo BorneSupérieure=2021-03-18
++cut -d= -f1
+pn=BorneSupérieure
++echo BorneSupérieure=2021-03-18
++cut -d= -f2
+pv=2021-03-18
++tee -a /dz-pareo/applis/pa6/parm/VA0EMB04.parm
++printf 5Q**%c%-32s%s\n 1 BorneSupérieure 2021-03-18
++printf 3P**1BNPQ00XMD001%-8s%-3sF\n VA0EMB04 SLK
++tee -a /dz-pareo/applis/pa6/parm/VA0EMB04.parm
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.VA0EMB04.SLK
++/dz-pareo/applis/pa6/bin/subnpq_v9 VA0EMB04 60
+/dz-pareo/applis/pa6/bin/subnpq_v9[181]: NUDOSS:  not found
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120376/f_00_xmd_00.pdf: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120376/f_00_xmd_01.zip: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120376/f_00_xmd_00.slk: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120376/f_00_xmd_00.csv: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120376/f_00_xmd_01.csv: No such file or directory
++jobTest 0 fg_exec_query : erreur d'execution query VA0EMB04
++fl_test_fic
++jobEtape fl_test_fic : Test génération fichier Query
+
+# =========================================================================== #
+# 19-03-2021 a 01:42:47 fl_test_fic : Test génération fichier Query
+# =========================================================================== #
++[ -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.VA0EMB04.slk ]
++exit 0
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJD1_PREEMDFS.LOG_*0rtnr*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 01:42:48  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJD1_PREEMDFS.LOG_*0rtnr*.15073404
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_15073404
++__orderid=LOG_*0rtnr*
++__jobname_fin=XDPA6GJD1_PREEMDFS
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++awk -F. {print $1}
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.out
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS
++__jobname=XDPA6GJD1_PREEMDFS
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001
++__orderid_fin=LOG_00rtnr_00001
++__job_complet_fin=XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001
++head -1
++cut -d / -f 1-5
++cut -d = -f 2-5
++grep YCFLOG=
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJD1_PREEMDFS.LOG_00rtnr_00001

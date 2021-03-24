@@ -1,0 +1,498 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6CJH5_BANQUHRA.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6CJH5_BANQUHRA.KSH
+_YCFSHELL=XDPA6CJH5_BANQUHRA.KSH
+_YCFJOB=XDPA6CJH5_BANQUHRA
+_YCTDATE=20210318221932
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6CJH5_BANQUHRA.KSH.20210318221932
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6CJH5_BANQUHRA.KSH: Debut le 18-03-2021 a 22:19:34
+# =========================================================================== #
++set -x
++ls -1 /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210318193037
++head -1
+FIC_ETABL=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++BDX_ETABL=/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS
++NO_DMD=76
++[ ! -z /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 ]
++fg_copy_file_sav /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++jobEtape fg_copy_file_sav : Sauvegarde du fichier
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:34 fg_copy_file_sav : Sauvegarde du fichier
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318221934
++basename /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
+FIC_NAME=RN5PA6ET.20210317193020
++cp /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 /dz-pareo/applis/pa6/archive/RN5PA6ET.20210317193020.20210318221934
++jobTest 0 fg_copy_file_sav : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 OK
+fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 OK
++fg_sqlloader /dz-pareo/applis/pa6/parm/banque_etablissements.ctl /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++jobEtape fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_etablissements.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020)
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:34 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_etablissements.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020)
+# =========================================================================== #
++[ X = X -o X = P ]
++unset userpass
++basename /dz-pareo/applis/pa6/parm/banque_etablissements.ctl ctl
+ctlfn=banque_etablissements.
++rm -f /dz-pareo/applis/pa6/logapp/banque_etablissements.log /dz-pareo/applis/pa6/logapp/banque_etablissements.bad
+oracle.sh sql ******
++typeset -i __rcode=0
++typeset __user=dexploitdba
+ <ligne contenant un mot de passe>
++typeset __instance=
++typeset __service=
++typeset __filedat=
++typeset __filectl=
++typeset __filelog=
++typeset __filebad=
++typeset __filedsc=
++typeset __optionsX=
++typeset __badcontinue=no
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__service=ORACLE-PA6-12
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__instance=dxpa6
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__optionsX=SILENT=ALL ERRORS=0
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/parm/banque_etablissements.ctl
+__filectl=/dz-pareo/applis/pa6/parm/banque_etablissements.ctl
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
+__filedat=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/logapp/banque_etablissements.log
+__filelog=/dz-pareo/applis/pa6/logapp/banque_etablissements.log
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/logapp/banque_etablissements.bad
+__filebad=/dz-pareo/applis/pa6/logapp/banque_etablissements.bad
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++unset _OPT OPTARG
++[  !=  ]
++[ dxpa6 ==  ]
++[ ! -s /dz-pareo/applis/pa6/parm/banque_etablissements.ctl ]
++[ /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 !=  ]
++[ ! -f /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 ]
++[ /dz-pareo/applis/pa6/logapp/banque_etablissements.log !=  ]
++[ -f /dz-pareo/applis/pa6/logapp/banque_etablissements.log ]
++[ /dz-pareo/applis/pa6/logapp/banque_etablissements.bad !=  ]
++[ -f /dz-pareo/applis/pa6/logapp/banque_etablissements.bad ]
++[  !=  ]
++[ 0 -ne 0 ]
++[  == FUTUR ]
++servGetMachine ORACLE-PA6-12
++typeset __machine=daproda4
++[ daproda4 != daproda4 ]
++oraSetEnv ORACLE-PA6-12 dxpa6
++[ 0 != 0 ]
++_OPTION=
++[ /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++[ /dz-pareo/applis/pa6/logapp/banque_etablissements.log !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 log=/dz-pareo/applis/pa6/logapp/banque_etablissements.log
++[ /dz-pareo/applis/pa6/logapp/banque_etablissements.bad !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 log=/dz-pareo/applis/pa6/logapp/banque_etablissements.log bad=/dz-pareo/applis/pa6/logapp/banque_etablissements.bad
++[  !=  ]
++[  ==  ]
++pwdGet dexploitdba oracle
+ <ligne contenant un mot de passe>
++sqlldr dexploitdba/exploitd2015@dxpa6 control=/dz-pareo/applis/pa6/parm/banque_etablissements.ctl  data=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 log=/dz-pareo/applis/pa6/logapp/banque_etablissements.log bad=/dz-pareo/applis/pa6/logapp/banque_etablissements.bad SILENT=ALL ERRORS=0
+
+  598 Rows successfully loaded.
++__rcode=0
++[ -f /dz-pareo/applis/pa6/logapp/banque_etablissements.bad -a no = no ]
++msgOut Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_etablissements.bad' pas sortie en erreur
+Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_etablissements.bad' pas sortie en erreur
++__rcode=0
++exit 0
++jobTest 0 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_etablissements.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020) : erreur
++fg_date_ctrlm_hr
++fg_lance_script_sql /dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql  /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS 2021-03-18
++SCRIPT=/dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS
++shift 3
++jobEtape fg_lance_script_sql(/dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql,,/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS) / sql-params:2021-03-18
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:35 fg_lance_script_sql(/dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql,,/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS) / sql-params:2021-03-18
+# =========================================================================== #
++unset sqlpar
++sqlpar= -P 2021-03-18
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F /dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql -P 2021-03-18
++1> /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F /dz-pareo/applis/pa6/sql/generebor_banque_etablissements.sql -P 2021-03-18
++jobTest 0 fg_lance_script_sql
++[ -s /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_ETABL.LS ]
++rm -f /dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020
++ls -1 /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210318193036
++head -1
+FIC_GUICH=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++BDX_GUICH=/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
++NO_DMD=77
++[ ! -z /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 ]
++fg_copy_file_sav /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++jobEtape fg_copy_file_sav : Sauvegarde du fichier
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:35 fg_copy_file_sav : Sauvegarde du fichier
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318221935
++basename /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
+FIC_NAME=RN5PA6GU.20210317193021
++cp /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 /dz-pareo/applis/pa6/archive/RN5PA6GU.20210317193021.20210318221935
++jobTest 0 fg_copy_file_sav : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 OK
+fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 OK
++fg_sqlloader /dz-pareo/applis/pa6/parm/banque_guichets.ctl /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++jobEtape fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_guichets.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021)
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:35 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_guichets.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021)
+# =========================================================================== #
++[ X = X -o X = P ]
++unset userpass
++basename /dz-pareo/applis/pa6/parm/banque_guichets.ctl ctl
+ctlfn=banque_guichets.
++rm -f /dz-pareo/applis/pa6/logapp/banque_guichets.log /dz-pareo/applis/pa6/logapp/banque_guichets.bad
+oracle.sh sql ******
++typeset -i __rcode=0
++typeset __user=dexploitdba
+ <ligne contenant un mot de passe>
++typeset __instance=
++typeset __service=
++typeset __filedat=
++typeset __filectl=
++typeset __filelog=
++typeset __filebad=
++typeset __filedsc=
++typeset __optionsX=
++typeset __badcontinue=no
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__service=ORACLE-PA6-12
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__instance=dxpa6
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++__optionsX=SILENT=ALL ERRORS=0
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/parm/banque_guichets.ctl
+__filectl=/dz-pareo/applis/pa6/parm/banque_guichets.ctl
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
+__filedat=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/logapp/banque_guichets.log
+__filelog=/dz-pareo/applis/pa6/logapp/banque_guichets.log
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++pathMakeAbsolute0 /dz-pareo/applis/pa6/logapp/banque_guichets.bad
+__filebad=/dz-pareo/applis/pa6/logapp/banque_guichets.bad
++getopts :hvs:u:p:i:C:F:L:B:D::X:E _OPT
++2> /dev/null
++unset _OPT OPTARG
++[  !=  ]
++[ dxpa6 ==  ]
++[ ! -s /dz-pareo/applis/pa6/parm/banque_guichets.ctl ]
++[ /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 !=  ]
++[ ! -f /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 ]
++[ /dz-pareo/applis/pa6/logapp/banque_guichets.log !=  ]
++[ -f /dz-pareo/applis/pa6/logapp/banque_guichets.log ]
++[ /dz-pareo/applis/pa6/logapp/banque_guichets.bad !=  ]
++[ -f /dz-pareo/applis/pa6/logapp/banque_guichets.bad ]
++[  !=  ]
++[ 0 -ne 0 ]
++[  == FUTUR ]
++servGetMachine ORACLE-PA6-12
++typeset __machine=daproda4
++[ daproda4 != daproda4 ]
++oraSetEnv ORACLE-PA6-12 dxpa6
++[ 0 != 0 ]
++_OPTION=
++[ /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++[ /dz-pareo/applis/pa6/logapp/banque_guichets.log !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 log=/dz-pareo/applis/pa6/logapp/banque_guichets.log
++[ /dz-pareo/applis/pa6/logapp/banque_guichets.bad !=  ]
++_OPTION= data=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 log=/dz-pareo/applis/pa6/logapp/banque_guichets.log bad=/dz-pareo/applis/pa6/logapp/banque_guichets.bad
++[  !=  ]
++[  ==  ]
++pwdGet dexploitdba oracle
+ <ligne contenant un mot de passe>
++sqlldr dexploitdba/exploitd2015@dxpa6 control=/dz-pareo/applis/pa6/parm/banque_guichets.ctl  data=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 log=/dz-pareo/applis/pa6/logapp/banque_guichets.log bad=/dz-pareo/applis/pa6/logapp/banque_guichets.bad SILENT=ALL ERRORS=0
+
+  31433 Rows successfully loaded.
++__rcode=0
++[ -f /dz-pareo/applis/pa6/logapp/banque_guichets.bad -a no = no ]
++msgOut Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_guichets.bad' pas sortie en erreur
+Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_guichets.bad' pas sortie en erreur
++__rcode=0
++exit 0
++jobTest 0 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_guichets.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021) : erreur
++fg_date_ctrlm_hr
++fg_lance_script_sql /dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql  /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS 2021-03-18
++SCRIPT=/dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql
++CSEP=
++FOUT=/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
++shift 3
++jobEtape fg_lance_script_sql(/dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql,,/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS) / sql-params:2021-03-18
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:39 fg_lance_script_sql(/dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql,,/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS) / sql-params:2021-03-18
+# =========================================================================== #
++unset sqlpar
++sqlpar= -P 2021-03-18
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F /dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql -P 2021-03-18
++1> /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F /dz-pareo/applis/pa6/sql/generebor_banque_guichets.sql -P 2021-03-18
++jobTest 0 fg_lance_script_sql
++[ -s /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS ]
++fg_copy_file_sav /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
++jobEtape fg_copy_file_sav : Sauvegarde du fichier
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:39 fg_copy_file_sav : Sauvegarde du fichier
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318221939
++basename /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
+FIC_NAME=BORD_BANQUE_GUICH.LS
++cp /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS /dz-pareo/applis/pa6/archive/BORD_BANQUE_GUICH.LS.20210318221939
++jobTest 0 fg_copy_file_sav : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS OK
+fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS OK
++fg_suppr_cpt_rendu 77
++jobEtape fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:39 fg_suppr_cpt_rendu : Suppression des fichiers cpt-rendu
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.77.*
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210317
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210317
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210317
++fg_maj_zd_bdx /dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS 77
++jobEtape fg_maj_zd_bdx : Chargement de bordereau - nodmd:77 fichier:/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
+
+# =========================================================================== #
+# 18-03-2021 a 22:19:39 fg_maj_zd_bdx : Chargement de bordereau - nodmd:77 fichier:/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnrb_ZD_v9 -pINTZD -f/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS -c0 -n77
++1> /dz-pareo/applis/pa6/logapp/XDPA6CJH5_BANQUHRA_INTZDNRB.77.20210318221932.20119802
++jobTest 0 fg_maj_zd_bdx : Pb de chargement par bordereaux - nodmd:77 fichier:/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS fg_maj_zd_bdx : chargement de bordereaux OK - nodmd:77 fichier:/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
+fg_maj_zd_bdx : chargement de bordereaux OK - nodmd:77 fichier:/dz-pareo/product/pa6/hra/prod/file/BORD_BANQUE_GUICH.LS
++fg_cat_cr_bdx_out 77 cr_quotidiens BANQUE_GUICH
++jobEtape fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:09 fg_cat_cr_bdx_out : Copie des CR concaténés dans cft.out
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318222009
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.77.*
++head -1
+/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB150IZ.77.* not found
+NOM_FIC_CR1=
++[ !  ]
++echo Pas de fichier NRB150IZ.77
+Pas de fichier NRB150IZ.77
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318
+NOM_FIC_CR2=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB212IZ.77.20210318
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318
+NOM_FIC_CR3=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB284IZ.77.20210318
++head -1
++ls -t1 /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318
+NOM_FIC_CR4=/dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318
++[ ! /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318 ]
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318 ]
++cat /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318
++1>> /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009
++jobTest 0 fg_cat_cr_bdx_out : Pb copie fichier CR /dz-pareo/product/pa6/hra/prod/txt/tmp/NRB362I1.77.20210318
++rm -f /dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6CJH5_BANQUHRA.KSH: Fin le 18-03-2021 a 22:20:10
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6CJH5_BANQUHRA.LOG_*0rttl*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:10  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6CJH5_BANQUHRA.LOG_*0rttl*.12779692
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_12779692
++__orderid=LOG_*0rttl*
++__jobname_fin=XDPA6CJH5_BANQUHRA
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA
++__jobname=XDPA6CJH5_BANQUHRA
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001
++__orderid_fin=LOG_00rttl_00001
++__job_complet_fin=XDPA6CJH5_BANQUHRA.LOG_00rttl_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6CJH5_BANQUHRA.LOG_00rttl_00001

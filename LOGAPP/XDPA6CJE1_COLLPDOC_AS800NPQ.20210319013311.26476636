@@ -1,11 +1,10 @@
 
 # =========================================================================== #
-# 11-03-2021 a 23:47:10 fg_exec_query : execution de la query VA0EMB04
+# 19-03-2021 a 01:33:13 fg_exec_query : execution de la query YDEMPLOY
 # =========================================================================== #
 5X**M0
-5Q**1BorneInférieure                 2021-03-11
-5Q**1BorneSupérieure                 2021-03-11
-3P**1BNPQ00XMD001VA0EMB04SLKF
+5Q**1DateTraitement                  2021-03-18
+3P**1BNPQ00XMD001YDEMPLOYCSVF
 
 ######################################################################
 # Début JOB subnpq_v9
@@ -31,7 +30,7 @@
 # STEP 4 : Creation du fichier des parametres pour NPQ
 ######################################################################
 
-VA0EMB04.parm
+YDEMPLOY.parm
 PA52D               110001  
 
 ######################################################################
@@ -48,7 +47,7 @@ PA52D               110001
 *****************************************************************
 
 
-JOB : JNPQ                            DATE : 2021/03/11 23:47:11
+JOB : JNPQ                            DATE : 2021/03/19 01:33:14
 
 
 *-------------------------- STEP050A ---------------------------*
@@ -66,37 +65,35 @@ JOB : JNPQ                            DATE : 2021/03/11 23:47:11
 *---------------------------------------------------------------*
 AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
 AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
-AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-23.47.11                                     
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-01.33.14                                     
 AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
 AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
-AS800BOP-00000000-PA2A         NPQ                  VA0EMB04F         05                                                
+AS800BOP-00000000-PA2A         NPQ                  YDEMPLOYF         05                                                
 AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
 AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
 AS800BOP-00000000-PA2DFT                                                                                                
 AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
 AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
-AS800BOP-00000000-PA2A000090000NPQ                  VA0EMB04F        A05                                                
+AS800BOP-00000000-PA2A000090000NPQ                  YDEMPLOYF        A05                                                
 AS800BOP-00000000-PA2BLANCEMENT CHAINE NPQ                                                                              
 AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
 AS800BOP-00000000-PA2DFT                                                                                                
 AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
 AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
 AS800BOP-00000000-5X**M0                                                                                                
-AS800BOP-00000000-5Q**1BorneInférieure                 2021-03-11                                                       
-AS800BOP-00000000-5Q**1BorneSupérieure                 2021-03-11                                                       
-AS800BOP-00000000-3P**1BNPQ00XMD001VA0EMB04SLKF                                                                         
+AS800BOP-00000000-5Q**1DateTraitement                  2021-03-18                                                       
+AS800BOP-00000000-3P**1BNPQ00XMD001YDEMPLOYCSVF                                                                         
 AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
 AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
 AS800BOP-00000000-5X**M0                                                                                                
-AS800BOP-00000000-5Q**1BorneInférieure                 2021-03-11                                                       
-AS800BOP-00000000-5Q**1BorneSupérieure                 2021-03-11                                                       
-AS800BOP-00000000-3P**1BNPQ00XMD001VA0EMB04SLKF                                                                         
-AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000119492 NPQ  ALLHRLO                                                           
+AS800BOP-00000000-5Q**1DateTraitement                  2021-03-18                                                       
+AS800BOP-00000000-3P**1BNPQ00XMD001YDEMPLOYCSVF                                                                         
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000120374 NPQ  ALLHRLO                                                           
 AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
 AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
 AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
-AS800BOP-BBAD0009-PC (PC) : 000000000000004                                                                             
-AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-23.47.11  **** CODE RETOUR 00 ******        
+AS800BOP-BBAD0009-PC (PC) : 000000000000003                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-01.33.14  **** CODE RETOUR 00 ******        
 
 
 *-------------------------- STEP100A ---------------------------*
@@ -114,8 +111,8 @@ AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-23.4
 *---------------------------------------------------------------*
 AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
 AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
-AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-23.47.11                                     
-AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000119492                                                                           
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-01.33.14                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120374                                                                           
 AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
 AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
 AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
@@ -134,15 +131,15 @@ AS800BOU-BBAD0009-CA (C1) : 000000000000005
 AS800BOU-BBAD0009-FT (FT) : 000000000000006                                                                             
 AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
 AS800BOU-BBAD0009-PA (PA) : 000000000000005                                                                             
-AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-23.47.11  **** CODE RETOUR 00 ******        
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.8388758: No such file or directory
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.8388758: No such file or directory
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-01.33.15  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.17367098: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.17367098: No such file or directory
 
 
 *-------------------------- STEP110N ----------------*
@@ -165,13 +162,13 @@ rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.8388758: No such file or direc
 *---------------------------------------------------------------*
 JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
 JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
-JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-11-23.47.11                                     
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-01.33.15                                     
 JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
 JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
-JA800BLZ-00000000-PA50ZO0001194920                                                       001992865                      
+JA800BLZ-00000000-PA50ZO0001203740                                                       002006933                      
 JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
 JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
-JA800BLZ-00000000-PA50ZO000119492                                                         h¡                           
+JA800BLZ-00000000-PA50ZO000120374                                                         Ÿ•                           
 JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
 JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
 JA800BLZ-00000000-PA51001                                                                                               
@@ -184,15 +181,15 @@ JA800BLZ-00000000-PA52D               01 0010
 JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
 JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
 JA800BLZ-00000000-PA52D               01 001                                                                            
-JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000056 LIGNES                                        
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000054 LIGNES                                        
 JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
-JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-11-23.47.11  **** CODE RETOUR 00 ******        
-rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.8388758: No such file or directory
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-01.33.15  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.17367098: No such file or directory
 
 
 
 
-JOB : JNPQ                            DATE : 2021/03/11 23:47:11
+JOB : JNPQ                            DATE : 2021/03/19 01:33:15
 
 
 *---------------------------------------------------------------*
@@ -207,10 +204,10 @@ JOB : JNPQ                            DATE : 2021/03/11 23:47:11
 CODE RETOUR XOS = 0
 *****************************************************
 nudoss
-119492
+120374
 
 ######################################################################
 # STEP 7 : Mise a disposition Editions
 ######################################################################
 
-/dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/119492
+/dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120374

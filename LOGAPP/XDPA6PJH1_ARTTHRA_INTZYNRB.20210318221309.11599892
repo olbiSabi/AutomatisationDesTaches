@@ -1,0 +1,1523 @@
+
+######################################################################
+# Début JOB subnrb_ZY_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+<I> Code processus     CDPROS   : INTZY
+<I> Fichier de donnees FICBATCH : /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS
+<I> -Type bordereaux   TOBMVTS  : V (Fixe,Variable,Genere)
+<I> -Type fichier      TOFMVTS  : R (Record,Line)
+<I> Simulation de maj  TTSIMU   : 0
+<I> No de demande      NODMDE   : 06
+<I> Script d'habillage FICHAB   : 
+<I> NRB parallelisable TEMULT   : 0
+<I> Journalisation     TELG10   : 0
+<I> Tri des mvts       TEMTRI   : 1
+<I> Simulation de maj  TTSIMU   : 0
+<I> Warning=Erreur     TYANOM   : W
+<I> Fichier de parametre QRPRM  : 
+<I> Extension process. nupro    : 12779710
+<I> Numero de job      nujob    : 12779710
+
+######################################################################
+# STEP 2 : Chargement du type de bordereau
+######################################################################
+
+
+######################################################################
+# STEP 3 : Récupération de la structure de donnée et du radical Processus
+######################################################################
+
+<I> Radical du processus RDPROS : INTZY
+<I> Structure de donnees CDSTD1 : ZY
+ 
+
+######################################################################
+# STEP 4 : Alimentation de la chaine pour le semaphore
+######################################################################
+
+
+######################################################################
+# STEP 5 : Copie de la NRB
+######################################################################
+
+
+######################################################################
+# STEP 6 : Creation du fichier des parametres pour NRB
+######################################################################
+
+50S0PA52E****           1 0001
+50S0PA52D               01 001
+25S1PA250127797101W000M00000000000
+25S2PA250127797101W000M00000000000
+**S3PA241000001T 0
+**S4PA260127797101 M
+ 
+TYBPPNRB.12779710 : 
+
+50S0PA52E****           1 0001
+50S0PA52D               01 001
+25S1PA250127797101W000M00000000000
+25S2PA250127797101W000M00000000000
+**S3PA241000001T 0
+**S4PA260127797101 M
+ 
+
+######################################################################
+# STEP 7 : Habillage du Shell standard
+######################################################################
+
+<I> Habillage des tris mfsort
+
+######################################################################
+# STEP 8 : Controle par semapohre
+######################################################################
+
+
+######################################################################
+# STEP 9 : Soumission de la chaine NRB
+######################################################################
+
+*****************************************************************
+*                       Mise à Jour Batch                       *
+*****************************************************************
+
+
+JOB : JNRB                            DATE : 2021/03/18 22:13:12
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050C -----------------------*
+*                  REMOVE du fichier PSBNRBNT.C06              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.12                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NRBCHAINE NRB                F         50                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRB                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NRBCHAINE NRB                F        A50                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRB                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-50S0PA52E****           1 0001                                                                        
+AS800BOP-00000000-50S0PA52D               01 001                                                                        
+AS800BOP-00000000-25S1PA250127797101W000M00000000000                                                                    
+AS800BOP-00000000-25S2PA250127797101W000M00000000000                                                                    
+AS800BOP-00000000-**S3PA241000001T 0                                                                                    
+AS800BOP-00000000-**S4PA260127797101 M                                                                                  
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-50S0PA52E****           1 0001                                                                        
+AS800BOP-00000000-50S0PA52D               01 001                                                                        
+AS800BOP-00000000-25S1PA250127797101W000M00000000000                                                                    
+AS800BOP-00000000-25S2PA250127797101W000M00000000000                                                                    
+AS800BOP-00000000-**S3PA241000001T 0                                                                                    
+AS800BOP-00000000-**S4PA260127797101 M                                                                                  
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000120357 NRB CHAINE NRB ALLHRLO                                                 
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000006                                                                             
+AS800BOP-BBAD0009-SA (S0) : 000000000000002                                                                             
+AS800BOP-BBAD0009-SB (S1) : 000000000000001                                                                             
+AS800BOP-BBAD0009-SC (S2) : 000000000000001                                                                             
+AS800BOP-BBAD0009-SD (S3) : 000000000000001                                                                             
+AS800BOP-BBAD0009-SE (S4) : 000000000000001                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.13.12  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP080A ---------------------------*
+*             Chargement de paramètres dans T080PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP080B ---------------------------*
+*             Initialisation du fichier vide T080M1             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP080C ---------------------------*
+*             Initialisation du fichier vide T080M3             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP080D ---------------------------*
+*             Initialisation du fichier vide T080M4             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP080E -----------------------*
+*                  REMOVE du fichier PSBBM201.C06              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP080N ---------------------------*
+*            Conversion Fichier Fixe Line Sequential            *
+*---------------------------------------------------------------*
+INTZYBM2-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBM2-BBAD0002-IDENTIFICATION DU PROGRAMME : BM2/7.000/2020-12-07-21.16.51/F/                                        
+INTZYBM2-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.12                                     
+INTZYBM2-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBM2-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM2-00000000-PA1ILF  /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS                                           
+INTZYBM2-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBM2-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM2-00000000-PA1ILF  /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS                                           
+INTZYBM2-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBM2-BBAD0009-BS (BS) : 000000000000000                                                                             
+INTZYBM2-BBAD0009-MS (MS) : 000000000000175                                                                             
+INTZYBM2-BBAD0009-M2 (M2) : 000000000000175                                                                             
+INTZYBM2-BBAD0009-PA (PA) : 000000000000001                                                                             
+INTZYBM2-BBAD0010-*** BM2 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.13.12  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP120N ---------------------------*
+*                 Tri des mouvements en entrée                  *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP130N ---------------------------*
+*                 Tri du fichier Blob en entrée                 *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP140A -----------------------*
+*                  REMOVE du fichier PSBBBMM0.C06              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP140N ---------------------------*
+*              Contrôle intrinsèque des mouvements              *
+*---------------------------------------------------------------*
+INTZYBMI-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMI-BBAD0002-IDENTIFICATION DU PROGRAMME : BMI/7.000/2021-02-24-09.27.03/F/                                        
+INTZYBMI-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.12                                     
+INTZYBMI-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMI-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMI-00000000-PA241000001T 0                                                                                        
+INTZYBMI-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMI-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMI-00000000-PA241000001T00                                                                                        
+INTZYBMJ-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMJ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMJ/7.000/2020-12-07-21.19.03/F/                                        
+INTZYBMI-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMI-BBAD0009-EB (EB) : 000000000000000                                                                             
+INTZYBMI-BBAD0009-M0 (ER) : 000000000000000                                                                             
+INTZYBMI-BBAD0009-MT (MT) : 000000000000175                                                                             
+INTZYBMI-BBAD0009-BA (BA) : 000000000000000                                                                             
+INTZYBMI-BBAD0009-BO (BO) : 000000000000000                                                                             
+INTZYBMI-BBAD0009-S1 (SA) : 000000000000175                                                                             
+INTZYBMI-BBAD0009-T1 (TA) : 000000000000138                                                                             
+INTZYBMI-BBAD0010-*** BMI : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.13.13  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140S2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140S3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140S4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140S5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140T2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140T3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140T4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140T5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140BB.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140BC.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140BD.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T140BE.12779710: No such file or directory
+
+
+*-------------------------- STEP150A ---------------------------*
+*             Chargement de paramètres dans T150PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP150B ---------------------------*
+*             Chargement de paramètres dans T150PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP150N ---------------------------*
+*                  Edition des erreurs de BMI                   *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.13                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203570                                                       002006866                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120357                                                         ŸR                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBW           1000011                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBW           1000011                                                                           
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+*GE01DHE-BBAD0002-IDENTIFICATION DU PROGRAMME : DHE/2020-06-12-14.23.56///                                              
+*GE01DHE-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.13                                     
+*GE01DHE-BBAD0009-H1 (H1) : 000000000000000                                                                             
+*GE01DHE-BBAD0009-M1 (M1) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.13.13  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150RS.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150H9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T150M9.12779710: No such file or directory
+
+
+*-------------------------- STEP154A ---------------------------*
+*             Chargement de paramètres dans T154PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP154B ---------------------------*
+*             Initialisation du fichier vide T154PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP154N ---------------------------*
+*                      Invoke Query server                      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.13                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120357                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01   LYTT154C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01XMDXMLT150H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01XMDXSDT150M1                                                                            
+AS800BOU-00000000-*A5FLYT1BBBW01XMZXMLT150H1                                                                            
+AS800BOU-00000000-*A5P/dz-pareo/product/pa6/hra/prod/param                                                              
+AS800BOU-00000000-PA5FLYT1BBBW01TXTTXTT150IZ                                                                            
+AS800BOU-00000000-*A5FLYT1BBBW01XMZXSL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01   LYTT154C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01XMDXMLT150H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBW01TXTTXTT150IZ                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBW (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBW 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBW 01 TXT (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000008                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.13.13  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T154C9.12779710: No such file or directory
+
+
+
+
+*-------------------------- STEP160A -----------------------*
+*                  REMOVE du fichier PSBBBMM2.C06              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP160N ---------------------------*
+*              Tri des mouvements entre BMI et BMM              *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP180A -----------------------*
+*                  REMOVE du fichier PSBBBMM3.C06              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP180N ---------------------------*
+*      Tri des enregistrements techniques entre BMI et BMM      *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP200A -----------------------*
+*                  REMOVE du fichier PSBNRBMB.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS.M7.C06: No such file or directory
+
+
+*-------------------------- STEP200B ---------------------------*
+*             Initialisation du fichier vide T200LD             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP200C ---------------------------*
+*             Initialisation du fichier vide T200LI             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP200D ---------------------------*
+*             Initialisation du fichier vide T200LV             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP200E ---------------------------*
+*             Initialisation du fichier vide T200PB             *
+*---------------------------------------------------------------*
+
+
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T200M4.12779710: No such file or directory
+-------- XINIRSV ------
+ Output file : /dz-pareo/product/pa6/hra/prod/txt/tmp/T200M4.12779710
+ Maximum record  length     : 4002
+ Minimum record  length     : 2
+-------------------------
+*-------------------------- STEP200N ---------------------------*
+*                          Mise à jour                          *
+*---------------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/ZY_OMEGA_ABS.LS.M7: No such file or directory
+INTZYBMM-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMM-BBAD0002-IDENTIFICATION DU PROGRAMME : BMM/7.000/2021-02-23-19.49.19/F/                                        
+INTZYBMM-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.13.14                                     
+INTZYBMM-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMM-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMM-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBMM-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMM-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMM-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBMJ-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMJ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMJ/7.000/2020-12-07-21.19.03/F/                                        
+INTZYBMA-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMA-BBAD0002-IDENTIFICATION DU PROGRAMME : BMA/7.000/2021-02-23-19.45.31/F/                                        
+INTZYBLA-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBLA-BBAD0002-IDENTIFICATION DU PROGRAMME : BLA/7.000/2021-02-23-19.43.08/F/                                        
+INTZYBMK-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMK-BBAD0002-IDENTIFICATION DU PROGRAMME : BMK/7.000/2021-02-23-19.47.43/F/                                        
+INTZYBLK-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBLK-BBAD0002-IDENTIFICATION DU PROGRAMME : BLK/7.000/2021-02-23-19.43.50/F/                                        
+INTZYBLN-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBLN-BBAD0002-IDENTIFICATION DU PROGRAMME : BLN/7.000/2021-02-23-19.44.35/F/                                        
+FA0F3A-SA
+FA0F3A-SE
+INTZYBML-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBML-BBAD0002-IDENTIFICATION DU PROGRAMME : BML/7.000/2021-02-23-19.48.46/F/                                        
+INTZYBMU-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMU-BBAD0002-IDENTIFICATION DU PROGRAMME : BMU/7.000/2021-02-23-19.49.42/F/                                        
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+FA0F3A-SA
+FA0F3A-SE
+INTZYBMM-BBAL0004-NOMBRE DE DOSSIERS ECRITS : 000000000000138                                                           
+INTZYBMM-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000138                                                      
+INTZYBMM-BBAM0006-DERNIER DOSSIER TRAITE : OMEGA/000000000108120                                                        
+INTZYBMM-BBAM0003-NOMBRE DE DOSSIERS A RECYCLER  : 000000000000000                                                      
+INTZYBMM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMM-BBAD0009-M2 (M2) : 000000000000175                                                                             
+INTZYBMM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMM-BBAD0009-M3 (M3) : 000000000000138                                                                             
+INTZYBMM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMM-BBAD0009-M4 (M4) : 000000000000517                                                                             
+INTZYBMM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMM-BBAD0009-M6 (M6) : 000000000000429                                                                             
+INTZYBMM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMM-BBAD0009-MB (MB) : 000000000000138                                                                             
+INTZYBMM-BBAD0009-PB (PB) : 000000000000000                                                                             
+INTZYBMM-BBAD0009-PA (PA) : 000000000000001                                                                             
+INTZYBMM-BBAD0010-*** BMM : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.38  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP210A ---------------------------*
+*             Chargement de paramètres dans T210PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP210N ---------------------------*
+*                  Restauration du code retour                  *
+*---------------------------------------------------------------*
+INTZYBM1-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBM1-BBAD0002-IDENTIFICATION DU PROGRAMME : BM1/7.000/2020-11-09-09.30.55/F/                                        
+INTZYBM1-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.38                                     
+INTZYBM1-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBM1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM1-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBM1-00000000-PA260000000001 M                                                                                      
+INTZYBM1-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBM1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM1-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBM1-00000000-PA260000000001 M                                                                                      
+INTZYBM1-BBAD0010-*** BM1 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.38  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T210N3.12779710: No such file or directory
+
+
+*-------------------------- STEP212A ---------------------------*
+*             Chargement de paramètres dans T212PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP212B ---------------------------*
+*             Chargement de paramètres dans T212PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP212N ---------------------------*
+*      Edition du compte-rendu technique de la mise à jour      *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.38                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203570                                                       002006866                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120357                                                         ŸR                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBV           1000011                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBV           1000011                                                                           
+*GE01DHE-BBAD0002-IDENTIFICATION DU PROGRAMME : DHE/2020-06-12-14.23.56///                                              
+*GE01DHE-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.38                                     
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000012                                                                             
+*GE01DHE-BBAD0009-H1 (H1) : 000000000000012                                                                             
+*GE01DHE-BBAD0009-M1 (M1) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.38  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212RS.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212H9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T212M9.12779710: No such file or directory
+
+
+*-------------------------- STEP216A ---------------------------*
+*             Chargement de paramètres dans T216PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP216B ---------------------------*
+*             Initialisation du fichier vide T216PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP216N ---------------------------*
+*              Invocation serveurs query / edition              *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.38                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120357                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01   LYTT216C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01XMDXMLT212H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01XMDXSDT212M1                                                                            
+AS800BOU-00000000-*A5FLYT1BBBV01XMZXMLT212H1                                                                            
+AS800BOU-00000000-*A5P/dz-pareo/product/pa6/hra/prod/param                                                              
+AS800BOU-00000000-PA5FLYT1BBBV01TXTTXTT212IZ                                                                            
+AS800BOU-00000000-*A5FLYT1BBBV01XMZXSL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01   LYTT216C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01XMDXMLT212H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBV01TXTTXTT212IZ                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBV 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBV 01 TXT (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000008                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.38  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T216C9.12779710: No such file or directory
+
+
+
+
+*-------------------------- STEP220N ---------------------------*
+*              Tri des mouvements entre BMM et BME              *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP240N ---------------------------*
+*               Tri des erreurs entre BMM et BME                *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP260N ---------------------------*
+*      tri des enregistrements techniques entre BMM et BME      *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP280N ---------------------------*
+*               Sélection des mouvements à éditer               *
+*---------------------------------------------------------------*
+INTZYBME-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBME-BBAD0002-IDENTIFICATION DU PROGRAMME : BME/7.000/2021-02-23-19.46.59/F/                                        
+INTZYBME-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.39                                     
+INTZYBME-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBME-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBME-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBME-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBME-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBME-BBAM0027-VALEURS DES PARAMETRES DE LA SORTIE NUMERO 1                                                          
+INTZYBME-00000000-0505                    01                                                                            
+INTZYBME-00000000-****05050505                                                                                          
+INTZYBME-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBME-BBAD0009-MB (MB) : 000000000000138                                                                             
+INTZYBME-BBAD0009-MX (M4) : 000000000000517                                                                             
+INTZYBME-BBAD0009-MD (M6) : 000000000000429                                                                             
+INTZYBME-BBAD0009-PA (PA) : 000000000000001                                                                             
+INTZYBME-BBAD0009-SA (S1) : 000000000000518                                                                             
+INTZYBME-BBAD0009-SB (S2) : 000000000000000                                                                             
+INTZYBME-BBAD0009-SC (S3) : 000000000000000                                                                             
+INTZYBME-BBAD0009-SD (S4) : 000000000000000                                                                             
+INTZYBME-BBAD0009-SE (S5) : 000000000000000                                                                             
+INTZYBME-BBAD0010-*** BME : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.39  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP284A ---------------------------*
+*             Chargement de paramètres dans T284PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP284B ---------------------------*
+*             Chargement de paramètres dans T284PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP284N ---------------------------*
+*           Edition du compte-rendu de la mise à jour           *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.39                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203570                                                       002006866                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120357                                                         ŸR                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBY           1000011                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBY           1000011                                                                           
+*GE01DHE-BBAD0002-IDENTIFICATION DU PROGRAMME : DHE/2020-06-12-14.23.56///                                              
+*GE01DHE-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.39                                     
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000076                                                                             
+*GE01DHE-BBAD0009-H1 (H1) : 000000000000184                                                                             
+*GE01DHE-BBAD0009-M1 (M1) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.39  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284RS.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284H9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T284M9.12779710: No such file or directory
+
+
+*-------------------------- STEP288A ---------------------------*
+*             Chargement de paramètres dans T288PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP288B ---------------------------*
+*             Initialisation du fichier vide T288PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP288N ---------------------------*
+*              Invocation serveurs query / edition              *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.39                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120357                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01   LYTT288C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01XMDXMLT284H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01XMDXSDT284M1                                                                            
+AS800BOU-00000000-*A5FLYT1BBBY01XMZXMLT284H1                                                                            
+AS800BOU-00000000-*A5P/dz-pareo/product/pa6/hra/prod/param                                                              
+AS800BOU-00000000-PA5FLYT1BBBY01TXTTXTT284IZ                                                                            
+AS800BOU-00000000-*A5FLYT1BBBY01XMZXSL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01   LYTT288C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01XMDXMLT284H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBY01TXTTXTT284IZ                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBY 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBY 01 TXT (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000008                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.17.39  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T288C9.12779710: No such file or directory
+
+
+
+
+   >>>   EDITION POUR LA SORTIE 1   <<<
+
+<I> Fichier des editions non vide ( > 128 octets)
+
+*-------------------------- STEP300N ---------------------------*
+*         Tri des mouvements à éditer entre BME et BMF          *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP302N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP304N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP306N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP308N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP320A ---------------------------*
+*             Chargement de paramètres dans T320PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP320B -----------------------*
+*                  REMOVE du fichier PSBBBMF0.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBMF0.C06: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBME1.C06: No such file or directory
+
+
+*-------------------------- STEP320N ---------------------------*
+*                   Edition de la mise à jour                   *
+*---------------------------------------------------------------*
+INTZYBMF-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMF-BBAD0002-IDENTIFICATION DU PROGRAMME : BMF/7.000/2021-02-23-19.47.07/F/                                        
+INTZYBMF-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.17.39                                     
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA241000001T 0                                                                                        
+INTZYBMF-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93                             1                                                                    
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93F                    9999999911636663   27        211311    211311                                
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000138                                                      
+INTZYBMF-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMF-BBAD0009-PB (PB) : 000000000000001                                                                             
+INTZYBMF-BBAD0009-PA (PA) : 000000000000002                                                                             
+INTZYBMF-BBAD0009-MX (MA) : 000000000000518                                                                             
+INTZYBMF-BBAD0010-*** BMF : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.19  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP330A ---------------------------*
+*             Chargement de paramètres dans T330PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP330B -----------------------*
+*                  REMOVE du fichier PSBBBME2.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBME2.C06: No such file or directory
+
+
+*-------------------------- STEP330N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+INTZYBMF-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMF-BBAD0002-IDENTIFICATION DU PROGRAMME : BMF/7.000/2021-02-23-19.47.07/F/                                        
+INTZYBMF-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.19                                     
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA241000001T 0                                                                                        
+INTZYBMF-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93                             2                                                                    
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93F                    9999999921636663   27        211311    211311                                
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0020-FICHIER VIDE : MX                                                                                     
+INTZYBMF-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000000                                                      
+INTZYBMF-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMF-BBAD0009-PB (PB) : 000000000000001                                                                             
+INTZYBMF-BBAD0009-PA (PA) : 000000000000002                                                                             
+INTZYBMF-BBAD0009-MX (MA) : 000000000000000                                                                             
+INTZYBMF-BBAD0010-*** BMF : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.19  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP340A ---------------------------*
+*             Chargement de paramètres dans T340PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP340B -----------------------*
+*                  REMOVE du fichier PSBBBME3.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBME3.C06: No such file or directory
+
+
+*-------------------------- STEP340N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+INTZYBMF-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMF-BBAD0002-IDENTIFICATION DU PROGRAMME : BMF/7.000/2021-02-23-19.47.07/F/                                        
+INTZYBMF-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.19                                     
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA241000001T 0                                                                                        
+INTZYBMF-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93                             3                                                                    
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93F                    9999999931636663   27        211311    211311                                
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0020-FICHIER VIDE : MX                                                                                     
+INTZYBMF-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000000                                                      
+INTZYBMF-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMF-BBAD0009-PB (PB) : 000000000000001                                                                             
+INTZYBMF-BBAD0009-PA (PA) : 000000000000002                                                                             
+INTZYBMF-BBAD0009-MX (MA) : 000000000000000                                                                             
+INTZYBMF-BBAD0010-*** BMF : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.19  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP350A ---------------------------*
+*             Chargement de paramètres dans T350PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP350B -----------------------*
+*                  REMOVE du fichier PSBBBME4.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBME4.C06: No such file or directory
+
+
+*-------------------------- STEP350N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+INTZYBMF-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMF-BBAD0002-IDENTIFICATION DU PROGRAMME : BMF/7.000/2021-02-23-19.47.07/F/                                        
+INTZYBMF-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA241000001T 0                                                                                        
+INTZYBMF-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93                             4                                                                    
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93F                    9999999941636663   27        211311    211311                                
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0020-FICHIER VIDE : MX                                                                                     
+INTZYBMF-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000000                                                      
+INTZYBMF-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMF-BBAD0009-PB (PB) : 000000000000001                                                                             
+INTZYBMF-BBAD0009-PA (PA) : 000000000000002                                                                             
+INTZYBMF-BBAD0009-MX (MA) : 000000000000000                                                                             
+INTZYBMF-BBAD0010-*** BMF : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.20  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP360A ---------------------------*
+*             Chargement de paramètres dans T360PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP360B -----------------------*
+*                  REMOVE du fichier PSBBBME5.C06              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBBME5.C06: No such file or directory
+
+
+*-------------------------- STEP360N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+INTZYBMF-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBMF-BBAD0002-IDENTIFICATION DU PROGRAMME : BMF/7.000/2021-02-23-19.47.07/F/                                        
+INTZYBMF-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA241000001T 0                                                                                        
+INTZYBMF-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93                             5                                                                    
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBMF-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBMF-00000000-PA93F                    9999999951636663   27        211311    211311                                
+INTZYBMF-00000000-PA99BBM                                                                                               
+INTZYBMF-BBAD0020-FICHIER VIDE : MX                                                                                     
+INTZYBMF-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000000                                                      
+INTZYBMF-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+INTZYBMF-BBAD0009-PB (PB) : 000000000000001                                                                             
+INTZYBMF-BBAD0009-PA (PA) : 000000000000002                                                                             
+INTZYBMF-BBAD0009-MX (MA) : 000000000000000                                                                             
+INTZYBMF-BBAD0010-*** BMF : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.20  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP362A ---------------------------*
+*             Chargement de paramètres dans T362PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP362B ---------------------------*
+*             Chargement de paramètres dans T362PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP362N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203570                                                       002006866                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120357                                                         ŸR                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBM           1010011                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBM           1010011                                                                           
+*GE01DHE-BBAD0002-IDENTIFICATION DU PROGRAMME : DHE/2020-06-12-14.23.56///                                              
+*GE01DHE-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+JA800BLZ-BBAD0009-I1 (SA) : 000000000013162                                                                             
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+*GE01DHE-BBAD0009-H1 (H1) : 000000000010241                                                                             
+*GE01DHE-BBAD0009-M1 (M1) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.20  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362RS.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362H9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362M9.12779710: No such file or directory
+
+
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362I2.12779710: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362I3.12779710: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362I4.12779710: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T362I5.12779710: No such file or directory
+*-------------------------- STEP366A ---------------------------*
+*             Chargement de paramètres dans T366PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP366B ---------------------------*
+*             Initialisation du fichier vide T366PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP366N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120357                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01   LYTT366C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01XMDXMLT362H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01XMDXSDT362M1                                                                            
+AS800BOU-00000000-*A5FLYT1BBBM01XMZXMLT362H1                                                                            
+AS800BOU-00000000-*A5P/dz-pareo/product/pa6/hra/prod/param                                                              
+AS800BOU-00000000-PA5FLYT1BBBM01TXTTXTT362IZ                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01TXTTXTT362I1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM02TXTTXTT362I2                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM03TXTTXTT362I3                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM04TXTTXTT362I4                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM05TXTTXTT362I5                                                                            
+AS800BOU-00000000-*A5FLYT1BBBM01XMZXSL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01   LYTT366C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01XMDXMLT362H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01TXTTXTT362IZ                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM01TXTTXTT362I1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM02TXTTXTT362I2                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM03TXTTXTT362I3                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM04TXTTXTT362I4                                                                            
+AS800BOU-00000000-PA5FLYT1BBBM05TXTTXTT362I5                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 01 TXT (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 02 TXT (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 03 TXT (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 04 TXT (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBM 05 TXT (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000013                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.20  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T366C9.12779710: No such file or directory
+
+
+
+
+*-------------------------- STEP890A ---------------------------*
+*             Chargement de paramètres dans T890PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP890B ---------------------------*
+*             Initialisation du fichier vide T890M3             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP890N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+INTZYBM1-BBAD0001-------------------------------------------------------------------------------------------------------
+INTZYBM1-BBAD0002-IDENTIFICATION DU PROGRAMME : BM1/7.000/2020-11-09-09.30.55/F/                                        
+INTZYBM1-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.20                                     
+INTZYBM1-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+INTZYBM1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM1-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBM1-00000000-PA260000000001 C                                                                                      
+INTZYBM1-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+INTZYBM1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+INTZYBM1-00000000-PA250127797101W000M00000000000                                                                        
+INTZYBM1-00000000-PA260000000001 C                                                                                      
+INTZYBM1-BBAD0010-*** BM1 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.20  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T890N3.12779710: No such file or directory
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-22.18.21                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203570                                                       002006866                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120357                                                         ŸR                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000396 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-22.18.21  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H1.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M1.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M2.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M3.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M4.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M5.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M6.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M7.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M8.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M9.12779710: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950PM.12779710: No such file or directory
+
+
+   >>>   EDITION POUR LA SORTIE 2   <<<
+
+<I> Fichier des editions vide ( <= 128 octets)
+
+   >>>   EDITION POUR LA SORTIE 3   <<<
+
+<I> Fichier des editions vide ( <= 128 octets)
+
+   >>>   EDITION POUR LA SORTIE 4   <<<
+
+<I> Fichier des editions vide ( <= 128 octets)
+
+   >>>   EDITION POUR LA SORTIE 5   <<<
+
+<I> Fichier des editions vide ( <= 128 octets)
+
+
+
+JOB : JNRB                            DATE : 2021/03/18 22:18:21
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
+
+######################################################################
+# STEP 10 : Mise a disposition des CR
+######################################################################
+

@@ -1,8 +1,8 @@
 ////////Ref LOGCTM ///////////////
-$JOB: XDPA6MCO1.LOG
-$DESCXDPA6MCO1.LOG/ Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W 
-$FREQXDPA6MCO1.LOG/ Mensuel
-$PRECXDPA6MCO1.LOG/     
+$JOB: XDPA6MCO1
+$DESCXDPA6MCO1/ Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W 
+$FREQXDPA6MCO1/ Mensuel
+$PRECXDPA6MCO1/     
 ----------------------------
 
 $JOB: XDPA6MCO11
@@ -15,20 +15,15 @@ $DESCXDPA6MCO12/ Paie Correction 12: Mandat récapitulatif du caissier général
 $FREQXDPA6MCO12/ Mensuel
 $PRECXDPA6MCO12/     
 ----------------------------
-$JOB: XDPA6MCO13
-$DESCXDPA6MCO13/ Paie Correction 13: Récapitulatif des rubriques de paie Exploration EMCRUB
-$FREQXDPA6MCO13/ Mensuel
-$PRECXDPA6MCO13/     
-----------------------------
 $JOB: XDPA6MCO14
 $DESCXDPA6MCO14/ Paie Correction 14: Etat des contrôles de paie pré feu vert et feu vert Exploration EMPNC7
 $FREQXDPA6MCO14/ Mensuel
 $PRECXDPA6MCO14/     
 ----------------------------
-$JOB: XDPA6GJS3_AGRSALS
-$DESCXDPA6GJS3_AGRSALS/ Quotidien 17: Détermination code tarif AGR vers SALSA
-$FREQXDPA6GJS3_AGRSALS/ Quotidien
-$PRECXDPA6GJS3_AGRSALS/     
+$JOB: XDPA6GJS3_AGRSALS_INTZYNRB
+$DESCXDPA6GJS3_AGRSALS_INTZYNRB/ Quotidien 17: Détermination code tarif AGR vers SALSA
+$FREQXDPA6GJS3_AGRSALS_INTZYNRB/ Quotidien
+$PRECXDPA6GJS3_AGRSALS_INTZYNRB/     
 ----------------------------
 $JOB: XDPA6GJS4_AGENSALS
 $DESCXDPA6GJS4_AGENSALS/ Quotidien 18: Pivot Agents vers SALSA
@@ -39,14 +34,7 @@ $JOB: XDPA6GJA2_AGENTATH_AS800NBX
 $DESCXDPA6GJA2_AGENTATH_AS800NBX/Quotidien 20: Données Agents vers ATHENA
 $FREQXDPA6GJA2_AGENTATH_AS800NBX/ Quotidien
 $PRECXDPA6GJA2_AGENTATH_AS800NBX/  Erreurs connues et qu'il ne faut pas signaler: ERREUR LECTURE ZYCO SQLCODE :-0000001841 // |VXA00BXM-BBAD0012-DEPASSEMENT DE CAPACITE (TABLE WORKING) : 10BB
-----------------------------
-
-$JOB: XDPA6GJC1_AGENCHIM
-$DESCXDPA6GJC1_AGENCHIM/ Quotidien 22: Données Agents  et  Catalogue vers CHIMED
-$FREQXDPA6GJC1_AGENCHIM/ Quotidien
-$PRECXDPA6GJC1_AGENCHIM/     
-----------------------------    
-
+----------------------------  
 $JOB: XDPA6CJH1_STRUCTHRA
 $DESCXDPA6CJH1_STRUCTHRA/ Quotidien 30: Récupération des structures de l’EAI
 $FREQXDPA6CJH1_STRUCTHRA/ Quotidien
@@ -67,10 +55,10 @@ $DESCXDPA6CJH3_GIDEHRA/ Quotidien 33: Génération des informations liées à GI
 $FREQXDPA6CJH3_GIDEHRA/ Quotidien
 $PRECXDPA6CJH3_GIDEHRA/     
 ----------------------------
-$JOB: XDPA6CJH4_GIDEHRA
-$DESCXDPA6CJH4_GIDEHRA/ Quotidien 34: Mise à jour des informations liées à GIDE
-$FREQXDPA6CJH4_GIDEHRA/ Quotidien
-$PRECXDPA6CJH4_GIDEHRA/    
+$JOB: XDPA6CJH4_GIDEHRA_INTZYNRB
+$DESCXDPA6CJH4_GIDEHRA_INTZYNRB/ Quotidien 34: Mise à jour des informations liées à GIDE
+$FREQXDPA6CJH4_GIDEHRA_INTZYNRB/ Quotidien
+$PRECXDPA6CJH4_GIDEHRA_INTZYNRB/    
 ----------------------------
 $JOB: XDPA6APRG
 $DESCXDPA6APRG/ Génération fichier paramétrage de paie avec rappel général M-1   
@@ -119,17 +107,6 @@ $DESCXDPA6JTA1/ Quotidien 38: Mise à jour des Flat Tables ZY
 $FREQXDPA6JTA1/ Quotidien
 $PRECXDPA6JTA1/     
 ----------------------------
-
-$JOB: XDPA6GJD1_PREEMDFS
-$DESCXDPA6GJD1_PREEMDFS/ état dossiers préembauche & Notification  à GTA (mail) nouveaux arrivants (Query VA0EMB04)
-$FREQXDPA6GJD1_PREEMDFS/Quotidien
-$PRECXDPA6GJD1_PREEMDFS/     
-----------------------------
-$JOB: XDPA6GJD2_TELETDFS/
-$DESCXDPA6GJD2_TELETDFS/ suivi agents en télétravail (Query VA0VH002)
-$FREQXDPA6GJD2_TELETDFS/ Quotidien
-$PRECXDPA6GJD2_TELETDFS/     
-----------------------------
 $JOB: XDPA6FIN
 $DESCXDPA6FIN/ Fin du différé
 $FREQXDPA6FIN/ Quotidien
@@ -150,20 +127,10 @@ $DESCXDPA6DYNCP02/ Lancement dynamique bordereau (Copie du fichier bordereau_epa
 $FREQXDPA6DYNCP02/ Quotidien
 $PRECXDPA6DYNCP02/     
 ----------------------------
-$JOB: XDPA6EJH3_PVODMSHR
-$DESCXDPA6EJH3_PVODMSHR/ Query ZCPVO00D  : Notifications PVO depuis  date  CTRL M précédente vers le DMS 
-$FREQXDPA6EJH3_PVODMSHR/ Quotidien
-$PRECXDPA6EJH3_PVODMSHR/  
-----------------------------
 $JOB: XDPA6EJH4_DATPREHR
 $DESCXDPA6EJH4_DATPREHR/ Copie fichier date CTRL M dans  fichier date CTRL M précédente 
 $FREQXDPA6EJH4_DATPREHR/ Quotidien
 $PRECXDPA6EJH4_DATPREHR/  
------------------------------
-$JOB: XDPA6GJQ2_EQTELQVT
-$DESCXDPA6GJQ2_EQTELQVT/ Demande d'équipement télétravail vers ITSM (GDDB)
-$FREQXDPA6GJQ2_EQTELQVT/ Quotidien
-$PRECXDPA6GJQ2_EQTELQVT/ 
 -----------------------------
 $JOB: XDPA6GJQ1_EDPDFQVT
 $DESCXDPA6GJQ1_EDPDFQVT/ Demande d'équipement télétravail vers ITSM (GDDB)
@@ -174,11 +141,6 @@ $JOB: XDPA6GJQ3_CETELQVT
 $DESCXDPA6GJQ3_CETELQVT/ Demandes cessation de télétravail vers PeopleDoc 
 $FREQXDPA6GJQ3_CETELQVT/ Quotidien
 $PRECXDPA6GJQ3_CETELQVT/ 
------------------------------
-$JOB: XDPA6GJC2_AGENPREV
-$DESCXDPA6GJC2_AGENPREV/ Données Agents et Catalogue vers PREVENTIEL
-$FREQXDPA6GJC2_AGENPREV/ Quotidien
-$PRECXDPA6GJC2_AGENPREV/ 
 -----------------------------
 $JOB: XDPA6PMRX_DSNREQUT
 $DESCXDPA6PMRX_DSNREQUT/ Génération et extraction de requête SQL contrôle DSN
@@ -214,11 +176,6 @@ $JOB: XDPA6GMH2_RUCAMP
 $DESCXDPA6GMH2_RUCAMP/ Mise à jour RU Compagne Carrière NRA/NRB ZYW0 
 $FREQXDPA6GMH2_RUCAMP/ Mensuel
 $PRECXDPA6GMH2_RUCAMP/ 
------------------------------
-$JOB: XDPA6CJH5_BANQUHRA
-$DESCXDPA6CJH5_BANQUHRA/ Interface Banques
-$FREQXDPA6CJH5_BANQUHRA/ Quotidien
-$PRECXDPA6CJH5_BANQUHRA/ 
 -----------------------------
 $JOB: XDPA6CHA1_REFCPHEB
 $DESCXDPA6CHA1_REFCPHEB/ Données Ref Param  Codes postaux et Pays Depuis DIDO (SQL + NRB)
@@ -256,20 +213,20 @@ $FREQXDPA6GMQ1_AGENCHGF/ Quotidien
 $PRECXDPA6GMQ1_AGENCHGF/ 
 
 -----------------------------
-$JOB: XDPA6CJE1_COLLPDOC
-$DESCXDPA6CJE1_COLLPDOC/ Génération du fichier Collaborateurs pour PEOPLEDOC (query YDEMPLOY)
-$FREQXDPA6CJE1_COLLPDOC/ Quotidien
-$PRECXDPA6CJE1_COLLPDOC/ 
+$JOB: XDPA6CJE1_COLLPDOC_AS800NPQ
+$DESCXDPA6CJE1_COLLPDOC_AS800NPQ/ Génération du fichier Collaborateurs pour PEOPLEDOC (query YDEMPLOY)
+$FREQXDPA6CJE1_COLLPDOC_AS800NPQ/ Quotidien
+$PRECXDPA6CJE1_COLLPDOC_AS800NPQ/ 
 -----------------------------
 $JOB: XDPA6CJTR_PDOCCFT
 $DESCXDPA6CJTR_PDOCCFT/ Envoi CFT du fichier Collaborateurs vers PEOPLEDOC
 $FREQXDPA6CJTR_PDOCCFT/ Quotidien
 $PRECXDPA6CJTR_PDOCCFT/ 
 -----------------------------
-$JOB: XDPA6GJO1_OMEGAEXP
-$DESCXDPA6GJO1_OMEGAEXP/ Données Agents vers OMEGA (Explorations OMEGA/OMEGB)
-$FREQXDPA6GJO1_OMEGAEXP/ Quotidien
-$PRECXDPA6GJO1_OMEGAEXP/ 
+$JOB: XDPA6GJO1_OMEGAEXP_AS800NBX
+$DESCXDPA6GJO1_OMEGAEXP_AS800NBX/ Données Agents vers OMEGA (Explorations OMEGA/OMEGB)
+$FREQXDPA6GJO1_OMEGAEXP_AS800NBX/ Quotidien
+$PRECXDPA6GJO1_OMEGAEXP_AS800NBX/ 
 -----------------------------
 $JOB: XDPA6GJO2_OMEGASQL
 $DESCXDPA6GJO2_OMEGASQL/ Extraction des managers/managés pour OMEGA (via SQL)
@@ -347,11 +304,6 @@ $DESCXDPA6GJM1_REFMOBIL/ Données référentiel Mobil&Vous
 $FREQXDPA6GJM1_REFMOBIL/ Quotidien
 $PRECXDPA6GJM1_REFMOBIL/ 
 -----------------------------
-$JOB: XDPA6GJM2_COLMOBIL
-$DESCXDPA6GJM2_COLMOBIL/ Données collaborateur Mobil&Vous
-$FREQXDPA6GJM2_COLMOBIL/ Quotidien
-$PRECXDPA6GJM2_COLMOBIL/ 
------------------------------
 $JOB: XDPA6GJO4_GPODYSSE
 $DESCXDPA6GJO4_GPODYSSE/ Extraction des GP individuels pour ODYSSEE 
 $FREQXDPA6GJO4_GPODYSSE/ Quotidien
@@ -371,11 +323,6 @@ $JOB: XDPA6DYNN0_SQL
 $DESCXDPA6DYNN0_SQL/ Annuel : exécution d'un fichier SQL à la demande
 $FREQXDPA6DYNN0_SQL/ Annuel
 $PRECXDPA6DYNN0_SQL/ 
------------------------------
-$JOB: XDPA6GJF4_REFEMPSYF_AS800NBX.SYFAD1
-$DESCXDPA6GJF4_REFEMPSYF_AS800NBX.SYFAD1/ Référentiel Emplois vers SYFADIS 
-$FREQXDPA6GJF4_REFEMPSYF_AS800NBX.SYFAD1/ Quotidien
-$PRECXDPA6GJF4_REFEMPSYF_AS800NBX.SYFAD1/
 -----------------------------
 $JOB: XDPA6GJF2_DNCOLLSYF_AS800NBX.SYFAD3
 $DESCXDPA6GJF2_DNCOLLSYF_AS800NBX.SYFAD3/ Données Collaborateurs  vers SYFADIS 
@@ -397,40 +344,10 @@ $DESCXDPA6GJP1_AGENFORM_AS800NBX.FORMA1/ Données Agents  pour Formation
 $FREQXDPA6GJP1_AGENFORM_AS800NBX.FORMA1/ Quotidien
 $PRECXDPA6GJP1_AGENFORM_AS800NBX.FORMA1/ 
 -----------------------------
-$JOB: XDPA6GJH1_FHISTHRA_JA0FTNRB
-$DESCXDPA6GJH1_FHISTHRA_JA0FTNRB/ MAJ Fiche historique  ZYPU 
-$FREQXDPA6GJH1_FHISTHRA_JA0FTNRB/ Quotidien
-$PRECXDPA6GJH1_FHISTHRA_JA0FTNRB/ 
------------------------------
-$JOB: XDPA6GJH1_FHISTHRA_JA0FSNRA
-$DESCXDPA6GJH1_FHISTHRA_JA0FSNRA/ MAJ Fiche historique  ZYPU 
-$FREQXDPA6GJH1_FHISTHRA_JA0FSNRA/ Quotidien
-$PRECXDPA6GJH1_FHISTHRA_JA0FSNRA/ 
------------------------------
 $JOB: XDPA6EJB1_EPABORH_XBEPANRA
 $DESCXDPA6EJB1_EPABORH_XBEPANRA/Données EPA vers Infocentre RH 
 $FREQXDPA6EJB1_EPABORH_XBEPANRA/ Quotidien
 $PRECXDPA6EJB1_EPABORH_XBEPANRA/ 
------------------------------
-$JOB: XDPA6EJB1_EPABORH_XAEPANRA
-$DESCXDPA6EJB1_EPABORH_XAEPANRA/ Données EPA vers Infocentre RH 
-$FREQXDPA6EJB1_EPABORH_XAEPANRA/ Quotidien
-$PRECXDPA6EJB1_EPABORH_XAEPANRA/ 
------------------------------
-$JOB: XDPA6GJS2_RESPSALS_AS800NBX.XERHI6
-$DESCXDPA6GJS2_RESPSALS_AS800NBX.XERHI6/ Responsable structure  vers SALSA 
-$FREQXDPA6GJS2_RESPSALS_AS800NBX.XERHI6/ Quotidien
-$PRECXDPA6GJS2_RESPSALS_AS800NBX.XERHI6/ 
------------------------------
-$JOB: XDPA6GJS1_CORHSALS_AS800NBX.XE0019
-$DESCXDPA6GJS1_CORHSALS_AS800NBX.XE0019/ Codifications RH vers SALSA 
-$FREQXDPA6GJS1_CORHSALS_AS800NBX.XE0019/ Quotidien
-$PRECXDPA6GJS1_CORHSALS_AS800NBX.XE0019/ 
------------------------------
-$JOB: XDPA6GJS1_CORHSALS_AS800NBX.XE0016
-$DESCXDPA6GJS1_CORHSALS_AS800NBX.XE0016/ Codifications RH vers SALSA 
-$FREQXDPA6GJS1_CORHSALS_AS800NBX.XE0016/ Quotidien
-$PRECXDPA6GJS1_CORHSALS_AS800NBX.XE0016/ 
 -----------------------------
 $JOB: XDPA6GJP1_AGENFORM
 $DESCXDPA6GJP1_AGENFORM/ Données agent vers Formation
@@ -507,11 +424,6 @@ $DESCXDPA6DYNMAIL.LOG/
 $FREQXDPA6DYNMAIL.LOG/ Quotidien
 $PRECXDPA6DYNMAIL.LOG/ 
 -----------------------------
-$JOB: XDPA6EJB1_EPABORH
-$DESCXDPA6EJB1_EPABORH/ Données EPA vers Infocentre RH 
-$FREQXDPA6EJB1_EPABORH/ Quotidien
-$PRECXDPA6EJB1_EPABORH/
------------------------------
 $JOB: XDPA6GJB1_REFBORH
 $DESCXDPA6GJB1_REFBORH/ Données Référentielles vers Infocentre RH 
 $FREQXDPA6GJB1_REFBORH/ Quotidien
@@ -522,40 +434,20 @@ $DESCXDPA6GJB2_AGENBORH/ Données Agents vers Infocentre RH
 $FREQXDPA6GJB2_AGENBORH/ Quotidien
 $PRECXDPA6GJB2_AGENBORH/ 
 -----------------------------
-$JOB: XDPA6GJF1_STRORGSYF
-$DESCXDPA6GJF1_STRORGSYF/ Unités Organisationnelles  vers SYFADIS 
-$FREQXDPA6GJF1_STRORGSYF/ Quotidien
-$PRECXDPA6GJF1_STRORGSYF/ 
------------------------------
-$JOB: XDPA6GJF2_DNCOLLSYF
-$DESCXDPA6GJF2_DNCOLLSYF/ Données Collaborateurs  vers SYFADIS 
-$FREQXDPA6GJF2_DNCOLLSYF/ Quotidien
-$PRECXDPA6GJF2_DNCOLLSYF/ 
------------------------------
 $JOB: XDPA6GJF3_REFEGASYF
 $DESCXDPA6GJF3_REFEGASYF/ Référentiel GA vers SYFADIS 
 $FREQXDPA6GJF3_REFEGASYF/ Quotidien
 $PRECXDPA6GJF3_REFEGASYF/ erreur connue, à ne pas signaler: exit failure rollback
 -----------------------------
-$JOB: XDPA6GJF4_REFEMPSYF
-$DESCXDPA6GJF4_REFEMPSYF/ Référentiel Emplois vers SYFADIS 
-$FREQXDPA6GJF4_REFEMPSYF/ Quotidien
-$PRECXDPA6GJF4_REFEMPSYF/ 
+$JOB: XDPA6GJF4_REFEMPSYF_AS800NBX
+$DESCXDPA6GJF4_REFEMPSYF_AS800NBX/ Référentiel Emplois vers SYFADIS 
+$FREQXDPA6GJF4_REFEMPSYF_AS800NBX/ Quotidien
+$PRECXDPA6GJF4_REFEMPSYF_AS800NBX/ 
 -----------------------------
-$JOB: XDPA6GJH1_FHISTHRA
-$DESCXDPA6GJH1_FHISTHRA/ MAJ Fiche historique  ZYPU 
-$FREQXDPA6GJH1_FHISTHRA/ Quotidien
-$PRECXDPA6GJH1_FHISTHRA/
------------------------------
-$JOB: XDPA6GJS1_CORHSALS
-$DESCXDPA6GJS1_CORHSALS/ Codifications RH vers SALSA 
-$FREQXDPA6GJS1_CORHSALS/ Quotidien
-$PRECXDPA6GJS1_CORHSALS/ 
------------------------------
-$JOB: XDPA6GJS2_RESPSALS
-$DESCXDPA6GJS2_RESPSALS/ Responsable structure  vers SALSA 
-$FREQXDPA6GJS2_RESPSALS/ Quotidien
-$PRECXDPA6GJS2_RESPSALS/ 
+$JOB: XDPA6GJH1_FHISTHRA_JA0FTNRB
+$DESCXDPA6GJH1_FHISTHRA_JA0FTNRB/ MAJ Fiche historique  ZYPU 
+$FREQXDPA6GJH1_FHISTHRA_JA0FTNRB/ Quotidien
+$PRECXDPA6GJH1_FHISTHRA_JA0FTNRB/
 -----------------------------
 $JOB: XDPA6PMHK_MIDONHRA
 $DESCXDPA6PMHK_MIDONHRA/ Interface amont MICRODON MAJ réelle
@@ -623,16 +515,6 @@ $JOB: XDPA6MDEM2
 $DESCXDPA6MDEM2/ Démarrage services (shell XDPA6TJA1_HRASTART.KSH 
 $FREQXDPA6MDEM2/ Quotidien
 $PRECXDPA6MDEM2/ 
------------------------------
-$JOB: XDPA6DEB
-$DESCXDPA6DEB/ 
-$FREQXDPA6DEB/ Quotidien
-$PRECXDPA6DEB/ 
------------------------------
-$JOB: XDPA6DEB_DTOUVPREC
-$DESCXDPA6DEB_DTOUVPREC/ 
-$FREQXDPA6DEB_DTOUVPREC/ Quotidien
-$PRECXDPA6DEB_DTOUVPREC/ 
 -----------------------------
 $JOB: XDPA6DEB_DTOUVSUIV
 $DESCXDPA6DEB_DTOUVSUIV/ 
@@ -766,30 +648,10 @@ $DESCXDPA6MCT1.LOG/ Paie Correction 10: Déblocage de dossiers dans la table tec
 $FREQXDPA6MCT1.LOG/ Mensuel
 $PRECXDPA6MCT1.LOG/     
 ----------------------------
-$JOB: XDPA6MCO1.LOG
-$DESCXDPA6MCO1.LOG/ Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W 
-$FREQXDPA6MCO1.LOG/ Mensuel
-$PRECXDPA6MCO1.LOG/     
-----------------------------
-$JOB: XDPA6MCO11
-$DESCXDPA6MCO11/ Paie Correction 11: Moyenne des rémunérations Exploration EMMMOY
-$FREQXDPA6MCO11/ Mensuel
-$PRECXDPA6MCO11/     
-----------------------------
-$JOB: XDPA6MCO12
-$DESCXDPA6MCO12/ Paie Correction 12: Mandat récapitulatif du caissier général
-$FREQXDPA6MCO12/ Mensuel
-$PRECXDPA6MCO12/     
-----------------------------
 $JOB: XDPA6MCO13
 $DESCXDPA6MCO13/ Paie Correction 13: Récapitulatif des rubriques de paie Exploration EMCRUB
 $FREQXDPA6MCO13/ Mensuel
 $PRECXDPA6MCO13/     
-----------------------------
-$JOB: XDPA6MCO14
-$DESCXDPA6MCO14/ Paie Correction 14: Etat des contrôles de paie pré feu vert et feu vert Exploration EMPNC7
-$FREQXDPA6MCO14/ Mensuel
-$PRECXDPA6MCO14/     
 ----------------------------
 $JOB: XDPA6MCEF1
 $DESCXDPA6MCEF1/ Paie Correction 15: Fin explorations
@@ -875,7 +737,6 @@ $DESCXDPA6EJH3_PVODMSHR_AS800NPQ/ Query ZCPVO00D  : Notifications PVO depuis  da
 $FREQXDPA6EJH3_PVODMSHR_AS800NPQ/ Quotidien
 $PRECXDPA6EJH3_PVODMSHR_AS800NPQ/ 
 -----------------------------
-
 $JOB: XDPA6GJC1_AGENCHIM_AS800NBX
 $DESCXDPA6GJC1_AGENCHIM_AS800NBX/ Quotidien 22: Données Agents  et  Catalogue vers CHIMED
 $FREQXDPA6GJC1_AGENCHIM_AS800NBX/ Quotidien
@@ -886,67 +747,26 @@ $DESCXDPA6GJC2_AGENPREV_AS800NBX/ Données Agents et Catalogue vers PREVENTIEL
 $FREQXDPA6GJC2_AGENPREV_AS800NBX/ Quotidien
 $PRECXDPA6GJC2_AGENPREV_AS800NBX/
 -----------------------------
-
 $JOB: XDPA6GJD1_PREEMDFS_AS800NPQ
 $DESCXDPA6GJD1_PREEMDFS_AS800NPQ/ état dossiers préembauche & Notification  à GTA (mail) nouveaux arrivants (Query VA0EMB04)
 $FREQXDPA6GJD1_PREEMDFS_AS800NPQ/ Quotidien
 $PRECXDPA6GJD1_PREEMDFS_AS800NPQ/ 
 -----------------------------
-
 $JOB: XDPA6GJD2_TELETDFS_AS800NPQ
 $DESCXDPA6GJD2_TELETDFS_AS800NPQ/ suivi agents en télétravail (Query VA0VH002)
 $FREQXDPA6GJD2_TELETDFS_AS800NPQ/ Quotidien
 $PRECXDPA6GJD2_TELETDFS_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GJF1_STRORGSYF_AS800NBX
-$DESCXDPA6GJF1_STRORGSYF_AS800NBX/ Unités Organisationnelles  vers SYFADIS 
-$FREQXDPA6GJF1_STRORGSYF_AS800NBX/ Quotidien
-$PRECXDPA6GJF1_STRORGSYF_AS800NBX/ 
------------------------------
-$JOB: XDPA6GJF2_DNCOLLSYF_AS800NBX
-$DESCXDPA6GJF2_DNCOLLSYF_AS800NBX/ Données Collaborateurs  vers SYFADIS 
-$FREQXDPA6GJF2_DNCOLLSYF_AS800NBX/ Quotidien
-$PRECXDPA6GJF2_DNCOLLSYF_AS800NBX/
------------------------------
-
-$JOB: XDPA6GJF4_REFEMPSYF_AS800NBX
-$DESCXDPA6GJF4_REFEMPSYF_AS800NBX/ Référentiel Emplois vers SYFADIS 
-$FREQXDPA6GJF4_REFEMPSYF_AS800NBX/ Quotidien
-$PRECXDPA6GJF4_REFEMPSYF_AS800NBX/ 
------------------------------
-$JOB: XDPA6GJH1_FHISTHRA_JA0FSNRA
-$DESCXDPA6GJH1_FHISTHRA_JA0FSNRA/ MAJ Fiche historique  ZYPU 
-$FREQXDPA6GJH1_FHISTHRA_JA0FSNRA/ Quotidien
-$PRECXDPA6GJH1_FHISTHRA_JA0FSNRA/
------------------------------
-$JOB: XDPA6GJH1_FHISTHRA_JA0FSNRB
-$DESCXDPA6GJH1_FHISTHRA_JA0FSNRB/ MAJ Fiche historique  ZYPU 
-$FREQXDPA6GJH1_FHISTHRA_JA0FSNRB/ Quotidien
-$PRECXDPA6GJH1_FHISTHRA_JA0FSNRB/
------------------------------
-
 $JOB: XDPA6GJM2_COLMOBIL_AS800NPQ
 $DESCXDPA6GJM2_COLMOBIL_AS800NPQ/ Données collaborateur Mobil&Vous
 $FREQXDPA6GJM2_COLMOBIL_AS800NPQ/ Quotidien
-$PRECXDPA6GJM2_COLMOBIL_AS800NPQ/ 
------------------------------
-
-$JOB: XDPA6GJO1_OMEGAEXP_AS800NBX
-$DESCXDPA6GJO1_OMEGAEXP_AS800NBX/ Données Agents vers OMEGA (Explorations OMEGA/OMEGB)
-$FREQXDPA6GJO1_OMEGAEXP_AS800NBX/ Quotidien
-$PRECXDPA6GJO1_OMEGAEXP_AS800NBX/ 
------------------------------
-$JOB: XDPA6GJO1_OMEGAEXP_AS800NBX
-$DESCXDPA6GJO1_OMEGAEXP_AS800NBX/ Données Agents vers OMEGA (Explorations OMEGA/OMEGB)
-$FREQXDPA6GJO1_OMEGAEXP_AS800NBX/ Quotidien
-$PRECXDPA6GJO1_OMEGAEXP_AS800NBX/ 
+$PRECXDPA6GJM2_COLMOBIL_AS800NPQ/  
 -----------------------------
 $JOB: XDPA6GJQ2_EQTELQVT_AS800NPQ
 $DESCXDPA6GJQ2_EQTELQVT_AS800NPQ/ Demande d'équipement télétravail vers ITSM (GDDB)
 $FREQXDPA6GJQ2_EQTELQVT_AS800NPQ/ Quotidien
 $PRECXDPA6GJQ2_EQTELQVT_AS800NPQ/ 
------------------------------
-
+----------------------------
 $JOB: XDPA6GJS1_CORHSALS_AS800NBX
 $DESCXDPA6GJS1_CORHSALS_AS800NBX/ Codifications RH vers SALSA 
 $FREQXDPA6GJS1_CORHSALS_AS800NBX/ Quotidien
@@ -956,32 +776,6 @@ $JOB: XDPA6GJS2_RESPSALS_AS800NBX
 $DESCXDPA6GJS2_RESPSALS_AS800NBX/ Responsable structure  vers SALSA 
 $FREQXDPA6GJS2_RESPSALS_AS800NBX/ Quotidien
 $PRECXDPA6GJS2_RESPSALS_AS800NBX/
------------------------------
-$JOB: XDPA6GJS3_AGRSALS_INTZYNRB
-$DESCXDPA6GJS3_AGRSALS_INTZYNRB/ Quotidien 17: Détermination code tarif AGR vers SALSA
-$FREQXDPA6GJS3_AGRSALS_INTZYNRB/ Quotidien
-$PRECXDPA6GJS3_AGRSALS_INTZYNRB/
------------------------------
-$JOB: XDPA6GJS3_AGRSALS_XE004NRA
-$DESCXDPA6GJS3_AGRSALS_XE004NRA/ Quotidien 17: Détermination code tarif AGR vers SALSA
-$FREQXDPA6GJS3_AGRSALS_XE004NRA/ Quotidien
-$PRECXDPA6GJS3_AGRSALS_XE004NRA/
------------------------------
-$JOB: XDPA6GJS3_AGRSALS_XE041NRA
-$DESCXDPA6GJS3_AGRSALS_XE041NRA/ Quotidien 17: Détermination code tarif AGR vers SALSA
-$FREQXDPA6GJS3_AGRSALS_XE041NRA/ Quotidien
-$PRECXDPA6GJS3_AGRSALS_XE041NRA/
------------------------------
-
-$JOB: XDPA6GJS4_AGENSALS_AS800NBX
-$DESCXDPA6GJS4_AGENSALS_AS800NBX/ Quotidien 18: Pivot Agents vers SALSA
-$FREQXDPA6GJS4_AGENSALS_AS800NBX/ Quotidien
-$PRECXDPA6GJS4_AGENSALS_AS800NBX/
------------------------------
-$JOB: XDPA6GJT2_COLTALENT_AS800NPQ
-$DESCXDPA6GJT2_COLTALENT_AS800NPQ/ Données Collaborateurs vers TALENTS&VOUS 
-$FREQXDPA6GJT2_COLTALENT_AS800NPQ/ Quotidien
-$PRECXDPA6GJT2_COLTALENT_AS800NPQ/
 -----------------------------
 $JOB: XDPA6MVA0
 $DESCXDPA6MVA0/ Clôture 10: Validation définitive de la paie via le lancement de la chaîne standard HR Access K24
@@ -1163,7 +957,6 @@ $DESCXDPA6MVEFW/ Clôture 45: Envoi par cft de l’état de remontée de l’inf
 $FREQXDPA6MVEFW/ Mensuel
 $PRECXDPA6MVEFW/     
 ----------------------------
-
 $JOB: XDPA6MBA0
 $DESCXDPA6MBA0/ Bulletin: Edition des bulletins de paie de la population 1 via le lancement de la chaîne standard HR Access NJ6
 $FREQXDPA6MBA0/ Mensuel
@@ -1204,8 +997,6 @@ $DESCXDPA6MBEF0/ Bulletin: Fin explorations
 $FREQXDPA6MBEF0/ Mensuel
 $PRECXDPA6MBEF0/     
 ----------------------------
-
-
 $JOB: XDPA6PMB1_PAIEBORH
 $DESCXDPA6PMB1_PAIEBORH/ Interface aval: Interface aval Infocentre Pilotage
 $FREQXDPA6PMB1_PAIEBORH/ Mensuel
@@ -1355,7 +1146,6 @@ $JOB: XDPA6MNBU0
 $DESCXDPA6MNBU0/ Paie normale 33: Edition des bulletins de la paie normale
 $FREQXDPA6MNBU0/ Mensuel
 $PRECXDPA6MNBU0/     
-
 ----------------------------
 
 

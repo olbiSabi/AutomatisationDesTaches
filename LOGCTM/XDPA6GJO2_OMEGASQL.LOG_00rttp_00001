@@ -1,0 +1,550 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH
+_YCFSHELL=XDPA6GJO2_OMEGASQL.KSH
+_YCFJOB=XDPA6GJO2_OMEGASQL
+_YCTDATE=20210318233101
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJO2_OMEGASQL.KSH.20210318233101
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH: Debut le 18-03-2021 a 23:31:03
+# =========================================================================== #
++set -x
++date +%Y%m%d%H%M%S
++export HORODAT=20210318233103
++export FIC_NAME=CT_iST_MANAG_20210318233103.dat
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de l'extraction SQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_suppr_fichier : Suppression des fichiers résultat de l'extraction SQL
+# =========================================================================== #
++rm -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat
++jobTest 0 fl_suppr_fichier
++fl_lance_extract
++jobEtape fl_lance_extract : Lancement de l'extraction SQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Lancement de l'extraction SQL
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/ctrlm.date ]
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c1-4
+A4=2021
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c5-6
+MM=03
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c7-8
+JJ=18
++export DATE_CTRLM=2021-03-18
++jobEtape fl_lance_extract : Constitution de la requête d'extraction OMEGASQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Constitution de la requête d'extraction OMEGASQL
+# =========================================================================== #
++echo SET HEAD OFF
++1> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET ECHO OFF
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET FEEDBACK OFF
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET PAGESIZE 0
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET LINESIZE 88
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo select 'SPE_MNGR_MNGE;'||TRIM(T3.MATCLE)||';'||TRIM(T1.MATCLE) 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo ||';;CDC_MNG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo FROM HR.ZY00 T1,HR.ZYVK T7,HR.ZYCO T8,HR.ZY3E T3,HR.ZY3B T4,HR.Ze00 T5
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo WHERE T1.NUDOSS  = T7.NUDOSS  AND T1.NUDOSS = T8.NUDOSS 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T1.NUDOSS = T3.NUDOSS AND T1.nudoss = T4.nudoss 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T8.DATCON,'YYYY-MM-DD') <= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T8.DATFIN,'YYYY-MM-DD') >= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T4.dtef00,'YYYY-MM-DD') <= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T4.dten00,'YYYY-MM-DD') >= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND   T1.TYPDOS = 'SAL' AND (T7.STATUT = '3' OR T7.STATUT = '4')  
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T8.TYPCON <> 'Z' AND T8.NATCON NOT IN ('CT','CV','CE','CA','AO')  
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T4.IDOU00 = T5.IDOU00                              
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND not exists (select 1 from ZE2A T9 where T9.IDOU00 = T5.IDOU00     
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T9.IDOU01 = '001468');                             
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo EXIT;
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++jobEtape fl_lance_extract : Extraction OMEGASQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Extraction OMEGASQL
+# =========================================================================== #
++fg_lance_script_sql /dz-pareo/applis/pa6/sql/OMEGASQL.sql  /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++SCRIPT=/dz-pareo/applis/pa6/sql/OMEGASQL.sql
++CSEP=
++FOUT=/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++shift 3
++jobEtape fg_lance_script_sql(/dz-pareo/applis/pa6/sql/OMEGASQL.sql,,/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fg_lance_script_sql(/dz-pareo/applis/pa6/sql/OMEGASQL.sql,,/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++1> /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++jobTest 0 fg_lance_script_sql
++jobTest 0 fl_lance_extract : Extraction OMEGASQL
++sort /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++1> /dz-pareo/applis/pa6/tmp/OMEGASQL.dat
++jobTest 0 fl_lance_extract : Tri du resultat de l Extraction OMEGASQL
++fl_mise_en_page
++date +%Y%m%d
++export HORODAT1=20210318
++cp /dz-pareo/applis/pa6/tmp/OMEGASQL.dat /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat
++jobTest 0 fl_lance_extract : Copie vers CFTOUT du fichier OMEGASQL
++cp /dz-pareo/applis/pa6/tmp/OMEGASQL.dat /dz-pareo/applis/pa6/archive/CT_iST_MANAG_20210318233103.dat
++jobTest 0 fl_lance_extract : Copie vers Archivage CFT du fichier OMEGASQL
++cft.sh send -m PA6OM2MA -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat -p CT_iST_MANAG_20210318233103.dat
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:05 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat -m PA6OM2MA
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6OM2MA.PRODWIN.15007788.3105-1' vers part='PRODWIN',idf='PA6OM2MA' parm='CT_iST_MANAG_20210318233103.dat' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++unset HORODAT
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH: Fin le 18-03-2021 a 23:31:05
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJO2_OMEGASQL.LOG_*0rttp*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:05  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJO2_OMEGASQL.LOG_*0rttp*.22610174
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_22610174
++__orderid=LOG_*0rttp*
++__jobname_fin=XDPA6GJO2_OMEGASQL
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL
++__jobname=XDPA6GJO2_OMEGASQL
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++__orderid_fin=LOG_00rttp_00001
++__job_complet_fin=XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH
+_YCFSHELL=XDPA6GJO2_OMEGASQL.KSH
+_YCFJOB=XDPA6GJO2_OMEGASQL
+_YCTDATE=20210318233101
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJO2_OMEGASQL.KSH.20210318233101
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH: Debut le 18-03-2021 a 23:31:03
+# =========================================================================== #
++set -x
++date +%Y%m%d%H%M%S
++export HORODAT=20210318233103
++export FIC_NAME=CT_iST_MANAG_20210318233103.dat
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de l'extraction SQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_suppr_fichier : Suppression des fichiers résultat de l'extraction SQL
+# =========================================================================== #
++rm -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat
++jobTest 0 fl_suppr_fichier
++fl_lance_extract
++jobEtape fl_lance_extract : Lancement de l'extraction SQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Lancement de l'extraction SQL
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/ctrlm.date ]
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c1-4
+A4=2021
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c5-6
+MM=03
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c7-8
+JJ=18
++export DATE_CTRLM=2021-03-18
++jobEtape fl_lance_extract : Constitution de la requête d'extraction OMEGASQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Constitution de la requête d'extraction OMEGASQL
+# =========================================================================== #
++echo SET HEAD OFF
++1> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET ECHO OFF
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET FEEDBACK OFF
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET PAGESIZE 0
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo SET LINESIZE 88
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo select 'SPE_MNGR_MNGE;'||TRIM(T3.MATCLE)||';'||TRIM(T1.MATCLE) 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo ||';;CDC_MNG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo FROM HR.ZY00 T1,HR.ZYVK T7,HR.ZYCO T8,HR.ZY3E T3,HR.ZY3B T4,HR.Ze00 T5
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo WHERE T1.NUDOSS  = T7.NUDOSS  AND T1.NUDOSS = T8.NUDOSS 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T1.NUDOSS = T3.NUDOSS AND T1.nudoss = T4.nudoss 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T8.DATCON,'YYYY-MM-DD') <= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T8.DATFIN,'YYYY-MM-DD') >= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T4.dtef00,'YYYY-MM-DD') <= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND TO_CHAR(T4.dten00,'YYYY-MM-DD') >= '2021-03-18' 
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND   T1.TYPDOS = 'SAL' AND (T7.STATUT = '3' OR T7.STATUT = '4')  
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T8.TYPCON <> 'Z' AND T8.NATCON NOT IN ('CT','CV','CE','CA','AO')  
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T4.IDOU00 = T5.IDOU00                              
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND not exists (select 1 from ZE2A T9 where T9.IDOU00 = T5.IDOU00     
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo AND T9.IDOU01 = '001468');                             
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++echo EXIT;
++1>> /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++jobEtape fl_lance_extract : Extraction OMEGASQL
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fl_lance_extract : Extraction OMEGASQL
+# =========================================================================== #
++fg_lance_script_sql /dz-pareo/applis/pa6/sql/OMEGASQL.sql  /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++SCRIPT=/dz-pareo/applis/pa6/sql/OMEGASQL.sql
++CSEP=
++FOUT=/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++shift 3
++jobEtape fg_lance_script_sql(/dz-pareo/applis/pa6/sql/OMEGASQL.sql,,/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:03 fg_lance_script_sql(/dz-pareo/applis/pa6/sql/OMEGASQL.sql,,/dz-pareo/applis/pa6/tmp/OMEGASQL.tmp) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep ''" -F /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++1> /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '' -F /dz-pareo/applis/pa6/sql/OMEGASQL.sql
++jobTest 0 fg_lance_script_sql
++jobTest 0 fl_lance_extract : Extraction OMEGASQL
++sort /dz-pareo/applis/pa6/tmp/OMEGASQL.tmp
++1> /dz-pareo/applis/pa6/tmp/OMEGASQL.dat
++jobTest 0 fl_lance_extract : Tri du resultat de l Extraction OMEGASQL
++fl_mise_en_page
++date +%Y%m%d
++export HORODAT1=20210318
++cp /dz-pareo/applis/pa6/tmp/OMEGASQL.dat /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat
++jobTest 0 fl_lance_extract : Copie vers CFTOUT du fichier OMEGASQL
++cp /dz-pareo/applis/pa6/tmp/OMEGASQL.dat /dz-pareo/applis/pa6/archive/CT_iST_MANAG_20210318233103.dat
++jobTest 0 fl_lance_extract : Copie vers Archivage CFT du fichier OMEGASQL
++cft.sh send -m PA6OM2MA -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat -p CT_iST_MANAG_20210318233103.dat
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:05 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/CT_iST_MANAG.dat -m PA6OM2MA
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6OM2MA.PRODWIN.15007788.3105-1' vers part='PRODWIN',idf='PA6OM2MA' parm='CT_iST_MANAG_20210318233103.dat' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++unset HORODAT
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJO2_OMEGASQL.KSH: Fin le 18-03-2021 a 23:31:05
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJO2_OMEGASQL.LOG_*0rttp*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 23:31:05  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJO2_OMEGASQL.LOG_*0rttp*.22610174
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_22610174
++__orderid=LOG_*0rttp*
++__jobname_fin=XDPA6GJO2_OMEGASQL
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL
++__jobname=XDPA6GJO2_OMEGASQL
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++__orderid_fin=LOG_00rttp_00001
++__job_complet_fin=XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJO2_OMEGASQL.LOG_00rttp_00001

@@ -1,23 +1,30 @@
 #!/bin/ksh
 
 # Encodage html
-ENCODING='"utf-8"'
+NCODING='"utf-8"'
 CSS='"background-color: #00ffff; text-align: center; font-weight: bold"'
-# Variable contenant le chemin vers les fichers LOGCTM
-FILEAPP=/home/talhent/production/LOGCTM
-# Variable contenant le chemin du rendu LOGCTM
-RENDU=/home/talhent/production/renduCTM.html
+# Variable contenant le chemin vers les fichers LOGAPP
+FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGAPP
+# Variable contenant le chemin du rendu LOGAPP
+RENDU=/home/talhent/production/AutomatisationDesTaches/renduAPP.html
 # Variable contenant le chemin vers les donnée de parametrage
-ADERHPARAM=/home/talhent/production/PARAMETRE.txt
+ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
 # Variable contenant le chemin les mots clé désignant les erreurs
-MOTS_CLE_ERROR=/home/talhent/production/MotsCles.txt
+MOTS_CLE_ERROR=/home/talhent/production/AutomatisationDesTaches/MotsCles.txt
+
+#-----------------------------------------------------------------------------------#
+#                                  FUNCTIONS                                        #
+#-----------------------------------------------------------------------------------#
 
 # Condition pour créée un fichier html si elle n'existe pas
-if test -f $RENDU; then
-	rm $RENDU
+ConditionFichierExiste()
+{
+if test -f $1; then
+	rm $1
 	else
-	touch $RENDU
-fi
+	touch $1
+fi	
+}
 #-------- Fonction permettant de parcourrir les logs à la recherche d'erreur ------
 DetectionErreur()
 {
@@ -29,28 +36,41 @@ do
 	if test -z $x; then
 	echo ""
 	else
-	echo $x"+| "
+	echo "||+"$x
 	fi
 done
 IFS=$oldIFS # rétablisement du séparateur de champ par défaut
 }
 
+#-----------------------------------------------------------------------------------#
+#                                   MAIN                                            #
+#-----------------------------------------------------------------------------------#
 
+ConditionFichierExiste $RENDU
 #Code pour la mise en forme en html(balise html)
 echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
-</style></head><body><table> <tr style=$CSS><td>JOB-CTM</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
+</style></head><body><table> <tr style=$CSS><td>JOB-APP</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
 #boucle pour parcourir tous les fichiers ce trouvant dans les dossier appropié.
 for FILE in `ls $FILEAPP`
 do
-	Fichier=$(echo $FILE| awk -F . '{print $1}')
+	Fichier=$(echo $FILE | awk -F . '{print $1}' | cut -d_ -f1,2)
 	#Definition de nouvelle variable fils de JOB
 	DESC="DESC"$Fichier
 	FREQ="FREQ"$Fichier
 	PREC="PREC"$Fichier
-	#Definition d'une variable heure de fin de JOB et début de JOB
-	HEURE_DEBUT=$(grep "$Fichier.KSH: Debut" $FILEAPP/$FILE | awk '{print $8}')
-	HEURE_FIN=$(grep "$Fichier.KSH: Fin" $FILEAPP/$FILE | awk '{print $8}')
+                 # *****************((((()))))******************#
+				 #*** ONT RECUPERENT LES DATES ET LES HEURES ***#
+				 #******************((((()))))******************#
+
+	#Definition d'une variable date de fin de JOB et début de JOB
 	
+	#Definition d'une variable heure de fin de JOB et début de JOB
+	HEURE_DEBUT=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $7}' | sed -n 1p)
+	HEURE_FIN=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $7}' | sed -n 2p)
+	if test -z $HEURE_DEBUT || test -z $HEURE_FIN; then 
+	HEURE_DEBUT=$(grep -E ^"Run began" $FILEAPP/$FILE | awk '{print $7}')
+	HEURE_FIN=$(grep -E ^"Run ended" $FILEAPP/$FILE | awk '{print $7}')
+	fi
 	#Décomposition de l'heure de début en Hd:Md/Sd
 	Hd=$(echo $HEURE_DEBUT | cut -d: -f1)
 	Md=$(echo $HEURE_DEBUT | cut -d: -f2)
@@ -77,8 +97,8 @@ do
 		Tmp=$minute"min "$seconde"s"
 	fi
 		 
-	 echo "<tr><td>" $(echo $FILE | awk -F . '{print $1"."$2}')" </td><td> `grep $DESC $ADERHPARAM | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
-	 <td>$Tmp</td><td> `grep $FREQ $ADERHPARAM | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
+	 echo "<tr><td>" $(echo $FILE | awk -F . '{print $1}')" </td><td> `grep $Fichier $ADERHPARAM | sed -n 2p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
+	 <td>$Tmp</td><td> `grep $Fichier $ADERHPARAM | sed -n 3p | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 done
 echo "</table> </body> </html>" >> $RENDU
 

@@ -1,0 +1,785 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6MCO13.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6MCO13.KSH
+_YCFSHELL=XDPA6MCO13.KSH
+_YCFJOB=XDPA6MCO13
+_YCTDATE=20210318235811
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6MCO13.KSH.20210318235811
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCO13.KSH: Debut le 18-03-2021 a 23:58:13
+# =========================================================================== #
++set -x
++export EXPLO=EMCRUB
++export PROCESS=MCRUB
++date +%y%m%d%H%M%S
++export HORODAT=210318235813
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+
+# =========================================================================== #
+# 18-03-2021 a 23:58:13 fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS
++fl_param_per_paie
+
+# =========================================================================== #
+# 18-03-2021 a 23:58:13 fl_param_per_paie : Recherche paramètres de période de paie
+# =========================================================================== #
+Période de paie déterminées : MT202103 MT202101
++fl_carte_param
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 23:58:13 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/EMCRUB.parm
++1> /dz-pareo/applis/pa6/parm/EMCRUB.parm
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5DS31CDCEMCRUB                                00                         %POP01
+5DS31CDCEMCRUB                                00                         %POP01
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5ZS32Z-DEBPAIMT202101
+5ZS32Z-DEBPAIMT202101
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5ZS32Z-PERPAIMT202103
+5ZS32Z-PERPAIMT202103
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 23:58:13 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5T**S
+5T**S
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5W**01SELECPOPSELECT NUDOSS FROM ZX00 
+5W**01SELECPOPSELECT NUDOSS FROM ZX00 
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5W**02SELECPOPWHERE PERPAI >='MT202101' 
+5W**02SELECPOPWHERE PERPAI >='MT202101' 
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 5W**02SELECPOPAND   PERPAI <='MT202103' 
+5W**02SELECPOPAND   PERPAI <='MT202103' 
++tee -a /dz-pareo/applis/pa6/parm/EMCRUB.parm
++echo 3P**1BXVA01TXT001
+3P**1BXVA01TXT001
++fl_lance_explo
++jobEtape fl_lance_explo : Lancement de l'exploration EMCRUB
+
+# =========================================================================== #
+# 18-03-2021 a 23:58:13 fl_lance_explo : Lancement de l'exploration EMCRUB
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 EMCRUB MCRUB
+
+######################################################################
+# Début JOB subnbx_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+
+######################################################################
+# STEP 2 : recuperation des proprietes du processus
+######################################################################
+
+<I> le processus 1 existe sur la plateforme PRODS9
+
+######################################################################
+# STEP 3 : Controle et copie du shell NBX standard
+######################################################################
+
+
+######################################################################
+# STEP 4 : Alimentation de la carte parametre de la NBX
+######################################################################
+
+alimentation de TYBPPNBX :
+
+5DS31CDCEMCRUB                                00                         %POP01
+5ZS32Z-DEBPAIMT202101
+5ZS32Z-PERPAIMT202103
+5FS40EXECUTION
+5T**S
+5W**01SELECPOPSELECT NUDOSS FROM ZX00 
+5W**02SELECPOPWHERE PERPAI >='MT202101' 
+5W**02SELECPOPAND   PERPAI <='MT202103' 
+3P**1BXVA01TXT001
+PA52D               110001  
+
+######################################################################
+# STEP 5 : Habillage du script shell
+######################################################################
+
+<I> Habillage des tris mfsort
+
+######################################################################
+# STEP 6 : Soumission de la NBX
+######################################################################
+
+*****************************************************************
+*                  Exécution d'une exploration                  *
+*****************************************************************
+
+
+JOB : JNBX                            DATE : 2021/03/18 23:58:13
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.58.13                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NBXCHAINE NBX EMCRUB         F         50                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NBX                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NBXCHAINE NBX EMCRUB         F        A50                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NBX                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5DS31CDCEMCRUB                                00                         %POP01                       
+AS800BOP-00000000-5ZS32Z-DEBPAIMT202101                                                                                 
+AS800BOP-00000000-5ZS32Z-PERPAIMT202103                                                                                 
+AS800BOP-00000000-5FS40EXECUTION                                                                                        
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT NUDOSS FROM ZX00                                                                 
+AS800BOP-00000000-5W**02SELECPOPWHERE PERPAI >='MT202101'                                                               
+AS800BOP-00000000-5W**02SELECPOPAND   PERPAI <='MT202103'                                                               
+AS800BOP-00000000-3P**1BXVA01TXT001                                                                                     
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-5DS31CDCEMCRUB                                00                         %POP01                       
+AS800BOP-00000000-5ZS32Z-DEBPAIMT202101                                                                                 
+AS800BOP-00000000-5ZS32Z-PERPAIMT202103                                                                                 
+AS800BOP-00000000-5FS40EXECUTION                                                                                        
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT NUDOSS FROM ZX00                                                                 
+AS800BOP-00000000-5W**02SELECPOPWHERE PERPAI >='MT202101'                                                               
+AS800BOP-00000000-5W**02SELECPOPAND   PERPAI <='MT202103'                                                               
+AS800BOP-00000000-3P**1BXVA01TXT001                                                                                     
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000120371 NBX CHAINE NBX EMCRUB ALLHRLO                                          
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000009                                                                             
+AS800BOP-BBAD0009-SD (S3) : 000000000000003                                                                             
+AS800BOP-BBAD0009-SE (S4) : 000000000000001                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.58.13  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.58.13                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120371                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000002                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000002                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.58.13  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100PB.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.5439538: No such file or directory
+
+
+*-------------------------- STEP110N ----------------*
+*          Execution module JAVA                    *
+*---------------------------------------------------*
+Filein: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.5439538
+Fileout: /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.5439538
+Reading INI file /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.5439538 ....
+Action: 0
+Writing response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.5439538 ...
+Wrote response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.5439538
+
+
+*-------------------------- STEP120A ---------------------------*
+*             Chargement de paramètres dans T120PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP120N ---------------------------*
+*                 Pré-sélection des populations                 *
+*---------------------------------------------------------------*
+AS800BOV-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOV-BBAD0002-IDENTIFICATION DU PROGRAMME : BOV/7.000/2020-06-12-14.48.46/F/                                        
+AS800BOV-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.58.14                                     
+AS800BOV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOV-00000000-PA5S          1                                                                                       
+AS800BOV-BBAX0035-SELECTION POPULATION CONSTITUEE PAR L'UTILISATEUR                                                     
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0021-POPULATION 0001 CONTENANT 000000000021553 DOSSIERS A ETE CREEE                                        
+AS800BOV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOV-BBAD0009-PD (PD) : 000000000000003                                                                             
+AS800BOV-BBAD0009-PS (PS) : 000000000000001                                                                             
+AS800BOV-BBAD0010-*** BOV : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.58.33  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP140N ---------------------------*
+*                    Tri T01 des paramètres                     *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP160A ---------------------------*
+*            Initialisation du fichier vide T160AUM             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP160N ---------------------------*
+*                 Exécution du programme généré                 *
+*---------------------------------------------------------------*
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : AEX/7.000/2020-06-14-07.36.34/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.58.33                                     
+MCRUBBL3-BBAD0001-------------------------------------------------------------------------------------------------------
+MCRUBBL3-BBAD0002-IDENTIFICATION DU PROGRAMME : BL3/7.000/2020-06-14-07.36.35/F/                                        
+MCRUBBL3-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.58.33                                     
+MCRUBAEX-BBAD0010-***  : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.41.49  **** CODE RETOUR 00 ******           
+
+
+*-------------------------- STEP180N ---------------------------*
+*                   Tri T02 entre AEX et AXE                    *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP200A -----------------------*
+*                     REMOVE du fichier PSEMCRUB.C                 *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS: No such file or directory
+
+
+*-------------------------- STEP200B ---------------------------*
+*            Initialisation du fichier vide T200APM             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP200C ---------------------------*
+*             Chargement de paramètres dans T200PW              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP200N ---------------------------*
+*                  Edition des états en liste                   *
+*---------------------------------------------------------------*
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : AXF/7.000/2020-06-12-16.28.08/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.02                                     
+AS800BOW-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOW-BBAD0002-IDENTIFICATION DU PROGRAMME : BOW/7.000/2020-06-12-14.48.47/F/                                        
+AS800BOW-BBAO0002-TRAVAIL TRAITE ZO 000120371                                                                           
+AS800BOW-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOW-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOW-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOW-00000000-PA5FLYT T780     LYTT780C1                                                                            
+AS800BOW-00000000-PA5FLYT BXPL01TXTTXTT700I&3                                                                           
+AS800BOW-00000000-PA5FLYT BXPL01XMZXMLT200H&3                                                                           
+AS800BOW-00000000-PA5FLYT BXPL01XMZXSLT210H&2                                                                           
+AS800BOW-00000000-PA5FLYT BXPL01XMDXMLT200X&2                                                                           
+AS800BOW-00000000-PA5FLYT BXPL01PRHC1 T200R&3                                                                           
+AS800BOW-00000000-PA5FLYT BXLB01TXTTXTT700I9                                                                            
+AS800BOW-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOW-00000000-PA5FLYT BXFI01TXTTXTPSEMCRUB.P                                                                        
+AS800BOW-00000000-PA5FLYT BXVA01TXTTXTPSEMCRUB.LS                                                                       
+AS800BOW-BBAD0009-ZO3P = BXVA-01 (TXT) : 1                                                                              
+AS800BOW-BBAO0021-TRAITEMENT ETAT BXVA 01 FORMAT SORTIE TXT TYPE FICHIER TXT                                            
+AS800BOW-BBAO0021-TRAITEMENT ETAT BX11 01 FORMAT SORTIE XMD TYPE FICHIER XML                                            
+ACTSABSL-BBAD0001-------------------------------------------------------------------------------------------------------
+ACTSABSL-BBAD0002-IDENTIFICATION DU PROGRAMME : BSL/7.000/2020-06-12-16.28.12/F/                                        
+AS800BOW-BBAO0021-TRAITEMENT ETAT BX12 01 FORMAT SORTIE XMD TYPE FICHIER XML                                            
+*GX01BXM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+*GX01BXM-BBAD0009-XA (XA) : 000000000000024                                                                             
+*GX01BXM-BBAD0009-XB (XB) : 000000000012268                                                                             
+AS800BOW-BBAD0021-TABLE RELATIONNELLE ZO3P LIGNES LUES 000000000000001, ECRITES 000000000000002, MISES A JOUR 0000000000
+                  00000, SUPPRIMEES 000000000000000                                                                     
+AS800BOW-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOW-BBAD0009-PA (PA) : 000000000000011                                                                             
+AS800BOW-BBAD0009-SA (SA) : 000000000000007                                                                             
+ACTSAAXF-BAXF998 - NOMBRE D ENREGISTREMENTS ECRITS SUR LE FICHIER VARIABLE     651                                      
+ACTSAAXF-BBAD0010-***  : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.09  **** CODE RETOUR 00 ******           
+
+
+*-------------------------- STEP210N ---------------------------*
+*                    Génération feuille XSL                     *
+*---------------------------------------------------------------*
+*GX01BXS-BBAD0002-IDENTIFICATION DU PROGRAMME : BXS/2020-06-12-14.32.24///                                              
+*GX01BXS-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.10                                     
+*GX01BXS-BBAD0020-FICHIER VIDE : PA                                                                                     
+*GX01BXS-BBAD0009-PS (PS) : 000000000000009                                                                             
+*GX01BXS-BBAD0010-*** BXS : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.10  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP220N ---------------------------*
+*                   Tri T03 entre AXE et AXP                    *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP240A -----------------------*
+*                     REMOVE du fichier PSEMCRUB.P                 *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP240N ---------------------------*
+*                 Edition des états étiquettes                  *
+*---------------------------------------------------------------*
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : AXP/7.000/2020-06-12-16.28.09/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.10                                     
+ACTSAAXP-BBAD0010-***  : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.10  **** CODE RETOUR 00 ******           
+
+
+*-------------------------- STEP280N ---------------------------*
+*              Suppression de la population batch               *
+*---------------------------------------------------------------*
+ACTSABE9-BBAD0001-------------------------------------------------------------------------------------------------------
+ACTSABE9-BBAD0002-IDENTIFICATION DU PROGRAMME : BE9/7.000/2020-06-12-16.28.09/F/                                        
+ACTSABE9-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.10                                     
+ACTSABE9-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+ACTSABE9-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+ACTSABE9-00000000-PA430001                                                                                              
+ACTSABE9-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+ACTSABE9-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+ACTSABE9-00000000-PA430001                                                                                              
+ACTSABE9-BBAM0041-POPULATION 0001 LIBEREE                                                                               
+ACTSABE9-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+ACTSABE9-BBAD0009-PA (PA) : 000000000000001                                                                             
+ACTSABE9-BBAD0010-*** BE9 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.10  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP700A ---------------------------*
+*             Chargement de paramètres dans T700PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP700B ---------------------------*
+*             Chargement de paramètres dans T700PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP700N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.10                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203710                                                       002006880                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120371                                                        Ÿ`                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52E****           1010010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBAEX           1010010                                                                           
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000029                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.10  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700RS.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H2.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H3.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H4.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H5.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H6.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H7.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H8.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700H9.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M2.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M3.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M4.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M5.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M6.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M7.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M8.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700M9.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700PM.5439538: No such file or directory
+
+
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I1.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I2.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I3.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I4.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I5.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I6.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I7.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I8.5439538: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T700I9.5439538: No such file or directory
+*-------------------------- STEP780N ---------------------------*
+*                                                               *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.10                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120371                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT T780     LYTT780C1                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FLYT BXVA01TXTTXTPSEMCRUB.LS                                                                       
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT BX1101XMDXMLT200XA                                                                            
+AS800BOU-00000000-PA5FLYT BX1201XMDXMLT200XB                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1T780     LYTT780C1                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FLYT1BXVA01TXTTXTPSEMCRUB.LS                                                                       
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BX1101XMDXMLT200XA                                                                            
+AS800BOU-00000000-PA5FLYT1BX1201XMDXMLT200XB                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0021-TRAITEMENT ETAT BXVA 01 FORMAT SORTIE TXT TYPE FICHIER                                                
+AS800BOU-BBAO0017-ETAT NON TROUVE BX11 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX12 01 XMD (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000011                                                                             
+AS800BOU-BBAD0009-FT (FT) : 000000000000008                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000007                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.10  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T780PB.5439538: No such file or directory
+
+
+*-------------------------- STEP820N ---------------*
+*               Submit generated SHELL in T780FT    *
+*---------------------------------------------------*
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.42.11                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203710                                                       002006880                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120371                                                        Ÿ`                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000181 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.42.11  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H1.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H2.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H3.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H4.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H5.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H6.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H7.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H8.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H9.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M1.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M2.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M3.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M4.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M5.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M6.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M7.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M8.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M9.5439538: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950PM.5439538: No such file or directory
+
+
+
+
+JOB : JNBX                            DATE : 2021/03/19 00:42:11
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
++jobTest 0 fl_lance_explo : Pb Traitement exploration EMCRUB
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 19-03-2021 a 00:42:11 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210319004211
++basename /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS
+FIC_NAME=PSEMCRUB.LS
++cp /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS /dz-pareo/applis/pa6/archive/PSEMCRUB.LS.20210319004211
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS OK
++cp /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS vers /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS vers /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/file/PSEMCRUB.LS vers /dz-pareo/applis/pa6/cft.out/editions_compta/EMCRUB-210318235813.csv OK
++unset PERPAI
++unset DEBPAI
++unset FICPRM
++unset HORODAT
++unset EXPLO
++unset PROCESS
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCO13.KSH: Fin le 19-03-2021 a 00:42:11
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6MCO13.LOG_*0ruck*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 00:42:11  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6MCO13.LOG_*0ruck*.5439552
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_5439552
++__orderid=LOG_*0ruck*
++__jobname_fin=XDPA6MCO13
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13
++__jobname=XDPA6MCO13
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001
++__orderid_fin=LOG_00ruck_00001
++__job_complet_fin=XDPA6MCO13.LOG_00ruck_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001
++grep YCFLOG=
++cut -d = -f 2-5
++head -1
++cut -d / -f 1-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO13.LOG_00ruck_00001
++sed s/^+/%/g
++sed s/*/*/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/^%/+/g
++sed s/^++/%/g
++sed s/*/*/g
++

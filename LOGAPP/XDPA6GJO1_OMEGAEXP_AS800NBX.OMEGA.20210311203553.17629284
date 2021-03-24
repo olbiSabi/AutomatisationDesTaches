@@ -13,8 +13,7 @@
 # STEP 2 : recuperation des proprietes du processus
 ######################################################################
 
-<I> le processus 1 existe sur la plateforme PRODS9 ERR.
-
+<I> le processus 1 existe sur la plateforme PRODS9
 
 ######################################################################
 # STEP 3 : Controle et copie du shell NBX standard
@@ -25,8 +24,7 @@
 # STEP 4 : Alimentation de la carte parametre de la NBX
 ######################################################################
 
-alimentation de TYBPPNBX : ERREUR
-
+alimentation de TYBPPNBX :
 
 5DS31   OMEGA         11032021                00                         %POP01
 5FS40EXECUTION
@@ -41,7 +39,7 @@ PA52D               110001
 <I> Habillage des tris mfsort
 
 ######################################################################
-# STEP 6 : Soumission de la NBX ERROR
+# STEP 6 : Soumission de la NBX
 ######################################################################
 
 *****************************************************************

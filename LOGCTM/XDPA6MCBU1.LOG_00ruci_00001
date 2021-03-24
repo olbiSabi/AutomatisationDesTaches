@@ -1,0 +1,516 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6MCBU1.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6MCBU1.KSH
+_YCFSHELL=XDPA6MCBU1.KSH
+_YCFJOB=XDPA6MCBU1
+_YCTDATE=20210319005916
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6MCBU1.KSH.20210319005916
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. /dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. /dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCBU1.KSH: Debut le 19-03-2021 a 00:59:18
+# =========================================================================== #
++set -x
++fl_param_per
++jobEtape fl_param_per : Recherche paramètres d'édition
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:18 fl_param_per : Recherche paramètres d'édition
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/ED_BP_REPR.dat ]
++jobEtape fl_param_per : Préparation des paramètres d'édition des BP
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:18 fl_param_per : Préparation des paramètres d'édition des BP
+# =========================================================================== #
++export TYPPAI=C
++export TYPEXE=C
++export RELANCE=0
++export PERPAI=        
++[ -s /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat ]
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
++cut -c3-4
+MM=03
++cut -c1-2
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
+AA=21
++MOISBP=2103
++cut -c2
++export OPTEDI=031
++echo Option d'édition : 031
+Option d'édition : 031
++fl_select
++jobEtape fl_select : Lancement de la constitution de la requête de sélection des dossiers
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:18 fl_select : Lancement de la constitution de la requête de sélection des dossiers
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/REQ_DOSS.sql
++echo 5W**01SELECPOPSELECT DISTINCT A.NUDOSS FROM ZX00 A 
++tee -a /dz-pareo/product/pa6/hra/prod/txt/tmp/REQ_DOSS.sql
+5W**01SELECPOPSELECT DISTINCT A.NUDOSS FROM ZX00 A 
++echo 5W**02SELECPOPWHERE A.MATRIC IN 
++tee -a /dz-pareo/product/pa6/hra/prod/txt/tmp/REQ_DOSS.sql
+5W**02SELECPOPWHERE A.MATRIC IN 
++echo 5W**02SELECPOP(SELECT B.CDCODE FROM ZD00 B WHERE B.CDSTCO ='LBD')
++tee -a /dz-pareo/product/pa6/hra/prod/txt/tmp/REQ_DOSS.sql
+5W**02SELECPOP(SELECT B.CDCODE FROM ZD00 B WHERE B.CDSTCO ='LBD')
++jobTest 0 fl_select : Pb dans la constitution sélection dossiers
++fl_Constitution_fichier_BP
++jobEtape fl_Constitution_fichier_BP : Lancement de constitution du fichier des BP
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:18 fl_Constitution_fichier_BP : Lancement de constitution du fichier des BP
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NJ6220IZ.202103
++/dz-pareo/applis/pa6/bin/subnj6_v9 2103 C C 0 031
+
+######################################################################
+# Début JOB subnj6_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+
+######################################################################
+# STEP 2 : Récupération de la structure de donnée et du radical Processus
+######################################################################
+
+
+######################################################################
+# STEP 3 : Copie de la NJ6
+######################################################################
+
+
+######################################################################
+# STEP 4 : Creation du fichier des parametres pour NJ6
+######################################################################
+
+D1S1DA62PCDCS                031   
+EPS1DA62EC0C
+5T**S                                                            
+
+######################################################################
+# STEP 5 : Habillage du Shell standard
+######################################################################
+
+<I> Habillage des tris mfsort
+
+######################################################################
+# STEP 6 : Soumission de la chaine NJ6
+######################################################################
+
+*****************************************************************
+*            Chaine NJ6 - Triplet UNO (UNIX/ORACLE)             *
+*****************************************************************
+
+
+JOB : JNJ6                            DATE : 2021/03/19 00:59:18
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050C -----------------------*
+*                  REMOVE du fichier PSBNJ6NT.C01              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+JD800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+JD800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-14-04.56.43/F/                                        
+JD800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.59.18                                     
+JD800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-PA2A         NJ6CHAINE NJ6                F         50                                                
+JD800BOP-00000000-PA2BLANCEMANT CHAINE NJ6                                                                              
+JD800BOP-00000000-PA2C        ALLHRLO                                                                                   
+JD800BOP-00000000-PA2DFT                                                                                                
+JD800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-PA2A000090000NJ6CHAINE NJ6                F        A50                                                
+JD800BOP-00000000-PA2BLANCEMANT CHAINE NJ6                                                                              
+JD800BOP-00000000-PA2C        ALLHRLO                                                                                   
+JD800BOP-00000000-PA2DFT                                                                                                
+JD800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-D1S1DA62PCDCS                031                                                                      
+JD800BOP-00000000-EPS1DA62EC0C                                                                                          
+JD800BOP-00000000-5T**S                                                                                                 
+JD800BOP-00000000-5W**01SELECPOPSELECT DISTINCT A.NUDOSS FROM ZX00 A                                                    
+JD800BOP-00000000-5W**02SELECPOPWHERE A.MATRIC IN                                                                       
+JD800BOP-00000000-5W**02SELECPOP(SELECT B.CDCODE FROM ZD00 B WHERE B.CDSTCO ='LBD')                                     
+JD800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-D1S1DA62PCDCS                031                                                                      
+JD800BOP-00000000-EPS1DA62EC0C                                                                                          
+JD800BOP-00000000-5T**S                                                                                                 
+JD800BOP-00000000-5W**01SELECPOPSELECT DISTINCT A.NUDOSS FROM ZX00 A                                                    
+JD800BOP-00000000-5W**02SELECPOPWHERE A.MATRIC IN                                                                       
+JD800BOP-00000000-5W**02SELECPOP(SELECT B.CDCODE FROM ZD00 B WHERE B.CDSTCO ='LBD')                                     
+JD800BOP-BBAO0002-TRAVAIL TRAITE 000000000120373 NJ6 CHAINE NJ6 ALLHRLO                                                 
+JD800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JD800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+JD800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+JD800BOP-BBAD0009-PC (PC) : 000000000000006                                                                             
+JD800BOP-BBAD0009-SB (S1) : 000000000000002                                                                             
+JD800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.59.18  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*                    Appel au programme BOU                     *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.59.19                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120373                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000002                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000002                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.59.19  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100PB.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.24182928: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.24182928: No such file or directory
+
+
+*-------------------------- STEP105N ----------------*
+*          Execution module JAVA                    *
+*---------------------------------------------------*
+Filein: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.24182928
+Fileout: /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.24182928
+Reading INI file /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.24182928 ....
+Action: 0
+Writing response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.24182928 ...
+Wrote response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.24182928
+
+
+*-------------------------- STEP110A ---------------------------*
+*             Chargement de paramètres dans T110PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP110B ---------------------------*
+*             Initialisation du fichier vide T110PC             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP110N ---------------------------*
+*                  Exécution des présélections                  *
+*---------------------------------------------------------------*
+AS800BOV-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOV-BBAD0002-IDENTIFICATION DU PROGRAMME : BOV/7.000/2020-06-12-14.48.46/F/                                        
+AS800BOV-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.59.19                                     
+AS800BOV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOV-00000000-PA5SZX                                                                                                
+AS800BOV-BBAX0035-SELECTION POPULATION CONSTITUEE PAR L'UTILISATEUR                                                     
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0022-AUCUN DOSSIER SELECTIONNE POUR LA POPULATION 0001                                                     
+*GE01BMQ-BBAM0041-POPULATION 0001 LIBEREE                                                                               
+AS800BOV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOV-BBAD0009-PD (PD) : 000000000000000                                                                             
+AS800BOV-BBAD0009-PS (PS) : 000000000000000                                                                             
+AS800BOV-BBAD0011-*** BOV : FIN ANORMALE - HORODATAGE DE FIN   : 2021-03-19-00.59.19  **** CODE RETOUR 10 ****** 34ID   
+
+
+*****************************************************************
+*                         Fin anormale                          *
+*****************************************************************
+*-------------------------- STEP945N ---------------------------*
+*           Libération de l'identifiant de population           *
+*---------------------------------------------------------------*
+ACTSABE9-BBAD0001-------------------------------------------------------------------------------------------------------
+ACTSABE9-BBAD0002-IDENTIFICATION DU PROGRAMME : BE9/7.000/2020-06-12-16.28.09/F/                                        
+ACTSABE9-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.59.20                                     
+ACTSABE9-BBAD0020-FICHIER VIDE : PA                                                                                     
+ACTSABE9-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+ACTSABE9-BBAD0009-PA (PA) : 000000000000000                                                                             
+ACTSABE9-BBAD0010-*** BE9 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.59.20  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP946N ---------------------------*
+*            Initialisation du fichier PSBNJ6PE.C01            *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-19-00.59.20                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203730                                                       002006882                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120373                                                        Ÿb                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               110001                                                                            
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               11 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000079 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-19-00.59.20  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.24182928: No such file or directory
+
+
+*-------------------------- STEP970N ---------------------------*
+*            Initialisation du fichier PSBNJ6ES.C01            *
+*---------------------------------------------------------------*
+
+
+
+
+JOB : JNJ6                            DATE : 2021/03/19 00:59:20
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (10) compris entre 0 et 11
+<I> Code retour applicatif (10) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
++CODRET=0
++[ 0 -gt 5 ]
++[ -s /dz-pareo/applis/pa6/parm/ED_BP_REPR.dat ]
++fl_prep_cft
++jobEtape fl_prep_cft : Copie du fichier des bulletins de paie (Correction 1) pour envoi au service éditique
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:20 fl_prep_cft : Copie du fichier des bulletins de paie (Correction 1) pour envoi au service éditique
+# =========================================================================== #
++[ -s /dz-pareo/product/pa6/hra/prod/txt/tmp/NJ6220IZ.202103 ]
++fl_cft_send
++jobEtape fl_cft_send : Envoi du fichier par CFT.
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:20 fl_cft_send : Envoi du fichier par CFT.
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/cft.out/BP_CORR1 ]
++unset TYPPAI
++unset TYPEXE
++unset RELANCE
++unset OPTEDI
++unset PERPAI
++unset MOISBP
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCBU1.KSH: Fin le 19-03-2021 a 00:59:20
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6MCBU1.LOG_*0ruci*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 00:59:21  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6MCBU1.LOG_*0ruci*.12910726
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_12910726
++__orderid=LOG_*0ruci*
++__jobname_fin=XDPA6MCBU1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1
++__jobname=XDPA6MCBU1
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001.out
++grep -vE \.out|\.err
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001
++__orderid_fin=LOG_00ruci_00001
++__job_complet_fin=XDPA6MCBU1.LOG_00ruci_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001
++head -1
++cut -d / -f 1-5
++cut -d = -f 2-5
++grep YCFLOG=
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001 ]
++sed s/^+/%/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}
++sed s/*/*/g
++sed s/^++/%/g
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCBU1.LOG_00ruci_00001
++sed s/^%/+/g

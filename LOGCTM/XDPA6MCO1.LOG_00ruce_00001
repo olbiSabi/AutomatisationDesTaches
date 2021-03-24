@@ -1,0 +1,1156 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6MCO1.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6MCO1.KSH
+_YCFSHELL=XDPA6MCO1.KSH
+_YCFJOB=XDPA6MCO1
+_YCTDATE=20210318233513
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6MCO1.KSH.20210318233513
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. /dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. /dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCO1.KSH: Debut le 18-03-2021 a 23:35:15
+# =========================================================================== #
++set -x
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers des cr de la paie de correction 1
+
+# =========================================================================== #
+# 18-03-2021 a 23:35:15 fl_suppr_fichier : Suppression des fichiers des cr de la paie de correction 1
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1
++fl_param_per_paie
++jobEtape fl_param_per_paie : Recherche paramètres de période de paie
+
+# =========================================================================== #
+# 18-03-2021 a 23:35:15 fl_param_per_paie : Recherche paramètres de période de paie
+# =========================================================================== #
++[ -s /dz-pareo/applis/pa6/parm/PARAM_PAIE.dat ]
++[ -s /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat ]
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
++cut -c3-4
+MM=03
++cat /dz-pareo/applis/pa6/parm/PERIODE_PAIE.dat
++cut -c1-2
+AA=21
++jobEtape fl_param_per_paie : Période de paie
+
+# =========================================================================== #
+# 18-03-2021 a 23:35:15 fl_param_per_paie : Période de paie
+# =========================================================================== #
++export PERIPAI=2103
++echo Période de paie déterminée : 2103
+Période de paie déterminée : 2103
++jobEtape fl_param_per_paie : Période limite rappel
+
+# =========================================================================== #
+# 18-03-2021 a 23:35:15 fl_param_per_paie : Période limite rappel
+# =========================================================================== #
++echo 21 +100
++bc
+AAP100=121
++echo 121 - 5
++bc
+AAM2=116
++echo 116
++cut -c2-3
++export LIMRAP=1612
++echo Période limite rappel déterminée (4 ans + année en cours): 1612
+Période limite rappel déterminée (4 ans + année en cours): 1612
++fl_Lancement_paie_correction
++jobEtape fl_Lancement_paie_correction : Lancement de paie de correction 1
+
+# =========================================================================== #
+# 18-03-2021 a 23:35:15 fl_Lancement_paie_correction : Lancement de paie de correction 1
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subk3w_v9 CORR1 2103 1612
+
+######################################################################
+# Début JOB subk3w_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement et contrôle des paramètres
+######################################################################
+
+<I> Lancement de la paie de correction 1
+<I> Periode de paie passée en paramètres: 2103
+<I> Periode limite de rappel passée en paramètres: 1612
+<I> Pas de rappel général positionné
+
+######################################################################
+# STEP 2 : Controle et copie du shell K3W standard
+######################################################################
+
+
+######################################################################
+# STEP 3 : Alimentation de la carte parametre de la K3W
+######################################################################
+
+DAS1DA18ACMT2103           0CFR
+DBS1DA18BCDC          S01      MT16120001-01-01     SALID
+DKS1
+DLS1
+E2S2PC14TSA
+E3S2PC132PCFR                  0
+DAS1DA18ACMT2103           0CFR
+DBS1DA18BCDC          S01      MT16120001-01-01     SALID
+DKS1
+DLS1
+E2S2PC14TSA
+E3S2PC132PCFR                  0
+
+######################################################################
+# STEP 4 : Habillage du script shell
+######################################################################
+
+<I> Habillage des tris mfsort
+
+######################################################################
+# STEP 5 : Soumission de la K3W
+######################################################################
+
+*****************************************************************
+*            Chaine K3W - Triplet UNO (UNIX/ORACLE)             *
+*****************************************************************
+
+
+JOB : JK3W                            DATE : 2021/03/18 23:35:15
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050C -----------------------*
+*                  REMOVE du fichier PSBK3WNT.C30              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+JD800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+JD800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-14-04.56.43/F/                                        
+JD800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.15                                     
+JD800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-PA2A         K3WCHAINE K3W                F         50                                                
+JD800BOP-00000000-PA2BLANCEMANT CHAINE K3W                                                                              
+JD800BOP-00000000-PA2C        ALLHRLO                                                                                   
+JD800BOP-00000000-PA2DFT                                                                                                
+JD800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-PA2A000090000K3WCHAINE K3W                F        A50                                                
+JD800BOP-00000000-PA2BLANCEMANT CHAINE K3W                                                                              
+JD800BOP-00000000-PA2C        ALLHRLO                                                                                   
+JD800BOP-00000000-PA2DFT                                                                                                
+JD800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-DAS1DA18ACMT2103           0CFR                                                                       
+JD800BOP-00000000-DBS1DA18BCDC          S01      MT16120001-01-01     SALID                                             
+JD800BOP-00000000-DKS1                                                                                                  
+JD800BOP-00000000-DLS1                                                                                                  
+JD800BOP-00000000-E2S2PC14TSA                                                                                           
+JD800BOP-00000000-E3S2PC132PCFR                  0                                                                      
+JD800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JD800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JD800BOP-00000000-DAS1DA18ACMT2103           0CFR                                                                       
+JD800BOP-00000000-DBS1DA18BCDC          S01      MT16120001-01-01     SALID                                             
+JD800BOP-00000000-DKS1                                                                                                  
+JD800BOP-00000000-DLS1                                                                                                  
+JD800BOP-00000000-E2S2PC14TSA                                                                                           
+JD800BOP-00000000-E3S2PC132PCFR                  0                                                                      
+JD800BOP-BBAO0002-TRAVAIL TRAITE 000000000120367 K3W CHAINE K3W ALLHRLO                                                 
+JD800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JD800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+JD800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+JD800BOP-BBAD0009-PC (PC) : 000000000000006                                                                             
+JD800BOP-BBAD0009-SB (S1) : 000000000000002                                                                             
+JD800BOP-BBAD0009-SC (S2) : 000000000000002                                                                             
+JD800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.15  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*            Demande de résolution des présélections            *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.16                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120367                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000002                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000002                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.16  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100PB.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.20643880: No such file or directory
+
+
+*-------------------------- STEP105N ----------------*
+*          Execution module JAVA                    *
+*---------------------------------------------------*
+Filein: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.20643880
+Fileout: /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.20643880
+Reading INI file /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.20643880 ....
+Action: 0
+Writing response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.20643880 ...
+Wrote response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T105JV.20643880
+
+
+*-------------------------- STEP110A ---------------------------*
+*             Chargement de paramètres dans T110PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP110B ---------------------------*
+*             Initialisation du fichier vide T110PC             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP110N ---------------------------*
+*                  Exécution des présélections                  *
+*---------------------------------------------------------------*
+AS800BOV-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOV-BBAD0002-IDENTIFICATION DU PROGRAMME : BOV/7.000/2020-06-12-14.48.46/F/                                        
+AS800BOV-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.16                                     
+AS800BOV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOV-00000000-PA5SZY                                                                                                
+AS800BOV-BBAX0026-TOUS LES DOSSIERS ONT ETE SELECTIONNES                                                                
+AS800BOV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOV-BBAD0009-PD (PD) : 000000000000000                                                                             
+AS800BOV-BBAD0009-PS (PS) : 000000000000000                                                                             
+AS800BOV-BBAD0010-*** BOV : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.16  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP240N ---------------------------*
+*                       Tri des demandes                        *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP260A -----------------------*
+*                  REMOVE du fichier PSBK3WA.C30               *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP260N ---------------------------*
+*                   Extraction et chargement                    *
+*---------------------------------------------------------------*
+JFCALDAV-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DAV/7.000/2020-12-07-18.18.26/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.16                                     
+JFCALDAV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JFCALDAV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JFCALDAV-00000000-DA18ACMT2103           0CFR                                                                           
+JFCALDAV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JFCALDAV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JFCALDAV-00000000-DA18BCDC          S01      MT16120001-01-01     SALID                                                 
+JDAZDB9J-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9J-BBAD0002-IDENTIFICATION DU PROGRAMME : B9J/7.000/2020-12-07-18.14.16/F/                                        
+JDAZDB9S-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9S-BBAD0002-IDENTIFICATION DU PROGRAMME : B9S/7.000/2020-12-07-18.14.42/F/                                        
+JDAZDB93-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB93-BBAD0002-IDENTIFICATION DU PROGRAMME : B93/7.000/2020-12-07-18.13.49/F/                                        
+JFCALDAV-DDAD0011-LISTE DES PARAMETRES CREES EN SORTIE SUR FA-FICHIER :                                                 
+JFCALDAV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JFCALDAV-00000000-CDC          C  0000120210303010321310321  1612      MT   SAL0 99999SS01                              
+JFCALDAV-00000000-CDC             999  000120367           ID                         0001-01-010                       
+JFCALDAV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JFCALDAV-BBAD0009-FA-FICHIER (WRITE) : 000000000000002                                                                  
+JFCALDAV-BBAD0009-FX-FICHIER (READ.) : 000000000000002                                                                  
+*YN01BG0-BBAD0010-*** DAV : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.16  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP280A -----------------------*
+*                  REMOVE du fichier PSBK3WPO.C30              *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP280N ---------------------------*
+*                    Création de population                     *
+*---------------------------------------------------------------*
+JFCALDC4-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DC4/7.000/2020-12-07-18.19.27/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.17                                     
+JDAZDB9J-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9J-BBAD0002-IDENTIFICATION DU PROGRAMME : B9J/7.000/2020-12-07-18.14.16/F/                                        
+JFCALDC4-BBAD0020-FICHIER VIDE : PP-FICHIER                                                                             
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+PREPARE S1 <SELECT A.NUDOSS FROM   HR.ZY00          A,   HR.ZY0J          D  WHERE (  A.SOCCLE ='CDC' AND A.TYPDOS ='SAL' AND D.COCHEU ='S'   AND A.NUDOSS=D.NUDOSS AND A.NUDOSS IN (SELECT C.NUDOSS FROM   HR.ZY13          B,   HR.ZY0J          C WHERE ( B.FREQUE ='MT' AND C.COCHEX ='C' AND C.VALIDE NOT IN ('I','D','X') AND C.FLDBUG = ' ' AND B.IDZY13=C.IDZY13 AND B.NUDOSS=C.NUDOSS)))>
+*GE01BMQ-BBAM0021-POPULATION 0001 CONTENANT 000000000000044 DOSSIERS A ETE CREEE                                        
+JFCALDC4-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JFCALDC4-BBAD0009-PA-FICHIER (READ) : 000000000000002                                                                   
+JFCALDC4-BBAD0009-PE-FICHIER (WRITE) : 000000000000001                                                                  
+JFCALDC4-BBAD0009-PP-FICHIER (READ) : 000000000000000                                                                   
+JFCALDC4-BBAD0009-PO-FICHIER (WRITE) : 000000000000001                                                                  
+*YN01BG0-BBAD0010-*** DC4 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.18  **** CODE RETOUR 04 ******        
+
+
+*-------------------------- STEP300A ---------------------------*
+*             Chargement de paramètres dans T300DPR             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP300B ---------------------------*
+*            Initialisation du fichier vide T300DE1             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP300N ---------------------------*
+*         Conversion du matricule en numéro de dossier          *
+*---------------------------------------------------------------*
+JDPGMDAA-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DAA/7.000/2020-06-13-23.38.24/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.18                                     
+JDPGMDAA-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JDPGMDAA-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JDPGMDAA-00000000-DA01     01                                                                                           
+JDPGMDAA-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JDPGMDAA-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JDPGMDAA-00000000-DA01     01                                                                                           
+JDPGMDAA-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JDPGMDAA-BBAD0009-PR-FICHIER (READ.) : 000000000000001                                                                  
+JDPGMDAA-BBAD0009-E1-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S1-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E2-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S2-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E3-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S3-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E4-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S4-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E5-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S5-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E6-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S6-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E7-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S7-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E8-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S8-FICHIER (WRITE) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-E9-FICHIER (READ.) : 000000000000000                                                                  
+JDPGMDAA-BBAD0009-S9-FICHIER (WRITE) : 000000000000000                                                                  
+*YN01BG0-BBAD0010-*** DAA : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.18  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP320N ---------------------------*
+*               Tri des éléments variables batch                *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP340A ---------------------------*
+*             Chargement de paramètres dans T340PY              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP340B ---------------------------*
+*             Chargement de paramètres dans T340DPE             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP340C -----------------------*
+*                  REMOVE du fichier PSBK3WR.C30               *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP340N ---------------------------*
+*                          Extraction                           *
+*---------------------------------------------------------------*
+JFCALDB2-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DB2/7.000/2020-12-07-18.18.27/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.18                                     
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DZZ/7.000/2020-12-07-18.19.30/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.18                                     
+JDAZYBLS-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZYBLS-BBAD0002-IDENTIFICATION DU PROGRAMME : BLS/7.000/2020-12-07-18.16.56/F/                                        
+JDAZYBLS-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.18                                     
+JDAZDB9S-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9S-BBAD0002-IDENTIFICATION DU PROGRAMME : B9S/7.000/2020-12-07-18.14.42/F/                                        
+JDAZDB92-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB92-BBAD0002-IDENTIFICATION DU PROGRAMME : B92/7.000/2020-12-07-18.13.23/F/                                        
+JDAZDB9J-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9J-BBAD0002-IDENTIFICATION DU PROGRAMME : B9J/7.000/2020-12-07-18.14.16/F/                                        
+JDAZDB93-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB93-BBAD0002-IDENTIFICATION DU PROGRAMME : B93/7.000/2020-12-07-18.13.49/F/                                        
+JFCALDZZ-DDAH0013-DOSSIER DE PAIE CDC00053256 001 / 13 NON TRAITE.                                                      
+JDAZYBLS-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000044                                                      
+JFCALDZZ-BBAD0009-EMPLOYEES. (XTRAC) : 000000000000044                                                                  
+JFCALDZZ-BBAD0009-PAY DOSS.. (XTRAC) : 000000000000044                                                                  
+JFCALDB2-DDAD0098-FIN DE LA TABLE DES POPULATIONS                                                                       
+JDLZXBEB-BBAD0001-------------------------------------------------------------------------------------------------------
+JDLZXBEB-BBAD0002-IDENTIFICATION DU PROGRAMME : BEB/7.000/2020-12-07-18.15.29/F/                                        
+JDLZXBEB-DDAH0097-INSERT/UPDATE OF ZY8D: 000000000000000                                                                
+JFCALDB2-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JFCALDB2-BBAD0009-ER-FICHIER (WRITE) : 000000000000002                                                                  
+JFCALDB2-BBAD0009-ES-FICHIER (WRITE) : 000000000000121                                                                  
+JFCALDB2-BBAD0009-EV-FICHIER (READ.) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-PA-FICHIER (READ.) : 000000000000002                                                                  
+JFCALDB2-BBAD0009-PO-FICHIER (READ.) : 000000000000001                                                                  
+JFCALDB2-BBAD0009-EV DOSSIER (READ.) : 000000000000119                                                                  
+JFCALDB2-BBAD0009-EV BATCH.. (READ.) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-EV GENERES (READ.) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-EV TYPE 90 (WRITE) : 000000000000119                                                                  
+JFCALDB2-BBAD0009-EV TYPE 93 (WRITE) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-EV TYPE 97 (WRITE) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-EV TYPE 9G (WRITE) : 000000000000000                                                                  
+JFCALDB2-BBAD0009-EMPLOYEES. (XTRAC) : 000000000000044                                                                  
+JFCALDB2-BBAD0009-PAY DOSS.. (XTRAC) : 000000000000044                                                                  
+*YN01BG0-BBAD0010-*** DB2 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.35.25  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP380N ---------------------------*
+*                 Tri des éléments temporaires                  *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP390N ---------------------------*
+*            Chargement d'un fichier de type membre             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400A ---------------------------*
+*             Chargement de paramètres dans T400DPE             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400B -----------------------*
+*                  REMOVE du fichier PSBK3WX.C30               *
+*-----------------------------------------------------------*
+
+
+*-------------------------- STEP400C ---------------------------*
+*             Chargement de paramètres dans T400PY              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400D ---------------------------*
+*             Concaténation de fichiers sur T400IAA             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400N ---------------------------*
+*                            Calcul                             *
+*---------------------------------------------------------------*
+JFCALDBI-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DBI/7.000/2021-02-24-13.24.02/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.26                                     
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DZZ/7.000/2020-12-07-18.19.30/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.26                                     
+JDAZYBLS-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZYBLS-BBAD0002-IDENTIFICATION DU PROGRAMME : BLS/7.000/2020-12-07-18.16.56/F/                                        
+JDAZYBLS-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.26                                     
+JDAZDB9S-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9S-BBAD0002-IDENTIFICATION DU PROGRAMME : B9S/7.000/2020-12-07-18.14.42/F/                                        
+JDAZDB92-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB92-BBAD0002-IDENTIFICATION DU PROGRAMME : B92/7.000/2020-12-07-18.13.23/F/                                        
+JDAZDB9J-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9J-BBAD0002-IDENTIFICATION DU PROGRAMME : B9J/7.000/2020-12-07-18.14.16/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DB6/7.000/2020-06-13-23.38.27/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.35                                     
+JDAZDB91-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB91-BBAD0002-IDENTIFICATION DU PROGRAMME : B91/7.000/2020-12-07-18.12.54/F/                                        
+JFCALDBI-FCBIZD02-User-defined message FC BIZDSN: La version du kit déclaratif utilisée est 7.0 et la phase en vigueur est DSN    P21V01.                                                                                                                                                                                                                     
+JFCALDBI-FCBIZD02-User-defined message FC BIZDSN: La réglementation CDC est de localisation FT.                                                                                                                                                                                                                                                               
+JDAZDB93-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB93-BBAD0002-IDENTIFICATION DU PROGRAMME : B93/7.000/2020-12-07-18.13.49/F/                                        
+JDAYSBE1-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAYSBE1-BBAD0002-IDENTIFICATION DU PROGRAMME : BE1/7.000/2021-01-12-09.28.41/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DBA/7.000/2021-03-10-08.38.44/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.43                                     
+JFCALDBA-DDAD0058-***  DEBUT DE TRAITEMENT DE LA REGLEMENTATION CDC  **                                                 
+JFCALDBA-DDAD0059-TABLE DES RUBRIQUES (TABRUB2)                    000000000004797 POSTES UTILISES SUR 000000000009000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0070-TABLE DE PARTICIPATION AUX ASSIETTES         000000000000855 POSTES UTILISES SUR 000000000001000 PREVU
+                  S                                                                                                     
+JFCALDBA-DDAD0071-TABLE DES CADENCEMENTS DIFFERENTS                000000000000027 POSTES UTILISES SUR 000000000000100 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0072-TABLE DES RUBRIQUES (TABRUB6)                    000000000001685 POSTES UTILISES SUR 000000000008000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0073-TABLE DES RUBRIQUES UTILISEES COMME MAXIMUM      000000000000003 POSTES UTILISES SUR 000000000000500 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0074-TABLE DE PARTICIPATION AUX CUMULS                000000000000101 POSTES UTILISES SUR 000000000000600 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0075-TABLE DE PARTICIPATION AUX SOMMES RECONDUCTIBLES 000000000000056 POSTES UTILISES SUR 000000000000400 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0076-TABLE DES CUMULS UTILISATEURS                    000000000000094 POSTES UTILISES SUR 000000000001100 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0077-TABLE DES ETABLISSEMENTS                         000000000000073 POSTES UTILISES SUR 000000000002000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0078-TABLE DES INDICES                                000000000000000 POSTES UTILISES SUR 000000000000200 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0079-TABLE DES POINTS                                 000000000000000 POSTES UTILISES SUR 000000000000030 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0080-TABLE DES CODES DE REGROUPEMENT                  000000000002773 POSTES UTILISES SUR 000000000003000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0081-TABLE DES CODES TRANCHE                          000000000000016 POSTES UTILISES SUR 000000000000060 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0082-TABLE DES TRANCHES                               000000000001020 POSTES UTILISES SUR 000000000002000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0083-TABLE DES PERIODES (ANNEES)                      000000000000020 POSTES UTILISES SUR 000000000000030 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0084-TABLE DES CODES UNITE DE PRORATA                 000000000000005 POSTES UTILISES SUR 000000000000010 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0085-TABLE DES CODES BAREMES (REPERTOIRE DSO)         000000000000000 POSTES UTILISES SUR 000000000000030 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAD0086-TABLE DES BAREMES (REPERTOIRE DSO)               000000000000000 POSTES UTILISES SUR 000000000030000 P
+                  REVUS                                                                                                 
+JFCALDBA-DDAG0027-MATRICULE CDC 00002276 : PAS DE TYPE DE CREDIT EN VIGUEUR SUR LA PERIODE CALCUL.                      
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DSD/7.000/2020-12-07-18.19.28/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.57                                     
+JDLZXBEK-BBAD0001-------------------------------------------------------------------------------------------------------
+JDLZXBEK-BBAD0002-IDENTIFICATION DU PROGRAMME : BEK/7.000/2021-01-12-09.31.10/F/                                        
+JDLZXBEK-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.35.58                                     
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM1(CP274)/000000000000205/000000000000600          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 1 : DZB/U1V/                                            
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM2(CP275)/000000000001371/000000000002000          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 2 : UIN/UIH/UAC/UGP/UIL/UIR/UIS/UAD/DCV/HJM/UGO/UGQ/    
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM3(CP276)/000000000000036/000000000013000          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 3 : UCB/UCO/UE6/                                        
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM4(CP277)/000000000006009/000000000050000          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 4 : DRC/DRN/DSL/DRB/DRH/DRK/UIP/UIQ/UIY/UIX/HYA/ULO/DS1/
+                  UHU/HLK/LY1/LY2/LY3/LY4/LY5/LY6/LY7/LY8/LY9/LYA/LYB/LYC/HL8/HKF/HJB/HKD/HKN/HKE/HJ8/HJV/              
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM5(CP278)/000000000000009/000000000000030          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 5 : UGK/                                                
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM6(CP279)/000000000000224/000000000004000          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 6 : DVC/DSJ/UAA/DRE/HM2/HL3/HL4/HJO/                    
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM7(CP280)/000000000000061/000000000001000          
+JDLZXBEK-DDAI0092-LISTE DES REPERTOIRES CHARGES POUR LE DOMAINE 7 : UAJ/UAK/                                            
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM8(CP281)/000000000000000/000000000000010          
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM9(CP282)/000000000000000/000000000000010          
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DOM0(CP283)/000000000000000/000000000000010          
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : WAB-DZB-P/000000000000268/000000000005000                
+JDLZXBEK-BBAD0013-STATISTIQUES D'OCCUPATION (TABLES WORKING) : DL5-CX/000000000000016/000000000000160                   
+X4K1EK - MATRIC:00002276    
+JDLZXBEB-BBAD0001-------------------------------------------------------------------------------------------------------
+JDLZXBEB-BBAD0002-IDENTIFICATION DU PROGRAMME : BEB/7.000/2020-12-07-18.15.29/F/                                        
+JDLZXBEB-BBAD0009-FIRST NUDOSS () : 000000005215886                                                                     
+X4K1EK - MATRIC:00005271    
+X4K1EK - MATRIC:00006052    
+X4K1EK - MATRIC:00006276    
+X4K1EK - MATRIC:00007819    
+X4K1EK - MATRIC:00008076    
+X4K1EK - MATRIC:00008163    
+X4K1EK - MATRIC:00011170    
+X4K1EK - MATRIC:00015275    
+X4K1EK - MATRIC:00023077    
+X4K1EK - MATRIC:00031264    
+X4K1EK - MATRIC:00035446    
+X4K1EK - MATRIC:00040182    
+X4K1EK - MATRIC:00045641    
+X4K1EK - MATRIC:00046752    
+X4K1EK - MATRIC:00048537    
+X4K1EK - MATRIC:00048816    
+X4K1EK - MATRIC:00050483    
+X4K1EK - MATRIC:00050698    
+X4K1EK - MATRIC:00051078    
+X4K1EK - MATRIC:00051109    
+X4K1EK - MATRIC:00052184    
+X4K1EK - MATRIC:00052496    
+X4K1EK - MATRIC:00052724    
+X4K1EK - MATRIC:00052744    
+JFCALDZZ-DDAH0013-DOSSIER DE PAIE CDC00053256 001 / 13 NON TRAITE.                                                      
+X4K1EK - MATRIC:00053030    
+X4K1EK - MATRIC:00053256    
+X4K1EK - MATRIC:00053965    
+X4K1EK - MATRIC:00054136    
+X4K1EK - MATRIC:00054179    
+X4K1EK - MATRIC:00055095    
+JFCALDBI-FCBIZD01-User-defined message FC BIZDSN: Les dates du contrat(2020-01-02/2999-12-31) doivent encadrer celles du dossier de paie(2018-01-02/2999-12-31) (00055194-001-001/FCBI0DSN-DF)                                                                                                                                                                
+X4K1EK - MATRIC:00055198    
+X4K1EK - MATRIC:00055194    
+X4K1EK - MATRIC:00055316    
+X4K1EK - MATRIC:00055375    
+X4K1EK - MATRIC:00055574    
+X4K1EK - MATRIC:00056239    
+X4K1EK - MATRIC:00056476    
+X4K1EK - MATRIC:00056521    
+X4K1EK - MATRIC:00056981    
+X4K1EK - MATRIC:00057519    
+X4K1EK - MATRIC:00057533    
+X4K1EK - MATRIC:00058082    
+JDAZYBLS-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000000044                                                      
+JFCALDZZ-BBAD0009-EMPLOYEES. (XTRAC) : 000000000000044                                                                  
+JFCALDZZ-BBAD0009-PAY DOSS.. (XTRAC) : 000000000000044                                                                  
+JFCALDBI-DDAD0098-FIN DE LA TABLE DES POPULATIONS                                                                       
+JDLZXBEB-DDAH0097-INSERT/UPDATE OF ZY8D: 000000000000000                                                                
+JDAYSBE1-BBAL0004-NOMBRE DE DOSSIERS ECRITS : 000000000001028                                                           
+X4K1EK - MATRIC:00058095    
+JDAYSBE1-BBAL0004-NOMBRE DE DOSSIERS ECRITS : 000000000000045                                                           
+JFCALDBA-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JFCALDBA-BBAD0009-PA-FICHIER (READ.) : 000000000000002                                                                  
+JFCALDBA-BBAD0009-FY-FICHIER (WRITE) : 000000000000017                                                                  
+JFCALDBA-BBAD0009-EMPLOYEES. (WRITE) : 000000000000044                                                                  
+JFCALDBA-BBAD0009-PAY SLIPS. (WRITE) : 000000000000044                                                                  
+JFCALDBA-BBAD0009-PAY DOSS.. (WRITE) : 000000000000044                                                                  
+JFCALDBI-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JFCALDBI-BBAD0009-FA-FICHIER (READ.) : 000000000000003                                                                  
+JFCALDBI-BBAD0009-FK-FICHIER (READ.) : 000000000000121                                                                  
+JFCALDBI-BBAD0009-TABLE AB10 (READ.) : 000000000005287                                                                  
+JFCALDBI-BBAD0009-FX-FICHIER (WRITE) : 000000000000065                                                                  
+JFCALDBI-BBAD0009-PO-FICHIER (READ.) : 000000000000001                                                                  
+JFCALDBI-BBAD0009-PAY DOSS.. (READ.) : 000000000000044                                                                  
+JFCALDBI-BBAD0009-EMPLOYEES. (READ.) : 000000000000044                                                                  
+JFCALDBI-DDAD0024-NOMBRE DE BULLETINS ECRITS DANS LA SORTIE DE TEST DE DBI : 000000000001028                            
+JFCALDBI-DDAF0066-NOMBRE DE SALARIES ECRITS DANS LA SORTIE DE TEST DE DBI : 000000000000044.                            
+*YN01BG0-BBAD0010-*** DBI : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.37.59  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP410A ---------------------------*
+*             Chargement de paramètres dans T410PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP410B ---------------------------*
+*             Chargement de paramètres dans T410PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP410N ---------------------------*
+*                  Vidage des dossiers de paie                  *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.37.59                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203670                                                       002006876                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120367                                                        Ÿ\                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51000                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBD           1000011                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52EBBBD           1000011                                                                           
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+*GE01DHE-BBAD0002-IDENTIFICATION DU PROGRAMME : DHE/2020-06-12-14.23.56///                                              
+*GE01DHE-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.37.59                                     
+*GE01DHE-BBAD0009-H1 (H1) : 000000000000000                                                                             
+*GE01DHE-BBAD0009-M1 (M1) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.37.59  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410RS.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H2.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H3.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H4.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H5.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H6.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H7.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H8.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410H9.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M2.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M3.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M4.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M5.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M6.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M7.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M8.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T410M9.20643880: No such file or directory
+
+
+*-------------------------- STEP415A ---------------------------*
+*             Chargement de paramètres dans T415PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP415B ---------------------------*
+*             Initialisation du fichier vide T415PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP415N ---------------------------*
+*         Préparation et soumission de transfert d'état         *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.00                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120367                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01   LYTT415C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01XMDXMLT410H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01XMDXSDT410M1                                                                            
+AS800BOU-00000000-*A5FLYT1BBBD01XMZXMLT410H1                                                                            
+AS800BOU-00000000-*A5P/dz-pareo/product/pa6/hra/prod/param                                                              
+AS800BOU-00000000-PA5FLYT1BBBD01TXTTXTT410IZ                                                                            
+AS800BOU-00000000-*A5FLYT1BBBD01XMZXSL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01   LYTT415C1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01XMDXMLT410H1                                                                            
+AS800BOU-00000000-PA5FLYT1BBBD01TXTTXTT410IZ                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBD (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBD 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BBBD 01 TXT (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000008                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.00  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C2.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C3.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C4.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C5.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C6.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C7.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C8.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T415C9.20643880: No such file or directory
+
+
+
+
+*-------------------------- STEP500A ---------------------------*
+*             Concaténation de fichiers sur T500INA             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500B ---------------------------*
+*             Concaténation de fichiers sur T500INB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500N ---------------------------*
+*                       Tri des éditions                        *
+*---------------------------------------------------------------*
+
+
+
+
+*-------------------------- STEP520A ---------------------------*
+*             Chargement de paramètres dans T520PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP520B ---------------------------*
+*             Chargement de paramètres dans T520DTR             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP520N ---------------------------*
+*                    Comptes rendus de paie                     *
+*---------------------------------------------------------------*
+JDPGMDBX-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0001-------------------------------------------------------------------------------------------------------
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : BG0/7.000/2020-06-12-14.31.10/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DBX/7.000/2020-12-08-00.10.08/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.00                                     
+*GX01BXM-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+*GX01BXM-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+*GX01BXM-00000000-PA01ISO-8859-1                                                                                        
+JDAZDB9J-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9J-BBAD0002-IDENTIFICATION DU PROGRAMME : B9J/7.000/2020-12-07-18.14.16/F/                                        
+*YN01BG0-BBAD0002-IDENTIFICATION DU PROGRAMME : DPV/7.000/2020-12-08-00.10.17/F/                                        
+*YN01BG0-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.00                                     
+JDPGMDPV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JDPGMDPV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JDPGMDPV-00000000-DA341                                                                                                 
+JDAZDB9S-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB9S-BBAD0002-IDENTIFICATION DU PROGRAMME : B9S/7.000/2020-12-07-18.14.42/F/                                        
+JDAZDB93-BBAD0001-------------------------------------------------------------------------------------------------------
+JDAZDB93-BBAD0002-IDENTIFICATION DU PROGRAMME : B93/7.000/2020-12-07-18.13.49/F/                                        
+ACTSABSL-BBAD0001-------------------------------------------------------------------------------------------------------
+ACTSABSL-BBAD0002-IDENTIFICATION DU PROGRAMME : BSL/7.000/2020-06-12-16.28.12/F/                                        
+*GX01BXM-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+*GX01BXM-BBAD0009-XA (XA) : 000000000001504                                                                             
+JDPGMDBX-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JDPGMDBX-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JDPGMDBX-BBAD0009-FX-FICHIER (READ.) : 000000000000084                                                                  
+*YN01BG0-BBAD0010-*** DBX : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.01  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP540A ---------------------------*
+*             Chargement de paramètres dans T540PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP540B ---------------------------*
+*             Initialisation du fichier vide T540PB             *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP540N ---------------------------*
+*         Préparation et soumission de transfert d'état         *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.01                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000120367                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-*A5FQRY1         QRYT540C1                                                                            
+AS800BOU-00000000-PA5FLYT1D3BX01   LYTT540C1                                                                            
+AS800BOU-00000000-PA5FLYT1D3BX01XMDXMLT520XA                                                                            
+AS800BOU-00000000-PA5FLYT1D3BX01XMDXSDT520MA                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1D3BX01   LYTT540C1                                                                            
+AS800BOU-00000000-PA5FLYT1D3BX01XMDXMLT520XA                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE D3BX 01 XMD (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000005                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.01  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C2.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C3.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C4.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C5.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C6.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C7.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C8.20643880: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T540C9.20643880: No such file or directory
+
+
+
+
+*-------------------------- STEP600A ---------------------------*
+*             Chargement de paramètres dans T600PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP600N ---------------------------*
+*                  Vidage des dossiers de paie                  *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.01                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203670                                                       002006876                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120367                                                        Ÿ\                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51 0                                                                                                
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51100                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52ED1BX           110001                                                                            
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52ED1BX           1100010                                                                           
+JA800BLZ-BBAZ0006-ETAT D1BX CHARGE EN TABLE RELATIONNELLE 000000000000187 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000195                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.01  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T600RS.20643880: No such file or directory
+
+
+*-------------------------- STEP943N ---------------------------*
+*           Libération de l'identifiant de population           *
+*---------------------------------------------------------------*
+ACTSABE9-BBAD0001-------------------------------------------------------------------------------------------------------
+ACTSABE9-BBAD0002-IDENTIFICATION DU PROGRAMME : BE9/7.000/2020-06-12-16.28.09/F/                                        
+ACTSABE9-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.02                                     
+ACTSABE9-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+ACTSABE9-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+ACTSABE9-00000000-PA430001                                                                                              
+ACTSABE9-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+ACTSABE9-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+ACTSABE9-00000000-PA430001                                                                                              
+ACTSABE9-BBAM0041-POPULATION 0001 LIBEREE                                                                               
+ACTSABE9-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+ACTSABE9-BBAD0009-PA (PA) : 000000000000001                                                                             
+ACTSABE9-BBAD0010-*** BE9 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.02  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-18-23.38.02                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001203670                                                       002006876                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000120367                                                        Ÿ\                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               100001                                                                            
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               10 001                                                                            
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-18-23.38.02  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.20643880: No such file or directory
+
+
+
+
+JOB : JK3W                            DATE : 2021/03/18 23:38:02
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 11
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
+
+######################################################################
+# STEP 6 : Copie des editions
+######################################################################
+
+numero de processus : 20643880
++jobTest 0 fl_Lancement_paie_correction : Pb dans la paie de correction 1
++[ -s /dz-pareo/applis/pa6/parm/PARAM_PAIE.dat ]
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 23:38:02 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318233802
++basename /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1
+FIC_NAME=K3W600IZ.CORR1
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 /dz-pareo/applis/pa6/archive/K3W600IZ.CORR1.20210318233802
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 OK
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W600IZ.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W600IZ.CORR1 OK
++fg_copy_file_cft /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 23:38:02 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318233802
++basename /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1
+FIC_NAME=K3W950IX.CORR1
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 /dz-pareo/applis/pa6/archive/K3W950IX.CORR1.20210318233802
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 OK
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1 fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1 OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/K3W950IX.CORR1 vers /dz-pareo/applis/pa6/cft.out/cr_mensuels/log_paie/K3W950IX.CORR1 OK
++unset PERIPAI
++unset LIMRAP
++unset RAPGEN
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6MCO1.KSH: Fin le 18-03-2021 a 23:38:02
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6MCO1.LOG_*0ruce*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 23:38:03  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6MCO1.LOG_*0ruce*.12976286
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_12976286
++__orderid=LOG_*0ruce*
++__jobname_fin=XDPA6MCO1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.out
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1
++__jobname=XDPA6MCO1
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001
++__orderid_fin=LOG_00ruce_00001
++__job_complet_fin=XDPA6MCO1.LOG_00ruce_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6MCO1.LOG_00ruce_00001
++sed s/^++/%/g
++sed s/^+/%/g
++sed s/*/*/g

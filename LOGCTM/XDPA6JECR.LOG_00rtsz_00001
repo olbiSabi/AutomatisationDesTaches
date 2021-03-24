@@ -1,0 +1,252 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6JECR.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6JECR.KSH
+_YCFSHELL=XDPA6JECR.KSH
+_YCFJOB=XDPA6JECR
+_YCTDATE=20210318222011
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6JECR.KSH.20210318222011
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6JECR.KSH: Debut le 18-03-2021 a 22:20:13
+# =========================================================================== #
++set -x
++[ -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BDX_EAI_GIDE.20210318221832.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens/EAI_GIDE.20210318221928 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210318221821 ]
++fl_Zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens/*
++jobEtape fl_Zip : Zip des fichiers cr_quotidiens
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:13 fl_Zip : Zip des fichiers cr_quotidiens
+# =========================================================================== #
++zip -9j /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BDX_EAI_GIDE.20210318221832.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens/EAI_GIDE.20210318221928 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210318221821
+  adding: BANQUE_GUICH.20210318222009 (deflated 91%)
+  adding: BDX_EAI_GIDE.20210318221832.txt (deflated 90%)
+  adding: EAI_GIDE.20210318221928 (deflated 98%)
+  adding: OMEGA_ABSENCES.20210318221821 (deflated 98%)
++jobTest 0 fl_Zip : Pb zip des fichiers cr_quotidiens fl_Zip : Zip des fichiers cr_quotidiens OK
+fl_Zip : Zip des fichiers cr_quotidiens OK
++fl_envoi_cft /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip
++jobEtape fl_envoi_cft : Envoi des MAJ sur serveur bureautique
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:13 fl_envoi_cft : Envoi des MAJ sur serveur bureautique
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6CRCOMMU -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:13 cft.sh send -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip -m PA6DFSPA6CRCOMMU
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6CRCOMMU.PRODWIN.12779770.2013-1' vers part='PRODWIN',idf='PA6DFSPA6CRCOMMU' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft PA6DFSBQ: /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip
++fl_archive /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip
++jobEtape fl_archive : Archivage du zip des cr_quotidiens
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:13 fl_archive : Archivage du zip des cr_quotidiens
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/cr_quotidiens-20210318222011.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++mv /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BANQUE_GUICH.20210318222009 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/BDX_EAI_GIDE.20210318221832.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens/EAI_GIDE.20210318221928 /dz-pareo/applis/pa6/cft.out/cr_quotidiens/OMEGA_ABSENCES.20210318221821 /dz-pareo/applis/pa6/archive
++[ -f /dz-pareo/applis/pa6/cft.out/fichiers_explo/METIER/* ]
++[ -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS-210318211648.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS_LOG_20210318211647.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CDC_Import.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS-210318203610.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0016_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0019_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_FICHISTO.20210318221255 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_PVO.20210318212143 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/OMEGA_COLLA_20210318203610.dat /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME1_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME2_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME3_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVAGEN_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME1_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME2_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME3_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS-210318203822.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS_LOG_20210318203820.txt ]
++fl_Zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/*
++jobEtape fl_Zip : Zip des fichiers cr_quotidiens
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:13 fl_Zip : Zip des fichiers cr_quotidiens
+# =========================================================================== #
++zip -9j /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS-210318211648.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS_LOG_20210318211647.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CDC_Import.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS-210318203610.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0016_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0019_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_FICHISTO.20210318221255 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_PVO.20210318212143 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/OMEGA_COLLA_20210318203610.dat /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME1_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME2_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME3_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVAGEN_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME1_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME2_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME3_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS-210318203822.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS_LOG_20210318203820.txt
+  adding: AGENSALS-210318211648.txt (deflated 86%)
+  adding: AGENSALS_LOG_20210318211647.txt (deflated 92%)
+  adding: CDC_Import.zip (deflated 12%)
+  adding: CORHSALS-210318203610.txt (deflated 89%)
+  adding: CORHSALS_LOG_XE0016_20210318203608.txt (deflated 92%)
+  adding: CORHSALS_LOG_XE0019_20210318203608.txt (deflated 92%)
+  adding: CR_AGRSALS.20210318211644 (deflated 99%)
+  adding: CR_FICHISTO.20210318221255 (deflated 99%)
+  adding: CR_PVO.20210318212143 (deflated 87%)
+  adding: OMEGA_COLLA_20210318203610.dat (deflated 88%)
+  adding: PA6_CHIMAGEN-210318204013.TXT (deflated 85%)
+  adding: PA6_CHIMAGEN_LOG_20210318204011.txt (deflated 92%)
+  adding: PA6_CHIMCATA-210318204013.TXT (deflated 97%)
+  adding: PA6_CHIMCATA_CHIME1_LOG_20210318204011.txt (deflated 92%)
+  adding: PA6_CHIMCATA_CHIME2_LOG_20210318204011.txt (deflated 92%)
+  adding: PA6_CHIMCATA_CHIME3_LOG_20210318204011.txt (deflated 92%)
+  adding: PA6_PREVAGEN_LOG_20210318204300.txt (deflated 92%)
+  adding: PA6_PREVCATA_CHIME1_LOG_20210318204300.txt (deflated 92%)
+  adding: PA6_PREVCATA_CHIME2_LOG_20210318204300.txt (deflated 92%)
+  adding: PA6_PREVCATA_CHIME3_LOG_20210318204300.txt (deflated 92%)
+  adding: RESPSALS-210318203822.txt (deflated 93%)
+  adding: RESPSALS_LOG_20210318203820.txt (deflated 92%)
++jobTest 0 fl_Zip : Pb zip des fichiers cr_quotidiens fl_Zip : Zip des fichiers cr_quotidiens OK
+fl_Zip : Zip des fichiers cr_quotidiens OK
++fl_envoi_cft3 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip
++jobEtape fl_envoi_cft : Envoi des MAJ sur serveur bureautique
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:18 fl_envoi_cft : Envoi des MAJ sur serveur bureautique
+# =========================================================================== #
++cft.sh send -m PA6DFSPA6CRGRH01 -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:18 cft.sh send -f /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip -m PA6DFSPA6CRGRH01
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6DFSPA6CRGRH01.PRODWIN.12779528.2018-1' vers part='PRODWIN',idf='PA6DFSPA6CRGRH01' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft PA6DFSME : /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip
++fl_archive /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip
++jobEtape fl_archive : Archivage du zip des cr_quotidiens
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:19 fl_archive : Archivage du zip des cr_quotidiens
+# =========================================================================== #
++mv /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh-20210318222011.zip /dz-pareo/applis/pa6/archive
++jobTest 0 fl_archive : Pb de déplacement du fichier zip dans archive fl_archive : Archivage du zip OK
+fl_archive : Archivage du zip OK
++mv /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS-210318211648.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/AGENSALS_LOG_20210318211647.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CDC_Import.zip /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS-210318203610.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0016_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CORHSALS_LOG_XE0019_20210318203608.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_AGRSALS.20210318211644 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_FICHISTO.20210318221255 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/CR_PVO.20210318212143 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/OMEGA_COLLA_20210318203610.dat /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME1_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME2_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME3_LOG_20210318204011.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVAGEN_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME1_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME2_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_PREVCATA_CHIME3_LOG_20210318204300.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS-210318203822.txt /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/RESPSALS_LOG_20210318203820.txt /dz-pareo/applis/pa6/archive
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6JECR.KSH: Fin le 18-03-2021 a 22:20:19
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6JECR.LOG_*0rtsz*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 22:20:19  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6JECR.LOG_*0rtsz*.23134226
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_23134226
++__orderid=LOG_*0rtsz*
++__jobname_fin=XDPA6JECR
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++awk -F. {print $1}
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.out
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR
++__jobname=XDPA6JECR
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001
++__orderid_fin=LOG_00rtsz_00001
++__job_complet_fin=XDPA6JECR.LOG_00rtsz_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6JECR.LOG_00rtsz_00001
++sed s/^++/%/g

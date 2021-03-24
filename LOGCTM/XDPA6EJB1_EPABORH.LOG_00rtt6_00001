@@ -1,0 +1,525 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6EJB1_EPABORH.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6EJB1_EPABORH.KSH
+_YCFSHELL=XDPA6EJB1_EPABORH.KSH
+_YCFJOB=XDPA6EJB1_EPABORH
+_YCTDATE=20210318212146
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6EJB1_EPABORH.KSH.20210318212146
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6EJB1_EPABORH.KSH: Debut le 18-03-2021 a 21:21:47
+# =========================================================================== #
++set -x
++rm -f /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV.txt /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV.txt
++date +%Y%m%d%H%M%S
++export DATE_JOUR=20210318212148
++fl_extraction_bo_EPA
++jobEtape fl_extraction_bo : Extraction des données EPA 
+
+# =========================================================================== #
+# 18-03-2021 a 21:21:48 fl_extraction_bo : Extraction des données EPA 
+# =========================================================================== #
++cd /dz-pareo/applis/pa6/sql/PA6_BO_EPA
++echo PA6_EPA_AME_INDIV
+FICHIEROUT=PA6_EPA_AME_INDIV
++fg_lance_script_sql PA6_EPA_AME_INDIV.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++SCRIPT=PA6_EPA_AME_INDIV.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_AME_INDIV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:21:48 fg_lance_script_sql(PA6_EPA_AME_INDIV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_AME_INDIV.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_AME_INDIV.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_AME_INDIV.txt
++echo PA6_EPA_COMPETENCES
+FICHIEROUT=PA6_EPA_COMPETENCES
++fg_lance_script_sql PA6_EPA_COMPETENCES.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++SCRIPT=PA6_EPA_COMPETENCES.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_COMPETENCES.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:21:49 fg_lance_script_sql(PA6_EPA_COMPETENCES.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_COMPETENCES.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_COMPETENCES.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_COMPETENCES.txt
++echo PA6_EPA_DOSS_COLLAB
+FICHIEROUT=PA6_EPA_DOSS_COLLAB
++fg_lance_script_sql PA6_EPA_DOSS_COLLAB.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++SCRIPT=PA6_EPA_DOSS_COLLAB.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_DOSS_COLLAB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:24:17 fg_lance_script_sql(PA6_EPA_DOSS_COLLAB.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_DOSS_COLLAB.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_DOSS_COLLAB.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_DOSS_COLLAB.txt
++echo PA6_EPA_FORMATIONS_ACTIONS
+FICHIEROUT=PA6_EPA_FORMATIONS_ACTIONS
++fg_lance_script_sql PA6_EPA_FORMATIONS_ACTIONS.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++SCRIPT=PA6_EPA_FORMATIONS_ACTIONS.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_FORMATIONS_ACTIONS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:27:48 fg_lance_script_sql(PA6_EPA_FORMATIONS_ACTIONS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_FORMATIONS_ACTIONS.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_FORMATIONS_ACTIONS.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_FORMATIONS_ACTIONS.txt
++echo PA6_EPA_GENERAL
+FICHIEROUT=PA6_EPA_GENERAL
++fg_lance_script_sql PA6_EPA_GENERAL.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++SCRIPT=PA6_EPA_GENERAL.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_GENERAL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:28:09 fg_lance_script_sql(PA6_EPA_GENERAL.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_GENERAL.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_GENERAL.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_GENERAL.txt
++echo PA6_EPA_LIENS_HIERAR
+FICHIEROUT=PA6_EPA_LIENS_HIERAR
++fg_lance_script_sql PA6_EPA_LIENS_HIERAR.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++SCRIPT=PA6_EPA_LIENS_HIERAR.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_LIENS_HIERAR.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:28:23 fg_lance_script_sql(PA6_EPA_LIENS_HIERAR.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_LIENS_HIERAR.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_LIENS_HIERAR.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_LIENS_HIERAR.txt
++echo PA6_EPA_OBJECTIFS
+FICHIEROUT=PA6_EPA_OBJECTIFS
++fg_lance_script_sql PA6_EPA_OBJECTIFS.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++SCRIPT=PA6_EPA_OBJECTIFS.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_OBJECTIFS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:28:33 fg_lance_script_sql(PA6_EPA_OBJECTIFS.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_OBJECTIFS.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_OBJECTIFS.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_OBJECTIFS.txt
++echo PA6_EPA_PVO_INDIV
+FICHIEROUT=PA6_EPA_PVO_INDIV
++fg_lance_script_sql PA6_EPA_PVO_INDIV.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++SCRIPT=PA6_EPA_PVO_INDIV.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_PVO_INDIV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:07 fg_lance_script_sql(PA6_EPA_PVO_INDIV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_PVO_INDIV.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_PVO_INDIV.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_PVO_INDIV.txt
++echo PA6_EPA_REF_RU_ENV
+FICHIEROUT=PA6_EPA_REF_RU_ENV
++fg_lance_script_sql PA6_EPA_REF_RU_ENV.sql | /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++SCRIPT=PA6_EPA_REF_RU_ENV.sql
++CSEP=|
++FOUT=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++shift 3
++jobEtape fg_lance_script_sql(PA6_EPA_REF_RU_ENV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV) / sql-params:
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:10 fg_lance_script_sql(PA6_EPA_REF_RU_ENV.sql,,/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV) / sql-params:
+# =========================================================================== #
++unset sqlpar
++sqlplusopts=whenever oserror exit failure rollback
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'
++[ X = X -o X = P ]
++unset userpass
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|'" -F PA6_EPA_REF_RU_ENV.sql
++1> /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
+oracle.sh sql ******
+whenever sqlerror exit failure rollback
+set tab off heading off echo off feedback off verify off pagesize 0 linesize 9999 colsep '|' -F PA6_EPA_REF_RU_ENV.sql
++jobTest 0 fg_lance_script_sql
++FICHIEROUT2=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++SORTIN=/dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++SORTOUT=/dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mfsort USE /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV ORG LS RECORD V,1,1300 GIVE /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP SORT
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++perl /dz-pareo/applis/pa6/bin/dedup_sorted_file.pl /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP
++mv /dz-pareo/product/pa6/hra/prod/txt/tmp/SORT_TEMP /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV
++mv /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6_EPA_REF_RU_ENV.txt
++jobTest 0 fl_extraction_bo : Pb extraction des données EPA !
++fl_archive_compress_fic
++jobEtape fl_archive_compress_fic : Archivage et compression des fichiers et copie dans cft.out
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:10 fl_archive_compress_fic : Archivage et compression des fichiers et copie dans cft.out
+# =========================================================================== #
++cd /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/
++rm -f PA6RH2J2.tar.Z
++tar -cvf PA6RH2J2.tar PA6_EPA_AME_INDIV.txt PA6_EPA_COMPETENCES.txt PA6_EPA_DOSS_COLLAB.txt PA6_EPA_FORMATIONS_ACTIONS.txt PA6_EPA_GENERAL.txt PA6_EPA_LIENS_HIERAR.txt PA6_EPA_OBJECTIFS.txt PA6_EPA_PVO_INDIV.txt PA6_EPA_REF_RU_ENV.txt
+a PA6_EPA_AME_INDIV.txt 2168 blocks
+a PA6_EPA_COMPETENCES.txt 427483 blocks
+a PA6_EPA_DOSS_COLLAB.txt 138419 blocks
+a PA6_EPA_FORMATIONS_ACTIONS.txt 28462 blocks
+a PA6_EPA_GENERAL.txt 19580 blocks
+a PA6_EPA_LIENS_HIERAR.txt 25767 blocks
+a PA6_EPA_OBJECTIFS.txt 23772 blocks
+a PA6_EPA_PVO_INDIV.txt 4028 blocks
+a PA6_EPA_REF_RU_ENV.txt 20 blocks
++jobTest 0 fl_archive_compress_fic : Pb lors de l'archivage (tar) des fichiers BO
++compress PA6RH2J2.tar
++jobTest 0 fl_archive_compress_fic : Pb lors de la compression (compress) des fichiers BO
++fg_copy_file_cft /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z /dz-pareo/applis/pa6/cft.out/interfaces_aval/
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:16 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318212916
++basename /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z
+FIC_NAME=PA6RH2J2.tar.Z
++cp /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z /dz-pareo/applis/pa6/archive/PA6RH2J2.tar.Z.20210318212916
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z OK
++cp /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z /dz-pareo/applis/pa6/cft.out/interfaces_aval/
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/Extrait_Infocentre/EPA/PA6RH2J2.tar.Z vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/ OK
++fl_envoi_cft PA6RH2J2 /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J2.tar.Z
++jobEtape fl_envoi_cft : Envoi CFT
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:16 fl_envoi_cft : Envoi CFT
+# =========================================================================== #
++cft.sh send -m PA6RH2J2 -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J2.tar.Z
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:16 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6RH2J2.tar.Z -m PA6RH2J2
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6RH2J2.DAPRODA1.9437372.2916-1' vers part='DAPRODA1',idf='PA6RH2J2' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi cft PA6RH2J2
++unset DATE_JOUR
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6EJB1_EPABORH.KSH: Fin le 18-03-2021 a 21:29:17
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6EJB1_EPABORH.LOG_*0rtt6*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 21:29:17  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6EJB1_EPABORH.LOG_*0rtt6*.24117316
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_24117316
++__orderid=LOG_*0rtt6*
++__jobname_fin=XDPA6EJB1_EPABORH
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++head -1
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.out
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH
++__jobname=XDPA6EJB1_EPABORH
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001
++__orderid_fin=LOG_00rtt6_00001
++__job_complet_fin=XDPA6EJB1_EPABORH.LOG_00rtt6_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001
++grep YCFLOG=
++cut -d = -f 2-5
++cut -d / -f 1-5
++head -1
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6EJB1_EPABORH.LOG_00rtt6_00001
++sed s/^++/%/g
++sed s/^+/%/g

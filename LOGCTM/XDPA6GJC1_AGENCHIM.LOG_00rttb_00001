@@ -1,0 +1,482 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJC1_AGENCHIM.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJC1_AGENCHIM.KSH
+_YCFSHELL=XDPA6GJC1_AGENCHIM.KSH
+_YCFJOB=XDPA6GJC1_AGENCHIM
+_YCTDATE=20210318204011
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJC1_AGENCHIM.KSH.20210318204011
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJC1_AGENCHIM.KSH: Debut le 18-03-2021 a 20:40:13
+# =========================================================================== #
++set -x
++date +%y%m%d%H%M%S
+HORODAT=210318204013
++fg_param_explo_datref
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:13 fg_param_explo_datref : Recherche paramètre dateref
+# =========================================================================== #
+Date ctrlm : 18032021
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:13 fl_suppr_fichier : Suppression des fichiers résultat de l'explo 
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSCHIME1.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIME1.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSCHIME2.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIME2.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSCHIME3.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIME3.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSCHIMED.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIMED.P
++rm -f /dz-pareo/product/pa6/hra/prod/file/PSCHIME3_1.LS
++export EXPLO1=CHIME1
++export PROCESS=CHIM1
++fl_carte_param CHIME1
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:13 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/CHIME1.parm
++1> /dz-pareo/applis/pa6/parm/CHIME1.parm
++tee -a /dz-pareo/applis/pa6/parm/CHIME1.parm
++echo 5DS31   CHIME1        18032021                00                         %POP01
+5DS31   CHIME1        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:13 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/CHIME1.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++tee -a /dz-pareo/applis/pa6/parm/CHIME1.parm
++echo 3P**1BXPL01TXT001
+3P**1BXPL01TXT001
++echo 3P**1BXFI01TXT001
+3P**1BXFI01TXT001
++[ CHIM1 = CHIM4 ]
++fg_lance_explo CHIME1 CHIM1
++jobEtape fg_lance_explo : Lancement de l'exploration CHIME1
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:13 fg_lance_explo : Lancement de l'exploration CHIME1
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 CHIME1 CHIM1
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME1.20210318204011.11337842
++jobTest 0 fg_lance_explo : Pb Traitement exploration CHIME1
++unset PROCESS
++export EXPLO2=CHIME2
++export PROCESS=CHIM2
++fl_carte_param CHIME2
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:42 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/CHIME2.parm
++1> /dz-pareo/applis/pa6/parm/CHIME2.parm
++echo 5DS31   CHIME2        18032021                00                         %POP01
++tee -a /dz-pareo/applis/pa6/parm/CHIME2.parm
+5DS31   CHIME2        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:42 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/CHIME2.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++echo 3P**1BXPL01TXT001
+3P**1BXPL01TXT001
++tee -a /dz-pareo/applis/pa6/parm/CHIME2.parm
++echo 3P**1BXFI01TXT001
+3P**1BXFI01TXT001
++[ CHIM2 = CHIM4 ]
++fg_lance_explo CHIME2 CHIM2
++jobEtape fg_lance_explo : Lancement de l'exploration CHIME2
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:42 fg_lance_explo : Lancement de l'exploration CHIME2
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 CHIME2 CHIM2
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME2.20210318204011.11337842
++jobTest 0 fg_lance_explo : Pb Traitement exploration CHIME2
++unset PROCESS
++export EXPLO3=CHIME3
++export PROCESS=CHIM3
++fl_carte_param CHIME3
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:45 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/CHIME3.parm
++1> /dz-pareo/applis/pa6/parm/CHIME3.parm
++tee -a /dz-pareo/applis/pa6/parm/CHIME3.parm
++echo 5DS31   CHIME3        18032021                00                         %POP01
+5DS31   CHIME3        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:46 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/CHIME3.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++tee -a /dz-pareo/applis/pa6/parm/CHIME3.parm
++echo 3P**1BXPL01TXT001
+3P**1BXPL01TXT001
++tee -a /dz-pareo/applis/pa6/parm/CHIME3.parm
++echo 3P**1BXFI01TXT001
+3P**1BXFI01TXT001
++[ CHIM3 = CHIM4 ]
++fg_lance_explo CHIME3 CHIM3
++jobEtape fg_lance_explo : Lancement de l'exploration CHIME3
+
+# =========================================================================== #
+# 18-03-2021 a 20:40:46 fg_lance_explo : Lancement de l'exploration CHIME3
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 CHIME3 CHIM3
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME3.20210318204011.11337842
++jobTest 0 fg_lance_explo : Pb Traitement exploration CHIME3
++unset PROCESS
++export EXPLO4=CHIMED
++export PROCESS=CHIM4
++fl_carte_param CHIMED
++jobEtape fl_carte_param : Paramètres de l'exploration
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:47 fl_carte_param : Paramètres de l'exploration
+# =========================================================================== #
++export FICPRM=/dz-pareo/applis/pa6/parm/CHIMED.parm
++1> /dz-pareo/applis/pa6/parm/CHIMED.parm
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
++echo 5DS31   CHIMED        18032021                00                         %POP01
+5DS31   CHIMED        18032021                00                         %POP01
++jobEtape fl_carte_param : Paramètres d'édition
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:47 fl_carte_param : Paramètres d'édition
+# =========================================================================== #
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
++echo 5FS40EXECUTION
+5FS40EXECUTION
++echo 3P**1BXPL01TXT001
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+3P**1BXPL01TXT001
++echo 3P**1BXFI01TXT001
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+3P**1BXFI01TXT001
++[ CHIM4 = CHIM4 ]
++[ -s /dz-pareo/applis/pa6/parm/PARAM_AGENCHI ]
++jobEtape fl_carte_param : lancement de CHIMED agent avec préselection sur TD12
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:47 fl_carte_param : lancement de CHIMED agent avec préselection sur TD12
+# =========================================================================== #
++echo 5T**S
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+5T**S
++echo 5W**01SELECPOPSELECT A.NUDOSS FROM ZY00 A, ZYTD12 B WHERE A.NUDOSS=B.NUDOSS 
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+5W**01SELECPOPSELECT A.NUDOSS FROM ZY00 A, ZYTD12 B WHERE A.NUDOSS=B.NUDOSS 
++echo 5W**02SELECPOPAND TO_CHAR(B.TIMJIF,'YYYY-MM-DD-HH.MM.SS')
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+5W**02SELECPOPAND TO_CHAR(B.TIMJIF,'YYYY-MM-DD-HH.MM.SS')
++echo 5W**02SELECPOP >= '2021-03-18-00.00.00' 
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+5W**02SELECPOP >= '2021-03-18-00.00.00' 
++echo 5W**02SELECPOPAND TO_CHAR(B.TIMJIF,'YYYY-MM-DD-HH.MM.SS')
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
+5W**02SELECPOPAND TO_CHAR(B.TIMJIF,'YYYY-MM-DD-HH.MM.SS')
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
++echo 5W**02SELECPOP <= '2021-03-18-23.59.59' 
+5W**02SELECPOP <= '2021-03-18-23.59.59' 
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
++echo 5W**02SELECPOPAND B.CDINFO IN ('00','05','06','07','0G','0H' 
+5W**02SELECPOPAND B.CDINFO IN ('00','05','06','07','0G','0H' 
++tee -a /dz-pareo/applis/pa6/parm/CHIMED.parm
++echo 5W**02SELECPOP,'10','12','18','19','3B','CO','FF','GS','PO','TL') 
+5W**02SELECPOP,'10','12','18','19','3B','CO','FF','GS','PO','TL') 
++fg_lance_explo CHIMED CHIM4
++jobEtape fg_lance_explo : Lancement de l'exploration CHIMED
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:47 fg_lance_explo : Lancement de l'exploration CHIMED
+# =========================================================================== #
++/dz-pareo/applis/pa6/bin/subnbx_v9 CHIMED CHIM4
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIMED.20210318204011.11337842
++jobTest 0 fg_lance_explo : Pb Traitement exploration CHIMED
++unset PROCESS
++fl_concat_fic
++jobEtape fl_concat_fic : Concaténation des fichiers CHIMED
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:56 fl_concat_fic : Concaténation des fichiers CHIMED
+# =========================================================================== #
++cat /dz-pareo/product/pa6/hra/prod/file/PSCHIMED.LS
++1> /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN.TXT
++uniq
++cat /dz-pareo/product/pa6/hra/prod/file/PSCHIME3.LS
++1> /dz-pareo/product/pa6/hra/prod/file/PSCHIME3_1.LS
++cat /dz-pareo/product/pa6/hra/prod/file/PSCHIME1.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIME2.LS /dz-pareo/product/pa6/hra/prod/file/PSCHIME3_1.LS
++1> /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA.TXT
++jobTest 0 fl_concat_fic : Pb concat des fichiers CHIMED fl_concat_fic : Concat des fichiers CHIMED OK
+fl_concat_fic : Concat des fichiers CHIMED OK
++fl_copy_file_cft
++jobEtape fl_copy_file_cft : Copie de fichier CFT
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:56 fl_copy_file_cft : Copie de fichier CFT
+# =========================================================================== #
++cut -c1-249 /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA.TXT
++1> /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT
++cut -c1-1093 /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN.TXT
++1> /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT
++fg_copy_file_cft /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318204257
++basename /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT
+FIC_NAME=PA6_CHIMAGEN_trunc.TXT
++cp /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT /dz-pareo/applis/pa6/archive/PA6_CHIMAGEN_trunc.TXT.20210318204257
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT OK
++cp /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMAGEN_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT OK
++fg_copy_file_cft /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
++jobEtape fg_copy_file_cft : Copie et archivage du fichier à traiter
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fg_copy_file_cft : Copie et archivage du fichier à traiter
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210318204257
++basename /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT
+FIC_NAME=PA6_CHIMCATA_trunc.TXT
++cp /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT /dz-pareo/applis/pa6/archive/PA6_CHIMCATA_trunc.TXT.20210318204257
++jobTest 0 fg_copy_file_cft : Pb sauvegarde du fichier reçu /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT OK
+fg_copy_file_cft : Sauvegarde du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT OK
++cp /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
++jobTest 0 fg_copy_file_cft : Pb copie fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT OK
+fg_copy_file_cft : Copie du fichier /dz-pareo/applis/pa6/tmp/PA6_CHIMCATA_trunc.TXT vers /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT OK
++jobTest 0 fl_copy_file_cft : Pb de copie CFT fl_copy_file_cft : Copie CFT OK
+fl_copy_file_cft : Copie CFT OK
++tail -1
++ls -1tr /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
++export IDF_EXPLO_1=/dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
++fl_envoi_cft PA6QM0AG /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
++jobEtape fl_envoi_cft : Envoi fichiers interface aval CHIMED
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fl_envoi_cft : Envoi fichiers interface aval CHIMED
+# =========================================================================== #
++cft.sh send -m PA6QM0AG -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT -m PA6QM0AG
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6QM0AG.GTWCDCX5.21037128.4257-1' vers part='GTWCDCX5',idf='PA6QM0AG' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi fichier interface aval CHIMED
++tail -1
++ls -1tr /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
++export IDF_EXPLO_2=/dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
++fl_envoi_cft PA6QM0CT /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
++jobEtape fl_envoi_cft : Envoi fichiers interface aval CHIMED
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fl_envoi_cft : Envoi fichiers interface aval CHIMED
+# =========================================================================== #
++cft.sh send -m PA6QM0CT -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 cft.sh send -f /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT -m PA6QM0CT
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6QM0CT.GTWCDCX5.21037134.4257-1' vers part='GTWCDCX5',idf='PA6QM0CT' parm='' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_envoi_cft : Pb envoi fichier interface aval CHIMED
++fl_move /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT cr_quotidiens_grh
++jobEtape fl_move : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fl_move : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+# =========================================================================== #
++cp /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIMED.20210318204011.11337842 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMAGEN_LOG_20210318204011.txt
++mv /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMAGEN-210318204013.TXT /dz-pareo/applis/pa6/archive
++jobTest 0 fl_move : Pb déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
++fl_move_1 /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT cr_quotidiens_grh
++jobEtape fl_move_1 : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:57 fl_move_1 : Déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
+# =========================================================================== #
++cp /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME1.20210318204011.11337842 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME1_LOG_20210318204011.txt
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME2.20210318204011.11337842 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME2_LOG_20210318204011.txt
++cp /dz-pareo/applis/pa6/logapp/XDPA6GJC1_AGENCHIM_AS800NBX.CHIME3.20210318204011.11337842 /dz-pareo/applis/pa6/cft.out/cr_quotidiens_grh/PA6_CHIMCATA_CHIME3_LOG_20210318204011.txt
++mv /dz-pareo/applis/pa6/cft.out/interfaces_aval/PA6_CHIMCATA-210318204013.TXT /dz-pareo/applis/pa6/archive
++jobTest 0 fl_move_1 : Pb déplacement du fichier envoyé dans archive et copie des CR dans cr_quotidiens_grh
++rm -f /dz-pareo/applis/pa6/parm/PARAM_AGENCHI
++unset FICPRM
++unset IDF_EXPLO_1
++unset IDF_EXPLO_2
++unset EXPLO1
++unset EXPLO2
++unset EXPLO3
++unset EXPLO4
++unset PROCESS
++unset DATREF
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJC1_AGENCHIM.KSH: Fin le 18-03-2021 a 20:42:57
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJC1_AGENCHIM.LOG_*0rttb*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 18-03-2021 a 20:42:58  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJC1_AGENCHIM.LOG_*0rttb*.7536792
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_7536792
++__orderid=LOG_*0rttb*
++__jobname_fin=XDPA6GJC1_AGENCHIM
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.out
++head -1
++awk -F. {print $1}
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM
++__jobname=XDPA6GJC1_AGENCHIM
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++grep -vE \.out|\.err
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001.out
++head -1
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001
++__orderid_fin=LOG_00rttb_00001
++__job_complet_fin=XDPA6GJC1_AGENCHIM.LOG_00rttb_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001
++grep YCFLOG=
++head -1
++cut -d = -f 2-5
++cut -d / -f 1-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJC1_AGENCHIM.LOG_00rttb_00001
++sed s/^++/%/g
++sed s/^+/%/g

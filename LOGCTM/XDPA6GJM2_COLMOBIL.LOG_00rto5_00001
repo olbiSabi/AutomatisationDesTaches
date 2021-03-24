@@ -1,0 +1,289 @@
++. /dexploit/tools/tools.profile
++[ dexploit == dexploit ]
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dz-pareo/applis/pa6/shell/XDPA6GJM2_COLMOBIL.KSH 
++jobExport
+> ----------------------------------------------------------
+> Initialisation de l'environnement du job controlm: /dz-pareo/applis/pa6/shell/XDPA6GJM2_COLMOBIL.KSH
+_YCFSHELL=XDPA6GJM2_COLMOBIL.KSH
+_YCFJOB=XDPA6GJM2_COLMOBIL
+_YCTDATE=20210319014403
+_YCDROOT=/dz-pareo
+_YCDAPP=/dz-pareo/applis/pa6
+_YCICODE=pa6
+_YCDSHELL=/dz-pareo/applis/pa6/shell
+_YCDPARM=/dz-pareo/applis/pa6/parm
+_YCDBIN=/dz-pareo/applis/pa6/bin
+_YCDDATA=/dz-pareo/applis/pa6/data
+_YCDTMP=/dz-pareo/applis/pa6/tmp
+_YCDARC=/dz-pareo/applis/pa6/archive
+_YCDCFTIN=/dz-pareo/applis/pa6/cft.in
+_YCDCFTOUT=/dz-pareo/applis/pa6/cft.out
+_YCDCFTARC=/dz-pareo/applis/pa6/cft.archive
+_YCDSQL=/dz-pareo/applis/pa6/sql
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
+_YCDDUMP=/dz-pareo/dump
+_YCFLOG=/dz-pareo/applis/pa6/logctm/XDPA6GJM2_COLMOBIL.KSH.20210319014403
+_YCDSHELLAPP=/dz-pareo/applis/pa6/shellapp
+_YCDLOGAPP=/dz-pareo/applis/pa6/logapp
+_YCDSSL=/dz-pareo/applis/pa6/ext/ssl
+> ----------------------------------
+> Verification des environnements:OK...
+
++set NULL
++. //dz-pareo/applis/pa6/parm/pa6.env
++[ X = X ]
++export PA6_DIR_SIGACS=/dz-pareo/product/pa6/hra/prod
++export COBDIR=/daproda4/product/cobol51
++export CDPLPH=PRODS9
++export TYPENV=TEST
++export PA6_ORAINST=dxpa6
++export PA6_ORAUSER=batch
++pwdGet batch oracle
+ <ligne contenant un mot de passe>
++[ X = P ]
++[ X = D ]
++export PA6_ORASERVICE=ORACLE-PA6-12
++oraSetEnv ORACLE-PA6-12 dxpa6
++export ORADIR=/daproda4/product/oracle/distrib/12201/client
++export ORACLE_PATH=/dz-pareo/product/pa6/hra/prod/prod/ddl
++export TWO_TASK=dxpa6
++export NLS_LANG=.WE8ISO8859P15
++export NLS_DATE_FORMAT=YYYY-MM-DD-HH24.MI.SS
++javaSetEnv
+javaSetEnv : distrib java utilisee /usr/java8_64
++export PSHL=/dz-pareo/product/pa6/hra/prod/prod/shl
++export COBPATH=/dz-pareo/product/pa6/hra/prod/prod/gnt:/daproda4/product/cobol51/bin
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export EXTFH=/dz-pareo/product/pa6/hra/prod/adm/cfg/extfh.cfg
++export TMPDIR=
++export COBSW=-d32000000
++export LDOPTS=-a default
++export SKEL=/dz-pareo/product/pa6/hra/prod/skel
++export LIBPATH=/usr/java8_64/lib:/daproda4/product/oracle/distrib/12201/client/lib:/daproda4/product/oracle/distrib/12201/client/webdb/lib:/dz-pareo/applis/pa6/lib:/dz-pareo/applis/pa6/bin:/usr/lib:/usr/local/lib:/usr/share/lib:/usr/lib:/usr/local/lib:/usr/share/lib::/daproda4/product/cobol51/lib
++export COBCPY=/dz-pareo/product/pa6/hra/prod/prod/cpy:/usr/mqm/inc/cobcpy64
++export LMFWAIT=50,20
++export ASLMFRETRY=50,20
++TYPE_MACHINE=AIX
++export TYPE_MACHINE
++export DIRBIN=/dz-pareo/applis/pa6/bin
++export DIRCFT=/dz-pareo/applis/pa6/cft.in
++export SIGADB=/dz-pareo/product/pa6/hra/prod
++export LOG=/dz-pareo/product/pa6/hra/prod/txt/log
++export FILE=/dz-pareo/product/pa6/hra/prod/file
++export OPENHR=/dz-pareo/product/pa6/hra/prod/openhr
++export LIS=/dz-pareo/product/pa6/hra/prod/txt/lis
++export TMP=/dz-pareo/product/pa6/hra/prod/txt/tmp
++export PBIN=/dz-pareo/product/pa6/hra/prod/prod/gnt
++export PARAM=/dz-pareo/product/pa6/hra/prod/param
++export RDMDCM=TYBX
++export CDPLLO=PLCLIUNO
++export SUFTP=so
++export SUFMOD=so
++export PATH=/usr/bin:.:/dz-pareo/product/pa6/hra/prod/bin:/usr/java8_64/bin:/daproda4/product/oracle/distrib/12201/client/bin:/dexploit/tools/sbin:/dexploit/tools/bin:/dexploit/tools/bin/AIX:/bin:/sbin:/usr/bin:/usr/sbin:/usr/ucb:/usr/lib:/usr/ccs/bin:/usr/local/bin:.:/dz-pareo/applis/pa6/bin:/daproda4/product/oracle/distrib/12201/client/bin:/daproda4/product/cobol51/bin
++export MY_LANG=F
++export SBIN=/dz-pareo/product/pa6/hra/prod/bin
++export ENV=/dz-pareo/product/pa6/hra/prod/file/.kshrc
++export SIGACS=/dz-pareo/product/pa6/hra/prod
++export PARM=/dz-pareo/product/pa6/hra/prod/param
++export CFTHUB=true
++. //dz-pareo/applis/pa6/parm/pa6.fonctions.env
++jobDebut
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJM2_COLMOBIL.KSH: Debut le 19-03-2021 a 01:44:05
+# =========================================================================== #
++set -x
++fl_suppr_fichier
++jobEtape fl_suppr_fichier : Suppression des fichiers résultat de la Query
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:05 fl_suppr_fichier : Suppression des fichiers résultat de la Query
+# =========================================================================== #
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv
++rm -f /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_*
++fl_dates
++jobEtape fl_param_dates : Formatage des paramètres pour le lancement de la Query 
+
+# =========================================================================== #
+# 19-03-2021 a 01:44:05 fl_param_dates : Formatage des paramètres pour le lancement de la Query 
+# =========================================================================== #
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c1-4
++export ANNEE=2021
++cut -c5-6
++export MOIS=03
++cat /dz-pareo/applis/pa6/parm/ctrlm.date
++cut -c7-8
++export JOUR=18
++export DATTRAIT=2021-03-18
++echo Date de lancement de la Query avec comme paramètre : 2021-03-18
+Date de lancement de la Query avec comme paramètre : 2021-03-18
++fg_exec_query 300 XIMOBILE CSV DateTraitement=2021-03-18
++1> /dz-pareo/applis/pa6/logapp/XDPA6GJM2_COLMOBIL_AS800NPQ.20210319014403.12517390
++jobEtape fg_exec_query : execution de la query XIMOBILE
++ATTENTE=300
++QUERY=XIMOBILE
++EXT=CSV
++shift 3
++FICPRM=/dz-pareo/applis/pa6/parm/XIMOBILE.parm
++rm -f /dz-pareo/applis/pa6/parm/XIMOBILE.parm
++echo 5X**M0
++tee -a /dz-pareo/applis/pa6/parm/XIMOBILE.parm
++echo DateTraitement=2021-03-18
++cut -d= -f1
+pn=DateTraitement
++echo DateTraitement=2021-03-18
++cut -d= -f2
+pv=2021-03-18
++printf 5Q**%c%-32s%s\n 1 DateTraitement 2021-03-18
++tee -a /dz-pareo/applis/pa6/parm/XIMOBILE.parm
++printf 3P**1BNPQ00XMD001%-8s%-3sF\n XIMOBILE CSV
++tee -a /dz-pareo/applis/pa6/parm/XIMOBILE.parm
++rm -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.CSV
++/dz-pareo/applis/pa6/bin/subnpq_v9 XIMOBILE 300
+/dz-pareo/applis/pa6/bin/subnpq_v9[181]: NUDOSS:  not found
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120378/f_00_xmd_00.pdf: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120378/f_00_xmd_01.zip: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120378/f_00_xmd_00.slk: No such file or directory
+cp: /dz-pareo/product/pa6/hra/prod/archivage/npq/bnpq/120378/f_00_xmd_01.csv: No such file or directory
++jobTest 0 fg_exec_query : erreur d'execution query XIMOBILE
++fl_generation_copy XIMOBILE
++jobEtape fl_generation_copy : Génération fichier pour la query XIMOBILE et déplacement du fichier dans MOBILE et copie dans archive 
+
+# =========================================================================== #
+# 19-03-2021 a 01:49:07 fl_generation_copy : Génération fichier pour la query XIMOBILE et déplacement du fichier dans MOBILE et copie dans archive 
+# =========================================================================== #
++date +%Y%m%d
++export HORODAT=20210319
++date +%H%M
++export HORODAT2=0149
++[ X = X ]
++export NOMFIC=CDC_P_USER_FILE_20210319_0149.csv
++[ -f /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv ]
++echo Fichier généré : NPQ.XIMOBILE.csv
+Fichier généré : NPQ.XIMOBILE.csv
++fg_copy_file_sav /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv
++jobEtape fg_copy_file_sav : Sauvegarde du fichier
+
+# =========================================================================== #
+# 19-03-2021 a 01:49:07 fg_copy_file_sav : Sauvegarde du fichier
+# =========================================================================== #
++date +%Y%m%d%H%M%S
+DT_HORODT=20210319014907
++basename /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv
+FIC_NAME=NPQ.XIMOBILE.csv
++cp /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv /dz-pareo/applis/pa6/archive/NPQ.XIMOBILE.csv.20210319014907
++jobTest 0 fg_copy_file_sav : Pb sauvegarde du fichier reçu /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv OK
+fg_copy_file_sav : Sauvegarde du fichier /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv OK
++iconv -f ISO8859-15 -t UTF-8 /dz-pareo/product/pa6/hra/prod/txt/tmp/NPQ.XIMOBILE.csv
++1> /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_P_USER_FILE_20210319_0149.csv
++jobTest 0 fl_generation_copy : pb conversion utf8  fl_generation_copy : conversion utf8 ok
+ fl_generation_copy : conversion utf8 ok
++fl_cft_archivage
++jobEtape fl_cft_envoi : envoi cft du fichier et archivage 
+
+# =========================================================================== #
+# 19-03-2021 a 01:49:07 fl_cft_envoi : envoi cft du fichier et archivage 
+# =========================================================================== #
++[ -f /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_P_USER_FILE_20210319_0149.csv ]
++cft.sh send -m PA6EXTTV1COLA -f /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_P_USER_FILE_20210319_0149.csv -p CDC_P_USER_FILE_20210319_0149.csv
+
+# =========================================================================== #
+# 19-03-2021 a 01:49:07 cft.sh send -f /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_P_USER_FILE_20210319_0149.csv -m PA6EXTTV1COLA
+# =========================================================================== #
+envoie du fichier '/daproda4/exploit/cft_hub/send/PA6EXTTV1COLA.GTWCDCX5.22151272.4907-1' vers part='GTWCDCX5',idf='PA6EXTTV1COLA' parm='CDC_P_USER_FILE_20210319_0149.csv' reftech= 
+code retour :0
+
+1 fichier cft copié(s) sur le HUBCFT dafluxprodd01,  code retour:0
++jobTest 0 fl_cft_archivage : pb envoi_cft fl_cft_archivage : envoi_cft OK
+fl_cft_archivage : envoi_cft OK
++mv /dz-pareo/applis/pa6/cft.out/MOBILE/CDC_P_USER_FILE_20210319_0149.csv /dz-pareo/applis/pa6/archive
++jobTest 0 fl_cft_archivage : pb archivage fl_cft_archivage : archivage OK
+fl_cft_archivage : archivage OK
++unset HORODAT
++unset NOMFIC
++jobFin
+# =========================================================================== #
+# Shell /dz-pareo/applis/pa6/shell/XDPA6GJM2_COLMOBIL.KSH: Fin le 19-03-2021 a 01:49:07
+# =========================================================================== #
++[ dexploit == patrol ]
++macExport
++alias ll=ls -lrt
++alias alias_ps1=export PSVOFFB}:${PWD}
+>'
++alias goenv=cd /dexploit/tools/etc/env
++jobInitialize /dexploit/tools/bin/suppMdp.ksh XDPA6GJM2_COLMOBIL.LOG_*0rto5*
++jobEtape  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+
+# =========================================================================== #
+# 19-03-2021 a 01:49:07  etape technique POST TRAITEMENT pour effacer les mdp dans les logctm, ne concerne pas les etudes
+# =========================================================================== #
++__fic=/dexploit/tmp/XDPA6GJM2_COLMOBIL.LOG_*0rto5*.22151278
++__job_a_reprendre=/dexploit/tmp/job_a_reprendre_22151278
++__orderid=LOG_*0rto5*
++__jobname_fin=XDPA6GJM2_COLMOBIL
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.out
+/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.err
++__ret=0
++[ 0 -eq 0 ]
++__version_agtctrlm=/daproda4/product/controlm/ag/ctmagctm
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.out
++awk -F. {print $1}
++head -1
+__directory_jobname=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL
++__jobname=XDPA6GJM2_COLMOBIL
++uname
+__type_sys=AIX
++[ AIX == SunOS ]
++ls -t1 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001 /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.err /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001.out
++head -1
++grep -vE \.out|\.err
+__job_complet=/daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001
++__orderid_fin=LOG_00rto5_00001
++__job_complet_fin=XDPA6GJM2_COLMOBIL.LOG_00rto5_00001
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001
++grep YCFLOG=
++head -1
++cut -d / -f 1-5
++cut -d = -f 2-5
+_YCDLOGS=/dz-pareo/applis/pa6/logctm
++__ret=0
++[ 0 -ne 0 ]
++[ -f /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001 ]
++cat /daproda4/product/controlm/ag/ctmagctm/ctm/sysout/XDPA6GJM2_COLMOBIL.LOG_00rto5_00001
++sed s/^+/%/g
++sed s/*/*/g
++sed s/^++/%/g
++sed s/^%/+/g
++awk {
+	if (/oracle.sh.*sql/)
+		{ gsub($0,"oracle.sh sql ******",$0)}
+	if (/sybase.sh.*sql/)		
+		{ gsub($0,"sybase.sh sql *****",$0)}
+	if (/mysql.sh.*sql/)		
+		{ gsub($0,"mysql.sh sql *****",$0)}
+	if (/[aA][sS][sS][wW]/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[pP][wW][dD]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[aA][sS][sS]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/[mM][dD][pP]=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PWD.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/PASSW.*=/)
+		{ gsub($0," <ligne contenant un mot de passe>",$0)}
+	if (/ sqlplus/)
+		{ gsub($0,"sqlplus *****",$0)}
+	if (/.*/)
+		{print $0} 
+	}

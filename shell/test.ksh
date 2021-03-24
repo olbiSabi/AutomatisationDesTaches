@@ -58,12 +58,22 @@ do
 	DESC="DESC"$Fichier
 	FREQ="FREQ"$Fichier
 	PREC="PREC"$Fichier
-                 # *****************((((()))))******************#
-				 #*** ONT RECUPERENT LES DATES ET LES HEURES ***#
-				 #******************((((()))))******************#
+                 	 # *****************((((()))))******************#
+				 	 #******** DATES DE FIN ET DEBUT DE JOB ********#
+				 	 #******************((((()))))******************#
 
 	#Definition d'une variable date de fin de JOB et début de JOB
-	
+	DATE_DEBUT=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $6}' | sed -n 1p)
+	DATE_FIN=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $6}' | sed -n 2p)
+	jourDebut=$(echo $DATE_DEBUT | cut -d/ -f3)
+	jourFin=$(echo $DATE_FIN | cut -d/ -f3)
+	if test -z $DATE_DEBUT || test -z $DATE_FIN; then 
+	jourDebut=$(grep -E ^"Run began" $FILEAPP/$FILE | awk '{print $6}')
+	jourFin=$(grep -E ^"Run ended" $FILEAPP/$FILE | awk '{print $6}')
+	fi
+					 # *****************((((()))))******************#
+				 	 #******** DATES DE FIN ET DEBUT DE JOB ********#
+				 	 #******************((((()))))******************#
 	#Definition d'une variable heure de fin de JOB et début de JOB
 	HEURE_DEBUT=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $7}' | sed -n 1p)
 	HEURE_FIN=$(grep "JOB :.* DATE :" $FILEAPP/$FILE | awk '{print $7}' | sed -n 2p)
@@ -75,14 +85,24 @@ do
 	Hd=$(echo $HEURE_DEBUT | cut -d: -f1)
 	Md=$(echo $HEURE_DEBUT | cut -d: -f2)
 	Sd=$(echo $HEURE_DEBUT | cut -d: -f3)
-	TempsDebutEnSecond=$(echo $Hd $Md $Sd | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
 	
 	#Décomposition de l'heure de fin en Hf:Mf/Sf
 	Hf=$(echo $HEURE_FIN | cut -d: -f1)
 	Mf=$(echo $HEURE_FIN | cut -d: -f2)
 	Sf=$(echo $HEURE_FIN | cut -d: -f3)
-	TempsFinEnSecond=$(echo $Hf $Mf $Sf | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
 	
+					 # *****************((((()))))******************#
+				 	 #******** CALCULE DE LA DUREE DES JOBS ********#
+				 	 #******************((((()))))******************#
+	if test $jourDebut -eq $jourFin; then
+	TempsDebutEnSecond=$(echo $Hd $Md $Sd | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
+	TempsFinEnSecond=$(echo $Hf $Mf $Sf | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
+	elif test $jourDebut -lt $jourFin; then
+	heureFin=$(( $Hf + 24))
+	TempsDebutEnSecond=$(echo $Hd $Md $Sd | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
+	TempsFinEnSecond=$(echo $heureFin $Mf $Sf | awk '{print ($1 * 3600) + ($2 * 60) + $3}')
+	fi
+
 	DUREE=$(echo $TempsFinEnSecond $TempsDebutEnSecond | awk '{print $1 - $2 }')
 	if test $DUREE -lt 0 || test $DUREE -eq $TempsFinEnSecond
 	then

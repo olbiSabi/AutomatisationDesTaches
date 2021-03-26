@@ -1,24 +1,24 @@
 ////////Ref LOGCTM ///////////////
-$JOB: XDPA6MCO1
-$DESCXDPA6MCO1/ Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W 
-$FREQXDPA6MCO1/ Mensuel
-$PRECXDPA6MCO1/     
+$JOB: XDPA6MCO1.LOG
+$DESCXDPA6MCO1.LOG/ Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W 
+$FREQXDPA6MCO1.LOG/ Mensuel
+$PRECXDPA6MCO1.LOG/     
 ----------------------------
 
-$JOB: XDPA6MCO11
-$DESCXDPA6MCO11/ Paie Correction 11: Moyenne des rémunérations Exploration EMMMOY
-$FREQXDPA6MCO11/ Mensuel
-$PRECXDPA6MCO11/     
+$JOB: XDPA6MCO11.LOG
+$DESCXDPA6MCO11.LOG/ Paie Correction 11: Moyenne des rémunérations Exploration EMMMOY
+$FREQXDPA6MCO11.LOG/ Mensuel
+$PRECXDPA6MCO11.LOG/     
 ----------------------------
-$JOB: XDPA6MCO12
-$DESCXDPA6MCO12/ Paie Correction 12: Mandat récapitulatif du caissier général
-$FREQXDPA6MCO12/ Mensuel
-$PRECXDPA6MCO12/     
+$JOB: XDPA6MCO12.LOG
+$DESCXDPA6MCO12.LOG/ Paie Correction 12: Mandat récapitulatif du caissier général
+$FREQXDPA6MCO12.LOG/ Mensuel
+$PRECXDPA6MCO12.LOG/     
 ----------------------------
-$JOB: XDPA6MCO14
-$DESCXDPA6MCO14/ Paie Correction 14: Etat des contrôles de paie pré feu vert et feu vert Exploration EMPNC7
-$FREQXDPA6MCO14/ Mensuel
-$PRECXDPA6MCO14/     
+$JOB: XDPA6MCO14.LOG
+$DESCXDPA6MCO14.LOG/ Paie Correction 14: Etat des contrôles de paie pré feu vert et feu vert Exploration EMPNC7
+$FREQXDPA6MCO14.LOG/ Mensuel
+$PRECXDPA6MCO14.LOG/     
 ----------------------------
 $JOB: XDPA6GJS3_AGRSALS_INTZYNRB
 $DESCXDPA6GJS3_AGRSALS_INTZYNRB/ Quotidien 17: Détermination code tarif AGR vers SALSA
@@ -45,10 +45,10 @@ $DESCXDPA6CJH2_STRUCTHRA/ Quotidien 31: Mise à jour base HRA avec structures
 $FREQXDPA6CJH2_STRUCTHRA/ Quotidien
 $PRECXDPA6CJH2_STRUCTHRA/     
 ----------------------------
-$JOB: XDPA6PJH1_ARTTHRA
-$DESCXDPA6PJH1_ARTTHRA/ Quotidien 32: Mise à jour absences ATHENA
-$FREQXDPA6PJH1_ARTTHRA/ Quotidien
-$PRECXDPA6PJH1_ARTTHRA/     
+$JOB: XDPA6PJH1_ARTTHRA_INTZYNRB
+$DESCXDPA6PJH1_ARTTHRA_INTZYNRB/ Quotidien 32: Mise à jour absences ATHENA
+$FREQXDPA6PJH1_ARTTHRA_INTZYNRB/ Quotidien
+$PRECXDPA6PJH1_ARTTHRA_INTZYNRB/     
 ----------------------------
 $JOB: XDPA6CJH3_GIDEHRA
 $DESCXDPA6CJH3_GIDEHRA/ Quotidien 33: Génération des informations liées à GIDE
@@ -187,30 +187,30 @@ $DESCXDPA6GMQ6_QUERYCFT/ Envoi rapport CFT Paie  au métier
 $FREQXDPA6GMQ6_QUERYCFT/ Quotidien
 $PRECXDPA6GMQ6_QUERYCFT/ 
 -----------------------------
-$JOB: XDPA6GMQ5_AGGFZZZZ
-$DESCXDPA6GMQ5_AGGFZZZZ/ Requête  VA0V3005 Liste agents Groupe de  fonction alimenté  ZZZ 
-$FREQXDPA6GMQ5_AGGFZZZZ/ Quotidien
-$PRECXDPA6GMQ5_AGGFZZZZ/ 
+$JOB: XDPA6GMQ5_AGGFZZZZ_AS800NPQ
+$DESCXDPA6GMQ5_AGGFZZZZ_AS800NPQ/ Requête  VA0V3005 Liste agents Groupe de  fonction alimenté  ZZZ 
+$FREQXDPA6GMQ5_AGGFZZZZ_AS800NPQ/ Quotidien
+$PRECXDPA6GMQ5_AGGFZZZZ_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMQ4_AGENCADD
-$DESCXDPA6GMQ4_AGENCADD/ Requête  VA0V3004 Liste agents changement  cadre dirigeants 
-$FREQXDPA6GMQ4_AGENCADD/ Quotidien
-$PRECXDPA6GMQ4_AGENCADD/ 
+$JOB: XDPA6GMQ4_AGENCADD_AS800NPQ
+$DESCXDPA6GMQ4_AGENCADD_AS800NPQ/ Requête  VA0V3004 Liste agents changement  cadre dirigeants 
+$FREQXDPA6GMQ4_AGENCADD_AS800NPQ/ Quotidien
+$PRECXDPA6GMQ4_AGENCADD_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMQ3_AGENGERT
-$DESCXDPA6GMQ3_AGENGERT/ Requête  VA0V3003 Liste agents changement  Corps et grade 
-$FREQXDPA6GMQ3_AGENGERT/ Quotidien
-$PRECXDPA6GMQ3_AGENGERT/ 
+$JOB: XDPA6GMQ3_AGENGERT_AS800NPQ
+$DESCXDPA6GMQ3_AGENGERT_AS800NPQ/ Requête  VA0V3003 Liste agents changement  Corps et grade 
+$FREQXDPA6GMQ3_AGENGERT_AS800NPQ/ Quotidien
+$PRECXDPA6GMQ3_AGENGERT_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMQ2_AGENMOBI
-$DESCXDPA6GMQ2_AGENMOBI/ Requête  VA0V3002  Liste des agents  avec mobilité 
-$FREQXDPA6GMQ2_AGENMOBI/ Quotidien
-$PRECXDPA6GMQ2_AGENMOBI/ 
+$JOB: XDPA6GMQ2_AGENMOBI_AS800NPQ
+$DESCXDPA6GMQ2_AGENMOBI_AS800NPQ/ Requête  VA0V3002  Liste des agents  avec mobilité 
+$FREQXDPA6GMQ2_AGENMOBI_AS800NPQ/ Quotidien
+$PRECXDPA6GMQ2_AGENMOBI_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMQ1_AGENCHGF
-$DESCXDPA6GMQ1_AGENCHGF/ Requête  VA0V3001  Liste  agents avec changement groupe fonction 
-$FREQXDPA6GMQ1_AGENCHGF/ Quotidien
-$PRECXDPA6GMQ1_AGENCHGF/ 
+$JOB: XDPA6GMQ1_AGENCHGF_AS800NPQ
+$DESCXDPA6GMQ1_AGENCHGF_AS800NPQ/ Requête  VA0V3001  Liste  agents avec changement groupe fonction 
+$FREQXDPA6GMQ1_AGENCHGF_AS800NPQ/ Quotidien
+$PRECXDPA6GMQ1_AGENCHGF_AS800NPQ/ 
 
 -----------------------------
 $JOB: XDPA6CJE1_COLLPDOC_AS800NPQ
@@ -238,30 +238,30 @@ $DESCXDPA6PMPF_PURGFIC/ Purge des états de paie plus anciens que 2 ans
 $FREQXDPA6PMPF_PURGFIC/ Quotidien
 $PRECXDPA6PMPF_PURGFIC/ 
 -----------------------------
-$JOB: XDPA6DYNK0
-$DESCXDPA6DYNK0/ Job dynamique à réception du Flux OMEGA Compteurs WS
-$FREQXDPA6DYNK0/ Mensuel
-$PRECXDPA6DYNK0/ 
+$JOB: XDPA6DYNK0_INTZYNRB
+$DESCXDPA6DYNK0_INTZYNRB/ Job dynamique à réception du Flux OMEGA Compteurs WS
+$FREQXDPA6DYNK0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNK0_INTZYNRB/ 
 -----------------------------
-$JOB: XDPA6DYNG0
-$DESCXDPA6DYNG0/ Job dynamique d’intégration de bordereaux en réel à réception du flux EPI Bonifications
-$FREQXDPA6DYNG0/ Mensuel
-$PRECXDPA6DYNG0/ 
+$JOB: XDPA6DYNG0_INTZYNRB
+$DESCXDPA6DYNG0_INTZYNRB/ Job dynamique d’intégration de bordereaux en réel à réception du flux EPI Bonifications
+$FREQXDPA6DYNG0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNG0_INTZYNRB/ 
 -----------------------------
-$JOB: XDPA6DYNF0
-$DESCXDPA6DYNF0/ Job dynamique d’intégration de bordereaux en réel à réception du flux EPI Cotisations
-$FREQXDPA6DYNF0/ Mensuel
-$PRECXDPA6DYNF0/ 
+$JOB: XDPA6DYNF0_INTZYNRB
+$DESCXDPA6DYNF0_INTZYNRB/ Job dynamique d’intégration de bordereaux en réel à réception du flux EPI Cotisations
+$FREQXDPA6DYNF0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNF0_INTZYNRB/ 
 -----------------------------
-$JOB: XDPA6DYNC0
-$DESCXDPA6DYNC0/ Job dynamique d’intégration de bordereaux en réel à réception du flux GIPRETE EL
-$FREQXDPA6DYNC0/ Mensuel
-$PRECXDPA6DYNC0/
+$JOB: XDPA6DYNC0_INTZYNRB
+$DESCXDPA6DYNC0_INTZYNRB/ Job dynamique d’intégration de bordereaux en réel à réception du flux GIPRETE EL
+$FREQXDPA6DYNC0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNC0_INTZYNRB/
 -----------------------------
-$JOB: XDPA6DYNB0
-$DESCXDPA6DYNB0/ Job dynamique d’intégration de bordereaux en réel à réception du flux GIPRETE PR
-$FREQXDPA6DYNB0/ Mensuel
-$PRECXDPA6DYNB0/
+$JOB: XDPA6DYNB0_INTZYNRB
+$DESCXDPA6DYNB0_INTZYNRB/ Job dynamique d’intégration de bordereaux en réel à réception du flux GIPRETE PR
+$FREQXDPA6DYNB0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNB0_INTZYNRB/
 -----------------------------
 $JOB: XDPA6PMQ3_IFSEEPST
 $DESCXDPA6PMQ3_IFSEEPST/ Requête  VA0V3007 Détail cumul IFSE et PST
@@ -273,10 +273,10 @@ $DESCXDPA6PMQ2_IFSE1ET2/ Requête  VA0V3006  Liste agents Cumul IFSE 1+2 hors pl
 $FREQXDPA6PMQ2_IFSE1ET2/ Quotidien
 $PRECXDPA6PMQ2_IFSE1ET2/ 
 -----------------------------
-$JOB: XDPA6PMHM_CRMNRBR
-$DESCXDPA6PMHM_CRMNRBR/ Intégration des CRM
-$FREQXDPA6PMHM_CRMNRBR/ Mensuel
-$PRECXDPA6PMHM_CRMNRBR/ 
+$JOB: XDPA6PMHM_CRMNRBR_JUMZYNRB
+$DESCXDPA6PMHM_CRMNRBR_JUMZYNRB/ Intégration des CRM
+$FREQXDPA6PMHM_CRMNRBR_JUMZYNRB/ Mensuel
+$PRECXDPA6PMHM_CRMNRBR_JUMZYNRB/ 
 
 -----------------------------
 $JOB: XDPA6PMHL_CRMNRBS.LOG
@@ -359,56 +359,31 @@ $DESCXDPA6TJA0_HRASTOP/ Arrêt HR Access
 $FREQXDPA6TJA0_HRASTOP/ Quotidien
 $PRECXDPA6TJA0_HRASTOP/ 
 -----------------------------
-$JOB: XDPA6GMD5_SURCODFS
-$DESCXDPA6GMD5_SURCODFS/ Suivi des durées de surcotisation
-$FREQXDPA6GMD5_SURCODFS/ Mensuel
-$PRECXDPA6GMD5_SURCODFS/ 
+$JOB: XDPA6GMD5_SURCODFS_AS800NPQ
+$DESCXDPA6GMD5_SURCODFS_AS800NPQ/ Suivi des durées de surcotisation
+$FREQXDPA6GMD5_SURCODFS_AS800NPQ/ Mensuel
+$PRECXDPA6GMD5_SURCODFS_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMD4_MODSEDFS
-$DESCXDPA6GMD4_MODSEDFS/ Gestion de l'échéancier –  Modalité de service
-$FREQXDPA6GMD4_MODSEDFS/ Mensuel
-$PRECXDPA6GMD4_MODSEDFS/ 
+$JOB: XDPA6GMD4_MODSEDFS_AS800NPQ
+$DESCXDPA6GMD4_MODSEDFS_AS800NPQ/ Gestion de l'échéancier –  Modalité de service
+$FREQXDPA6GMD4_MODSEDFS_AS800NPQ/ Mensuel
+$PRECXDPA6GMD4_MODSEDFS_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMD2_DOCUMDFS
-$DESCXDPA6GMD2_DOCUMDFS/ Gestion de l'échéancier – Documents
-$FREQXDPA6GMD2_DOCUMDFS/ Mensuel
-$PRECXDPA6GMD2_DOCUMDFS/ 
+$JOB: XDPA6GMD2_DOCUMDFS_AS800NPQ
+$DESCXDPA6GMD2_DOCUMDFS_AS800NPQ/ Gestion de l'échéancier – Documents
+$FREQXDPA6GMD2_DOCUMDFS_AS800NPQ/ Mensuel
+$PRECXDPA6GMD2_DOCUMDFS_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMD3_CONTRDFS
-$DESCXDPA6GMD3_CONTRDFS/ Gestion de l'échéancier – Contrat
-$FREQXDPA6GMD3_CONTRDFS/ Mensuel
-$PRECXDPA6GMD3_CONTRDFS/ 
+$JOB: XDPA6GMD3_CONTRDFS_AS800NPQ
+$DESCXDPA6GMD3_CONTRDFS_AS800NPQ/ Gestion de l'échéancier – Contrat
+$FREQXDPA6GMD3_CONTRDFS_AS800NPQ/ Mensuel
+$PRECXDPA6GMD3_CONTRDFS_AS800NPQ/ 
 -----------------------------
-$JOB: XDPA6GMD1_POSITDFS
-$DESCXDPA6GMD1_POSITDFS/ Gestion de l'échéancier – Position QUERY VA0PO001 & Notification GTA (fin de position) –  Envoi par mail à la MOA 
-$FREQXDPA6GMD1_POSITDFS/ Mensuel
-$PRECXDPA6GMD1_POSITDFS/ 
------------------------------
-$JOB: XDPA6GMD2_DOCUMDFS
-$DESCXDPA6GMD2_DOCUMDFS/ Gestion de l'échéancier – Documents
-$FREQXDPA6GMD2_DOCUMDFS/ Mensuel
-$PRECXDPA6GMD2_DOCUMDFS/ 
------------------------------
-$JOB: XDPA6GMD3_CONTRDFS
-$DESCXDPA6GMD3_CONTRDFS/ Gestion de l'échéancier – Contrat 
-$FREQXDPA6GMD3_CONTRDFS/ Mensuel
-$PRECXDPA6GMD3_CONTRDFS/ 
------------------------------
-$JOB: XDPA6GMD4_MODSEDFS
-$DESCXDPA6GMD4_MODSEDFS/ Gestion de l'échéancier –  Modalité de service
-$FREQXDPA6GMD4_MODSEDFS/ Mensuel
-$PRECXDPA6GMD4_MODSEDFS/ 
------------------------------
-$JOB: XDPA6GMD5_SURCODFS
-$DESCXDPA6GMD5_SURCODFS/ Suivi des durées de surcotisation
-$FREQXDPA6GMD5_SURCODFS/ Mensuel
-$PRECXDPA6GMD5_SURCODFS/ 
------------------------------
-$JOB: XDPA6PMHM_CRMNRBR
-$DESCXDPA6PMHM_CRMNRBR/ Intégration des CRM
-$FREQXDPA6PMHM_CRMNRBR/ Mensuel
-$PRECXDPA6PMHM_CRMNRBR/ 
------------------------------
+$JOB: XDPA6GMD1_POSITDFS_AS800NPQ
+$DESCXDPA6GMD1_POSITDFS_AS800NPQ/ Gestion de l'échéancier – Position QUERY VA0PO001 & Notification GTA (fin de position) –  Envoi par mail à la MOA 
+$FREQXDPA6GMD1_POSITDFS_AS800NPQ/ Mensuel
+$PRECXDPA6GMD1_POSITDFS_AS800NPQ/ 
+---------------------------
 $JOB: XDPA6GMH1_FIPIDESR.LOG
 $DESCXDPA6GMH1_FIPIDESR.LOG/ GA: Génération fichier FIP.ide
 $FREQXDPA6GMH1_FIPIDESR.LOG/ Mensuel
@@ -506,22 +481,26 @@ $FREQXDPA6MBEFS/ Mensuel
 $PRECXDPA6MBEFS/ 
  
 -----------------------------
-$JOB: XDPA6MCO111
-$DESCXDPA6MCO111/ Test Test 
-$FREQXDPA6MCO111/ Quotidien
-$PRECXDPA6MCO111/ 
+$JOB: XDPA6MCO111.LOG
+$DESCXDPA6MCO111.LOG/ Test Test 
+$FREQXDPA6MCO111.LOG/ Quotidien
+$PRECXDPA6MCO111.LOG/ 
 -----------------------------
 $JOB: XDPA6MDEM2
 $DESCXDPA6MDEM2/ Démarrage services (shell XDPA6TJA1_HRASTART.KSH 
 $FREQXDPA6MDEM2/ Quotidien
 $PRECXDPA6MDEM2/ 
 -----------------------------
-$JOB: XDPA6DEB_DTOUVSUIV
-$DESCXDPA6DEB_DTOUVSUIV/ 
-$FREQXDPA6DEB_DTOUVSUIV/ Quotidien
-$PRECXDPA6DEB_DTOUVSUIV/ 
+$JOB: XDPA6DEB_DTOUVSUIV.LOG
+$DESCXDPA6DEB_DTOUVSUIV.LOG/ 
+$FREQXDPA6DEB_DTOUVSUIV.LOG/ Quotidien
+$PRECXDPA6DEB_DTOUVSUIV.LOG/ 
 -----------------------------
-
+$JOB: XDPA6DEB_DTOUVPREC.LOG
+$DESCXDPA6DEB_DTOUVPREC.LOG/ 
+$FREQXDPA6DEB_DTOUVPREC.LOG/ Quotidien
+$PRECXDPA6DEB_DTOUVPREC.LOG/ 
+-----------------------------
 $JOB: XDPA6JAA0
 $DESCXDPA6JAA0/ Mise à jour exceptionnelle de bordereaux 
 $FREQXDPA6JAA0/ Quotidien
@@ -538,15 +517,15 @@ $FREQXDPA6JPVO/ Quotidien
 $PRECXDPA6JPVO/ 
 -----------------------------
 
-$JOB: XDPA6DYNM0_AFPHRA
-$DESCXDPA6DYNM0_AFPHRA/ MAJ dossiers en réel partie FRAIS PRO ZY90
-$FREQXDPA6DYNM0_AFPHRA/ Mensuel
-$PRECXDPA6DYNM0_AFPHRA/ 
+$JOB: XDPA6DYNM0_AFPHRA_INTZYNRB
+$DESCXDPA6DYNM0_AFPHRA_INTZYNRB/ MAJ dossiers en réel partie FRAIS PRO ZY90
+$FREQXDPA6DYNM0_AFPHRA_INTZYNRB/ Mensuel
+$PRECXDPA6DYNM0_AFPHRA_INTZYNRB/ 
 -----------------------------
-$JOB: XDPA6DYNL0
-$DESCXDPA6DYNL0/ Job dynamique d’intégration de bordereaux en réel à réception du flux OMEGA HS
-$FREQXDPA6DYNL0/ Mensuel
-$PRECXDPA6DYNL0/
+$JOB: XDPA6DYNL0_INTZYNRB
+$DESCXDPA6DYNL0_INTZYNRB/ Job dynamique d’intégration de bordereaux en réel à réception du flux OMEGA HS
+$FREQXDPA6DYNL0_INTZYNRB/ Mensuel
+$PRECXDPA6DYNL0_INTZYNRB/
 -----------------------------
 $JOB: XDPA6MTA0.LOG
 $DESCXDPA6MTA0.LOG/ Paie de test 10: Dévalidation des dossiers « implicitement valides » via l'exécution d'un script SQL
@@ -648,10 +627,10 @@ $DESCXDPA6MCT1.LOG/ Paie Correction 10: Déblocage de dossiers dans la table tec
 $FREQXDPA6MCT1.LOG/ Mensuel
 $PRECXDPA6MCT1.LOG/     
 ----------------------------
-$JOB: XDPA6MCO13
-$DESCXDPA6MCO13/ Paie Correction 13: Récapitulatif des rubriques de paie Exploration EMCRUB
-$FREQXDPA6MCO13/ Mensuel
-$PRECXDPA6MCO13/     
+$JOB: XDPA6MCO13.LOG
+$DESCXDPA6MCO13.LOG/ Paie Correction 13: Récapitulatif des rubriques de paie Exploration EMCRUB
+$FREQXDPA6MCO13.LOG/ Mensuel
+$PRECXDPA6MCO13.LOG/     
 ----------------------------
 $JOB: XDPA6MCEF1
 $DESCXDPA6MCEF1/ Paie Correction 15: Fin explorations

@@ -32,12 +32,13 @@ oldIFS=$IFS # Sauvegarde du séparateur de champ
 IFS=$'\n' # nouveau séparateur de champ, le caratère fin de ligne
 for MotsCles in $(<$MOTS_CLE_ERROR)
 do
-	x=$(grep "$MotsCles" $FILEAPP/$1)
-	if test -z $x; then
-	echo ""
-	else
-	echo "||+"$x
-	fi
+echo $MotsCles
+	# x=$(grep -i "$MotsCles" $FILEAPP/$1)
+	# if test -z $x; then
+	# echo ""
+	# else
+	# echo "||+"$x
+	# fi
 done
 IFS=$oldIFS # rétablisement du séparateur de champ par défaut
 }
@@ -58,6 +59,7 @@ do
 	DESC="DESC"$Fichier
 	FREQ="FREQ"$Fichier
 	PREC="PREC"$Fichier
+DetectionErreur
                  	 # *****************((((()))))******************#
 				 	 #******** DATES DE FIN ET DEBUT DE JOB ********#
 				 	 #******************((((()))))******************#

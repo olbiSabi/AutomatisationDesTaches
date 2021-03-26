@@ -13,7 +13,6 @@ ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
 MOTS_CLE_ERROR=/home/talhent/production/AutomatisationDesTaches/MotsCles.txt
 
 
-
 #-----------------------------------------------------------------------------------#
 #                                  FUNCTIONS                                        #
 #-----------------------------------------------------------------------------------#
@@ -28,20 +27,34 @@ if test -f $1; then
 fi	
 }
 #-------- Fonction permettant de parcourrir les logs à la recherche d'erreur ------
-DetectionErreur()
+TestSiVide()
 {
-oldIFS=$IFS # Sauvegarde du séparateur de champ
-IFS=$'\n' # nouveau séparateur de champ, le caratère fin de ligne
-for MotsCles in $(<$MOTS_CLE_ERROR)
-do
-	x=$(grep -i "$MotsCles" $FILEAPP/$1)
-	if test -z $x; then
+	if test -z $1; then
 	echo ""
 	else
-	echo "||+"$x
-	fi
-done
-IFS=$oldIFS # rétablisement du séparateur de champ par défaut
+	echo "|| $1"
+fi
+}
+DetectionErreur()
+{
+# 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'erreur' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
+ERROR1=$(grep -E -i "exit [1-9]" $FILEAPP/$1)
+ERROR2=$(grep -E -i "anormal" $FILEAPP/$1)
+ERROR3=$(grep -E -i "abnormal" $FILEAPP/$1)
+ERROR4=$(grep -E -i "jobTest [1-9]" $FILEAPP/$1)
+ERROR5=$(grep -E -i "code retour [1-9]" $FILEAPP/$1)
+ERROR6=$(grep -E -i "delai" $FILEAPP/$1)
+ERROR7=$(grep -E -i "erreur" $FILEAPP/$1)
+ERROR8=$(grep -E -i "permission denied" $FILEAPP/$1)
+ERROR9=$(grep -E -i "error" $FILEAPP/$1)
+ERROR10=$(grep -E -i "depassement" $FILEAPP/$1)
+ERROR11=$(grep -E -i "can not" $FILEAPP/$1)
+ERROR12=$(grep -E -i "trop petit" $FILEAPP/$1)
+ERROR13=$(grep -E -i "err\." $FILEAPP/$1)
+ERROR14=$(grep -E -i "rejet" $FILEAPP/$1)
+ERROR15=$(grep -E -i "cannot" $FILEAPP/$1)
+echo "$(TestSiVide "$ERROR1") $(TestSiVide "$ERROR2") $(TestSiVide "$ERROR3") $(TestSiVide "$ERROR4") $(TestSiVide "$ERROR5") $(TestSiVide "$ERROR6") $(TestSiVide "$ERROR7") $(TestSiVide "$ERROR8")
+ $(TestSiVide "$ERROR9") $(TestSiVide "$ERROR10") $(TestSiVide "$ERROR11") $(TestSiVide "$ERROR12") $(TestSiVide "$ERROR13") $(TestSiVide "$ERROR14") $(TestSiVide "$ERROR15")"
 }
 
 #-----------------------------------------------------------------------------------#
@@ -53,6 +66,7 @@ ConditionFichierExiste $RENDU
 echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
 </style></head><body><table> <tr style=$CSS><td>JOB-CTM</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
 #boucle pour parcourir tous les fichiers ce trouvant dans les dossier appropié.
+
 for FILE in `ls $FILEAPP`
 do
 	Fichier=$(echo $FILE| awk -F . '{print $1}')
@@ -120,7 +134,7 @@ do
 		Tmp=$minute"min "$seconde"s"
 	fi
 		 
-	 echo "<tr><td>" $(echo $FILE | cut -d_ -f1,2)" </td><td> `grep $DESC $ADERHPARAM | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
-	 <td>$Tmp</td><td> `grep $FREQ $ADERHPARAM | cut -d/ -f 2`</td><td>` DetectionErreur $FILE`</td></tr>" >> $RENDU
+	 echo "<tr><td>" $(echo $FILE | cut -d_ -f1,2)" </td><td> `grep $DESC $ADERHPARAM | sed -n 1p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
+	 <td> $Tmp </td><td> `grep $FREQ $ADERHPARAM | sed -n 1p  | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 done
 echo "</table> </body> </html>" >> $RENDU

@@ -9,9 +9,6 @@ FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGAPP
 RENDU=/home/talhent/production/AutomatisationDesTaches/renduAPP.html
 # Variable contenant le chemin vers les donnée de parametrage
 ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
-# Variable contenant le chemin les mots clé désignant les erreurs
-MOTS_CLE_ERROR=/home/talhent/production/AutomatisationDesTaches/MotsCles.txt
-
 #-----------------------------------------------------------------------------------#
 #                                  FUNCTIONS                                        #
 #-----------------------------------------------------------------------------------#
@@ -26,20 +23,28 @@ if test -f $1; then
 fi	
 }
 #-------- Fonction permettant de parcourrir les logs à la recherche d'erreur ------
-DetectionErreur()
+TestSiVide()
 {
-oldIFS=$IFS # Sauvegarde du séparateur de champ
-IFS=$'\n' # nouveau séparateur de champ, le caratère fin de ligne
-for MotsCles in $(<$MOTS_CLE_ERROR)
-do
-	x=$(grep "$MotsCles" $FILEAPP/$1)
-	if test -z $x; then
+	if test -z $1; then
 	echo ""
 	else
-	echo "||+"$x
-	fi
+	echo "|| $1"
+fi
+}
+
+DetectionErreur()
+{
+for MotsCles in 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'erreur' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
+do
+# echo $MotsCles
+# echo $i
+	x=$(grep -E -i "$MotsCles" $FILEAPP/$1)
+	echo "$(TestSiVide "$x")"
+	
+	i=$(($i + 1))
 done
-IFS=$oldIFS # rétablisement du séparateur de champ par défaut
+
+
 }
 
 #-----------------------------------------------------------------------------------#
@@ -58,6 +63,7 @@ do
 	DESC="DESC"$Fichier
 	FREQ="FREQ"$Fichier
 	PREC="PREC"$Fichier
+
                  	 # *****************((((()))))******************#
 				 	 #******** DATES DE FIN ET DEBUT DE JOB ********#
 				 	 #******************((((()))))******************#
@@ -121,3 +127,4 @@ do
 	 <td>$Tmp</td><td> `grep $Fichier $ADERHPARAM | sed -n 3p | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 done
 echo "</table> </body> </html>" >> $RENDU
+

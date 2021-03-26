@@ -6,12 +6,9 @@ CSS='"background-color: #00ffff; text-align: center; font-weight: bold"'
 # Variable contenant le chemin vers les fichers LOGCTM
 FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGCTM
 # Variable contenant le chemin du rendu LOGCTM
-RENDU=/home/talhent/production/AutomatisationDesTaches/renduCTM.html
+RENDU=/home/talhent/production/AutomatisationDesTaches/LOGCTM.html
 # Variable contenant le chemin vers les donnée de parametrage
 ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
-# Variable contenant le chemin les mots clé désignant les erreurs
-MOTS_CLE_ERROR=/home/talhent/production/AutomatisationDesTaches/MotsCles.txt
-
 
 #-----------------------------------------------------------------------------------#
 #                                  FUNCTIONS                                        #
@@ -35,26 +32,14 @@ TestSiVide()
 	echo "|| $1"
 fi
 }
+
 DetectionErreur()
 {
-# 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'erreur' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
-ERROR1=$(grep -E -i "exit [1-9]" $FILEAPP/$1)
-ERROR2=$(grep -E -i "anormal" $FILEAPP/$1)
-ERROR3=$(grep -E -i "abnormal" $FILEAPP/$1)
-ERROR4=$(grep -E -i "jobTest [1-9]" $FILEAPP/$1)
-ERROR5=$(grep -E -i "code retour [1-9]" $FILEAPP/$1)
-ERROR6=$(grep -E -i "delai" $FILEAPP/$1)
-ERROR7=$(grep -E -i "erreur" $FILEAPP/$1)
-ERROR8=$(grep -E -i "permission denied" $FILEAPP/$1)
-ERROR9=$(grep -E -i "error" $FILEAPP/$1)
-ERROR10=$(grep -E -i "depassement" $FILEAPP/$1)
-ERROR11=$(grep -E -i "can not" $FILEAPP/$1)
-ERROR12=$(grep -E -i "trop petit" $FILEAPP/$1)
-ERROR13=$(grep -E -i "err\." $FILEAPP/$1)
-ERROR14=$(grep -E -i "rejet" $FILEAPP/$1)
-ERROR15=$(grep -E -i "cannot" $FILEAPP/$1)
-echo "$(TestSiVide "$ERROR1") $(TestSiVide "$ERROR2") $(TestSiVide "$ERROR3") $(TestSiVide "$ERROR4") $(TestSiVide "$ERROR5") $(TestSiVide "$ERROR6") $(TestSiVide "$ERROR7") $(TestSiVide "$ERROR8")
- $(TestSiVide "$ERROR9") $(TestSiVide "$ERROR10") $(TestSiVide "$ERROR11") $(TestSiVide "$ERROR12") $(TestSiVide "$ERROR13") $(TestSiVide "$ERROR14") $(TestSiVide "$ERROR15")"
+for MotsCles in 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'erreur' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
+do
+	x=$(grep -E -i "$MotsCles" $FILEAPP/$1)
+	echo "$(TestSiVide "$x")"
+done
 }
 
 #-----------------------------------------------------------------------------------#

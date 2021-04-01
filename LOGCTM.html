@@ -1,692 +1,0 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8" /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
-</style></head><body><table> <tr style="background-color: #00ffff; text-align: center; font-weight: bold"><td>JOB-CTM</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>
-<tr><td> XDPA6CJE1_COLLPDOC.LOG </td><td>  Génération du fichier Collaborateurs pour PEOPLEDOC (query YDEMPLOY)</td><td>23:07:58</td><td>23:13:03</td>
-	 <td> 5min 5s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| # 09-03-2021 a 23:07:58 fl_suppr_fichier : Suppression des fichiers résultat de la Query ERREUR
-+jobTest 0 fg_exec_query : erreur d'execution query YDEMPLOY</td></tr>
-<tr><td> XDPA6CJE1_COLLPDOC.LOG </td><td>  Génération du fichier Collaborateurs pour PEOPLEDOC (query YDEMPLOY)</td><td>01:33:13</td><td>01:38:17</td>
-	 <td> 5min 4s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query YDEMPLOY</td></tr>
-<tr><td> XDPA6CJH1_STRUCTHRA.LOG </td><td>  Quotidien 30: Récupération des structures de l’EAI</td><td>21:46:02</td><td>21:46:04</td>
-	 <td> 0min 2 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6CJH1_STRUCTHRA.LOG </td><td>  Quotidien 30: Récupération des structures de l’EAI</td><td>01:38:21</td><td>01:38:22</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6CJH2_STRUCTHRA.LOG </td><td>  Quotidien 31: Mise à jour base HRA avec structures</td><td>21:46:08</td><td>
-21:46:09</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6CJH2_STRUCTHRA.LOG </td><td>  Quotidien 31: Mise à jour base HRA avec structures</td><td>22:13:07</td><td>
-22:13:07</td>
-	 <td> 0min 0 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6CJH3_GIDEHRA.LOG </td><td>  Quotidien 33: Génération des informations liées à GIDE</td><td>21:50:14</td><td>21:50:18</td>
-	 <td> 0min 4 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6CJH3_GIDEHRA.LOG </td><td>  Quotidien 33: Génération des informations liées à GIDE</td><td>22:18:26</td><td>22:18:29</td>
-	 <td> 0min 3 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6CJH4_GIDEHRA.LOG </td><td>  Quotidien 34: Mise à jour des informations liées à GIDE</td><td>21:50:22</td><td>21:50:58</td>
-	 <td> 0min 36 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6CJH4_GIDEHRA.LOG </td><td>  Quotidien 34: Mise à jour des informations liées à GIDE</td><td>22:18:34</td><td>22:19:28</td>
-	 <td> 0min 54 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6CJH5_BANQUHRA.LOG </td><td>  Interface Banques</td><td>22:19:34</td><td>22:20:10</td>
-	 <td> 0min 36 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +msgOut Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_etablissements.bad' pas sortie en erreur
-Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_etablissements.bad' pas sortie en erreur
-+jobTest 0 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_etablissements.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020) : erreur
-+msgOut Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_guichets.bad' pas sortie en erreur
-Existance d'un fichier '/dz-pareo/applis/pa6/logapp/banque_guichets.bad' pas sortie en erreur
-+jobTest 0 fg_sqlloader(/dz-pareo/applis/pa6/parm/banque_guichets.ctl,/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021) : erreur
-
-|| +__optionsX=SILENT=ALL ERRORS=0
-+sqlldr dexploitdba/exploitd2015@dxpa6 control=/dz-pareo/applis/pa6/parm/banque_etablissements.ctl  data=/dz-pareo/applis/pa6/cft.in/RN5PA6ET.20210317193020 log=/dz-pareo/applis/pa6/logapp/banque_etablissements.log bad=/dz-pareo/applis/pa6/logapp/banque_etablissements.bad SILENT=ALL ERRORS=0
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+__optionsX=SILENT=ALL ERRORS=0
-+sqlldr dexploitdba/exploitd2015@dxpa6 control=/dz-pareo/applis/pa6/parm/banque_guichets.ctl  data=/dz-pareo/applis/pa6/cft.in/RN5PA6GU.20210317193021 log=/dz-pareo/applis/pa6/logapp/banque_guichets.log bad=/dz-pareo/applis/pa6/logapp/banque_guichets.bad SILENT=ALL ERRORS=0
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6CJTR_PDOCCFT.LOG </td><td>  Envoi CFT du fichier Collaborateurs vers PEOPLEDOC</td><td>01:38:21</td><td>01:38:22</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6DEB_DTOUVPREC.LOG </td><td>  </td><td>07:05:32</td><td>07:05:34</td>
-	 <td> 0min 2 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6DEB_DTOUVSUIV.LOG </td><td>  </td><td>07:05:25</td><td>07:05:27</td>
-	 <td> 0min 2 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6DEB.LOG_00s6nb </td><td>  </td><td>07:05:21</td><td>07:05:21</td>
-	 <td> 0min 0 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6EJB1_EPABORH.LOG </td><td> Données EPA vers Infocentre RH </td><td>21:21:47</td><td>21:29:17</td>
-	 <td> 7min 30s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6EJH3_PVODMSHR.LOG </td><td>  Query ZCPVO00D  : Notifications PVO depuis  date  CTRL M précédente vers le DMS </td><td>01:38:30</td><td>01:41:33</td>
-	 <td> 3min 3s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6EJH4_DATPREHR.LOG </td><td>  Copie fichier date CTRL M dans  fichier date CTRL M précédente </td><td>01:41:37</td><td>01:41:37</td>
-	 <td> 0min 0 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6EJH6_EPAEDITPDF.LOG </td><td>  Query Edition PDF EPA</td><td>01:41:41</td><td>
-01:41:42</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6FIN.LOG_00rtnj </td><td>  Fin du différé</td><td>02:46:18</td><td>02:46:23</td>
-	 <td> 0min 5 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJB1_REFBORH.LOG </td><td>  Données Référentielles vers Infocentre RH </td><td>21:29:21</td><td>21:29:34</td>
-	 <td> 0min 13 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJB2_AGENBORH.LOG </td><td>  Données Agents vers Infocentre RH </td><td>21:29:38</td><td>21:33:54</td>
-	 <td> 4min 16s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJC1_AGENCHIM.LOG </td><td>  Quotidien 22: Données Agents  et  Catalogue vers CHIMED</td><td>20:40:13</td><td>20:42:57</td>
-	 <td> 2min 44s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJC2_AGENPREV.LOG </td><td>  Données Agents et Catalogue vers PREVENTIEL</td><td>20:43:02</td><td>20:45:30</td>
-	 <td> 2min 28s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJD1_PREEMDFS.LOG </td><td>  état dossiers préembauche & Notification  à GTA (mail) nouveaux arrivants (Query VA0EMB04)</td><td>01:41:45</td><td>
-01:42:48</td>
-	 <td> 1min 3s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query VA0EMB04</td></tr>
-<tr><td> XDPA6GJD2_TELETDFS.LOG </td><td>  suivi agents en télétravail (Query VA0VH002)</td><td>01:42:51</td><td>01:43:53</td>
-	 <td> 1min 2s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query VA0VH002</td></tr>
-<tr><td> XDPA6GJF1_STRORGSYF.LOG </td><td>  Unités Organisationnelles  vers SYFADIS </td><td>23:31:08</td><td>23:31:52</td>
-	 <td> 0min 44 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJF2_DNCOLLSYF.LOG </td><td>  Données Collaborateurs  vers SYFADIS </td><td>23:31:56</td><td>23:34:46</td>
-	 <td> 2min 50s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJF3_REFEGASYF.LOG </td><td>  Référentiel GA vers SYFADIS </td><td>23:34:51</td><td>23:34:57</td>
-	 <td> 0min 6 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJF4_REFEMPSYF.LOG </td><td>  Référentiel Emplois vers SYFADIS </td><td>23:35:01</td><td>23:35:07</td>
-	 <td> 0min 6 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJH1_FHISTHRA.LOG </td><td>  MAJ Fiche historique  ZYPU </td><td>21:33:58</td><td>22:12:56</td>
-	 <td> 38min 58s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJH4_CIRNIRHR.LOG </td><td>  Intégration certification NIR (KJ8 </td><td>01:38:26</td><td>
-01:38:26</td>
-	 <td> 0min 0 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJM1_REFMOBIL.LOG </td><td>  Données référentiel Mobil&Vous</td><td>01:43:57</td><td>01:44:01</td>
-	 <td> 0min 4 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJM2_COLMOBIL.LOG </td><td>  Données collaborateur Mobil&Vous</td><td>01:44:05</td><td>01:49:07</td>
-	 <td> 5min 2s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query XIMOBILE</td></tr>
-<tr><td> XDPA6GJO1_OMEGAEXP.LOG </td><td>  Données Agents vers OMEGA (Explorations OMEGA</td><td>20:36:10</td><td>20:40:09</td>
-	 <td> 3min 59s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJO2_OMEGASQL.LOG </td><td>  Extraction des managers</td><td>23:31:03</td><td>23:31:05</td>
-	 <td> 0min 2 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-+sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJO4_GPODYSSE.LOG </td><td>  Extraction des GP individuels pour ODYSSEE </td><td>08:00:05</td><td>08:03:59</td>
-	 <td> 3min 54s </td><td>  Quotidien</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6GJQ1_EDPDFQVT.LOG </td><td>  Demande d'équipement télétravail vers ITSM (GDDB)</td><td>01:57:38</td><td>02:17:41</td>
-	 <td> 20min 3s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJQ2_EQTELQVT.LOG </td><td>  Demande d'équipement télétravail vers ITSM (GDDB)</td><td>02:17:45</td><td>02:26:07</td>
-	 <td> 8min 22s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query VAWVH003</td></tr>
-<tr><td> XDPA6GJQ3_CETELQVT.LOG </td><td>  Demandes cessation de télétravail vers PeopleDoc </td><td>02:26:11</td><td>02:46:13</td>
-	 <td> 20min 2s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJS1_CORHSALS.LOG </td><td>  Codifications RH vers SALSA </td><td>20:36:10</td><td>20:38:18</td>
-	 <td> 2min 8s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJS2_RESPSALS.LOG </td><td>  Responsable structure  vers SALSA </td><td>20:38:22</td><td>20:38:50</td>
-	 <td> 0min 28 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJS3_AGRSALS.LOG </td><td>  Quotidien 17: Détermination code tarif AGR vers SALSA</td><td>20:38:54</td><td>21:16:44</td>
-	 <td> 37min 50s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJS4_AGENSALS.LOG </td><td>  Quotidien 18: Pivot Agents vers SALSA</td><td>21:16:48</td><td>21:21:07</td>
-	 <td> 4min 19s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6GJT2_COLTALENT.LOG </td><td>  Données Collaborateurs vers TALENTS&VOUS </td><td>01:49:12</td><td>01:57:34</td>
-	 <td> 8min 22s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| +jobTest 0 fg_exec_query : erreur d'execution query XITALENT</td></tr>
-<tr><td> XDPA6JAA0.LOG_00rtsv </td><td>  Mise à jour exceptionnelle de bordereaux </td><td>20:36:05</td><td>
-20:36:06</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6JAME.LOG_00rtt4 </td><td>  Quotidien 23: Traitements quotidiens AME</td><td>21:21:11</td><td>
-21:21:12</td>
-	 <td> 0min 1 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6JECR.LOG_00rtsz </td><td>  Quotidien 36: Envoi CR des MAJ bordereaux sur serveur bureautique</td><td>22:20:13</td><td>22:20:19</td>
-	 <td> 0min 6 s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6JPVO.LOG_00rtt5 </td><td>  Traitements quotidiens PVO </td><td>21:21:16</td><td>21:21:43</td>
-	 <td> 0min 27 s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| <I> Warning=Erreur     TYANOM   : W
-*                  Edition des erreurs de BMI                   *
-*               Tri des erreurs entre BMM et BME                *</td></tr>
-<tr><td> XDPA6JTA0.LOG_00rtt0 </td><td>  Quotidien 37: Mise à jour des Flat Tables ZE</td><td>22:20:23</td><td>22:45:01</td>
-	 <td> 24min 38s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| <I> Warning=Erreur     TYANOM   : W
-*                  Edition des erreurs de BMI                   *
-*               Tri des erreurs entre BMM et BME                *</td></tr>
-<tr><td> XDPA6JTA1.LOG_00rtt1 </td><td>  Quotidien 38: Mise à jour des Flat Tables ZY</td><td>22:45:06</td><td>23:30:58</td>
-	 <td> 45min 52s </td><td>  Quotidien</td><td>
-
-
-
-
-
-|| <I> Warning=Erreur     TYANOM   : W
-*                  Edition des erreurs de BMI                   *
-*               Tri des erreurs entre BMM et BME                *</td></tr>
-<tr><td> XDPA6MCBU1.LOG_00ruci </td><td>  Paie Correction 16: Edition des bulletins de la paie de correction n°1</td><td>00:59:18</td><td>00:59:20</td>
-	 <td> 0min 2 s </td><td>  Mensuel</td><td>
-|| AS800BOV-BBAD0011-*** BOV : FIN ANORMALE - HORODATAGE DE FIN   : 2021-03-19-00.59.19  **** CODE RETOUR 10 ****** 34ID   
-*                         Fin anormale                          *
-
-
-|| AS800BOV-BBAD0011-*** BOV : FIN ANORMALE - HORODATAGE DE FIN   : 2021-03-19-00.59.19  **** CODE RETOUR 10 ****** 34ID   </td></tr>
-<tr><td> XDPA6MCEF1.LOG_00rucg </td><td>  Paie Correction 15: Fin explorations</td><td>00:59:23</td><td>00:59:24</td>
-	 <td> 0min 1 s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCO11.LOG_00rucf </td><td>  Paie Correction 11: Moyenne des rémunérations Exploration EMMMOY</td><td>23:38:06</td><td>23:52:59</td>
-	 <td> 14min 53s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCO12.LOG_00rucj </td><td>  Paie Correction 12: Mandat récapitulatif du caissier général</td><td>23:53:03</td><td>23:58:08</td>
-	 <td> 5min 5s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCO13.LOG_00ruck </td><td>  Paie Correction 13: Récapitulatif des rubriques de paie Exploration EMCRUB</td><td>23:58:13</td><td>00:42:11</td>
-	 <td> 43min 58s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCO14.LOG_00rucl </td><td>  Paie Correction 14: Etat des contrôles de paie pré feu vert et feu vert Exploration EMPNC7</td><td>00:42:15</td><td>00:59:14</td>
-	 <td> 16min 59s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCO1.LOG_00ruce </td><td>  Paie Correction 01: Traitement de la paie de correction n°1, via la chaîne standard HR Access K3W </td><td>23:35:15</td><td>23:38:02</td>
-	 <td> 2min 47s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MCT1.LOG_00rucm </td><td>  Paie Correction 10: Déblocage de dossiers dans la table technique TP13 via l'exécution d'un script SQL</td><td>00:59:28</td><td>00:59:29</td>
-	 <td> 0min 1 s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MTQ01.LOG_00pkec </td><td>  Paie de test 22: Etat de contrôle des oppositions par salariés Rapport YDEMPOPS </td><td>01:30:58</td><td>01:39:01</td>
-	 <td> 8min 3s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MTQ02.LOG_00pkeb </td><td>  Paie de test 23: Etat de contrôle des oppositions par périodes de paie Rapport YDEMPOPP </td><td>01:39:05</td><td>01:42:06</td>
-	 <td> 3min 1s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MTQ03.LOG_00pkea </td><td>  Paie de test 24: Tableau pour la lettre des oppositions soldées Rapport YDEMPOPT </td><td>01:42:11</td><td>01:45:13</td>
-	 <td> 3min 2s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MTQ04.LOG_00pkeg </td><td>  Paie de test 25: Vérification des lignes budgétaires Rapports YDREC053 et YDAZX004 </td><td>01:45:16</td><td>01:47:19</td>
-	 <td> 2min 3s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6MTR01.LOG_00pked </td><td>  Paie de test 26: Requête de contrôle via l'exécution d'un script SQL  </td><td>01:48:42</td><td>01:48:46</td>
-	 <td> 0min 4 s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6PJH1_ARTTHRA.LOG </td><td>  Quotidien 32: Mise à jour absences ATHENA</td><td>21:50:05</td><td>21:54:41</td>
-	 <td> 4min 36s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6PJH1_ARTTHRA.LOG </td><td>  Quotidien 32: Mise à jour absences ATHENA</td><td>22:13:11</td><td>22:18:21</td>
-	 <td> 5min 10s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6PMRX_DSNREQUC1.LOG </td><td>  Génération et extraction de requête SQL contrôle DSN</td><td>00:59:52</td><td>01:02:00</td>
-	 <td> 2min 8s </td><td>  Mensuel</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6PMRX_DSNREQUT.LOG </td><td>  Génération et extraction de requête SQL contrôle DSN</td><td>01:50:10</td><td>01:51:25</td>
-	 <td> 1min 15s </td><td>  Mensuel</td><td>
-
-
-
-
-
-
-
-|| +sqlplusopts=whenever oserror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback
-whenever sqlerror exit failure rollback</td></tr>
-<tr><td> XDPA6PMT2_CREVIR.LOG </td><td>  Paie de test 13: Création des CRE exploration  PYCRE2 </td><td>00:39:03</td><td>01:17:35</td>
-	 <td> 38min 32s </td><td>  Mensuel</td><td></td></tr>
-<tr><td> XDPA6TJA0_HRASTOP.LOG </td><td>  Arrêt HR Access</td><td>20:31:26</td><td>20:32:43</td>
-	 <td> 1min 17s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6TJA0_HRASTOP.LOG </td><td>  Arrêt HR Access</td><td>20:31:26</td><td>20:32:43</td>
-	 <td> 1min 17s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6TJA1_HRASTART.LOG </td><td>  Quotidien 12: Ouverture de l’application ADERH</td><td>01:56:19</td><td>01:59:20</td>
-	 <td> 3min 1s </td><td>  Quotidien</td><td></td></tr>
-<tr><td> XDPA6TJA1_HRASTART.LOG </td><td>  Quotidien 12: Ouverture de l’application ADERH</td><td>01:23:06</td><td>01:26:08</td>
-	 <td> 3min 2s </td><td>  Quotidien</td><td></td></tr>
-</table> </body> </html>

@@ -1,12 +1,31 @@
 #!/bin/ksh
 
-# Encodage html
-ENCODING='"utf-8"'
+#------------------------------------ DESCRIPTION- ----------------------------------#
+# @(#)         Script shell qui sera appelé par un shell principale. 
+# @(#) ce script recupere toutes les logs de CONTROL M dans le repertoir logctm:
+# @(#) /dz-pareo-ga/applis/pa6/logctm. les fichiers log recupere seront traités
+# @(#) et les données important extraite.
+#---------------------------------- AUTEUR ET DATE ----------------------------------#
+# @(#) Auteur: Sabi ONIANKITAN
+# @(#) Date Creation:
+#------------------------------------ HISTORIQUE ------------------------------------#
+# @(#)|    VERSION   |      NOM     |  PRENOM   |  DATE DE MISE A JOUR  |
+#     |     V0.1     |  ONIANKITAN  |   SABI    |  29/03/2021           | 
+#-----------------------------------------------------------------------------------#
+
+
+#. /${_YCDPARM}/pa6.env
+#. /${_YCDPARM}/pa6.fonctions.env
+
+#------------------------------------- Encodage html --------------------------------#
+NCODING='"utf-8"'
 CSS='"background-color: #00ffff; text-align: center; font-weight: bold"'
+#------------------------------------- Encodage html --------------------------------#
+
 # Variable contenant le chemin vers les fichers LOGCTM
 FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGCTM
 # Variable contenant le chemin du rendu LOGCTM
-RENDU=/home/talhent/production/AutomatisationDesTaches/LOGCTM.html
+RENDU=/home/talhent/production/AutomatisationDesTaches/renduCTM.html
 # Variable contenant le chemin vers les donnée de parametrage
 ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
 
@@ -46,10 +65,13 @@ done
 #                                   MAIN                                            #
 #-----------------------------------------------------------------------------------#
 
+#jobDebut
+
 ConditionFichierExiste $RENDU
-#Code pour la mise en forme en html(balise html)
+#----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#
 echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
 </style></head><body><table> <tr style=$CSS><td>JOB-CTM</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #boucle pour parcourir tous les fichiers ce trouvant dans les dossier appropié.
 
 for FILE in `ls $FILEAPP`
@@ -118,8 +140,12 @@ do
 		seconde=$(($DUREE % 60 ))
 		Tmp=$minute"min "$seconde"s"
 	fi
-		 
+
+#----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#			 
 	 echo "<tr><td>" $(echo $FILE | cut -d_ -f1,2)" </td><td> `grep $DESC $ADERHPARAM | sed -n 1p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
 	 <td> $Tmp </td><td> `grep $FREQ $ADERHPARAM | sed -n 1p  | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 done
 echo "</table> </body> </html>" >> $RENDU
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#jobFin

@@ -23,11 +23,14 @@ CSS='"background-color: #00ffff; text-align: center; font-weight: bold"'
 #------------------------------------- Encodage html --------------------------------#
 
 # Variable contenant le chemin vers les fichers LOGCTM
-FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGCTM
+FILECTM=/home/talhent/production/AutomatisationDesTaches/LOGCTM
+Fist_FILECTM_SAVE=/home/talhent/production/AutomatisationDesTaches/shell/FICHIER_LOG_CTM1.parm
+Second_FILECTM_SAVE=/home/talhent/production/AutomatisationDesTaches/shell/FICHIER_LOG_CTM2.parm
+DATE_LOGCTM=/home/talhent/production/AutomatisationDesTaches/shell/DATE_DU_DERNIER_LOGCTM.parm
 # Variable contenant le chemin du rendu LOGCTM
 RENDU=/home/talhent/production/AutomatisationDesTaches/renduCTM.html
 # Variable contenant le chemin vers les donnée de parametrage
-ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.txt
+ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.parm
 MOTSCLES=/home/talhent/production/AutomatisationDesTaches/MOTSCLES.parm
 
 #-----------------------------------------------------------------------------------#
@@ -53,15 +56,27 @@ TestSiVide()
 fi
 }
 
+concateneVariableError()
+{
+Mots='' 
+for MotsCles in 'erreur' 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
+do
+	Mots+="|"$MotsCles""
+done
+Mots=$(echo $Mots | sed 's/^|//')
+echo "${Mots}"
+}
+ERROR=`concateneVariableError`
 DetectionErreur()
 {
-for MotsCles in 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'erreur' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
-do
-	x=$(grep -E -i "$MotsCles" $FILEAPP/$1)
-	echo "$(TestSiVide "$x")"
-done
+	EXCLURE='erreur[ ]*=[ ]*0|Edition des erreurs de BMI|Tri des erreurs entre BMM et BME|Warning=Erreur|LIBELLE_ERREUR_CTRLM=$|libelle code erreur|jobTest[ ]*0|exit[ ]*0|code retour[ ]*0|^\+|rm: cannot remove directory|grep[ ]*ERROR|syntax error on line 1 stdin|FakeErrorLoginModule.java|zip error: Nothing to do|mv: cannot rename|VARSORT.*;exit 2 1 2 15|[^1-9] Rows not loaded due to data errors.|Errors allowed: 0|Silent options: FEEDBACK, ERRORS and DISCARDS|whenever sqlerror exit failure rollback|NPQ.VA0TL002.xls.old: Permission denied|pas sortie en erreur|rejetés :.* 000000[ ]*$'
+		x=$(egrep -i "$ERROR" $FILECTM/$1 | egrep -vi "$EXCLURE")
+ 	echo "$(TestSiVide "$x")"
 }
 
+FicherRecupere(){
+	find $FILECTM/ -mtime -$1 -type f | awk -F / '{print $NF}' > $Fist_FILECTM_SAVE
+}
 #-----------------------------------------------------------------------------------#
 #                                   MAIN                                            #
 #-----------------------------------------------------------------------------------#
@@ -69,14 +84,17 @@ done
 #jobDebut
 
 ConditionFichierExiste $RENDU
+ConditionFichierExiste $Second_FILECTM_SAVE
+FicherRecupere 21
 #----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#
 echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
 </style></head><body><table> <tr style=$CSS><td>JOB-CTM</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #boucle pour parcourir tous les fichiers ce trouvant dans les dossier appropié.
 
-for FILE in `ls -rt $FILEAPP`
+for FILE in $(< $Fist_FILECTM_SAVE)
 do
+	LOGFILENAME=$(echo $FILE| awk -F . '{print $1}')
 	Fichier=$(echo $FILE| awk -F . '{print $1}')
 	LETTRE_ENV=`expr substr $Fichier 1 1`
 	case $LETTRE_ENV in
@@ -104,10 +122,10 @@ do
 				 	 #******************((((()))))******************#
 
 	#Definition d'une variable date de fin de JOB et début de JOB
-	DATE_DEBUT=$(grep "Debut le" $FILEAPP/$FILE | awk '{print $6}'| sed -n 1p)
-	DATE_FIN=$(grep "Fin le" $FILEAPP/$FILE | awk '{print $6}'| sed -n 1p)
+	DATE_DEBUT=$(grep "Debut le" $FILECTM/$FILE | awk '{print $6}'| sed -n 1p)
+	DATE_FIN=$(grep "Fin le" $FILECTM/$FILE | awk '{print $6}'| sed -n 1p)
 	if test -z $DATE_FIN; then 
-	DATE_FIN=$(grep "POST TRAITEMENT" $FILEAPP/$FILE | awk -F "#" '{print $2}' | cut -d" " -f2)
+	DATE_FIN=$(grep "POST TRAITEMENT" $FILECTM/$FILE | awk -F "#" '{print $2}' | cut -d" " -f2)
 	fi
 	
 	# jour début
@@ -118,10 +136,10 @@ do
 				 	 #******** DATES DE FIN ET DEBUT DE JOB ********#
 				 	 #******************((((()))))******************#
 	#Definition d'une variable heure de fin de JOB et début de JOB
-	HEURE_DEBUT=$(grep "Debut le" $FILEAPP/$FILE | awk '{print $8}'| sed -n 1p)
-	HEURE_FIN=$(grep "Fin le" $FILEAPP/$FILE | awk '{print $8}'| sed -n 1p)
+	HEURE_DEBUT=$(grep "Debut le" $FILECTM/$FILE | awk '{print $8}'| sed -n 1p)
+	HEURE_FIN=$(grep "Fin le" $FILECTM/$FILE | awk '{print $8}'| sed -n 1p)
 	if test -z $HEURE_FIN; then 
-	HEURE_FIN=$(grep "POST TRAITEMENT" $FILEAPP/$FILE | awk -F "#" '{print $2}' | cut -d" " -f4)
+	HEURE_FIN=$(grep "POST TRAITEMENT" $FILECTM/$FILE | awk -F "#" '{print $2}' | cut -d" " -f4)
 	fi
 	
 	#Décomposition de l'heure de début en Hd:Md/Sd
@@ -159,7 +177,7 @@ do
 	fi
 
 #----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#			 
-	 echo "<tr><td>" $(echo $FILE | cut -d_ -f1,2)" </td><td> `grep $DESC $ADERHPARAM | sed -n 1p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
+	 echo "<tr><td>$LOGFILENAME</td><td> `grep $DESC $ADERHPARAM | sed -n 1p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
 	 <td> $Tmp </td><td> `grep $FREQ $ADERHPARAM | sed -n 1p  | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 done
 echo "</table> </body> </html>" >> $RENDU

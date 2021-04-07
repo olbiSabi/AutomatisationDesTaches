@@ -48,17 +48,26 @@ fi
 #-------- Fonction permettant de parcourrir les logs à la recherche d'erreur ------
 TestSiVide()
 {
-	if test -z $1; then
-	echo ""
-	else
+	if test ! -z $1; then
 	echo "|| $1"
 fi
 }
 
+concateneVariableError()
+{
+Mots='' 
+for MotsCles in 'erreur' 'exit [1-9]' 'anormal' 'abnormal' 'jobTest [1-9]' 'code retour [1-9]' 'delai' 'permission denied' 'error' 'depassement' 'cannot' 'can not' 'trop petit' 'err\.' 'rejet'
+do
+	Mots+="|"$MotsCles""
+done
+Mots=$(echo $Mots | sed 's/^|//')
+echo "${Mots}"
+}
+ERROR=`concateneVariableError`
 DetectionErreur()
 {
-	ERROR=''error'|'erreur'|'anormal'|'abnormal'|'delai'|'depassement'|'cannot'|'err\.'|'rejet'|"trop petit"|"can not"|"permission denied"|"exit [1-9]"|"jobTest [1-9]"|"code retour [1-9]"'
-		x=$(egrep -i $ERROR $FILEAPP/$1)
+	EXCLURE='erreur[ ]*=[ ]*0|Edition des erreurs de BMI|Tri des erreurs entre BMM et BME|Warning=Erreur|LIBELLE_ERREUR_CTRLM=$|libelle code erreur|jobTest[ ]*0|exit[ ]*0|code retour[ ]*0|^\+|rm: cannot remove directory|grep[ ]*ERROR|syntax error on line 1 stdin|FakeErrorLoginModule.java|zip error: Nothing to do|mv: cannot rename|VARSORT.*;exit 2 1 2 15|[^1-9] Rows not loaded due to data errors.|Errors allowed: 0|Silent options: FEEDBACK, ERRORS and DISCARDS|whenever sqlerror exit failure rollback|NPQ.VA0TL002.xls.old: Permission denied|pas sortie en erreur|rejetés :.* 000000[ ]*$'
+		x=$(egrep -i "$ERROR" $FILEAPP/$1 | egrep -vi $EXCLURE )
  	echo "$(TestSiVide "$x")"
 }
 
@@ -76,6 +85,7 @@ ConditionFichierExiste $RENDU
 ConditionFichierExiste $Second_FILEAPP_SAVE
 # recuperation des logs sur un intervalle de jours
 FicherRecupere 25
+
 # on recupere la date du dernier log exécuté
 if test -f $DATE_LOGAPP; then
 DERNIER_LOG=$(cat $DATE_LOGAPP)
@@ -101,6 +111,7 @@ OLDIFS=$IFS
 IFS=$'\n'
 for FILE in $(< $Fist_FILEAPP_SAVE)
 do
+
 	Fichier=$(echo $FILE | awk -F . '{print $1}' | cut -d_ -f1,2)
 	LETTRE_ENV=`expr substr $Fichier 1 1`
 	case $LETTRE_ENV in

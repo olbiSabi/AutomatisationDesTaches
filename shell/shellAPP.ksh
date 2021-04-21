@@ -25,10 +25,13 @@ CSS='"background-color: #00ffff; text-align: center; font-weight: bold"'
 # Variable contenant le chemin vers les fichers LOGAPP
 FILEAPP=/home/talhent/production/AutomatisationDesTaches/LOGAPP
 Fist_FILEAPP_SAVE=/home/talhent/production/AutomatisationDesTaches/shell/FICHIER_LOG_APP1.parm
+SABI=/home/talhent/production/AutomatisationDesTaches/shell/sabi1
+Fist_APP_TMP=/home/talhent/production/AutomatisationDesTaches/shell/sabi
 Second_FILEAPP_SAVE=/home/talhent/production/AutomatisationDesTaches/shell/FICHIER_LOG_APP2.parm
 DATE_LOGAPP=/home/talhent/production/AutomatisationDesTaches/shell/DATE_DU_DERNIER_LOGAPP.parm
 # Variable contenant le chemin du rendu LOGAPP
 RENDU=/home/talhent/production/AutomatisationDesTaches/renduAPP.html
+RENDU_SANS_EXCLUSION=/home/talhent/production/AutomatisationDesTaches/renduAPP_Sans_Exclusion.html
 # Variable contenant le chemin vers les donnée de parametrage
 ADERHPARAM=/home/talhent/production/AutomatisationDesTaches/PARAMETRE.parm
 MOTSCLES=/home/talhent/production/AutomatisationDesTaches/MOTSCLES.parm
@@ -64,15 +67,26 @@ Mots=$(echo $Mots | sed 's/^|//')
 echo "${Mots}"
 }
 ERROR=`concateneVariableError`
+
 DetectionErreur()
 {
-	EXCLURE='erreur[ ]*=[ ]*0|Edition des erreurs de BMI|Tri des erreurs entre BMM et BME|Warning=Erreur|LIBELLE_ERREUR_CTRLM=$|libelle code erreur|jobTest[ ]*0|exit[ ]*0|code retour[ ]*0|^\+|rm: cannot remove directory|grep[ ]*ERROR|syntax error on line 1 stdin|FakeErrorLoginModule.java|zip error: Nothing to do|mv: cannot rename|VARSORT.*;exit 2 1 2 15|[^1-9] Rows not loaded due to data errors.|Errors allowed: 0|Silent options: FEEDBACK, ERRORS and DISCARDS|whenever sqlerror exit failure rollback|NPQ.VA0TL002.xls.old: Permission denied|pas sortie en erreur|rejetés :.* 000000[ ]*$'
-		x=$(egrep -i "$ERROR" $FILEAPP/$1 | egrep -vi $EXCLURE )
- 	echo "$(TestSiVide "$x")"
+EXCLURE='erreur[ ]*=[ ]*0|Edition des erreurs de BMI|Tri des erreurs entre BMM et BME|Warning=Erreur|LIBELLE_ERREUR_CTRLM=$|libelle code erreur|jobTest[ ]*0|exit[ ]*0|code retour[ ]*0|^\+|rm: cannot remove directory|grep[ ]*ERROR|syntax error on line 1 stdin|FakeErrorLoginModule.java|zip error: Nothing to do|mv: cannot rename|VARSORT.*;exit 2 1 2 15|[^1-9] Rows not loaded due to data errors.|Errors allowed: 0|Silent options: FEEDBACK, ERRORS and DISCARDS|whenever sqlerror exit failure rollback|NPQ.VA0TL002.xls.old: Permission denied|pas sortie en erreur|rejetés :.* 000000[ ]*$'
+
+	x=$(egrep -i "$ERROR" $FILEAPP/$1 | sort | uniq | egrep -vi $EXCLURE )
+	echo "$(TestSiVide "$x")"
 }
 
+DetectionErreurSansExclusion()
+{
+EXCLURE='erreur[ ]*=[ ]*0|Edition des erreurs de BMI|Tri des erreurs entre BMM et BME|Warning=Erreur|LIBELLE_ERREUR_CTRLM=$|libelle code erreur|jobTest[ ]*0|exit[ ]*0|code retour[ ]*0|^\+|rm: cannot remove directory|grep[ ]*ERROR|syntax error on line 1 stdin|FakeErrorLoginModule.java|zip error: Nothing to do|mv: cannot rename|VARSORT.*;exit 2 1 2 15|[^1-9] Rows not loaded due to data errors.|Errors allowed: 0|Silent options: FEEDBACK, ERRORS and DISCARDS|whenever sqlerror exit failure rollback|NPQ.VA0TL002.xls.old: Permission denied|pas sortie en erreur|rejetés :.* 000000[ ]*$'
+
+	x=$(egrep -i "$ERROR" $FILEAPP/$1 | sort | uniq)
+	echo "$(TestSiVide "$x")"
+}
+LOG_EXCLURE='XDPA6PMPF_PURGFIC_LISTE_REP_AVANT|XDPA6PMPF_PURGFIC_LISTE_REP_APRES'
 FicherRecupere(){
-	find $FILEAPP/ -mtime -$1 -type f | awk -F / '{print $NF}' > $Fist_FILEAPP_SAVE
+	find $FILEAPP/ -mtime -$1 -type f | awk -F / '{print $NF}' > $Fist_APP_TMP
+	egrep -v "$LOG_EXCLURE" $Fist_APP_TMP > $Fist_FILEAPP_SAVE
 }
 
 #-----------------------------------------------------------------------------------#
@@ -82,9 +96,11 @@ FicherRecupere(){
 #jobDebut
 
 ConditionFichierExiste $RENDU
+ConditionFichierExiste $RENDU_SANS_EXCLUSION
 ConditionFichierExiste $Second_FILEAPP_SAVE
+ConditionFichierExiste $SABI
 # recuperation des logs sur un intervalle de jours
-FicherRecupere 25
+FicherRecupere 40
 
 # on recupere la date du dernier log exécuté
 if test -f $DATE_LOGAPP; then
@@ -93,10 +109,66 @@ else
 touch $DATE_LOGAPP
 fi
 
-# recuperation des logs en fonction de la date du dernier log
+#MEGA TEST
 for i in $(< $Fist_FILEAPP_SAVE)
 do
-	DATE_COURANT=$(echo $i | awk -F . '{print $(NF-1)}')
+	MOIS=`ls -l $FILEAPP/$i | awk -F " " '{print $7}'`
+	case $MOIS in
+		"janvier")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/janvier/01/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"fevrier")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/fevrier/02/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"mars")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/mars/03/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"avril")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/avril/04/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"mai")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/mai/05/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"juin")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/juin/06/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"juillet")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/juillet/07/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"aout")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/aout/08/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"septembre")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/septembre/09/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"octobre")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/octobre/10/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"novembre")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/novembre/11/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+		"decembre")
+		EXTRACTION_DATE=`ls -lrt $FILEAPP/$i | awk -F " " '{print $7 $6 $8}' | sed 's/://' | sed 's/decembre/12/'`
+		echo $i#$EXTRACTION_DATE >> $SABI
+		;;
+	esac
+done
+
+# recuperation des logs en fonction de la date du dernier log
+for i in $(< $SABI)
+do
+	DATE_COURANT=$(echo $i | awk -F "#" '{print $NF}')
 	if test $DATE_COURANT -ge $DERNIER_LOG; then
 	echo $i >> $Second_FILEAPP_SAVE
 	fi
@@ -104,15 +176,22 @@ done
 
 #----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#
 echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
-</style></head><body><table> <tr style=$CSS><td>JOB-APP</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
+</style></head><body><div><a href="`echo $RENDU_SANS_EXCLUSION`">Rendu avec exclusion de faux erreurs</a></div>
+<table> <tr style=$CSS><td>JOB-APP</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#----------------------------------------------------------------- Code pour la mise en forme en htmlsans eclusion (balise html)-------------------------------------------------------------------------#
+echo "<!DOCTYPE html> <html> <head> <meta charset=$ENCODING /> <title>Compte-rendu</title> <style>table, th, td {border: 1px solid black; border-collapse: collapse;}th, td {padding: 10px;}
+</style></head><body><div><a href="`echo $RENDU`">Rendu sans exclusion de faux erreurs</a></div>
+<table> <tr style=$CSS><td>JOB-APP</td><td>Description</td><td>Heure début</td><td>Heure fin</td><td>Durée</td><td>Fréquence</td><td>Erreurs </td></tr>" >> $RENDU_SANS_EXCLUSION
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #boucle pour parcourir tous les fichiers ce trouvant dans les dossier appropié.
 OLDIFS=$IFS
 IFS=$'\n'
-for FILE in $(< $Fist_FILEAPP_SAVE)
+for fiche in $(< $SABI)
 do
-
-	Fichier=$(echo $FILE | awk -F . '{print $1}' | cut -d_ -f1,2)
+	FILE=$(echo $fiche | awk -F "#" '{print $1}')
+	Fichier=$(echo $fiche | awk -F . '{print $1}' | cut -d_ -f1,2)
 	LETTRE_ENV=`expr substr $Fichier 1 1`
 	case $LETTRE_ENV in
 		"X")
@@ -191,9 +270,13 @@ do
 	 echo "<tr><td>" $(echo $FILE | awk -F . '{print $1}')" </td><td> `grep $Fichier $ADERHPARAM | sed -n 2p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
 	 <td>$Tmp</td><td> `grep $Fichier $ADERHPARAM | sed -n 3p | cut -d/ -f 2`</td><td>`DetectionErreur $FILE`</td></tr>" >> $RENDU
 
+#----------------------------------------------------------------- Code pour la mise en forme en html(balise html)-------------------------------------------------------------------------#		 
+	 echo "<tr><td>" $(echo $FILE | awk -F . '{print $1}')" </td><td> `grep $Fichier $ADERHPARAM | sed -n 2p | cut -d/ -f 2`</td><td>$HEURE_DEBUT</td><td>$HEURE_FIN</td>
+	 <td>$Tmp</td><td> `grep $Fichier $ADERHPARAM | sed -n 3p | cut -d/ -f 2`</td><td>`DetectionErreurSansExclusion $FILE`</td></tr>" >> $RENDU_SANS_EXCLUSION
 done
 IFS=$OLDIFS
 echo "</table> </body> </html>" >> $RENDU
+echo "</table> </body> </html>" >> $RENDU_SANS_EXCLUSION
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-cat $Fist_FILEAPP_SAVE | awk -F . '{print $(NF-1)}' | tail -1 > $DATE_LOGAPP
+cat $SABI | awk -F "#" '{print $NF}' | tail -1 > $DATE_LOGAPP
 #jobFin

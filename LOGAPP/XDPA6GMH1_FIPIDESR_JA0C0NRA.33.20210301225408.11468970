@@ -1,0 +1,1809 @@
+
+######################################################################
+# Début JOB subnra_v9
+######################################################################
+
+
+######################################################################
+# STEP 1 : Chargement des paramètres
+######################################################################
+
+
+######################################################################
+# STEP 2 : recuperation des proprietes du processus
+######################################################################
+
+<I> le processus 1 existe sur la plateforme PRODS9
+
+######################################################################
+# STEP 3 : copie du shell standard
+######################################################################
+
+<I> le Shell /dz-pareo/product/pa6/hra/prod/prod/shl/JA0C0NRA est copié sous /dz-pareo/product/pa6/hra/prod/txt/tmp/JA0C0NRA.17956926
+
+######################################################################
+# STEP 4 : Alimentation des cartes paramètre
+######################################################################
+
+TYBPPNRA.17956926 : 
+
+22S3PC10P%POP                                      110 R
+27S3PC12ZY01
+28S3PC13TYPNRAC
+28S3PC13TYPDECM
+28S3PC13DATDEB2021-03-01
+28S3PC13DATFIN2021-03-31
+5T**S
+5W**01SELECPOPSELECT A.NUDOSS FROM ZY00 A WHERE A.TYPDOS='SAL' 
+
+######################################################################
+# STEP 5 : Habillage du Shell standard
+######################################################################
+
+
+######################################################################
+# STEP 6 : Execution de la NRA
+######################################################################
+
+*****************************************************************
+*                   Production de mouvements                    *
+*****************************************************************
+
+
+JOB : JNRA                            DATE : 2021/03/01 23:10:48
+
+
+*-------------------------- STEP050A ---------------------------*
+*             Chargement de paramètres dans T050PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050B ---------------------------*
+*             Chargement de paramètres dans T050PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP050N ---------------------------*
+*                  Initialisation de la phase                   *
+*---------------------------------------------------------------*
+AS800BOP-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOP-BBAD0002-IDENTIFICATION DU PROGRAMME : BOP/7.000/2020-06-12-21.48.37/F/                                        
+AS800BOP-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.10.49                                     
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A         NRACHAINE NRA                F         55                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRA                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-PA2A000090000NRACHAINE NRA                F        A55                                                
+AS800BOP-00000000-PA2BLANCEMENT CHAINE NRA                                                                              
+AS800BOP-00000000-PA2C        ALLHRLO                                                                                   
+AS800BOP-00000000-PA2DFT                                                                                                
+AS800BOP-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-22S3PC10P%POP                                      110 R                                              
+AS800BOP-00000000-27S3PC12ZY01                                                                                          
+AS800BOP-00000000-28S3PC13TYPNRAC                                                                                       
+AS800BOP-00000000-28S3PC13TYPDECM                                                                                       
+AS800BOP-00000000-28S3PC13DATDEB2021-03-01                                                                              
+AS800BOP-00000000-28S3PC13DATFIN2021-03-31                                                                              
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT A.NUDOSS FROM ZY00 A WHERE A.TYPDOS='SAL'                                        
+AS800BOP-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOP-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOP-00000000-22S3PC10P%POP                                      110 R                                              
+AS800BOP-00000000-27S3PC12ZY01                                                                                          
+AS800BOP-00000000-28S3PC13TYPNRAC                                                                                       
+AS800BOP-00000000-28S3PC13TYPDECM                                                                                       
+AS800BOP-00000000-28S3PC13DATDEB2021-03-01                                                                              
+AS800BOP-00000000-28S3PC13DATFIN2021-03-31                                                                              
+AS800BOP-00000000-5T**S                                                                                                 
+AS800BOP-00000000-5W**01SELECPOPSELECT A.NUDOSS FROM ZY00 A WHERE A.TYPDOS='SAL'                                        
+AS800BOP-BBAO0002-TRAVAIL TRAITE 000000000117830 NRA CHAINE NRA ALLHRLO                                                 
+AS800BOP-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOP-BBAD0009-NT (NT) : 000000000000001                                                                             
+AS800BOP-BBAD0009-PA (PA) : 000000000000004                                                                             
+AS800BOP-BBAD0009-PC (PC) : 000000000000008                                                                             
+AS800BOP-BBAD0009-SD (S3) : 000000000000006                                                                             
+AS800BOP-BBAD0010-*** BOP : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.10.49  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP100A ---------------------------*
+*             Chargement de paramètres dans T100PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP100N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.10.49                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000117830                                                                           
+AS800BOU-BBAD0020-FICHIER VIDE : PB                                                                                     
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P                                                                                                  
+AS800BOU-00000000-PA5FSEL1         SEL                                                                                  
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( RC54 ).                                                                  
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000002                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000000                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000002                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.10.49  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100PB.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C9.17956926: No such file or directory
+
+
+*-------------------------- STEP110N ----------------*
+*          Execution module JAVA                    *
+*---------------------------------------------------*
+Filein: /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.17956926
+Fileout: /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.17956926
+Reading INI file /dz-pareo/product/pa6/hra/prod/txt/tmp/T100C1.17956926 ....
+Action: 0
+Writing response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.17956926 ...
+Wrote response to file /dz-pareo/product/pa6/hra/prod/txt/tmp/T110JV.17956926
+
+
+*-------------------------- STEP120A ---------------------------*
+*             Chargement de paramètres dans T120PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP120N ---------------------------*
+*                 Pré-sélection des populations                 *
+*---------------------------------------------------------------*
+AS800BOV-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOV-BBAD0002-IDENTIFICATION DU PROGRAMME : BOV/7.000/2020-06-12-14.48.46/F/                                        
+AS800BOV-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.10.49                                     
+AS800BOV-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOV-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOV-00000000-PA5SZY                                                                                                
+AS800BOV-BBAX0035-SELECTION POPULATION CONSTITUEE PAR L'UTILISATEUR                                                     
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0021-POPULATION 0001 CONTENANT 000000000012841 DOSSIERS A ETE CREEE                                        
+AS800BOV-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOV-BBAD0009-PD (PD) : 000000000000006                                                                             
+AS800BOV-BBAD0009-PS (PS) : 000000000000001                                                                             
+AS800BOV-BBAD0010-*** BOV : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.11.01  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP220A -----------------------*
+*                  REMOVE du fichier PSBBI101.C33              *
+*-----------------------------------------------------------*
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI102.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI103.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI104.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI105.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI106.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI107.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI108.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI109.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI110.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1WE.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L1.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L2.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L3.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L4.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L5.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L6.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L7.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L8.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1L9.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B2.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B3.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B4.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B5.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B6.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B7.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B8.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1B9.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C1.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C2.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C3.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C4.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C5.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C6.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C7.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C8.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1C9.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N2.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N3.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N4.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N5.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N6.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N7.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N8.C33: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/file/PSBBI1N9.C33: No such file or directory
+
+
+*-------------------------- STEP220B ---------------------------*
+*             Chargement de paramètres dans T220PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP220N ---------------------------*
+*                   Production de mouvements                    *
+*---------------------------------------------------------------*
+JA0C0BI1-BBAD0001-------------------------------------------------------------------------------------------------------
+JA0C0BI1-BBAD0002-IDENTIFICATION DU PROGRAMME : BI1/7.000/2020-12-07-23.23.27/F/                                        
+JA0C0BI1-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.11.02                                     
+JA0C0BI1-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA0C0BI1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA0C0BI1-00000000-PC10P0001                                      110 R                                                  
+JA0C0BI1-00000000-PC12ZY01                                                                                              
+JA0C0BI1-00000000-PC13TYPNRAC                                                                                           
+JA0C0BI1-00000000-PC13TYPDECM                                                                                           
+JA0C0BI1-00000000-PC13DATDEB2021-03-01                                                                                  
+JA0C0BI1-00000000-PC13DATFIN2021-03-31                                                                                  
+JA0C0BI1-BBAD0009-PC (PC) : 000000000000006                                                                             
+JA0C0BI1-00000000-PC10P0001                                      110 R                                                  
+JA0C0BI1-00000000-PC12ZY01                                                                                              
+JA0C0BI1-00000000-PC13TYPNRAC                                                                                           
+JA0C0BI1-00000000-PC13TYPDECM                                                                                           
+JA0C0BI1-00000000-PC13DATDEB2021-03-01                                                                                  
+ICDC-JA0EM61I/AC UJA-DATORI : 2021-03-01
+JA0C0BI1-00000000-PC13DATFIN2021-03-31                                                                                  
+ICDC-JA0EM61I/AC UJA-DATORI : 2021-03-31
+JA0C0BI1-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA0C0BI1-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA0C0BI1-00000000-PC10P00010001-01-01-00.00.002999-12-31-23.59.59110 R                                                  
+JA0C0BLS-BBAD0001-------------------------------------------------------------------------------------------------------
+JA0C0BLS-BBAD0002-IDENTIFICATION DU PROGRAMME : BLS/7.000/2020-12-07-23.23.57/F/                                        
+JA0C0BLS-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.11.02                                     
+ICDC-JA0EM61I/AC UJA-DATORI : 2021-03-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-03-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-05-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-01-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-12-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-09-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-05-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-02-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-03-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-05-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-06-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-08-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-07-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-03-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-09-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-01-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-02-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-10-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-09-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-04-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-08-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-08-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-02-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-04-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-03-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-08-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-03-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-02-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-12-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-10-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-03-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-08-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-05-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-02-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1961-03-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-04-23
+ICDC-JA0EM61I/AC UJA-DATORI : 2006-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-08-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-03-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-03-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-12-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-03-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-08-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 2002-12-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-09-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-09-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-07-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-02-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-07-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-01-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-10-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-10-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-12-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-12-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-03-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-03-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-07-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-02-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-03-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-10-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-09-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-06-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-08-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-01-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-05-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-09-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-12-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-03-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-07-20
+ICDC-JA0EM61I/AC UJA-DATORI : 2006-09-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-01-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-06-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-03-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-03-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-02-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-02-18
+ICDC-JA0EM61I/AC UJA-DATORI : 2002-06-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-09-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-05-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-07-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-03-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-01-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-03-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-12-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-06-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-09-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-09-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-06-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-06-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-02-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-12-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-12-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-07-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-05-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-10-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-05-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-06-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-10-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-01-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-05-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-02-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-09-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-06-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-05-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-05-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-08-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-10-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-02-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-10-29
+ICDC-JA0EM61I/AC UJA-DATORI : 2009-06-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-01-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-01-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-06-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-05-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-02-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-03-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-02-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-10-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-07-28
+ICDC-JA0EM61I/AC UJA-DATORI : 2008-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-03-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-02-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-01-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-06-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-06-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-12-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-03-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-07-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-03-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-06-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-12-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-03-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-06-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-08-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-08-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-06-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-09-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-08-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-04-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-06-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-07-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-12-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-01-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-04-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-10-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-03-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 2010-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-01-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-06-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-01-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-07-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 2009-07-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-10-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-01-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-04-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-10-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-06-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-01-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1959-12-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-09-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-09-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1957-04-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1962-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-02-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-02-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-05-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-02-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-05-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-05-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-04-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-09-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-02-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-03-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-12-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-10-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-02-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-02-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-07-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-09-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-08-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-01-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-10-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-02-01
+ICDC-JA0EM61I/AC UJA-DATORI : 2002-08-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-09-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-08-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-09-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-01-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-04-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-09-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-08-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-03-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-12-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-06-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-02-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-12-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-05-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-06-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1962-06-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-08-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-07-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-05-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-08-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-03-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-03-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-12-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-09-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-07-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-08-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-08-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-04-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-03-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-12-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-08-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-07-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-06-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-05
+ICDC-JA0EM61I/AC UJA-DATORI : 2017-06-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-08-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-02-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-01-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-06-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-08-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-05-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-02-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-10-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1961-08-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-02-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-12-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-12-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-12-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-12-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-12-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-04-27
+ICDC-JA0EM61I/AC UJA-DATORI : 2007-10-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-05-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1961-03-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-02-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-02-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-05-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-08-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-07-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1959-08-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-08-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-01-05
+ICDC-JA0EM61I/AC UJA-DATORI : 2003-02-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-08-22
+ICDC-JA0EM61I/AC UJA-DATORI : 2008-09-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-12-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-08-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-02-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-10-25
+ICDC-JA0EM61I/AC UJA-DATORI : 2003-08-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-02-23
+ICDC-JA0EM61I/AC UJA-DATORI : 2011-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-07-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-07-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-12-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-06-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-05-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-03-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-02-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-07-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-01-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-02-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-08-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-07-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-05-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-04-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-09-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-04-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-07-27
+ICDC-JA0EM61I/AC UJA-DATORI : 2003-08-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-12-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-03-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-01-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-03-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-12-13
+ICDC-JA0EM61I/AC UJA-DATORI : 2005-07-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-01-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-03-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-03-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-08-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-01-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-09-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-01-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-06-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-10-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-07-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-10-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-05-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-10-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-05-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-02-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-04-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-03-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-02-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-08-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-08-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-08-24
+ICDC-JA0EM61I/AC UJA-DATORI : 2005-11-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-07-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-05-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-08-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-08-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-03-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-09-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-04-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-04-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-05-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-09-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-12-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-08-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-06-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-03-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-06-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-01-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-08-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-12-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-03-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-12-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-01-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-09-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-09-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-04-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-06-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-06-02
+ICDC-JA0EM61I/AC UJA-DATORI : 2011-01-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-04-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-07-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-08-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-06-05
+ICDC-JA0EM61I/AC UJA-DATORI : 2003-01-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-05-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-08-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-05-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-08-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-10-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-08-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-10-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 2007-09-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1959-07-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-08-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-07-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-02-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-07-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-06-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-03-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-07-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-07-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-07-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-07-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-01-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-06-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-02-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-08-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-10-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-09-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-05-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-03-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-03-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-06-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-02-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1958-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-06-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-09-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-06-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-06-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 2002-10-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-09-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 2010-02-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 2010-02-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-09-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-05-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-05-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-01-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-08-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-11-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-01-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-05-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-06-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-07-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-08-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-03-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-07-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-03-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-04-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1962-01-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-05-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-04-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-03-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-09-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1960-08-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-12-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-09-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-05-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-06-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-01-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-08-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-03-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-04-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-07-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-10-04
+ICDC-JA0EM61I/AC UJA-DATORI : 2014-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-09-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-10-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-04-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1999-08-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-09-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1965-08-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-02-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-10-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-12-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-08-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-09-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-08-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-10-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1961-06-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-07-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-02-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-02-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-09-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-07-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-07-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-07-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-02-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-09-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-09-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-05-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-09-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-11-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-06-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-02-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-09-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-08-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-02-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-07-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-02-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-01-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-01-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-07-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-03-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-09-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-10-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-04-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-01-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-05-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-08-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-06-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-01-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-09-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-06-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-04-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-09-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-05-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-05-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-02-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-01-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-06-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-09-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-06-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-08-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-09-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-05-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-07-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-03-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-04-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-06-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-09-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1967-04-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-02-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-05-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-12-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 2000-10-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-03-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-05-30
+ICDC-JA0EM61I/AC UJA-DATORI : 2001-07-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-05-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-08-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-12-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-12-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-10-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-02-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-06-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-08-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-06-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-10-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-11-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-05-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-07-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-12-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-08-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-02-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-08-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-07-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-03-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-08-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-03-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-08-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-05-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-12-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-01-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-11-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-06-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-10-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-12-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-06-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-08-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1973-02-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-08-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-06-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-07-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1963-12-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-06-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-07-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-02-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-05-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-02-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-09-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-03-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-12-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-01-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-08-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-12-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-08-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-04-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1980-06-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-03-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-12-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-09-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-06-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-06-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-03-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-05-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1966-07-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-02-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-08-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-04-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-04-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-07-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-06-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-02-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-05-17
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-06-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-03-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-30
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-01-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-07-21
+ICDC-JA0EM61I/AC UJA-DATORI : 2014-12-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-12-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-09-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-01-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-04-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-03-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-05-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-08-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-04-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1998-02-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1987-04-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-01-25
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-05-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-02-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-20
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-12-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1983-07-04
+ICDC-JA0EM61I/AC UJA-DATORI : 2003-06-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-05-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-10-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-03-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1992-08-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-03-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-06-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1997-09-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-03-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-06-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-01-11
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1974-08-18
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-10-27
+ICDC-JA0EM61I/AC UJA-DATORI : 1970-09-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-09-26
+ICDC-JA0EM61I/AC UJA-DATORI : 1989-11-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-05-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1964-08-10
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-01-01
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-08-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-14
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-09-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1993-02-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1975-10-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-09-02
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-10-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-03-07
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1977-12-31
+ICDC-JA0EM61I/AC UJA-DATORI : 1994-03-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-09-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1990-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1979-04-16
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1995-11-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1988-02-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-13
+ICDC-JA0EM61I/AC UJA-DATORI : 1984-12-05
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-12
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-10-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-02-24
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-09
+ICDC-JA0EM61I/AC UJA-DATORI : 1981-08-29
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-11-23
+ICDC-JA0EM61I/AC UJA-DATORI : 1968-11-19
+ICDC-JA0EM61I/AC UJA-DATORI : 1991-12-21
+ICDC-JA0EM61I/AC UJA-DATORI : 1969-12-15
+ICDC-JA0EM61I/AC UJA-DATORI : 1972-09-03
+ICDC-JA0EM61I/AC UJA-DATORI : 1982-11-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1976-11-06
+ICDC-JA0EM61I/AC UJA-DATORI : 1985-03-28
+ICDC-JA0EM61I/AC UJA-DATORI : 1986-05-22
+ICDC-JA0EM61I/AC UJA-DATORI : 1996-07-04
+ICDC-JA0EM61I/AC UJA-DATORI : 1971-05-08
+ICDC-JA0EM61I/AC UJA-DATORI : 1978-02-05
+JA0C0BLS-BBAM0005-NOMBRE DE DOSSIERS TRAITES     : 000000000012841                                                      
+JA0C0BI1-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+JA0C0BI1-BBAD0009-N1 (NA) : 000000000000015                                                                             
+JA0C0BI1-BBAD0009-B1 (BA) : 000000000000000                                                                             
+JA0C0BI1-BBAD0009-PC (PC) : 000000000000012                                                                             
+JA0C0BI1-BBAD0009-M1 (MA) : 000000000000015                                                                             
+*GE01BMQ-BBAD0001-------------------------------------------------------------------------------------------------------
+*GE01BMQ-BBAD0002-IDENTIFICATION DU PROGRAMME : BMQ/7.000/2020-06-12-14.23.49/F/                                        
+*GE01BMQ-BBAM0041-POPULATION 0001 LIBEREE                                                                               
+JA0C0BI1-BBAD0010-*** BI1 : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.24.33  **** CODE RETOUR 00 ******        
+
+
+*-------------------------- STEP350A ---------------------------*
+*             Chargement de paramètres dans T350PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP350B ---------------------------*
+*             Chargement de paramètres dans T350PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP350N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.24.34                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000117830                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FVOL1         VOLT350C1                                                                            
+AS800BOU-00000000-PA5FVOL1BI1X1VOL XMLT220XL                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FVOL1BI1M1VOL DATPSBBI101.C33                                                                      
+AS800BOU-00000000-PA5FVOL1BI1B1VOL BLBPSBBI1B1.C33                                                                      
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FVOL1         VOLT350C1                                                                            
+AS800BOU-00000000-PA5FVOL1BI1X1VOL XMLT220XL                                                                            
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/file                                                               
+AS800BOU-00000000-PA5FVOL1BI1M1VOL DATPSBBI101.C33                                                                      
+AS800BOU-00000000-PA5FVOL1BI1B1VOL BLBPSBBI1B1.C33                                                                      
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1X (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1X 1V OL (3P)                                                                       
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1M (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1M 1V OL (3P)                                                                       
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1B (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BI1B 1V OL (3P)                                                                       
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-CA (C1) : 000000000000008                                                                             
+AS800BOU-BBAD0009-FT (FT) : 000000000000012                                                                             
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000006                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.24.34  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350C9.17956926: No such file or directory
+
+
+*-------------------------- STEP360N ---------------*
+*               Submit generated SHELL in T350FT    *
+*---------------------------------------------------*
+cp: /dz-pareo/product/pa6/hra/prod/txt/tmp/T220XL.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T350FT.17956926: No such file or directory
+
+
+*-------------------------- STEP400A ---------------------------*
+*             Chargement de paramètres dans T400PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400B ---------------------------*
+*             Chargement de paramètres dans T400PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP400N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.24.34                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000117830                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT400C1                                                                            
+AS800BOU-00000000-PA5FLYT1BX0101XMDXMLT220XA                                                                            
+AS800BOU-00000000-PA5FLYT1BX0201XMDXMLT220XB                                                                            
+AS800BOU-00000000-PA5FLYT1BX0301XMDXMLT220XC                                                                            
+AS800BOU-00000000-PA5FLYT1BX0401XMDXMLT220XD                                                                            
+AS800BOU-00000000-PA5FLYT1BX0501XMDXMLT220XE                                                                            
+AS800BOU-00000000-PA5FLYT1BX0601XMDXMLT220XF                                                                            
+AS800BOU-00000000-PA5FLYT1BX0701XMDXMLT220XG                                                                            
+AS800BOU-00000000-PA5FLYT1BX0801XMDXMLT220XH                                                                            
+AS800BOU-00000000-PA5FLYT1BX0901XMDXMLT220XI                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT400C1                                                                            
+AS800BOU-00000000-PA5FLYT1BX0101XMDXMLT220XA                                                                            
+AS800BOU-00000000-PA5FLYT1BX0201XMDXMLT220XB                                                                            
+AS800BOU-00000000-PA5FLYT1BX0301XMDXMLT220XC                                                                            
+AS800BOU-00000000-PA5FLYT1BX0401XMDXMLT220XD                                                                            
+AS800BOU-00000000-PA5FLYT1BX0501XMDXMLT220XE                                                                            
+AS800BOU-00000000-PA5FLYT1BX0601XMDXMLT220XF                                                                            
+AS800BOU-00000000-PA5FLYT1BX0701XMDXMLT220XG                                                                            
+AS800BOU-00000000-PA5FLYT1BX0801XMDXMLT220XH                                                                            
+AS800BOU-00000000-PA5FLYT1BX0901XMDXMLT220XI                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BX01 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX01 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX02 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX02 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX03 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX03 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX04 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX04 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX05 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX05 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX06 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX06 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX07 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX07 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX08 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX08 01 XMD (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BX09 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BX09 01 XMD (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000011                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.24.34  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T400C9.17956926: No such file or directory
+
+
+
+
+*-------------------------- STEP500A ---------------------------*
+*             Chargement de paramètres dans T500PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500B ---------------------------*
+*             Chargement de paramètres dans T500PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP500N ---------------------------*
+*     Programme de communication avec le serveur HRD Query      *
+*---------------------------------------------------------------*
+AS800BOU-BBAD0001-------------------------------------------------------------------------------------------------------
+AS800BOU-BBAD0002-IDENTIFICATION DU PROGRAMME : BOU/7.000/2020-06-12-14.48.45/F/                                        
+AS800BOU-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.24.34                                     
+AS800BOU-BBAO0002-TRAVAIL TRAITE ZO 000117830                                                                           
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5Tbinary                                                                                            
+AS800BOU-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT500C1                                                                            
+AS800BOU-00000000-PA5FLYT1BY0101XMLXMLT220XL                                                                            
+AS800BOU-00000000-PA5FLYT1BY0201XMLXMLT220XM                                                                            
+AS800BOU-00000000-PA5FLYT1BY0301XMLXMLT220XN                                                                            
+AS800BOU-00000000-PA5FLYT1BY0401XMLXMLT220XO                                                                            
+AS800BOU-00000000-PA5FLYT1BY0501XMLXMLT220XP                                                                            
+AS800BOU-00000000-PA5FLYT1BY0601XMLXMLT220XQ                                                                            
+AS800BOU-00000000-PA5FLYT1BY0701XMLXMLT220XR                                                                            
+AS800BOU-00000000-PA5FLYT1BY0801XMLXMLT220XS                                                                            
+AS800BOU-00000000-PA5FLYT1BY0901XMLXMLT220XT                                                                            
+AS800BOU-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+AS800BOU-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+AS800BOU-00000000-PA5P/dz-pareo/product/pa6/hra/prod/txt/tmp                                                            
+AS800BOU-00000000-PA5FLYT1ETATS    LYTT500C1                                                                            
+AS800BOU-00000000-PA5FLYT1BY0101XMLXMLT220XL                                                                            
+AS800BOU-00000000-PA5FLYT1BY0201XMLXMLT220XM                                                                            
+AS800BOU-00000000-PA5FLYT1BY0301XMLXMLT220XN                                                                            
+AS800BOU-00000000-PA5FLYT1BY0401XMLXMLT220XO                                                                            
+AS800BOU-00000000-PA5FLYT1BY0501XMLXMLT220XP                                                                            
+AS800BOU-00000000-PA5FLYT1BY0601XMLXMLT220XQ                                                                            
+AS800BOU-00000000-PA5FLYT1BY0701XMLXMLT220XR                                                                            
+AS800BOU-00000000-PA5FLYT1BY0801XMLXMLT220XS                                                                            
+AS800BOU-00000000-PA5FLYT1BY0901XMLXMLT220XT                                                                            
+AS800BOU-BBAO0025-DIAGRAMME UTILISE DIAGPRO9 ( ZO00 ).                                                                  
+AS800BOU-BBAO0017-ETAT NON TROUVE BY01 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY01 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY02 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY02 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY03 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY03 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY04 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY04 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY05 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY05 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY06 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY06 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY07 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY07 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY08 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY08 01 XML (3P)                                                                      
+AS800BOU-BBAO0017-ETAT NON TROUVE BY09 (3E)                                                                             
+AS800BOU-BBAO0017-ETAT NON TROUVE BY09 01 XML (3P)                                                                      
+AS800BOU-BBAD0008-STATISTIQUES SUR LES FICHIERS (ENREGISTREMENTS LUS/ECRITS)                                            
+AS800BOU-BBAD0009-PB (PB) : 000000000000001                                                                             
+AS800BOU-BBAD0009-PA (PA) : 000000000000011                                                                             
+AS800BOU-BBAD0010-*** BOU : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.24.34  **** CODE RETOUR 01 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T500C9.17956926: No such file or directory
+
+
+
+
+No HMF file produced
+*-------------------------- STEP950A ---------------------------*
+*             Chargement de paramètres dans T950PA              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950B ---------------------------*
+*             Chargement de paramètres dans T950PB              *
+*---------------------------------------------------------------*
+
+
+*-------------------------- STEP950N ---------------------------*
+*                    Terminaison de la phase                    *
+*---------------------------------------------------------------*
+JA800BLZ-BBAD0001-------------------------------------------------------------------------------------------------------
+JA800BLZ-BBAD0002-IDENTIFICATION DU PROGRAMME : BLZ/7.000/2020-12-07-23.31.36/F/                                        
+JA800BLZ-BBAD0003-DEBUT DE TRAITEMENT   - HORODATAGE DE DEBUT : 2021-03-01-23.24.34                                     
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO0001178300                                                       001971260                      
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA50ZO000117830                                                         <                           
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA51001                                                                                               
+JA800BLZ-BBAD0004-LISTE DES PARAMETRES LUS                                                                              
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 0010                                                                           
+JA800BLZ-BBAD0005-LISTE DES PARAMETRES INTERPRETES ET UTILISES                                                          
+JA800BLZ-BBAD0006-....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8                      
+JA800BLZ-00000000-PA52D               01 001                                                                            
+JA800BLZ-BBAZ0008-DISPLAYS CHARGES EN TABLE RELATIONNELLE 000000000000266 LIGNES                                        
+JA800BLZ-BBAD0009-IZ (SZ) : 000000000000000                                                                             
+JA800BLZ-BBAD0010-*** BLZ : FIN NORMALE  - HORODATAGE DE FIN   : 2021-03-01-23.24.34  **** CODE RETOUR 00 ******        
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950RS.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H1.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950H9.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M1.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M2.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M3.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M4.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M5.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M6.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M7.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M8.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950M9.17956926: No such file or directory
+rm: /dz-pareo/product/pa6/hra/prod/txt/tmp/T950PM.17956926: No such file or directory
+
+
+
+
+JOB : JNRA                            DATE : 2021/03/01 23:24:35
+
+
+*---------------------------------------------------------------*
+*                          Fin du job                           *
+*---------------------------------------------------------------*
+<I> Transcodification du code retour pour XOS
+<I> Code retour applicatif (0) compris entre 0 et 7
+<I> Code retour applicatif (0) transformé en : 0
+
+
+*****************************************************
+CODE RETOUR XOS = 0
+*****************************************************
